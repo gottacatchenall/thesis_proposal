@@ -254,362 +254,78 @@ scritpts. The markdown is handled with \texttt{pandoc}.\\%
 \makebox[0pt][l]{\colorRule[CCCCCC]{2.0\textwidth}{0.5pt}}
 \vskip 2em
 
-This template uses \texttt{pandoc} (and a few additional python glue
-scripts) to facilitate the production of scientific articles using a
-standard markdown file. The objective is to ensure that standard
-markdown (with the important exception of the \texttt{pandoc-crossref}
-citation markup) will be rendered into an interactive website (which
-allows collaborative annotations with the \texttt{hypothes.is}
-platform), a ``draft'' style PDF (double-spaced, numbered lines, figures
-at the end), and a ``preprint'' style PDF (with slightly more
-reader-friendly pagination).
-
-The core bit of configuration is the \texttt{metadata.json} file, which
-handles information about authorship, affiliations, the abstract,
-keywords, etc. All documents will be deployed to \texttt{gh-pages}
-\emph{only} on push events from the \texttt{main} branch. All of the
-artifacts will be built when doing pull requests, so you can check that
-merging a branch is \emph{not} going to cause the compilation of the
-documents to fail; indeed, you can download the artifacts produced
-during the run, to check the PDF and html files. The website is only
-updated from the \texttt{main} branch.
-
-The workflow is \emph{very} GitHub based, and so the manuscript file
-\emph{is} the \texttt{README.md} - this is not going to be a huge issue
-as 90\% of the markdown is standard, with the exception of the citations
-and mathematics, so this will render (mostly) like a normal README file.
-
-\hypertarget{deploying-the-template}{%
-\section{Deploying the template}\label{deploying-the-template}}
-
-The process of deploying this template has been \emph{greatly}
-streamlined from previous versions:
-
-\begin{itemize}
-\tightlist
-\item
-  Click on the ``Use this template'' button
-\item
-  Edit \texttt{README.md} with your own text, commit, and push
-\item
-  This push will trigger the first build - the builds are only active on
-  the \texttt{main} branch (\emph{not} \texttt{master}!), and on pull
-  requests
-\item
-  Go to \texttt{http://you.github.io/repo-name/} to view the html
-  version, and get access to the PDFs
-\item
-  Add your references to the \texttt{references.bib} file
-\item
-  Edit the \texttt{metadata.json} file to add the title, abstract,
-  authors
-\end{itemize}
-
-In particular, note that \emph{you do not need} to create a personnal
-access token to deploy to \texttt{gh-pages} (from where the website is
-served).
-
-\hypertarget{the-metadata-file}{%
-\section{The metadata file}\label{the-metadata-file}}
-
-\hypertarget{general-information}{%
-\subsection{General information}\label{general-information}}
-
-The title is a field in the \texttt{metadata.json}:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{\{}
-    \DataTypeTok{"title"}\FunctionTok{:} \StringTok{"Preprint template"}
-\FunctionTok{\}}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{authorship}{%
-\subsection{Authorship}\label{authorship}}
-
-Authors are listed as objects in the \texttt{authors} block. Each author
-is specified as follows:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{\{}
-      \DataTypeTok{"familyname"}\FunctionTok{:} \StringTok{"Bob"}\FunctionTok{,}
-      \DataTypeTok{"givennames"}\FunctionTok{:} \StringTok{"Alice"}\FunctionTok{,}
-      \DataTypeTok{"email"}\FunctionTok{:} \StringTok{"alice.bob@u.edu"}\FunctionTok{,}
-      \DataTypeTok{"orcid"}\FunctionTok{:} \StringTok{"0000{-}0000{-}0000{-}0001"}\FunctionTok{,}
-      \DataTypeTok{"affiliations"}\FunctionTok{:} \OtherTok{[}
-        \StringTok{"Affiliation 1"}\OtherTok{,}
-        \StringTok{"Affiliation 2"}
-      \OtherTok{]}\FunctionTok{,}
-      \DataTypeTok{"status"}\FunctionTok{:} \OtherTok{[}\StringTok{"corresponding"}\OtherTok{,} \StringTok{"equal"}\OtherTok{]}
-    \FunctionTok{\}}
-\end{Highlighting}
-\end{Shaded}
-
-The \texttt{email} field is recommended for all authors. The
-\texttt{status} field is only useful for the corresponding author, and
-to denote equal contributions. These informations are rendered on the
-initial page. If an \texttt{orcid} is given, it will be linked on the
-HTML and PDF versions.
-
-Note that there is \emph{no need} to number the affiliations - a small
-python script will take care of this automatically.
-
-\hypertarget{abstract}{%
-\subsection{Abstract}\label{abstract}}
-
-This template supports three types of abstracts, indicated in the
-metadata file as \texttt{abstract}:
-
-A regular \texttt{abstract} is defined as
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ErrorTok{"abstract":} \ErrorTok{"A} \ErrorTok{very} \ErrorTok{long} \ErrorTok{string"}
-\end{Highlighting}
-\end{Shaded}
-
-An itemized abstract is an array of strings, each representing a bullet
-point:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ErrorTok{"abstract":} \OtherTok{[}
-    \StringTok{"Point 1"}\OtherTok{,}
-    \StringTok{"Point 2"}
-\OtherTok{]}
-\end{Highlighting}
-\end{Shaded}
-
-A structured abstract is an object with key-value pairs :
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ErrorTok{"abstract":} \FunctionTok{\{}
-    \DataTypeTok{"Location"}\FunctionTok{:} \StringTok{"Worldwide"}\FunctionTok{,}
-    \DataTypeTok{"Organisms"}\FunctionTok{:} \StringTok{"Mammals"}
-\FunctionTok{\}}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{citation-style}{%
-\subsection{Citation style}\label{citation-style}}
-
-The \texttt{citationstyle} key corresponds to the name, with
-\texttt{.csl} ommited, of a CSL stylesheet stored in the
-\href{https://github.com/citation-style-language/}{citation style
-language} repository. Note that there is no difference between main and
-dependent styles, the build engine will take the correct steps to get
-the correct style. The default is
-\texttt{"citationstyle":\ "ecology-letters"}. There is a longer section
-about references management later on.
-
-\hypertarget{references-management}{%
-\section{References management}\label{references-management}}
-
-The references are managed by \texttt{pandoc}. Note that we \emph{do
-not} use \texttt{pandoc-citeproc}, which was an external module for
-older \texttt{pandoc} versions. References \emph{must} be stored in a
-\texttt{references.bib} file, and that it would make sense to order it
-alphabetically by key.
-
-We use \href{https://www.zotero.org/}{Zotero} for references management,
-and for the lab's manuscripts, we work from folders in a shared library
-(with a folder for every manuscript).
-
-It is recommedned to use the
-\href{https://retorque.re/zotero-better-bibtex/}{Better BibTeX} plugin
-for citation key generations, and auto-export of the shared library to
-the \texttt{references.bib} file. We use a citation key format meant to
-convey information on the author (first author full name), date (complet
-year), and title (first three letters of the first two non-stop words).
-It must be set in the Better BibTeX preferences as (you might need to
-remove the line changes):
-
-\begin{verbatim}
-[auth:fold]
-[year]
-[title:fold:nopunctordash:skipwords:lower:select=1,1:substring=1,3:capitalize]
-[title:fold:nopunctordash:skipwords:lower:select=2,2:substring=1,3:capitalize]
-\end{verbatim}
-
-It is a good idea to configure Better BibTeX to auto-export on change,
-and to remove a lot of fields that are not strictly speaking required
-for references. The list of fields we usually ignore is:
-
-\begin{verbatim}
-abstract,copyright,annotation,file,pmid,month,shorttitle,keywords
-\end{verbatim}
-
-The citations are done using the normal markdown syntax, where
-\texttt{@Elton1927AniEco} produces Elton (1927), and
-\texttt{{[}@Camerano1880EquViv{]}} produces (Camerano 1880).
-
-\hypertarget{figures-tables-and-other-floats}{%
-\section{Figures, Tables, and other
-floats}\label{figures-tables-and-other-floats}}
-
-Note that you can wrap the text of legends for both figures and tables.
-This avoids the issue of having very long lines.
-
-\hypertarget{mathematics}{%
-\subsection{Mathematics}\label{mathematics}}
-
-The following equation
-
-\begin{equation}\protect\hypertarget{eq:eq1}{}{J'(p) = \frac{1}{\text{log}(S)}\times\left(-\sum p \times \text{log}(p)\right)}\label{eq:eq1}\end{equation}
-
-is produced using
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\SpecialStringTok{$$J\textquotesingle{}(p) = }\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{1\}\{}\SpecialCharTok{\textbackslash{}text}\NormalTok{\{log\}}\SpecialStringTok{(S)\}}\SpecialCharTok{\textbackslash{}times}\SpecialStringTok{ ... $$}\NormalTok{ \{\#eq:eq1\}}
-\end{Highlighting}
-\end{Shaded}
-
-and can be referenced using \texttt{@eq:eq1}, which will result in
-eq.~\ref{eq:eq1}. Note that because we use \texttt{pandoc-crossref}, the
-label ``eq.'' will be generated automatically.
-
-\hypertarget{tables}{%
-\subsection{Tables}\label{tables}}
-
-Table legends go on the line after the table itself. To generate a
-reference to the table, use \texttt{\{\#tbl:id\}} -- then, in the text,
-you can use \texttt{\{@tbl:id\}} to refer to the table. For example, the
-table below is tbl.~\ref{tbl:id}. You can remove the \emph{table} in
-front by using \texttt{!@tbl:id}, or force it to be capitalized with
-\texttt{\textbackslash{}*tbl:id}.
-
-\hypertarget{tbl:id}{}
-\begin{longtable}[]{@{}rrrrl@{}}
-\caption{\label{tbl:id}This is a table, and its identifier is
-\texttt{id} -- we can refer to it using \texttt{\{@tbl:id\}}. Note that
-even if the table legend is written below the table itself, it will
-appear on top in the PDF document.}\tabularnewline
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width &
-Species\tabularnewline
-\midrule
-\endfirsthead
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width &
-Species\tabularnewline
-\midrule
-\endhead
-5.1 & 3.5 & 1.4 & 0.2 & setosa\tabularnewline
-5.0 & 3.6 & 1.4 & 0.2 & setosa\tabularnewline
-5.4 & 3.9 & 1.7 & 0.4 & setosa\tabularnewline
-\bottomrule
-\end{longtable}
-
-\hypertarget{figures}{%
-\section{Figures}\label{figures}}
-
-Figures can have a legend -- all figures \emph{must} be in the
-\texttt{figures/} folder of the project, as it is also used for the
-website. We recommend to use good resolution images, rather than PDFs,
-or at least to have multiple versions available.
-
-\begin{verbatim}
-![This is the legend of the figure...](figures/figure.png){#fig:figure}
-\end{verbatim}
-
-\begin{figure}
-\hypertarget{fig:figure}{%
-\centering
-\includegraphics{figures/figure.png}
-\caption{This is the legend of the figure, which will be shown in the
-margin in preprint mode, and underneath the figure in draft mode. The
-legend can contain references, etc. It is advised to use a resolution of
-at least 600dpi for the figures.}\label{fig:figure}
-}
-\end{figure}
-
-We can now use \texttt{@fig:figure} to refer to fig.~\ref{fig:figure}.
-
-\hypertarget{example-text}{%
-\section{Example text}\label{example-text}}
-
-Connectance, defined as the ratio of realized interactions on the total
-number of potential interactions, is one of the most common descriptor
-of network structure. In a bipartite network with \(T\) species at the
-top, and \(B\) at the bottom, having a total of \(L\) interactions, it
-is defined as \(Co = L/(T\times B)\). Connectance has a lower bound, as
-the network cannot have fewer interactions that the number of species in
-its more speciose level -- the minimal connectance is therefore
-\(c_m = \text{max}(T,B)\). This makes the connectance of networks of
-different sizes difficult to compare, especially since bipartite
-networks tends to have a low connectance. For this reason, we used a
-corrected version of connectance, defined as
-
-\begin{equation}\protect\hypertarget{eq:cstar}{}{Co^\star=\frac{L-c_m}{T\times B-c_m} \,.}\label{eq:cstar}\end{equation}
-
-\hypertarget{this-is-a-subsection}{%
-\subsection{This is a subsection}\label{this-is-a-subsection}}
-
-This takes values between 0 (the network has the minimal number of
-interactions) and 1 (all species are connected), but is robust to
-variations in species richness.
-
-\hypertarget{this-is-another-subsection}{%
-\subsection{This is another
-subsection}\label{this-is-another-subsection}}
-
-This takes values between 0 (the network has the minimal number of
-interactions) and 1 (all species are connected), but is robust to
-variations in species richness.
-
-\hypertarget{some-non-standard-maths}{%
-\subsection{Some non-standard maths}\label{some-non-standard-maths}}
-
-The phylogenetic reconstruction of \(\hat{\mathscr{L}}\) and
-\(\hat{\mathscr{R}}\) has an associated uncertainty, represented by the
-breadth of the uniform distribution associated to each of their entries.
-Therefore, we can use this information to assemble a
-\emph{probabilistic} metaweb in the sense of
-(\textbf{Poisot2016StrPro?}), \emph{i.e.} in which every interaction is
-represented as a single, independent, Bernoulli event of probability
-\(p\).
-
-Specifically, we have adopted the following approach. For every entry in
-\(\hat{\mathscr{L}}\) and \(\hat{\mathscr{R}}\), we draw a value from
-its distribution. This results in one instance of the possible left
-(\(\hat{\mathscr{l}}\)) and right (\(\hat{\mathscr{r}}\)) subspaces for
-the Canadian metaweb. These can be multiplied, to produce one matrix of
-real values. Because the entries in \(\hat{\mathscr{l}}\) and
-\(\hat{\mathscr{r}}\) are in the same space where \(\mathscr{L}\) and
-\(\mathscr{R}\) were originally predicted, it follows that the threshold
-\(\rho\) estimated for the European metaweb also applies. We use this
-information to produce one random Canadian metaweb,
-\(N = \hat{\mathscr{L}}\)\(\hat{\mathscr{R}}' \ge \rho\).
-
-Because the intervals around some trait values can be broad (in fact,
-probably broader than what they would actually be, see \emph{e.g.}
-\textbf{Garland1999IntPhy?}), we repeat the above process
-\(2\times 10^5\) times, which results in a probabilistic metaweb \(P\),
-where the probability of an interaction (here conveying our degree of
-trust that it exists given the inferred trait distributions) is given by
-the number of times where it appears across all random draws \(N\),
-divided by the number of samples. An interaction with \(P_{i,j} = 1\)
-means that these two species were predicted to interact in all
-\(2\times 10^5\) random draws, etc..
-
-\hypertarget{references}{%
-\section*{References}\label{references}}
-\addcontentsline{toc}{section}{References}
-
-\hypertarget{refs}{}
-\begin{CSLReferences}{1}{0}
-\leavevmode\hypertarget{ref-Camerano1880EquViv}{}%
-Camerano, L. (1880). Dell'equilibrio dei viventi merce la reciproca
-distruzione. \emph{Atti Della R. Accad. Delle Sci. Torino}, 15,
-393--414.
-
-\leavevmode\hypertarget{ref-Elton1927AniEco}{}%
-Elton, C.S. (1927). \emph{Animal ecology}. University of Chicago Press.
-
-\end{CSLReferences}
+Requirements
+
+\begin{quote}
+Candidates must submit a thesis proposal at least 7 days prior to the
+examination. It is the student's responsibility to provide each member
+of the Examining Committee with a copy, as well as Ancil Gittens in the
+graduate office. The thesis proposal should address the relevant
+background, the specific questions to be asked and their significance,
+the approach and methods, results already obtained, and the anticipated
+schedule. The proposal should be no more than 10 double-spaced pages (12
+font). This limit does not include tables, figures, figure legends,
+bibliography or the planned timeline to complete work. Committee members
+will not be responsible for reviewing text in excess of the page limit.
+The written proposal may include preliminary results if available but
+must address the whole scope (all chapters) of the projected thesis.\\
+The proposal serves two purposes. First, it defines the research area
+and thus forms a basis for questioning. Second, it is itself part of the
+evidence upon which a final evaluation will be made. For these reasons,
+it should be written with care. Please see the additional tips on
+proposal writing in the document titled ``QE Expectations and Advice''
+(weblink available on Biology Graduate Studies webpage
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+The student must provide a written proposal for their project to their
+QE examining committee at least 7 days prior to the scheduled QE. An
+acceptable proposal must be provided at least 7 days in advance or the
+QE may need to be rescheduled. It is strongly recommended that a draft
+of the proposal be provided to the supervisory committee at least a few
+days prior to the supervisory committee meeting mentioned above. This
+allows for maximal feedback to be incorporated prior to the QE. The
+proposal should be similar in nature to an NSERC grant application
+describing the research approach. In general in your proposal and in all
+future scientific writing, using subheadings and clear writing to help
+the reader is a good idea. The guidelines mandate a proposal of 2500
+words (approximately 10 pages double spaced). This limit does not
+include tables, figures, bibliography, figure legends, or a planned
+timeline to complete work. This 2500 word limit will be enforced. A
+proposal of 12 pages might not be rejected (or it might), but a proposal
+of 15 pages definitely will. Similarly, the presentation at the start of
+the QE is required to be 1520 minutes. This will also be enforced. Both
+the written proposal and the oral presentation may include preliminary
+results if available but must address the whole of the projected thesis.
+- A successful QE will depend heavily on a top-quality proposal. This
+proposal should go through multiple drafts and be honed to a very finely
+worded document that shows the clarity of your thinking through
+conciseness and exact statements. Some topics you should probably cover
+are listed below. We recommend discussing omissions from this list with
+your advisor and your supervisory committee if you think some of these
+sections are not relevant to your particular project. - Brief review of
+the current state of knowledge - Precise statement of the question
+and/or hypotheses - Description of the methods - Detailed description of
+the experimental or sample design. Be clear about what factors are being
+controlled or sampled. Provide specific numbers for how many levels of
+each factor are planned, and how many replicates/samples within each
+factor. Address any issues that arise from finite effort levels in terms
+of tradeoffs between replication within vs.~between factors
+(i.e.~describe why your plan is optimal). Provide a realistic estimate
+of the amount of time this will require in the lab or field. -
+Statistical analysis approach. Describe specific statistical approaches,
+the output of these approaches, how these can be used to test your
+hypotheses, assumptions of the tests, and potential problems. - If you
+will be using novel measurement techniques, provide a detailed
+description (if you are using standard techniques then references to the
+standard techniques are enough). - Provide a description of each chapter
+anticipated in the dissertation (this - may be incorporated into the
+above sections or as a separate section). - A brief statement of the
+broader importance of the question to your field and to society -
+Provide a timeline showing when the research and writing will be
+performed - (this can be an appendix that does not count against your
+\end{quote}
 
 \end{document}
