@@ -13,8 +13,14 @@ Brief summary of decision theory.
 
 Transition to theme of optimization given unknown information.
 In face of uncertainty, decision making is an optimization problem.
+Frame optimization problem mathematically an introduce concept of
+solution-space and constraint.
 
+Transition to how this is applied in ecology.
+Introduce idea of monitoring network.
+Transition to specifics of this thesis.
 
+![thesis concept](./figures/thesisconcept.png)
 
 # CH1 optimizing sampling of species distributions
 - simulate species distribution and efficacy of detection given a set of
@@ -23,7 +29,7 @@ observation points where the dist from observation site decays.
 - address SDM not being the territory
 
 # CH2 optimizing sampling of interactions
-- the missing link paper, turn this into optimizing with two different SDMs
+- the missing link paper,  turn this into optimizing with two different SDMs
 
 # CH3 optimizing corridor placement
 - land cover -> resistance -> extinction time
