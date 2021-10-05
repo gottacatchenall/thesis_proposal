@@ -22,12 +22,15 @@ Transition to specifics of this thesis.
 ![thesis concept](./figures/thesisconcept.png)
 
 # CH1 optimizing sampling of species distributions
+
+## Methods
 - simulate species distribution and efficacy of detection given a set of
 observation points where the dist from observation site decays.
 - optimize set of repeated sampling locations L for a _known_ distribution D.
 - address SDM not being the territory
 
 # CH2 optimizing sampling of interactions
+## Methods
 - the missing link paper,  turn this into optimizing with two different SDMs
 
 # CH3 optimizing corridor placement
