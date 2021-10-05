@@ -1,7 +1,6 @@
 
 
 Forecasting in ecology.
-
 Forecasting in weather, introduce computers.
 
 Future is uncertain, how do we best act given a forecast?
