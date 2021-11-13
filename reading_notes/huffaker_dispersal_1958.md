@@ -1,0 +1,1 @@
+# Experimental Studies on Predation: Dispersion Factors and Predator–Prey Oscillations (Huffaker 1958)

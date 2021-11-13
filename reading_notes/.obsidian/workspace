@@ -1,0 +1,113 @@
+{
+  "main": {
+    "id": "22c0880e45fcebd0",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1b400a196a9899a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_reading_list.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "ab1ef9bdaf3706e7",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_reading_list.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "266b948401a475a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "c807eb7351a8309f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "949409cbd5cd7944",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b6ae4517fd62b42e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1b248cd470a6a833",
+    "type": "split",
+    "children": [
+      {
+        "id": "0bb12ea039c91b40",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "be1679a535692543",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_reading_list.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "ab1ef9bdaf3706e7",
+  "lastOpenFiles": [
+    "_reading_list.md",
+    "loreau_intergrative.md",
+    "phenomenological_models.md",
+    "macarthur_forest_warblers_1958.md",
+    "schoener_resource_competition.md",
+    "odum_ecosystem_development.md",
+    "hutchinson_niche.md",
+    "huffaker_dispersal_1958.md",
+    "preston_species_rarity.md",
+    "lindeman_trophic_dynamics.md"
+  ]
+}
