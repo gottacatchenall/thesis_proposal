@@ -1,9 +1,11 @@
 Within the last several hundred years, human activity has rapidly
-reshaped both Earth's surface. These changes can roughly be divided
-into two categories: (1) Land-use change, which has rapidly reshaped
-our planet's surface and restructured habitats for every species, and
+reshaped Earth's surface. These changes can roughly be divided
+into two categories: (1) Land-use change, where Earth's surface changes
+ and
 (2) climate change, words here, as a result of greenhouse gas
-emissions. As a result _ecological forecasting_ [@dietze], or
+emissions.
+
+As a result _ecological forecasting_ [@dietze], or
 modeling how ecological systems will change over time, has as an
 imperative to mitigate the effect of these changes on Earth's
 ecosystems, their functioning, and the services they provide to
@@ -14,13 +16,10 @@ of the scientific method to natural history". Since its origin ecology
 has been a descriptive science. This is a natural biproduct of the
 immense variability of Earth's biosphere.
 
+emerged to explain particular phenomena at particular scales.
 
 In recent years, there has been an interest in an epistemological
 shift in ecology.
-emerged to explain particular phenomena at particular scales.
-
-
-
 To shift ecology into a predictive science. The justification for this
 shift is twofold: (1) bogged down philosophy of science, by further
 rooting our understanding of ecosystem function and dynamics in an
@@ -133,6 +132,6 @@ This chapter proposes an algorithm for optimizing (corridorplacement/restoration
 
 
 - TK conceptual figure with interfaces between what I'm writing / have contributed
-to and linked with other libraries 
+to and linked with other libraries
 
 - `Observatories.jl`, `Corridors.jl`, `MCD.jl`
