@@ -14,10 +14,5 @@
     }
   ],
   "abstract": "The proposal for my thesis, _Simulation models for predictive ecology_",
-  "keywords": [
-    "pandoc",
-    "pandoc-crossref",
-    "github actions"
-  ],
   "citationstyle": "ecology-letters"
 }
