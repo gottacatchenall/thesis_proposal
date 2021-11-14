@@ -4,26 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "e1b400a196a9899a",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_reading_list.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
         "id": "ab1ef9bdaf3706e7",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_reading_list.md",
+            "file": "food_webs_mccann.md",
+            "mode": "source"
+          }
+        },
+        "group": "1757c0e0bc37efcb"
+      },
+      {
+        "id": "e10dccc86e783478",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "food_webs_mccann.md",
             "mode": "preview"
           }
-        }
+        },
+        "group": "1757c0e0bc37efcb"
       }
     ],
     "direction": "vertical"
@@ -63,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1b248cd470a6a833",
@@ -79,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_reading_list.md",
+                "file": "food_webs_mccann.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +102,15 @@
   },
   "active": "ab1ef9bdaf3706e7",
   "lastOpenFiles": [
-    "_reading_list.md",
+    "food_webs_mccann.md",
     "loreau_intergrative.md",
-    "phenomenological_models.md",
     "macarthur_forest_warblers_1958.md",
+    "_reading_list.md",
+    "phenomenological_models.md",
     "schoener_resource_competition.md",
     "odum_ecosystem_development.md",
     "hutchinson_niche.md",
     "huffaker_dispersal_1958.md",
-    "preston_species_rarity.md",
-    "lindeman_trophic_dynamics.md"
+    "preston_species_rarity.md"
   ]
 }
