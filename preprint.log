@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  14 NOV 2021 19:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  14 NOV 2021 19:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1204,57 +1204,60 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.25993pt on input line 241.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.25993pt on input line 241.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.12506pt on input line 309.
+LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
+(Font)              scaled to size 7.50009pt on input line 309.
+[1
+
+{/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<./figures/thesisconcept.png, id=68, 2854.16313pt x 1903.11pt>
+File: ./figures/thesisconcept.png Graphic file (type png)
+<use ./figures/thesisconcept.png>
+Package pdftex.def Info: ./figures/thesisconcept.png  used on input line 333.
+(pdftex.def)             Requested size: 386.67299pt x 257.80898pt.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.54997pt on input line 352.
+ [2 <./figures/thesisconcept.png>]
 LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line
- 286.
+ 394.
+
 (/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
 )
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.12506pt on input line 324.
-LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
-(Font)              scaled to size 7.50009pt on input line 324.
- [1
-
-{/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<./figures/thesisconcept.png, id=62, 2854.16313pt x 1903.11pt>
-File: ./figures/thesisconcept.png Graphic file (type png)
-<use ./figures/thesisconcept.png>
-Package pdftex.def Info: ./figures/thesisconcept.png  used on input line 339.
-(pdftex.def)             Requested size: 386.67299pt x 257.80898pt.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.25993pt on input line 346.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.25993pt on input line 346.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 358.
- [2 <./figures/thesisconcept.png>] [3]
 LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 45
-6.
- (/opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+0.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 456.
- 
+(Font)              scaled to size 9.0pt on input line 450.
+ [3]
+
 AED: lastpage setting LastPage
 [4] (./preprint.aux)
 Package rerunfilecheck Info: File `preprint.out' has not changed.
-(rerunfilecheck)             Checksum: 3F06CD1D563BC6DBC133AF61672483B6;1846.
+(rerunfilecheck)             Checksum: F3C5E0C5401F71304E31EDE0BD068E95;2058.
  ) 
 Here is how much of TeX's memory you used:
- 29797 strings out of 478579
- 524890 string characters out of 5855461
- 832753 words of memory out of 5000000
- 47133 multiletter control sequences out of 15000+600000
+ 29807 strings out of 478579
+ 525028 string characters out of 5855461
+ 829887 words of memory out of 5000000
+ 47138 multiletter control sequences out of 15000+600000
  536576 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,117p,541b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,12n,117p,541b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{/opt
-/texlive/texdir/texmf-dist/fonts/enc/dvips/base/8r.enc}{/opt/texlive/texdir/tex
-mf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc}{/opt/texlive/texdir/texmf-di
-st/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{/opt/texlive/texdir/texmf-dist
-/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{/opt/texlive/texdir/texmf-dist/f
-onts/enc/dvips/stix2-type1/stix2-t1.enc}</opt/texlive/texdir/texmf-dist/fonts/t
+/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc}{/opt/texl
+ive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}{/opt/texlive/te
+xdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{/opt/texlive/texd
+ir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{/opt/texlive/texdir
+/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/texlive/texdir/texmf-dist/fonts/t
 ype1/public/inconsolata/Inconsolata-zi4r.pfb></opt/texlive/texdir/texmf-dist/fo
 nts/type1/public/stix2-type1/STIX2Math.pfb></opt/texlive/texdir/texmf-dist/font
 s/type1/public/stix2-type1/STIX2Text-Bold.pfb></opt/texlive/texdir/texmf-dist/f
@@ -1263,10 +1266,10 @@ ist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/texdir/t
 exmf-dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texmf-dis
 t/fonts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/fonts/typ
 e1/urw/helvetic/uhvr8a.pfb>
-Output written on preprint.pdf (4 pages, 2306673 bytes).
+Output written on preprint.pdf (4 pages, 2294929 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

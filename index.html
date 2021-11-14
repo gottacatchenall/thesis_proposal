@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thesis proposal</title>
+    <script src="https://hypothes.is/embed.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
+        :root {
+            --citation: #1976D2;
+            --structure: hsl(210, 61%, 43%);
+
+            --light: #474747;
+            --pale: #a5a5a5;
+            --grey: #e0e0e0;
+            --nav: #fdfdfd;
+
+            --width: 820px;
+            --inner-space: 1.2em;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            margin: 0 0;
+            padding: 0 0;
+        }
+
+        article > p {
+            line-height: 135%;
+        }
+        article > h1 {
+            padding-top: 3em;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            border-bottom: 1px solid var(--structure);
+        }
+        a:hover {
+            font-weight: 500;
+        }
+        .citation {
+            color: var(--citation);
+        }
+        .container {
+            margin: 0em auto;
+            max-width: var(--width);
+            padding: var(--inner-space);
+        }
+        header > .container {
+            margin-top: 4em;
+        }
+        code, pre {
+            font-family: "Roboto Mono", monospace;
+        }
+        pre {
+            white-space: pre-wrap;
+        }
+        h1, h2, h3 {
+            color: var(--structure);
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+        }
+        header {
+            font-family: "Roboto", sans-serif;
+            z-index: 5;
+            color: black;
+            margin-top: 4rem;
+        }
+        .header--title {
+            font-weight: 600;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .header--authors > span {
+            color: var(--light);
+            font-weight: 400;
+        }
+        main {
+            padding-top: 8em !important;
+            padding-bottom: 8em !important;
+        }
+        footer {
+            background-color: var(--grey);
+            font-weight: 300;
+        }
+        .abstract {
+            color: var(--light);
+            margin-bottom: 5em;
+        }
+        figure {
+            max-width: 100%;
+            border: 1px solid var(--pale);
+            border-radius: 2px;
+            margin: 1em 0.5em;
+        }
+        figure > img {
+            max-width: 100%;
+            display: block;
+            margin: 0em auto;
+        }
+        figure > figcaption {
+            padding: var(--inner-space);
+        }
+        table {
+            width: 100%;
+            min-width: 100%;
+            border-collapse: collapse;
+        }
+        table > caption {
+            padding: var(--inner-space);
+        }
+        figcaption, caption {
+            color: var(--light);
+            font-weight: 300;
+        }
+        thead {
+            color: var(--structure);
+        }
+        td, th {
+            padding: 3px;
+        }
+        tr {
+            border-top: 1px solid var(--structure);
+            border-bottom: 1px solid var(--structure);
+        }
+        tbody > tr:nth-child(even) {background: var(--grey)};
+        tbody {
+            border-bottom: 1px solid var(--structure);
+        }
+        #refs {
+            font-size: 90%;
+            column-count: 2;
+        }
+        #refs > .csl-entry {
+            padding-bottom: 0.2em;
+            padding-top: 0.2em;
+        }
+        .hanging-indent > .csl-entry {
+            padding-left: 15px ;
+            text-indent: -15px ;
+        }    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css"
+    integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"
+    integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O"
+    crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF"
+    crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false }
+                ]
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header--title">Thesis proposal</div>
+            <div class="header--authors">
+                <span class="header--author">
+                <a href="https://orcid.org/0000-0002-6506-6487" target="_blank">
+                    Michael D. Catchen
+                </a>
+                <sup class="affilcode">1</sup>
+                <sup class="affilcode">2</sup>
+                </span>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="abstract">
+            The proposal for my thesis, <em>Simulation models for predictive ecology</em>
+
+
+            <div class="artifacts">
+                <a href="draft.pdf" title="Draft PDF" target="_blank">draft</a>
+                <a href="preprint.pdf" title="Preprint PDF" target="_blank">preprint</a>
+            </div>
+        </section>
+        
+        <article>
+            <h1 id="introduction">Introduction</h1>
+            <p>Within the last several hundred years, human activity has rapidly reshaped Earth’s surface. These changes can roughly be divided into two categories: (1) Land-use change, where Earth’s surface changes and (2) climate change, words here, as a result of greenhouse gas emissions.</p>
+            <p>As a result <em>ecological forecasting</em>, or building models to estimate how ecological systems will change over time, has as an imperative to mitigate the effect of these changes on Earth’s ecosystems, their functioning, and the services they provide to humans <span class="citation" data-cites="Dietze2017PreEco">(Dietze 2017)</span>.</p>
+            <p>An oft applied definition of the origin of is “the application of the scientific method to natural history.” Since its origin ecology has been a descriptive science. This is a natural by-product of the immense variability of Earth’s biosphere. emerged to explain particular phenomena at particular scales.</p>
+            <p>In recent years, there has been an interest in an epistemological shift in ecology. To shift ecology into a predictive science. The justification for this shift is twofold: (1) bogged down philosophy of science, by further rooting our understanding of ecosystem function and dynamics in an ability to predict their structure <span class="citation" data-cites="Dietze2017PreEco">(Dietze 2017)</span>. and (2) the practical need for models for <em>ecological forecasting</em>.</p>
+            <p>Historically the term “theory,” as applied in the physical sciences, refers to mathematical models, typically an equation describing how the value of an observable state of the system, represented by a vector of numbers <span class="math inline">[<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, …, <em>x</em><sub><em>n</em></sub>]<sup><em>T</em></sup> = <em>x⃗</em></span> changes as over time.</p>
+            <p><span class="math inline"><em>x⃗</em>(<em>t</em>)</span> but instead to define how the state of <span class="math inline"><em>x⃗</em></span> changes from one time to the next.</p>
+            <p>Because of its early success in the physical science, the led to framework for bridging theory and data.</p>
+            <p>A large set of problems in ecology when aiming to confront high-dimensional analytic models with data:</p>
+            <p>Often assume long-run equilibrium.</p>
+            <p>Ecological processes vary across more variables than the tools of analytic models are suited for.</p>
+            <p>As the number of variables in an analytic model increases, so does the ability of the scientist to decern clear relationships between them, and so does overfitting potential.</p>
+            <p>Curse of dimensionality— Until the 20th century, no theory of the gravitational dynamics of more than 2 bodies. Understanding the gravitational dynamics of more than two planets with any reliability proved difficult. Using the same models (diffeqs), how could we adequately predict ecosystems?</p>
+            <p>Chaotic dynamics emerge from simple analytic models, and . Whether ecosystems actually exhibit chaotic behavior is a different question.</p>
+            <p>The term <em>ecological forecasting</em> implicitly creates an analogy between predicting how ecosystems will change in the future and weather forecasting. Use of computational methods in NWP. Much as one would not aim to forecast the weather in Quebec by applying Navier-Stokes. NWP has worked because it incorporates information about data and meteorological processes collected at difference scales into models that.</p>
+            <p>Transition to simulation as the solution: shift toward approach of building models that <em>generate</em> data.</p>
+            <p>(resolving the semantic ambuity of what differentiates “mechanistic” vs “phenomological” models is out of scope for now). —-</p>
+            <p>Transition to theme of optimization given unknown information. A forecast gives us a range of future values with uncertainty around them. Further a convenient property that a forecasting model’s uncertainty goes up over time (if we assume the underlying process is Markov–this is a strong assumption but oft true of the models we fit to temporal data)</p>
+            <p>In face of uncertainty, decision making is an optimization problem. We have some goal state for the future, and some estimate of what the state of the world will be given a set of actions. Frame optimization problem mathematically an introduce concept of solution-space and constraint.</p>
+            <p>Indeed Marx’s most well known quote that “philosophers have hitherto only interpreted the world in various ways; the point is to change it.”</p>
+            <p>and a necessary step toward establishing a just and sustainable world.</p>
+            <p>Transition to specifics of this thesis.</p>
+            <figure>
+            <img src="./figures/thesisconcept.png" alt="thesis concept" /><figcaption aria-hidden="true">thesis concept</figcaption>
+            </figure>
+            <h1 id="ch1-forecasting-the-spatial-and-phenological-uncoupling-of-a-plant-pollinator-network">CH1 Forecasting the spatial and phenological uncoupling of a plant-pollinator network</h1>
+            <p>This chapter uses several years of data on bee-flower phenology and interactions, combined with spatial records of species occurrence via GBIF, to predict the probability of each realized interaction network as a function of location and time.</p>
+            <p>Two ways in which this network of interactions can become uncoupled: spatial and temporal. Overlap in ranges and shifts in ranges. Elevational gradient as proxy for range shifts</p>
+            <h2 id="data">Data</h2>
+            <p>System description: lots of data on <em>Bombus</em> (bumblebees) and wildflowers. Three different sites, (7/7/3) years each, each covering an elevational gradient.</p>
+            <h2 id="methods">Methods</h2>
+            <p>Split the process into parts.</p>
+            <ol type="1">
+            <li>Building an interaction prediction model.</li>
+            <li>Make it spatial based on distributions.</li>
+            <li>Forecast distributions based on CMIP6.</li>
+            </ol>
+            <h2 id="preliminary-results">Preliminary Results</h2>
+            <p>Transition to next chapter by discussing uncertainty in interaction prediction across space.</p>
+            <h1 id="ch2-optimizing-sampling-of-interactions">CH2 optimizing sampling of interactions</h1>
+            <p>This chapter discusses the effect of species relative abundance on samples of interaction data, and proposes a method for optimizing spatial sampling of a possible interaction between species as a function of the estimated distribution of both species.</p>
+            <h2 id="methods-1">Methods</h2>
+            <ul>
+            <li><p>the missing link paper, turn this into optimizing with two different SDMs</p></li>
+            <li><p>relative abundance and its effect on false negative</p></li>
+            <li><p>non-independent associations in samples</p></li>
+            <li><p>simulate species distribution and efficacy of detection given a set of observation points where the dist from observation site decays.</p></li>
+            <li><p>optimize set of repeated sampling locations L for a <em>known</em> distribution D.</p></li>
+            <li><p>address SDM not being the territory</p></li>
+            </ul>
+            <h2 id="results">Results</h2>
+            <h1 id="ch3-optimizing-corridor-placement">CH3 optimizing corridor placement</h1>
+            <p>This chapter proposes an algorithm for optimizing (corridorplacement/restoration effort) given a raster where each cell indicates land-cover. The optimization method uses the result of a simulated process (specifically occupancy dynamics in the landscape) and uses simulated annealing to estimate the global optimum of the targetstate (specfically mean-time-to-extinction for the occupancy dynamics example).</p>
+            <h2 id="methods-2">Methods</h2>
+            <ul>
+            <li>land cover -&gt; resistance -&gt; extinction time</li>
+            <li>simulated annealing to optimize landscape optimization</li>
+            </ul>
+            <h1 id="ch4-a-software-note-on-the-resulting-packages.">CH4 a software note on the resulting packages.</h1>
+            <p>(MetacommunityDynamics.jl: a virtual laboratory for community ecology): a collection of modules in the Julia language for different aspects of metacommunity ecology, including most of the code used for the preceding chapters.</p>
+            <ul>
+            <li><p>TK conceptual figure with interfaces between what I’m writing / have contributed to and linked with other libraries</p></li>
+            <li><p><code>Observatories.jl</code>, <code>Corridors.jl</code>, <code>MCD.jl</code></p></li>
+            </ul>
+            <h1 class="unnumbered" id="references">References</h1>
+            <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+            <div id="ref-Dietze2017PreEco" class="csl-entry" role="doc-biblioentry">
+            Dietze, M.C. (2017). Prediction in ecology: A first-principles framework. <em>Ecological Applications</em>, 27, 2048–2060.
+            </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>Affiliations</h2> 
+            <sup>1</sup>&nbsp;McGill University; <sup>2</sup>&nbsp;Québec Centre for Biodiversity Sciences
+            <br />
+            
+        </div>
+    </footer>
+    
+</body>
+</html>
