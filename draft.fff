@@ -1,5 +1,7 @@
 \begin{figure}
+\hypertarget{fig:thesis}{%
 \centering
 \includegraphics{./figures/thesisconcept.png}
-\caption{thesis concept}
+\caption{thesis concept}\label{fig:thesis}
+}
 \end{figure}
