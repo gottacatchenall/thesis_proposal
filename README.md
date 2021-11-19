@@ -1,26 +1,22 @@
 # Introduction
 
----
 **P1**
 
-Within the last several hundred years, human activity have rapidly
+Within the last several hundred years, human activity has rapidly
 changed Earth's atmosphere, oceans, and surface. Greenhouse gas
 emissions have caused an increase the temperature of both Earth's
-surface and oceans (resulting in acidification), and both agricultural
-and urban development has rapidly reshaped Earth's surface.
+terrestial surface and its oceans, and both agricultural
+and urban development has rapidly reshaped the cover of Earth's surface.
 These the bulk of this change has occurred within the last several
 hundred years, a geological instant, potentially inducing shocks to
 ecosystems that could threated their integrity [@Scheffer]. As a result understanding and predicting how ecosystems will change in the future, _ecological forecasting_, and making making descisions based on these predictions mitigating the consequences of this change, on ecosystems has emerged as an imperative for ecology and environmental science [@Dietze2017PreEco;].
 
----
+
 
 **P2**
 
 However, robust forecasting of ecological processes will change in the future is, to say the least, quite difficult.
 This difficultly is compounded by a few factors, the first being that sampling ecosystems is not easy. Ecological data is often biased, and noisey, spatially and temporally sparse.  As a result _ecosystem monitoring_ [@Makiola2020KeyQue] has emerged as an imperative. Developing a system for ecological observation, which is able to coordinate across locations. [@AndyUrbanBiomonitoring paper].
-
-
----
 
 The second major challenge in forecasting ecosystems is that the underlying dynamics of most ecological processes are fundementally unknown (and unknowable) and instead must be inferred. 
 
@@ -31,13 +27,12 @@ effective to, rather than attempt to directly model $\vec{x}(t)$ itself, to
 instead describe how $\vec{x}$ changes from one timestep to the next,
 yielding models in the form of differential equations in
 continuous-time settings--$\frac{dx}{dt} = f(x)$-- or difference
-equations in discrete-time settings---$x_t = f(x_{t-1})$---where
+equations in discrete-time settings--$x_t = f(x_{t-1})$--where
 $f:\mathbb{R}^n \to \mathbb{R}^n$ is an arbitrary function describing
 how the system changes on a moment-to-moment basis (e.g. in the context of communities, $f$ could be Lotka-Voltera, Holling-Type-III or DeAngelis-Beddington functional response). 
 The form of this functional response in real systems is effectively unknown, and some forms are inherently more "forecastable" than others [@Chen2019RevCom].
 
 
----
 **P3**
 
 However, we run into many problems when aiming to apply this type of
@@ -66,8 +61,7 @@ any reliability proved difficult. Using the same models (diffeqs), how
 could we adequately predict ecosystems?
 
 
----
-*P4*
+**P4**
 
 The term _ecological forecasting_ implicitly creates an analogy
 between predicting how ecosystems will change in the future by using
@@ -80,11 +74,14 @@ The success of NWP, and the Earth observations that support it should serve as a
 Much like ecology, NWP is faced with high-dimensional systems that are
 governed by different mechanisms at different scales.
 
-Much as one would not aim to forecast the weather in Quebec by
-applying Navier-Stokes. NWP has worked because it incorporates
+NWP has worked because it incorporates
 information about data and meteorological processes collected at
 difference scales into models that. Use of computational methods in
 NWP.
+
+Much as one would not aim to forecast the weather in Quebec by
+applying Navier-Stokes, forecasting ecological systems must
+
 
 Transition to simulation as the solution: shift toward approach of
 building models that _generate_ data.
@@ -100,7 +97,6 @@ stochasticity). Chaotic dynamics emerge from simple analytic models,
 and . Whether ecosystems actually exhibit chaotic behavior is a
 different question.
 
-----
 **P5**
 
 But forecasting isn't the only difficult problem here.
@@ -121,10 +117,7 @@ solution-space and constraint.
 
 Indeed Marx's most well known quote that "philosophers have hitherto
 only interpreted the world in various ways; the point is to change it".
-
 and a necessary step toward establishing a just and sustainable world.
-
----
 
 ![thesis concept](./figures/thesisconcept.png){#fig:thesis}
 
@@ -258,4 +251,10 @@ and dynamics in an ability to predict their structure
 _ecological forecasting_.
 
 
+# Appendix
+
+
+
+
 # References
+
