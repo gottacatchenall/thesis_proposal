@@ -71,13 +71,14 @@ could we adequately predict ecosystems?
 
 The term _ecological forecasting_ implicitly creates an analogy
 between predicting how ecosystems will change in the future by using
-the term "forecasting"---the most immediate analog is the success story
-of forecasting is numerical weather prediction [NWP; @Bauer2015QuiRev].
+the term "forecasting"---the most immediate analog being the success story
+of weather forecasting via numerical weather prediction (NWP).
 
+Although it is become almost hack to complain about the dang weather forecast being wrong, over the least 50 years the [@Bauer2015QuiRev]. 
+
+The success of NWP, and the Earth observations that support it should serve as a template for development of a system for monitoring Earth's biodiversity.
 Much like ecology, NWP is faced with high-dimensional systems that are
 governed by different mechanisms at different scales.
-
-
 
 Much as one would not aim to forecast the weather in Quebec by
 applying Navier-Stokes. NWP has worked because it incorporates
@@ -123,11 +124,18 @@ only interpreted the world in various ways; the point is to change it".
 
 and a necessary step toward establishing a just and sustainable world.
 
-Transition to specifics of this thesis.
+---
 
+![thesis concept](./figures/thesisconcept.png){#fig:thesis}
 
+**P6 -- final intro para**
 
-![thesis concept](./figures/thesisconcept.png)
+Three major components here: 1) Ecosystem monitoring, 2) Forecasting using the 
+products of that monitoring, and 3) Choosing the best possible mitigation 
+strategy.
+
+This flow is outlined in the left panel of @fig:thesis
+
 
 # Chapter One: Forecasting the spatial uncoupling of a plant-pollinator network
 
