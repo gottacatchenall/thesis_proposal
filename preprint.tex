@@ -240,18 +240,13 @@ ecology}
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-\begin{longtable}[]{@{}l@{}}
-\toprule
-\endhead
-\begin{minipage}[t]{0.05\columnwidth}\raggedright
-\textbf{P1}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.05\columnwidth}\raggedright
-Within the last several hundred years, human activity have rapidly
+\textbf{P1}
+
+Within the last several hundred years, human activity has rapidly
 changed Earth's atmosphere, oceans, and surface. Greenhouse gas
 emissions have caused an increase the temperature of both Earth's
-surface and oceans (resulting in acidification), and both agricultural
-and urban development has rapidly reshaped Earth's surface. These the
+terrestial surface and its oceans, and both agricultural and urban
+development has rapidly reshaped the cover of Earth's surface. These the
 bulk of this change has occurred within the last several hundred years,
 a geological instant, potentially inducing shocks to ecosystems that
 could threated their integrity (\textbf{Scheffer?}). As a result
@@ -259,10 +254,7 @@ understanding and predicting how ecosystems will change in the future,
 \emph{ecological forecasting}, and making making descisions based on
 these predictions mitigating the consequences of this change, on
 ecosystems has emerged as an imperative for ecology and environmental
-science {[}Dietze (2017);{]}.\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+science {[}Dietze (2017);{]}.
 
 \textbf{P2}
 
@@ -274,8 +266,6 @@ temporally sparse. As a result \emph{ecosystem monitoring} (Makiola
 \emph{et al.} 2020) has emerged as an imperative. Developing a system
 for ecological observation, which is able to coordinate across
 locations. (\textbf{AndyUrbanBiomonitoring?} paper).
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 The second major challenge in forecasting ecosystems is that the
 underlying dynamics of most ecological processes are fundementally
@@ -290,7 +280,7 @@ out to be much more effective to, rather than attempt to directly model
 one timestep to the next, yielding models in the form of differential
 equations in continuous-time settings--\(\frac{dx}{dt} = f(x)\)-- or
 difference equations in discrete-time
-settings---\(x_t = f(x_{t-1})\)---where
+settings--\(x_t = f(x_{t-1})\)--where
 \(f:\mathbb{R}^n \to \mathbb{R}^n\) is an arbitrary function describing
 how the system changes on a moment-to-moment basis (e.g.~in the context
 of communities, \(f\) could be Lotka-Voltera, Holling-Type-III or
@@ -298,49 +288,43 @@ DeAngelis-Beddington functional response). The form of this functional
 response in real systems is effectively unknown, and some forms are
 inherently more ``forecastable'' than others (Chen \emph{et al.} 2019).
 
-\begin{longtable}[]{@{}l@{}}
-\toprule
-\endhead
-\begin{minipage}[t]{0.05\columnwidth}\raggedright
-\textbf{P3}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.05\columnwidth}\raggedright
+\textbf{P3}
+
 However, we run into many problems when aiming to apply this type of
-model to empirical data in ecology.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.05\columnwidth}\raggedright
+model to empirical data in ecology.
+
 The initial success of ODE models can be traced back to the larger
 program of ontological reductionism, which became the de facto apporoach
 model physical sciences after its early success in physics, which, and
 by the time ecology was becoming a quantitative science (sometime in the
 20th century, depending on who you ask), became the foundation for early
-quantitative models in ecology.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.05\columnwidth}\raggedright
+quantitative models in ecology.
+
 But ecosystems are perhaps the quintessential example of system that
 cannot be understood simply by iterative reduction of its components.
-Emergent phenomena, mechanisms at different scales, etc.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.05\columnwidth}\raggedright
+Emergent phenomena, mechanisms at different scales, etc.
+
 Some have been explored in the ecological literature: (1) Some
 applications of dynamic models in ecology assume long-run equilibrium.
-(2) Stochasticity\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.05\columnwidth}\raggedright
-(3) Ecological processes vary across more variables than the tools of
-analytic models are suited for. As the number of variables in an
-analytic model increases, so does the ability of the scientist to decern
-clear relationships between them, and so does overfitting potential.
-Curse of dimensionality--- Until the 20th century, no theory of the
-gravitational dynamics of more than 2 bodies. Understanding the
-gravitational dynamics of more than two planets with any reliability
-proved difficult. Using the same models (diffeqs), how could we
-adequately predict ecosystems?\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+(2) Stochasticity
 
-\emph{P4}
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Ecological processes vary across more variables than the tools of
+  analytic models are suited for. As the number of variables in an
+  analytic model increases, so does the ability of the scientist to
+  decern clear relationships between them, and so does overfitting
+  potential. Curse of dimensionality--- Until the 20th century, no
+  theory of the gravitational dynamics of more than 2 bodies.
+  Understanding the gravitational dynamics of more than two planets with
+  any reliability proved difficult. Using the same models (diffeqs), how
+  could we adequately predict ecosystems?
+\end{enumerate}
+
+\textbf{P4}
 
 The term \emph{ecological forecasting} implicitly creates an analogy
 between predicting how ecosystems will change in the future by using the
@@ -356,10 +340,12 @@ serve as a template for development of a system for monitoring Earth's
 biodiversity. Much like ecology, NWP is faced with high-dimensional
 systems that are governed by different mechanisms at different scales.
 
+NWP has worked because it incorporates information about data and
+meteorological processes collected at difference scales into models
+that. Use of computational methods in NWP.
+
 Much as one would not aim to forecast the weather in Quebec by applying
-Navier-Stokes. NWP has worked because it incorporates information about
-data and meteorological processes collected at difference scales into
-models that. Use of computational methods in NWP.
+Navier-Stokes, forecasting ecological systems must
 
 Transition to simulation as the solution: shift toward approach of
 building models that \emph{generate} data.
@@ -373,41 +359,25 @@ many mechanisms at different scales, each with stochasticity). Chaotic
 dynamics emerge from simple analytic models, and . Whether ecosystems
 actually exhibit chaotic behavior is a different question.
 
-\begin{longtable}[]{@{}l@{}}
-\toprule
-\endhead
-\begin{minipage}[t]{0.07\columnwidth}\raggedright
-\textbf{P5}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.07\columnwidth}\raggedright
-But forecasting isn't the only difficult problem here.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.07\columnwidth}\raggedright
+\textbf{P5}
+
+But forecasting isn't the only difficult problem here.
+
 Transition to theme of optimization given unknown information. A
 forecast gives us a range of future values with uncertainty around them.
 Further a convenient property that a forecasting model's uncertainty
 goes up over time (if we assume the underlying process is Markov--this
 is a strong assumption but oft true of the models we fit to temporal
-data)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.07\columnwidth}\raggedright
+data)
+
 In face of uncertainty, decision making is an optimization problem. We
 have some goal state for the future, and some estimate of what the state
 of the world will be given a set of actions. Frame optimization problem
-mathematically an introduce concept of solution-space and
-constraint.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.07\columnwidth}\raggedright
+mathematically an introduce concept of solution-space and constraint.
+
 Indeed Marx's most well known quote that ``philosophers have hitherto
-only interpreted the world in various ways; the point is to change
-it.''\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.07\columnwidth}\raggedright
-and a necessary step toward establishing a just and sustainable
-world.\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+only interpreted the world in various ways; the point is to change it.''
+and a necessary step toward establishing a just and sustainable world.
 
 \begin{figure}
 \hypertarget{fig:thesis}{%
@@ -588,6 +558,9 @@ for this shift is twofold: (1) bogged down philosophy of science, by
 further rooting our understanding of ecosystem function and dynamics in
 an ability to predict their structure (Dietze 2017). and (2) the
 practical need for models for \emph{ecological forecasting}.
+
+\hypertarget{appendix}{%
+\section{Appendix}\label{appendix}}
 
 \hypertarget{references}{%
 \section*{References}\label{references}}
