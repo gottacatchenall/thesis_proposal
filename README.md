@@ -1,84 +1,108 @@
 # Introduction
 
+---
+**P1**
 
-Within the last several hundred years, human activity has rapidly
-reshaped Earth's surface. These changes can roughly be divided into
-two categories: (1) Land-use change, where Earth's surface changes and
-(2) climate change, words here, as a result of greenhouse gas
-emissions.
+Within the last several hundred years, human activity have rapidly
+changed Earth's atmosphere, oceans, and surface. Greenhouse gas
+emissions have caused an increase the temperature of both Earth's
+surface and oceans (resulting in acidification), and both agricultural
+and urban development has rapidly reshaped Earth's surface.
+These the bulk of this change has occurred within the last several
+hundred years, a geological instant, potentially inducing shocks to
+ecosystems that could threated their integrity [@Scheffer]. As a result understanding and predicting how ecosystems will change in the future, _ecological forecasting_, and making making descisions based on these predictions mitigating the consequences of this change, on ecosystems has emerged as an imperative for ecology and environmental science [@Dietze2017PreEco;].
 
-As a result _ecological forecasting_, or building models to
-estimate how ecological systems will change over time, has as an
-imperative to mitigate the effect of these changes on Earth's
-ecosystems, their functioning, and the services they provide to
-humans  [@Dietze2017PreEco].
+---
 
-An oft applied definition of the origin of  is "the application
-of the scientific method to natural history". Since its origin ecology
-has been a descriptive science. This is a natural by-product of the
-immense variability of Earth's biosphere.
-emerged to explain particular phenomena at particular scales.
+**P2**
 
-In recent years, there has been an interest in an epistemological
-shift in ecology. To shift ecology into a predictive science. The
-justification for this shift is twofold: (1) bogged down philosophy of
-science, by further rooting our understanding of ecosystem function
-and dynamics in an ability to predict their structure
-[@Dietze2017PreEco]. and (2) the practical need for models for
-_ecological forecasting_.
+However, robust forecasting of ecological processes will change in the future is, to say the least, quite difficult.
+This difficultly is compounded by a few factors, the first being that sampling ecosystems is not easy. Ecological data is often biased, and noisey, spatially and temporally sparse.  As a result _ecosystem monitoring_ [@Makiola2020KeyQue] has emerged as an imperative. Developing a system for ecological observation, which is able to coordinate across locations. [@AndyUrbanBiomonitoring paper].
 
 
-Historically the term "theory", as applied in the physical sciences,
-refers to mathematical models, typically an equation describing how
-the value of an observable state of the system, represented by a
-vector of numbers $[x_1, x_2, \dots, x_n]^T = \vec{x}$ changes as over
-time.
+---
 
-$\vec{x}(t)$ but instead to define how the state of $\vec{x}$ changes
-from one time to the next.
+The second major challenge in forecasting ecosystems is that the underlying dynamics of most ecological processes are fundementally unknown (and unknowable) and instead must be inferred. 
 
-Because of its early success in the physical science, the led to
-framework for bridging theory and data.
+Much of the history of quantitatively modeling ecosystems have been done in the language of dynamical systems, describing how the value of an observable state
+of the system, represented by a vector of numbers $[x_1, x_2, \dots,
+x_n]^T = \vec{x}$ changes as over time. It turns out to be much more
+effective to, rather than attempt to directly model $\vec{x}(t)$ itself, to
+instead describe how $\vec{x}$ changes from one timestep to the next,
+yielding models in the form of differential equations in
+continuous-time settings--$\frac{dx}{dt} = f(x)$-- or difference
+equations in discrete-time settings---$x_t = f(x_{t-1})$---where
+$f:\mathbb{R}^n \to \mathbb{R}^n$ is an arbitrary function describing
+how the system changes on a moment-to-moment basis (e.g. in the context of communities, $f$ could be Lotka-Voltera, Holling-Type-III or DeAngelis-Beddington functional response). 
+The form of this functional response in real systems is effectively unknown, and some forms are inherently more "forecastable" than others [@Chen2019RevCom].
 
 
-A large set of problems in ecology when aiming to confront high-dimensional
-analytic models with data:
+---
+**P3**
 
-Often assume long-run equilibrium.
+However, we run into many problems when aiming to apply this type of
+model to empirical data in ecology.
 
-Ecological processes vary across more variables than the tools of
-analytic models are suited for.
+The initial success of ODE models can be traced back to the larger program of ontological reductionism, which became the de facto apporoach model physical sciences after its early success in physics,
+which, and by the time ecology was becoming a quantitative science (sometime in the 20th century, depending on who you ask), became the foundation for early quantitative models in ecology. 
 
-As the number of variables in an analytic model increases, so does the
-ability of the scientist to decern clear relationships between them,
-and so does overfitting potential.
+But ecosystems are perhaps the quintessential example of system that cannot be
+understood simply by iterative reduction of its components. Emergent phenomena,
+mechanisms at different scales, etc. 
 
-Curse of dimensionality---
-Until the 20th century, no theory of the gravitational dynamics of
-more than 2 bodies. Understanding the gravitational dynamics of more
-than two planets with any reliability proved difficult. Using the same
-models (diffeqs), how could we adequately predict ecosystems?
 
-Chaotic dynamics emerge from simple analytic models, and .
-Whether ecosystems actually exhibit chaotic behavior is a different question.
+Some have been explored in the ecological literature:
+(1) Some applications of dynamic models in ecology assume long-run equilibrium.
+(2) Stochasticity
+
+(3) Ecological processes vary across more variables than the tools of
+analytic models are suited for. As the number of variables in an
+analytic model increases, so does the ability of the scientist to
+decern clear relationships between them, and so does overfitting
+potential. Curse of dimensionality--- Until the 20th century, no
+theory of the gravitational dynamics of more than 2 bodies.
+Understanding the gravitational dynamics of more than two planets with
+any reliability proved difficult. Using the same models (diffeqs), how
+could we adequately predict ecosystems?
+
+
+---
+*P4*
 
 The term _ecological forecasting_ implicitly creates an analogy
-between predicting how ecosystems will change in the future and
-weather forecasting. Use of computational methods in NWP. Much as one
-would not aim to forecast the weather in Quebec by applying
-Navier-Stokes. NWP has worked because it incorporates information
-about data and meteorological processes collected at  difference
-scales into models that.
+between predicting how ecosystems will change in the future by using
+the term "forecasting"---the most immediate analog is the success story
+of forecasting is numerical weather prediction [NWP; @Bauer2015QuiRev].
+
+Much like ecology, NWP is faced with high-dimensional systems that are
+governed by different mechanisms at different scales.
+
+
+
+Much as one would not aim to forecast the weather in Quebec by
+applying Navier-Stokes. NWP has worked because it incorporates
+information about data and meteorological processes collected at
+difference scales into models that. Use of computational methods in
+NWP.
 
 Transition to simulation as the solution: shift toward approach of
 building models that _generate_ data.
 
-
-
 (resolving the semantic ambuity of what differentiates "mechanistic"
 vs "phenomological" models is out of scope for now).
-----
 
+
+More broadly a reflection reflect ecology lagging behind the
+statistical methods used in sciences that face similar challenges
+(many dimensions, many mechanisms at different scales, each with
+stochasticity). Chaotic dynamics emerge from simple analytic models,
+and . Whether ecosystems actually exhibit chaotic behavior is a
+different question.
+
+----
+**P5**
+
+But forecasting isn't the only difficult problem here.
 
 Transition to theme of optimization given unknown information. A
 forecast gives us a range of future values with uncertainty around
@@ -105,18 +129,30 @@ Transition to specifics of this thesis.
 
 ![thesis concept](./figures/thesisconcept.png)
 
-# CH1 Forecasting the spatial and phenological uncoupling of a plant-pollinator network
+# Chapter One: Forecasting the spatial uncoupling of a plant-pollinator network
+
+Plants and pollinators form interaction networks, called the "architecture of biodiversity" [@Jordano2007].
+
+The stability, function, and persistance of ecosystems relies on the structure of
+these interactions.
+Antropogenic change threatens to unravel these networks. Two aspects to this
+change: spatial and temporal. 
+Spatially, range shifts along elevational gradient, and temporall, phenological shifts.
+
+The issue is that we don't really know what interactions are like now. So not
+only do we need to predict with data that is spatially and temporally sparse and likely to contain many interaction "false-negatives" [@Strydom2021]
+
 
 This chapter uses several years of data on bee-flower phenology and
 interactions, combined with spatial records of species occurrence via
-GBIF, to predict the probability of each realized interaction network
-as a function of location and time.
+GBIF, to forecast how much overlap there will be between plants/pollinators
+in space/time.
+
+In stages, (1) take data from multiple sites to predict a spatial metaweb of _Bombus_-flower interactions across Colorado. (2) Predict how these spatial distributions will change under CMIP6. and (3) quantify the lack of overlap between species for which there is a predicted 
 
 
-Two ways in which this network of interactions can become uncoupled:
-spatial and temporal.
-Overlap in ranges and shifts in ranges. Elevational gradient as proxy
-for range shifts
+
+**CH1 concept figure**
 
 ## Data
 
@@ -134,15 +170,20 @@ Split the process into parts.
 
 ## Preliminary Results
 
+1) we got a tree
+
 Transition to next chapter by discussing uncertainty in interaction
 prediction across space.
 
 # CH2 optimizing sampling of interactions
 
-This chapter discusses the effect of species relative abundance on
-samples of interaction data, and proposes a method for optimizing
-spatial sampling of a possible interaction between species as a
-function of the estimated distribution of both species.
+This chapter quantifies the relationship between a given species
+relative abundance and the sampling effort needed to adequately
+understand this species distribution and interactions.
+
+For a given sample of interaction data, and proposes a method for
+optimizing spatial sampling of a possible interaction between species
+as a function of the estimated distribution of both species.
 
 
 
@@ -157,11 +198,23 @@ observation points where the dist from observation site decays.
 - optimize set of repeated sampling locations L for a _known_ distribution D.
 - address SDM not being the territory
 
-
 ## Results
 
+### In-progress results
+
+
 # CH3 optimizing corridor placement
-This chapter proposes an algorithm for optimizing (corridorplacement/restoration effort) given a raster where each cell indicates land-cover. The optimization method uses the result of a simulated process (specifically occupancy dynamics in the landscape) and uses simulated annealing to estimate the global optimum of the targetstate (specfically mean-time-to-extinction for the occupancy dynamics example).
+
+This chapter proposes an algorithm for optimizing restoration
+across space
+
+
+(corridorplacement/restoration effort) given a raster where each cell
+indicates land-cover. The optimization method uses the result of a
+simulated process (specifically occupancy dynamics in the landscape)
+and uses simulated annealing to estimate the global optimum of the
+targetstate (specfically mean-time-to-extinction for the occupancy
+dynamics example).
 
 
 ## Methods
@@ -177,6 +230,24 @@ This chapter proposes an algorithm for optimizing (corridorplacement/restoration
 to and linked with other libraries
 
 - `Observatories.jl`, `Corridors.jl`, `MCD.jl`
+
+
+# concl
+
+
+// this is a discussion para
+An oft applied definition of the origin of  is "the application
+of the scientific method to natural history". Since its origin ecology
+has been a descriptive science. This is a natural by-product of the
+immense variability of Earth's biosphere.
+emerged to explain particular phenomena at particular scales.
+In recent years, there has been an interest in an epistemological
+shift in ecology. To shift ecology into a predictive science. The
+justification for this shift is twofold: (1) bogged down philosophy of
+science, by further rooting our understanding of ecosystem function
+and dynamics in an ability to predict their structure
+[@Dietze2017PreEco]. and (2) the practical need for models for
+_ecological forecasting_.
 
 
 # References
