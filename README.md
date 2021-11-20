@@ -172,7 +172,8 @@ how these spatial distributions will change under CMIP6. and (3)
 quantify the lack of overlap between species for which there is a
 predicted
 
-**CH1 concept figure**
+![chapter one concept fig](./figures/ch1.png)
+
 
 ## Data
 
@@ -225,13 +226,13 @@ simulate realized false-negatives as a function of varying sampling effort.
 
 
 This also goes on to includes testing some assumptions of the model with
-empirical data @fig:4. which indicate our neutral model, if
+empirical data @fig:posassoc. which indicate our neutral model, if
 anything, underestimates the probability of false-negatives due to positive
 correlations in co-occurrence in two spatially replicated networks
 [@Hadfield2014TalTwo; @Thompson2000ResSol]---further I'm planning to add the
 field data from chapter one into this anlysis once complete.
 
-![f](./figures/positiveassociations.png)
+![f](./figures/positiveassociations.png){#fig:posassoc}
 
 new addition: 
 - simulate species distribution and efficacy of detection given a set
@@ -280,7 +281,7 @@ aspects of metacommunity ecology, including most of the code used for
 the preceding chapters.
 
 
-![todo](./figures/software.png)
+![todo](./figures/ch4.png)
 
 
 # Conclusion
