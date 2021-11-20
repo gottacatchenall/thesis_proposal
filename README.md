@@ -56,7 +56,7 @@ model to empirical data in ecology.
 The initial success of ODE models can be traced back to the larger
 program of ontological reductionism, which became the de facto
 apporoach model physical sciences after its early success in physics,
-which, and by the time ecology was becoming a quantitative science
+which, by the time ecology was becoming a quantitative science
 (sometime in the 20th century, depending on who you ask), became the
 foundation for early quantitative models in ecology.
 
@@ -207,7 +207,7 @@ prediction across space.
 # Chapter Two: Optimizing spatial sampling of species interactions
 
 There are false-negatives in interation data. Co-occurrence is not the
-same thing as interaction [@cite], but often is  used as a proxy.
+same thing as interaction [@cite], but often is used as a proxy.
 
 This chapter unravels the relationship between a given species
 relative abundance and the sampling effort needed to adequately
@@ -217,12 +217,23 @@ There is more than one way to observe a false-negative.
 
 ![taxonomy of false negatives](./figures/ch2.png)
 
-## Methods
 
-- the missing link paper, turn this into optimizing with two different
-  SDMs relative abundance and its effect on false negative
-  non-independent associations in samples
+It begins with a conceptual framework for understanding the difference in
+false-negatives in occurrence, co-occurrence, and interactions (fig. 3).
+We use a null model of the relative-abundance distribution [@Hubbell2001UniNeu] to
+simulate realized false-negatives as a function of varying sampling effort.
 
+
+This also goes on to includes testing some assumptions of the model with
+empirical data @fig:4. which indicate our neutral model, if
+anything, underestimates the probability of false-negatives due to positive
+correlations in co-occurrence in two spatially replicated networks
+[@Hadfield2014TalTwo; @Thompson2000ResSol]---further I'm planning to add the
+field data from chapter one into this anlysis once complete.
+
+![f](./figures/positiveassociations.png)
+
+new addition: 
 - simulate species distribution and efficacy of detection given a set
   of observation points where the dist from observation site decays.
   optimize set of repeated sampling locations L for a _known_
@@ -232,22 +243,29 @@ There is more than one way to observe a false-negative.
 
 - nonrandom association figure sampling effort under neutral model
 
-### In-progress results
 
 # Chapter Three: Optimizing corridor placement against ecological dynamics
 
-As human activity 
+Promoting landscape connectivity is important to mitigate the effects of
+land-use change on Earth's biodiversity. However, the practical realities of
+conservation mean that there is a limitation on how much we can modify
+landscapes in order to do this. So what is the best place to put a corridor
+given a constraint on how much surface-area you can change in a landscape? This
+is the question this chapter seeks to answer. Models for proposing corridor
+locations have been developed, but are limited in that are not developed around
+promoting some element of ecosystem function, but instead by trying to find the
+path of least resistance given a resistance surface [@Peterman2018ResRP].
 
-
-This chapter proposes an algorithm for optimizing restoration across
-space
-
-(corridorplacement/restoration effort) given a raster where each cell
-indicates land-cover. The optimization method uses the result of a
-simulated process (specifically occupancy dynamics in the landscape)
-and uses simulated annealing to estimate the global optimum of the
-targetstate (specfically mean-time-to-extinction for the occupancy
-dynamics example).
+This chapter proposes a general algorithm for optimizing corridor placement
+based on a measurement of ecosystem functioning derived from simulations run on
+a proposed landscape modification. We propose various landscape modifications
+which alter the cover of a landscape, represented as a raster
+(fig. 6, left). We then compute a new resistance surface based on
+the proposed landscape modification, and based on the values of resistance to
+dispersal between each location we simulate spatially-explicit metapopulation
+dynamics model [@Ovaskainen2002MetMod; @Hanski2000MetCap] to estimate a
+distribution of time until extinction for each landscape modification
+(fig. 6, right).
 
 ## Methods
 
@@ -264,14 +282,8 @@ the preceding chapters.
 
 ![todo](./figures/software.png)
 
-- TK conceptual figure with interfaces between what I'm writing / have
-- contributed to and linked with other libraries
-
-- `Observatories.jl`, `Corridors.jl`, `MCD.jl`
 
 # Conclusion
-
-
 
 
 # Appendix
