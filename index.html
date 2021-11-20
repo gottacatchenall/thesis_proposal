@@ -205,7 +205,7 @@
             <p>Much of the history of quantitatively modeling ecosystems have been done in the language of dynamical systems, describing how the value of an observable state of the system, represented by a vector of numbers <span class="math inline">[<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, …, <em>x</em><sub><em>n</em></sub>]<sup><em>T</em></sup> = <em>x⃗</em></span> changes as over time. It turns out to be much more effective to, rather than attempt to directly model <span class="math inline"><em>x⃗</em>(<em>t</em>)</span> itself, to instead describe how <span class="math inline"><em>x⃗</em></span> changes from one timestep to the next, yielding models in the form of differential equations in continuous-time settings–<span class="math inline">$\frac{dx}{dt} = f(x)$</span>– or difference equations in discrete-time settings–<span class="math inline"><em>x</em><sub><em>t</em></sub> = <em>f</em>(<em>x</em><sub><em>t</em> − 1</sub>)</span>–where <span class="math inline"><em>f</em> : ℝ<sup><em>n</em></sup> → ℝ<sup><em>n</em></sup></span> is an arbitrary function describing how the system changes on a moment-to-moment basis (e.g. in the context of communities, <span class="math inline"><em>f</em></span> could be Lotka-Voltera, Holling-Type-III or DeAngelis-Beddington functional response). The form of this functional response in real systems is effectively unknown, and some forms are inherently more “forecastable” than others <span class="citation" data-cites="Chen2019RevCom">(Chen <em>et al.</em> 2019)</span>.</p>
             <p><strong>P3</strong></p>
             <p>However, we run into many problems when aiming to apply this type of model to empirical data in ecology.</p>
-            <p>The initial success of ODE models can be traced back to the larger program of ontological reductionism, which became the de facto apporoach model physical sciences after its early success in physics, which, and by the time ecology was becoming a quantitative science (sometime in the 20th century, depending on who you ask), became the foundation for early quantitative models in ecology.</p>
+            <p>The initial success of ODE models can be traced back to the larger program of ontological reductionism, which became the de facto apporoach model physical sciences after its early success in physics, which, by the time ecology was becoming a quantitative science (sometime in the 20th century, depending on who you ask), became the foundation for early quantitative models in ecology.</p>
             <p>But ecosystems are perhaps the quintessential example of system that cannot be understood simply by iterative reduction of its components. Emergent phenomena, mechanisms at different scales, etc.</p>
             <p>Some have been explored in the ecological literature: (1) Some applications of dynamic models in ecology assume long-run equilibrium. (2) Stochasticity</p>
             <ol start="3" type="1">
@@ -258,21 +258,20 @@
             <figure>
             <img src="./figures/ch2.png" alt="taxonomy of false negatives" /><figcaption aria-hidden="true">taxonomy of false negatives</figcaption>
             </figure>
-            <h2 id="methods-1">Methods</h2>
-            <ul>
-            <li><p>the missing link paper, turn this into optimizing with two different SDMs relative abundance and its effect on false negative non-independent associations in samples</p></li>
-            <li><p>simulate species distribution and efficacy of detection given a set of observation points where the dist from observation site decays. optimize set of repeated sampling locations L for a <em>known</em> distribution D. address SDM not being the territory</p></li>
-            </ul>
+            <p>It begins with a conceptual framework for understanding the difference in false-negatives in occurrence, co-occurrence, and interactions (fig. 3). We use a null model of the relative-abundance distribution <span class="citation" data-cites="Hubbell2001UniNeu">(Hubbell 2001)</span> to simulate realized false-negatives as a function of varying sampling effort.</p>
+            <p>This also goes on to includes testing some assumptions of the model with empirical data fig. <strong>¿fig:4?</strong>. which indicate our neutral model, if anything, underestimates the probability of false-negatives due to positive correlations in co-occurrence in two spatially replicated networks <span class="citation" data-cites="Hadfield2014TalTwo Thompson2000ResSol">(Thompson &amp; Townsend 2000; Hadfield <em>et al.</em> 2014)</span>—further I’m planning to add the field data from chapter one into this anlysis once complete.</p>
+            <figure>
+            <img src="./figures/positiveassociations.png" alt="f" /><figcaption aria-hidden="true">f</figcaption>
+            </figure>
+            <p>new addition: - simulate species distribution and efficacy of detection given a set of observation points where the dist from observation site decays. optimize set of repeated sampling locations L for a <em>known</em> distribution D. address SDM not being the territory</p>
             <h2 id="results">Results</h2>
             <ul>
             <li>nonrandom association figure sampling effort under neutral model</li>
             </ul>
-            <h3 id="in-progress-results">In-progress results</h3>
             <h1 id="chapter-three-optimizing-corridor-placement-against-ecological-dynamics">Chapter Three: Optimizing corridor placement against ecological dynamics</h1>
-            <p>As human activity</p>
-            <p>This chapter proposes an algorithm for optimizing restoration across space</p>
-            <p>(corridorplacement/restoration effort) given a raster where each cell indicates land-cover. The optimization method uses the result of a simulated process (specifically occupancy dynamics in the landscape) and uses simulated annealing to estimate the global optimum of the targetstate (specfically mean-time-to-extinction for the occupancy dynamics example).</p>
-            <h2 id="methods-2">Methods</h2>
+            <p>Promoting landscape connectivity is important to mitigate the effects of land-use change on Earth’s biodiversity. However, the practical realities of conservation mean that there is a limitation on how much we can modify landscapes in order to do this. So what is the best place to put a corridor given a constraint on how much surface-area you can change in a landscape? This is the question this chapter seeks to answer. Models for proposing corridor locations have been developed, but are limited in that are not developed around promoting some element of ecosystem function, but instead by trying to find the path of least resistance given a resistance surface <span class="citation" data-cites="Peterman2018ResRP">(Peterman 2018)</span>.</p>
+            <p>This chapter proposes a general algorithm for optimizing corridor placement based on a measurement of ecosystem functioning derived from simulations run on a proposed landscape modification. We propose various landscape modifications which alter the cover of a landscape, represented as a raster (fig. 6, left). We then compute a new resistance surface based on the proposed landscape modification, and based on the values of resistance to dispersal between each location we simulate spatially-explicit metapopulation dynamics model <span class="citation" data-cites="Ovaskainen2002MetMod Hanski2000MetCap">(Hanski &amp; Ovaskainen 2000; Ovaskainen <em>et al.</em> 2002)</span> to estimate a distribution of time until extinction for each landscape modification (fig. 6, right).</p>
+            <h2 id="methods-1">Methods</h2>
             <ul>
             <li>land cover -&gt; resistance -&gt; extinction time simulated annealing to</li>
             <li>optimize landscape optimization</li>
@@ -282,11 +281,6 @@
             <figure>
             <img src="./figures/software.png" alt="todo" /><figcaption aria-hidden="true">todo</figcaption>
             </figure>
-            <ul>
-            <li><p>TK conceptual figure with interfaces between what I’m writing / have</p></li>
-            <li><p>contributed to and linked with other libraries</p></li>
-            <li><p><code>Observatories.jl</code>, <code>Corridors.jl</code>, <code>MCD.jl</code></p></li>
-            </ul>
             <h1 id="conclusion">Conclusion</h1>
             <h1 id="appendix">Appendix</h1>
             <figure>
@@ -306,11 +300,32 @@
             <div id="ref-Dietze2017PreEco" class="csl-entry" role="doc-biblioentry">
             Dietze, M.C. (2017). Prediction in ecology: A first-principles framework. <em>Ecological Applications</em>, 27, 2048–2060.
             </div>
+            <div id="ref-Hadfield2014TalTwo" class="csl-entry" role="doc-biblioentry">
+            Hadfield, J.D., Krasnov, B.R., Poulin, R. &amp; Nakagawa, S. (2014). A Tale of Two Phylogenies: Comparative Analyses of Ecological Interactions. <em>The American Naturalist</em>, 183, 174–187.
+            </div>
+            <div id="ref-Hanski2000MetCap" class="csl-entry" role="doc-biblioentry">
+            Hanski, I. &amp; Ovaskainen, O. (2000). The metapopulation capacity of a fragmented landscape. <em>Nature</em>, 404, 755–758.
+            </div>
+            <div id="ref-Hubbell2001UniNeu" class="csl-entry" role="doc-biblioentry">
+            Hubbell, S.P. (2001). <em>The unified neutral theory of biodiversity and biogeography</em>. Monographs in population biology. Princeton University Press, Princeton.
+            </div>
             <div id="ref-Makiola2020KeyQue" class="csl-entry" role="doc-biblioentry">
             Makiola, A., Compson, Z.G., Baird, D.J., Barnes, M.A., Boerlijst, S.P., Bouchez, A., <em>et al.</em> (2020). Key Questions for Next-Generation Biomonitoring. <em>Frontiers in Environmental Science</em>, 7.
             </div>
+            <div id="ref-Ovaskainen2002MetMod" class="csl-entry" role="doc-biblioentry">
+            Ovaskainen, O., Sato, K., Bascompte, J. &amp; Hanski, I. (2002). Metapopulation Models for Extinction Threshold in Spatially Correlated Landscapes. <em>Journal of Theoretical Biology</em>, 215, 95–108.
+            </div>
+            <div id="ref-Ovaskainen2002MetMod" class="csl-entry" role="doc-biblioentry">
+            Ovaskainen, O., Sato, K., Bascompte, J. &amp; Hanski, I. (2002). Metapopulation Models for Extinction Threshold in Spatially Correlated Landscapes. <em>Journal of Theoretical Biology</em>, 215, 95–108.
+            </div>
             <div id="ref-Petchey2015EcoFor" class="csl-entry" role="doc-biblioentry">
             Petchey, O.L., Pontarp, M., Massie, T.M., Kéfi, S., Ozgul, A., Weilenmann, M., <em>et al.</em> (2015). The ecological forecast horizon, and examples of its uses and determinants. <em>Ecology Letters</em>, 18, 597–611.
+            </div>
+            <div id="ref-Peterman2018ResRP" class="csl-entry" role="doc-biblioentry">
+            Peterman, W.E. (2018). ResistanceGA: An R package for the optimization of resistance surfaces using genetic algorithms. <em>Methods in Ecology and Evolution</em>, 9, 1638–1647.
+            </div>
+            <div id="ref-Thompson2000ResSol" class="csl-entry" role="doc-biblioentry">
+            Thompson, R.M. &amp; Townsend, C.R. (2000). Is resolution the solution?: The effect of taxonomic resolution on the calculated properties of three stream food webs. <em>Freshwater Biology</em>, 44, 413–422.
             </div>
             </div>
         </article>

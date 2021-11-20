@@ -16,6 +16,13 @@
  
 \begin{figure}
 \centering
+\includegraphics{./figures/positiveassociations.png}
+\caption{f}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
 \includegraphics{./figures/software.png}
 \caption{todo}
 \end{figure}

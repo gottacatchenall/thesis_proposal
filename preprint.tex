@@ -296,8 +296,8 @@ model to empirical data in ecology.
 
 The initial success of ODE models can be traced back to the larger
 program of ontological reductionism, which became the de facto apporoach
-model physical sciences after its early success in physics, which, and
-by the time ecology was becoming a quantitative science (sometime in the
+model physical sciences after its early success in physics, which, by
+the time ecology was becoming a quantitative science (sometime in the
 20th century, depending on who you ask), became the foundation for early
 quantitative models in ecology.
 
@@ -486,20 +486,30 @@ There is more than one way to observe a false-negative.
 \caption{taxonomy of false negatives}
 \end{figure}
 
-\hypertarget{methods-1}{%
-\subsection{Methods}\label{methods-1}}
+It begins with a conceptual framework for understanding the difference
+in false-negatives in occurrence, co-occurrence, and interactions
+(fig.~3). We use a null model of the relative-abundance distribution
+(Hubbell 2001) to simulate realized false-negatives as a function of
+varying sampling effort.
 
-\begin{itemize}
-\item
-  the missing link paper, turn this into optimizing with two different
-  SDMs relative abundance and its effect on false negative
-  non-independent associations in samples
-\item
-  simulate species distribution and efficacy of detection given a set of
-  observation points where the dist from observation site decays.
-  optimize set of repeated sampling locations L for a \emph{known}
-  distribution D. address SDM not being the territory
-\end{itemize}
+This also goes on to includes testing some assumptions of the model with
+empirical data fig.~\ref{fig:4}. which indicate our neutral model, if
+anything, underestimates the probability of false-negatives due to
+positive correlations in co-occurrence in two spatially replicated
+networks (Thompson \& Townsend 2000; Hadfield \emph{et al.}
+2014)---further I'm planning to add the field data from chapter one into
+this anlysis once complete.
+
+\begin{figure}
+\centering
+\includegraphics{./figures/positiveassociations.png}
+\caption{f}
+\end{figure}
+
+new addition: - simulate species distribution and efficacy of detection
+given a set of observation points where the dist from observation site
+decays. optimize set of repeated sampling locations L for a \emph{known}
+distribution D. address SDM not being the territory
 
 \hypertarget{results}{%
 \subsection{Results}\label{results}}
@@ -510,27 +520,34 @@ There is more than one way to observe a false-negative.
   nonrandom association figure sampling effort under neutral model
 \end{itemize}
 
-\hypertarget{in-progress-results}{%
-\subsubsection{In-progress results}\label{in-progress-results}}
-
 \hypertarget{chapter-three-optimizing-corridor-placement-against-ecological-dynamics}{%
 \section{Chapter Three: Optimizing corridor placement against ecological
 dynamics}\label{chapter-three-optimizing-corridor-placement-against-ecological-dynamics}}
 
-As human activity
+Promoting landscape connectivity is important to mitigate the effects of
+land-use change on Earth's biodiversity. However, the practical
+realities of conservation mean that there is a limitation on how much we
+can modify landscapes in order to do this. So what is the best place to
+put a corridor given a constraint on how much surface-area you can
+change in a landscape? This is the question this chapter seeks to
+answer. Models for proposing corridor locations have been developed, but
+are limited in that are not developed around promoting some element of
+ecosystem function, but instead by trying to find the path of least
+resistance given a resistance surface (Peterman 2018).
 
-This chapter proposes an algorithm for optimizing restoration across
-space
+This chapter proposes a general algorithm for optimizing corridor
+placement based on a measurement of ecosystem functioning derived from
+simulations run on a proposed landscape modification. We propose various
+landscape modifications which alter the cover of a landscape,
+represented as a raster (fig.~6, left). We then compute a new resistance
+surface based on the proposed landscape modification, and based on the
+values of resistance to dispersal between each location we simulate
+spatially-explicit metapopulation dynamics model (Hanski \& Ovaskainen
+2000; Ovaskainen \emph{et al.} 2002) to estimate a distribution of time
+until extinction for each landscape modification (fig.~6, right).
 
-(corridorplacement/restoration effort) given a raster where each cell
-indicates land-cover. The optimization method uses the result of a
-simulated process (specifically occupancy dynamics in the landscape) and
-uses simulated annealing to estimate the global optimum of the
-targetstate (specfically mean-time-to-extinction for the occupancy
-dynamics example).
-
-\hypertarget{methods-2}{%
-\subsection{Methods}\label{methods-2}}
+\hypertarget{methods-1}{%
+\subsection{Methods}\label{methods-1}}
 
 \begin{itemize}
 \tightlist
@@ -555,15 +572,6 @@ chapters.
 \includegraphics{./figures/software.png}
 \caption{todo}
 \end{figure}
-
-\begin{itemize}
-\item
-  TK conceptual figure with interfaces between what I'm writing / have
-\item
-  contributed to and linked with other libraries
-\item
-  \texttt{Observatories.jl}, \texttt{Corridors.jl}, \texttt{MCD.jl}
-\end{itemize}
 
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
@@ -600,16 +608,50 @@ Ecological Dynamics via Symbolic Regression. \emph{BioEssays}, 41,
 Dietze, M.C. (2017). Prediction in ecology: A first-principles
 framework. \emph{Ecological Applications}, 27, 2048--2060.
 
+\leavevmode\hypertarget{ref-Hadfield2014TalTwo}{}%
+Hadfield, J.D., Krasnov, B.R., Poulin, R. \& Nakagawa, S. (2014). A Tale
+of Two Phylogenies: Comparative Analyses of Ecological Interactions.
+\emph{The American Naturalist}, 183, 174--187.
+
+\leavevmode\hypertarget{ref-Hanski2000MetCap}{}%
+Hanski, I. \& Ovaskainen, O. (2000). The metapopulation capacity of a
+fragmented landscape. \emph{Nature}, 404, 755--758.
+
+\leavevmode\hypertarget{ref-Hubbell2001UniNeu}{}%
+Hubbell, S.P. (2001). \emph{The unified neutral theory of biodiversity
+and biogeography}. Monographs in population biology. Princeton
+University Press, Princeton.
+
 \leavevmode\hypertarget{ref-Makiola2020KeyQue}{}%
 Makiola, A., Compson, Z.G., Baird, D.J., Barnes, M.A., Boerlijst, S.P.,
 Bouchez, A., \emph{et al.} (2020). Key Questions for Next-Generation
 Biomonitoring. \emph{Frontiers in Environmental Science}, 7.
+
+\leavevmode\hypertarget{ref-Ovaskainen2002MetMod}{}%
+Ovaskainen, O., Sato, K., Bascompte, J. \& Hanski, I. (2002).
+Metapopulation Models for Extinction Threshold in Spatially Correlated
+Landscapes. \emph{Journal of Theoretical Biology}, 215, 95--108.
+
+\leavevmode\hypertarget{ref-Ovaskainen2002MetMod}{}%
+Ovaskainen, O., Sato, K., Bascompte, J. \& Hanski, I. (2002).
+Metapopulation Models for Extinction Threshold in Spatially Correlated
+Landscapes. \emph{Journal of Theoretical Biology}, 215, 95--108.
 
 \leavevmode\hypertarget{ref-Petchey2015EcoFor}{}%
 Petchey, O.L., Pontarp, M., Massie, T.M., Kéfi, S., Ozgul, A.,
 Weilenmann, M., \emph{et al.} (2015). The ecological forecast horizon,
 and examples of its uses and determinants. \emph{Ecology Letters}, 18,
 597--611.
+
+\leavevmode\hypertarget{ref-Peterman2018ResRP}{}%
+Peterman, W.E. (2018). ResistanceGA: An R package for the optimization
+of resistance surfaces using genetic algorithms. \emph{Methods in
+Ecology and Evolution}, 9, 1638--1647.
+
+\leavevmode\hypertarget{ref-Thompson2000ResSol}{}%
+Thompson, R.M. \& Townsend, C.R. (2000). Is resolution the solution?:
+The effect of taxonomic resolution on the calculated properties of three
+stream food webs. \emph{Freshwater Biology}, 44, 413--422.
 
 \end{CSLReferences}
 
