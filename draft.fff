@@ -9,21 +9,30 @@
  
 \begin{figure}
 \centering
+\includegraphics{./figures/ch1.png}
+\caption{chapter one concept fig}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
 \includegraphics{./figures/ch2.png}
 \caption{taxonomy of false negatives}
 \end{figure}
 \efloatseparator
  
 \begin{figure}
+\hypertarget{fig:posassoc}{%
 \centering
 \includegraphics{./figures/positiveassociations.png}
-\caption{f}
+\caption{f}\label{fig:posassoc}
+}
 \end{figure}
 \efloatseparator
  
 \begin{figure}
 \centering
-\includegraphics{./figures/software.png}
+\includegraphics{./figures/ch4.png}
 \caption{todo}
 \end{figure}
 \efloatseparator

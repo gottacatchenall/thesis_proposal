@@ -237,7 +237,9 @@
             <p>The issue is that we don’t really know what interactions are like now. So not only do we need to predict with data that is spatially and temporally sparse and likely to contain many interaction “false-negatives” <span class="citation" data-cites="Strydom2021">(<strong>Strydom2021?</strong>)</span></p>
             <p>This chapter uses several years of data on bee-flower phenology and interactions, combined with spatial records of species occurrence via GBIF, to forecast how much overlap there will be between plants/pollinators in space/time.</p>
             <p>In stages, (1) take data from multiple sites to predict a spatial metaweb of <em>Bombus</em>-flower interactions across Colorado. (2) Predict how these spatial distributions will change under CMIP6. and (3) quantify the lack of overlap between species for which there is a predicted</p>
-            <p><strong>CH1 concept figure</strong></p>
+            <figure>
+            <img src="./figures/ch1.png" alt="chapter one concept fig" /><figcaption aria-hidden="true">chapter one concept fig</figcaption>
+            </figure>
             <h2 id="data">Data</h2>
             <p>The data for this chapter is derived from multiple souces and can be split into three categories. (1) Field data from three different locations acvross Colorado. All field sites have multiple plots across an elevational gradient.</p>
             <p>System description: lots of data on <em>Bombus</em> (bumblebees) and wildflowers. Three different sites, (7/7/3) years each, each covering an elevational gradient.</p>
@@ -259,9 +261,9 @@
             <img src="./figures/ch2.png" alt="taxonomy of false negatives" /><figcaption aria-hidden="true">taxonomy of false negatives</figcaption>
             </figure>
             <p>It begins with a conceptual framework for understanding the difference in false-negatives in occurrence, co-occurrence, and interactions (fig. 3). We use a null model of the relative-abundance distribution <span class="citation" data-cites="Hubbell2001UniNeu">(Hubbell 2001)</span> to simulate realized false-negatives as a function of varying sampling effort.</p>
-            <p>This also goes on to includes testing some assumptions of the model with empirical data fig. <strong>¿fig:4?</strong>. which indicate our neutral model, if anything, underestimates the probability of false-negatives due to positive correlations in co-occurrence in two spatially replicated networks <span class="citation" data-cites="Hadfield2014TalTwo Thompson2000ResSol">(Thompson &amp; Townsend 2000; Hadfield <em>et al.</em> 2014)</span>—further I’m planning to add the field data from chapter one into this anlysis once complete.</p>
+            <p>This also goes on to includes testing some assumptions of the model with empirical data fig. 2. which indicate our neutral model, if anything, underestimates the probability of false-negatives due to positive correlations in co-occurrence in two spatially replicated networks <span class="citation" data-cites="Hadfield2014TalTwo Thompson2000ResSol">(Thompson &amp; Townsend 2000; Hadfield <em>et al.</em> 2014)</span>—further I’m planning to add the field data from chapter one into this anlysis once complete.</p>
             <figure>
-            <img src="./figures/positiveassociations.png" alt="f" /><figcaption aria-hidden="true">f</figcaption>
+            <img src="./figures/positiveassociations.png" id="fig:posassoc" alt="Figure 2: f" /><figcaption aria-hidden="true">Figure 2: f</figcaption>
             </figure>
             <p>new addition: - simulate species distribution and efficacy of detection given a set of observation points where the dist from observation site decays. optimize set of repeated sampling locations L for a <em>known</em> distribution D. address SDM not being the territory</p>
             <h2 id="results">Results</h2>
@@ -279,7 +281,7 @@
             <h1 id="ch4-a-software-note-on-the-resulting-packages.">CH4 a software note on the resulting packages.</h1>
             <p>(MetacommunityDynamics.jl: a virtual laboratory for community ecology): a collection of modules in the Julia language for different aspects of metacommunity ecology, including most of the code used for the preceding chapters.</p>
             <figure>
-            <img src="./figures/software.png" alt="todo" /><figcaption aria-hidden="true">todo</figcaption>
+            <img src="./figures/ch4.png" alt="todo" /><figcaption aria-hidden="true">todo</figcaption>
             </figure>
             <h1 id="conclusion">Conclusion</h1>
             <h1 id="appendix">Appendix</h1>
