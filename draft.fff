@@ -5,3 +5,17 @@
 \caption{thesis concept}\label{fig:thesis}
 }
 \end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
+\includegraphics{./figures/ch2.png}
+\caption{taxonomy of false negatives}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
+\includegraphics{./figures/trees.png}
+\caption{trees}
+\end{figure}

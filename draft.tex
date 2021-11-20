@@ -213,13 +213,14 @@ science {[}Dietze (2017);{]}.
 \textbf{P2}
 
 However, robust forecasting of ecological processes will change in the
-future is, to say the least, quite difficult. This difficultly is
-compounded by a few factors, the first being that sampling ecosystems is
-not easy. Ecological data is often biased, and noisey, spatially and
-temporally sparse. As a result \emph{ecosystem monitoring} (Makiola
-\emph{et al.} 2020) has emerged as an imperative. Developing a system
-for ecological observation, which is able to coordinate across
-locations. (\textbf{AndyUrbanBiomonitoring?} paper).
+future is, to say the least, quite difficult (Beckage \emph{et al.}
+2011; Petchey \emph{et al.} 2015). This difficultly is compounded by a
+few factors, the first being that sampling ecosystems is not easy.
+Ecological data is often biased, and noisey, spatially and temporally
+sparse. As a result \emph{ecosystem monitoring} (Makiola \emph{et al.}
+2020) has emerged as an imperative. Developing a system for ecological
+observation, which is able to coordinate across locations.
+(\textbf{AndyUrbanBiomonitoring?} paper).
 
 The second major challenge in forecasting ecosystems is that the
 underlying dynamics of most ecological processes are fundementally
@@ -286,8 +287,8 @@ term ``forecasting''---the most immediate analog being the success story
 of weather forecasting via numerical weather prediction (NWP).
 
 Although it is become almost hack to complain about the dang weather
-forecast being wrong, over the least 50 years the
-(\textbf{Bauer2015QuiRev?}).
+forecast being wrong, over the least 50 years the (Bauer \emph{et al.}
+2015).
 
 The success of NWP, and the Earth observations that support it should
 serve as a template for development of a system for monitoring Earth's
@@ -384,6 +385,11 @@ predicted
 \hypertarget{data}{%
 \subsection{Data}\label{data}}
 
+The data for this chapter is derived from multiple souces and can be
+split into three categories. (1) Field data from three different
+locations acvross Colorado. All field sites have multiple plots across
+an elevational gradient.
+
 System description: lots of data on \emph{Bombus} (bumblebees) and
 wildflowers. Three different sites, (7/7/3) years each, each covering an
 elevational gradient.
@@ -397,11 +403,8 @@ Split the process into parts.
 \def\labelenumi{\arabic{enumi})}
 \tightlist
 \item
-  Building an interaction prediction model.
-\item
-  Make it spatial based on distributions.
-\item
-  Forecast distributions based on CMIP6.
+  Building an interaction prediction model. 2) Make it spatial based on
+  distributions. 3) Forecast distributions based on CMIP6.
 \end{enumerate}
 
 \hypertarget{preliminary-results}{%
@@ -417,17 +420,25 @@ Split the process into parts.
 Transition to next chapter by discussing uncertainty in interaction
 prediction across space.
 
-\hypertarget{ch2-optimizing-sampling-of-interactions}{%
-\section{CH2 optimizing sampling of
-interactions}\label{ch2-optimizing-sampling-of-interactions}}
+\hypertarget{chapter-two-optimizing-spatial-sampling-of-species-interactions}{%
+\section{Chapter Two: Optimizing spatial sampling of species
+interactions}\label{chapter-two-optimizing-spatial-sampling-of-species-interactions}}
 
-This chapter quantifies the relationship between a given species
-relative abundance and the sampling effort needed to adequately
-understand this species distribution and interactions.
+There are false-negatives in interation data. Co-occurrence is not the
+same thing as interaction (\textbf{cite?}), but often is used as a
+proxy.
 
-For a given sample of interaction data, and proposes a method for
-optimizing spatial sampling of a possible interaction between species as
-a function of the estimated distribution of both species.
+This chapter unravels the relationship between a given species relative
+abundance and the sampling effort needed to adequately understand this
+species distribution and interactions.
+
+There is more than one way to observe a false-negative.
+
+\begin{figure}
+\centering
+\includegraphics{./figures/ch2.png}
+\caption{taxonomy of false negatives}
+\end{figure}
 
 \hypertarget{methods-1}{%
 \subsection{Methods}\label{methods-1}}
@@ -435,23 +446,23 @@ a function of the estimated distribution of both species.
 \begin{itemize}
 \item
   the missing link paper, turn this into optimizing with two different
-  SDMs
-\item
-  relative abundance and its effect on false negative
-\item
+  SDMs relative abundance and its effect on false negative
   non-independent associations in samples
 \item
   simulate species distribution and efficacy of detection given a set of
   observation points where the dist from observation site decays.
-\item
   optimize set of repeated sampling locations L for a \emph{known}
-  distribution D.
-\item
-  address SDM not being the territory
+  distribution D. address SDM not being the territory
 \end{itemize}
 
 \hypertarget{results}{%
 \subsection{Results}\label{results}}
+
+\begin{itemize}
+\tightlist
+\item
+  nonrandom association figure sampling effort under neutral model
+\end{itemize}
 
 \hypertarget{in-progress-results}{%
 \subsubsection{In-progress results}\label{in-progress-results}}
@@ -477,8 +488,9 @@ dynamics example).
 \tightlist
 \item
   land cover -\textgreater{} resistance -\textgreater{} extinction time
+  simulated annealing to
 \item
-  simulated annealing to optimize landscape optimization
+  optimize landscape optimization
 \end{itemize}
 
 \hypertarget{ch4-a-software-note-on-the-resulting-packages.}{%
@@ -493,28 +505,23 @@ chapters.
 \begin{itemize}
 \item
   TK conceptual figure with interfaces between what I'm writing / have
+\item
   contributed to and linked with other libraries
 \item
   \texttt{Observatories.jl}, \texttt{Corridors.jl}, \texttt{MCD.jl}
 \end{itemize}
 
-\hypertarget{concl}{%
-\section{concl}\label{concl}}
-
-// this is a discussion para An oft applied definition of the origin of
-is ``the application of the scientific method to natural history.''
-Since its origin ecology has been a descriptive science. This is a
-natural by-product of the immense variability of Earth's biosphere.
-emerged to explain particular phenomena at particular scales. In recent
-years, there has been an interest in an epistemological shift in
-ecology. To shift ecology into a predictive science. The justification
-for this shift is twofold: (1) bogged down philosophy of science, by
-further rooting our understanding of ecosystem function and dynamics in
-an ability to predict their structure (Dietze 2017). and (2) the
-practical need for models for \emph{ecological forecasting}.
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
 
 \hypertarget{appendix}{%
 \section{Appendix}\label{appendix}}
+
+\begin{figure}
+\centering
+\includegraphics{./figures/trees.png}
+\caption{trees}
+\end{figure}
 
 \hypertarget{references}{%
 \section*{References}\label{references}}
@@ -522,6 +529,14 @@ practical need for models for \emph{ecological forecasting}.
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
+\leavevmode\hypertarget{ref-Bauer2015QuiRev}{}%
+Bauer, P., Thorpe, A. \& Brunet, G. (2015). The quiet revolution of
+numerical weather prediction. \emph{Nature}, 525, 47--56.
+
+\leavevmode\hypertarget{ref-Beckage2011LimPre}{}%
+Beckage, B., Gross, L.J. \& Kauffman, S. (2011). The limits to
+prediction in ecological systems. \emph{Ecosphere}, 2, art125.
+
 \leavevmode\hypertarget{ref-Chen2019RevCom}{}%
 Chen, Y., Angulo, M.T. \& Liu, Y.-Y. (2019). Revealing Complex
 Ecological Dynamics via Symbolic Regression. \emph{BioEssays}, 41,
@@ -535,6 +550,12 @@ framework. \emph{Ecological Applications}, 27, 2048--2060.
 Makiola, A., Compson, Z.G., Baird, D.J., Barnes, M.A., Boerlijst, S.P.,
 Bouchez, A., \emph{et al.} (2020). Key Questions for Next-Generation
 Biomonitoring. \emph{Frontiers in Environmental Science}, 7.
+
+\leavevmode\hypertarget{ref-Petchey2015EcoFor}{}%
+Petchey, O.L., Pontarp, M., Massie, T.M., Kéfi, S., Ozgul, A.,
+Weilenmann, M., \emph{et al.} (2015). The ecological forecast horizon,
+and examples of its uses and determinants. \emph{Ecology Letters}, 18,
+597--611.
 
 \end{CSLReferences}
 

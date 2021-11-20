@@ -446,6 +446,39 @@
         "volume": "312"
     },
     {
+        "DOI": "10.1038/nature14956",
+        "author": [
+            {
+                "family": "Bauer",
+                "given": "Peter"
+            },
+            {
+                "family": "Thorpe",
+                "given": "Alan"
+            },
+            {
+                "family": "Brunet",
+                "given": "Gilbert"
+            }
+        ],
+        "container-title": "Nature",
+        "id": "Bauer2015QuiRev",
+        "issue": "7567",
+        "issued": {
+            "date-parts": [
+                [
+                    2015,
+                    9
+                ]
+            ]
+        },
+        "page": "47-56",
+        "publisher": "Nature Publishing Group",
+        "title": "The quiet revolution of numerical weather prediction",
+        "type": "article-journal",
+        "volume": "525"
+    },
+    {
         "DOI": "10.1146/annurev-statistics-030718-105212",
         "author": [
             {
@@ -2042,6 +2075,35 @@
         "title": "Iterative near-term ecological forecasting: Needs, opportunities, and challenges",
         "type": "article-journal",
         "volume": "115"
+    },
+    {
+        "DOI": "10.1038/ncomms12349",
+        "PMCID": "PMC4974646",
+        "PMID": "27476545",
+        "author": [
+            {
+                "family": "Dobrowski",
+                "given": "Solomon Z."
+            },
+            {
+                "family": "Parks",
+                "given": "Sean A."
+            }
+        ],
+        "container-title": "Nature Communications",
+        "id": "Dobrowski2016CliCha",
+        "issued": {
+            "date-parts": [
+                [
+                    2016,
+                    8
+                ]
+            ]
+        },
+        "page": "12349",
+        "title": "Climate change velocity underestimates climate change exposure in mountainous regions",
+        "type": "article-journal",
+        "volume": "7"
     },
     {
         "DOI": "10.1073/pnas.1904470116",
@@ -5378,6 +5440,98 @@
         "title": "The intrinsic predictability of ecological time series and its potential to guide forecasting",
         "type": "article-journal",
         "volume": "89"
+    },
+    {
+        "DOI": "10.1111/ele.12443",
+        "author": [
+            {
+                "family": "Petchey",
+                "given": "Owen L."
+            },
+            {
+                "family": "Pontarp",
+                "given": "Mikael"
+            },
+            {
+                "family": "Massie",
+                "given": "Thomas M."
+            },
+            {
+                "family": "K\u00e9fi",
+                "given": "Sonia"
+            },
+            {
+                "family": "Ozgul",
+                "given": "Arpat"
+            },
+            {
+                "family": "Weilenmann",
+                "given": "Maja"
+            },
+            {
+                "family": "Palamara",
+                "given": "Gian Marco"
+            },
+            {
+                "family": "Altermatt",
+                "given": "Florian"
+            },
+            {
+                "family": "Matthews",
+                "given": "Blake"
+            },
+            {
+                "family": "Levine",
+                "given": "Jonathan M."
+            },
+            {
+                "family": "Childs",
+                "given": "Dylan Z."
+            },
+            {
+                "family": "McGill",
+                "given": "Brian J."
+            },
+            {
+                "family": "Schaepman",
+                "given": "Michael E."
+            },
+            {
+                "family": "Schmid",
+                "given": "Bernhard"
+            },
+            {
+                "family": "Spaak",
+                "given": "Piet"
+            },
+            {
+                "family": "Beckerman",
+                "given": "Andrew P."
+            },
+            {
+                "family": "Pennekamp",
+                "given": "Frank"
+            },
+            {
+                "family": "Pearse",
+                "given": "Ian S."
+            }
+        ],
+        "container-title": "Ecology Letters",
+        "id": "Petchey2015EcoFor",
+        "issue": "7",
+        "issued": {
+            "date-parts": [
+                [
+                    2015
+                ]
+            ]
+        },
+        "keyword": "Dynamics,ecosystems,environmental change,forecasting,futures,prediction,scenarios",
+        "page": "597-611",
+        "title": "The ecological forecast horizon, and examples of its uses and determinants",
+        "type": "article-journal",
+        "volume": "18"
     },
     {
         "DOI": "10.1111/2041-210X.12984",

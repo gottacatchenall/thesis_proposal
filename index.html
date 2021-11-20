@@ -200,7 +200,7 @@
             <p><strong>P1</strong></p>
             <p>Within the last several hundred years, human activity has rapidly changed Earth’s atmosphere, oceans, and surface. Greenhouse gas emissions have caused an increase the temperature of both Earth’s terrestial surface and its oceans, and both agricultural and urban development has rapidly reshaped the cover of Earth’s surface. These the bulk of this change has occurred within the last several hundred years, a geological instant, potentially inducing shocks to ecosystems that could threated their integrity <span class="citation" data-cites="Scheffer">(<strong>Scheffer?</strong>)</span>. As a result understanding and predicting how ecosystems will change in the future, <em>ecological forecasting</em>, and making making descisions based on these predictions mitigating the consequences of this change, on ecosystems has emerged as an imperative for ecology and environmental science [<span class="citation" data-cites="Dietze2017PreEco">Dietze (2017)</span>;].</p>
             <p><strong>P2</strong></p>
-            <p>However, robust forecasting of ecological processes will change in the future is, to say the least, quite difficult. This difficultly is compounded by a few factors, the first being that sampling ecosystems is not easy. Ecological data is often biased, and noisey, spatially and temporally sparse. As a result <em>ecosystem monitoring</em> <span class="citation" data-cites="Makiola2020KeyQue">(Makiola <em>et al.</em> 2020)</span> has emerged as an imperative. Developing a system for ecological observation, which is able to coordinate across locations. <span class="citation" data-cites="AndyUrbanBiomonitoring">(<strong>AndyUrbanBiomonitoring?</strong> paper)</span>.</p>
+            <p>However, robust forecasting of ecological processes will change in the future is, to say the least, quite difficult <span class="citation" data-cites="Beckage2011LimPre Petchey2015EcoFor">(Beckage <em>et al.</em> 2011; Petchey <em>et al.</em> 2015)</span>. This difficultly is compounded by a few factors, the first being that sampling ecosystems is not easy. Ecological data is often biased, and noisey, spatially and temporally sparse. As a result <em>ecosystem monitoring</em> <span class="citation" data-cites="Makiola2020KeyQue">(Makiola <em>et al.</em> 2020)</span> has emerged as an imperative. Developing a system for ecological observation, which is able to coordinate across locations. <span class="citation" data-cites="AndyUrbanBiomonitoring">(<strong>AndyUrbanBiomonitoring?</strong> paper)</span>.</p>
             <p>The second major challenge in forecasting ecosystems is that the underlying dynamics of most ecological processes are fundementally unknown (and unknowable) and instead must be inferred.</p>
             <p>Much of the history of quantitatively modeling ecosystems have been done in the language of dynamical systems, describing how the value of an observable state of the system, represented by a vector of numbers <span class="math inline">[<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, …, <em>x</em><sub><em>n</em></sub>]<sup><em>T</em></sup> = <em>x⃗</em></span> changes as over time. It turns out to be much more effective to, rather than attempt to directly model <span class="math inline"><em>x⃗</em>(<em>t</em>)</span> itself, to instead describe how <span class="math inline"><em>x⃗</em></span> changes from one timestep to the next, yielding models in the form of differential equations in continuous-time settings–<span class="math inline">$\frac{dx}{dt} = f(x)$</span>– or difference equations in discrete-time settings–<span class="math inline"><em>x</em><sub><em>t</em></sub> = <em>f</em>(<em>x</em><sub><em>t</em> − 1</sub>)</span>–where <span class="math inline"><em>f</em> : ℝ<sup><em>n</em></sup> → ℝ<sup><em>n</em></sup></span> is an arbitrary function describing how the system changes on a moment-to-moment basis (e.g. in the context of communities, <span class="math inline"><em>f</em></span> could be Lotka-Voltera, Holling-Type-III or DeAngelis-Beddington functional response). The form of this functional response in real systems is effectively unknown, and some forms are inherently more “forecastable” than others <span class="citation" data-cites="Chen2019RevCom">(Chen <em>et al.</em> 2019)</span>.</p>
             <p><strong>P3</strong></p>
@@ -213,7 +213,7 @@
             </ol>
             <p><strong>P4</strong></p>
             <p>The term <em>ecological forecasting</em> implicitly creates an analogy between predicting how ecosystems will change in the future by using the term “forecasting”—the most immediate analog being the success story of weather forecasting via numerical weather prediction (NWP).</p>
-            <p>Although it is become almost hack to complain about the dang weather forecast being wrong, over the least 50 years the <span class="citation" data-cites="Bauer2015QuiRev">(<strong>Bauer2015QuiRev?</strong>)</span>.</p>
+            <p>Although it is become almost hack to complain about the dang weather forecast being wrong, over the least 50 years the <span class="citation" data-cites="Bauer2015QuiRev">(Bauer <em>et al.</em> 2015)</span>.</p>
             <p>The success of NWP, and the Earth observations that support it should serve as a template for development of a system for monitoring Earth’s biodiversity. Much like ecology, NWP is faced with high-dimensional systems that are governed by different mechanisms at different scales.</p>
             <p>NWP has worked because it incorporates information about data and meteorological processes collected at difference scales into models that. Use of computational methods in NWP.</p>
             <p>Much as one would not aim to forecast the weather in Quebec by applying Navier-Stokes, forecasting ecological systems must</p>
@@ -239,52 +239,63 @@
             <p>In stages, (1) take data from multiple sites to predict a spatial metaweb of <em>Bombus</em>-flower interactions across Colorado. (2) Predict how these spatial distributions will change under CMIP6. and (3) quantify the lack of overlap between species for which there is a predicted</p>
             <p><strong>CH1 concept figure</strong></p>
             <h2 id="data">Data</h2>
+            <p>The data for this chapter is derived from multiple souces and can be split into three categories. (1) Field data from three different locations acvross Colorado. All field sites have multiple plots across an elevational gradient.</p>
             <p>System description: lots of data on <em>Bombus</em> (bumblebees) and wildflowers. Three different sites, (7/7/3) years each, each covering an elevational gradient.</p>
             <h2 id="methods">Methods</h2>
             <p>Split the process into parts.</p>
             <ol type="1">
-            <li>Building an interaction prediction model.</li>
-            <li>Make it spatial based on distributions.</li>
-            <li>Forecast distributions based on CMIP6.</li>
+            <li>Building an interaction prediction model. 2) Make it spatial based on distributions. 3) Forecast distributions based on CMIP6.</li>
             </ol>
             <h2 id="preliminary-results">Preliminary Results</h2>
             <ol type="1">
             <li>we got a tree</li>
             </ol>
             <p>Transition to next chapter by discussing uncertainty in interaction prediction across space.</p>
-            <h1 id="ch2-optimizing-sampling-of-interactions">CH2 optimizing sampling of interactions</h1>
-            <p>This chapter quantifies the relationship between a given species relative abundance and the sampling effort needed to adequately understand this species distribution and interactions.</p>
-            <p>For a given sample of interaction data, and proposes a method for optimizing spatial sampling of a possible interaction between species as a function of the estimated distribution of both species.</p>
+            <h1 id="chapter-two-optimizing-spatial-sampling-of-species-interactions">Chapter Two: Optimizing spatial sampling of species interactions</h1>
+            <p>There are false-negatives in interation data. Co-occurrence is not the same thing as interaction <span class="citation" data-cites="cite">(<strong>cite?</strong>)</span>, but often is used as a proxy.</p>
+            <p>This chapter unravels the relationship between a given species relative abundance and the sampling effort needed to adequately understand this species distribution and interactions.</p>
+            <p>There is more than one way to observe a false-negative.</p>
+            <figure>
+            <img src="./figures/ch2.png" alt="taxonomy of false negatives" /><figcaption aria-hidden="true">taxonomy of false negatives</figcaption>
+            </figure>
             <h2 id="methods-1">Methods</h2>
             <ul>
-            <li><p>the missing link paper, turn this into optimizing with two different SDMs</p></li>
-            <li><p>relative abundance and its effect on false negative</p></li>
-            <li><p>non-independent associations in samples</p></li>
-            <li><p>simulate species distribution and efficacy of detection given a set of observation points where the dist from observation site decays.</p></li>
-            <li><p>optimize set of repeated sampling locations L for a <em>known</em> distribution D.</p></li>
-            <li><p>address SDM not being the territory</p></li>
+            <li><p>the missing link paper, turn this into optimizing with two different SDMs relative abundance and its effect on false negative non-independent associations in samples</p></li>
+            <li><p>simulate species distribution and efficacy of detection given a set of observation points where the dist from observation site decays. optimize set of repeated sampling locations L for a <em>known</em> distribution D. address SDM not being the territory</p></li>
             </ul>
             <h2 id="results">Results</h2>
+            <ul>
+            <li>nonrandom association figure sampling effort under neutral model</li>
+            </ul>
             <h3 id="in-progress-results">In-progress results</h3>
             <h1 id="ch3-optimizing-corridor-placement">CH3 optimizing corridor placement</h1>
             <p>This chapter proposes an algorithm for optimizing restoration across space</p>
             <p>(corridorplacement/restoration effort) given a raster where each cell indicates land-cover. The optimization method uses the result of a simulated process (specifically occupancy dynamics in the landscape) and uses simulated annealing to estimate the global optimum of the targetstate (specfically mean-time-to-extinction for the occupancy dynamics example).</p>
             <h2 id="methods-2">Methods</h2>
             <ul>
-            <li>land cover -&gt; resistance -&gt; extinction time</li>
-            <li>simulated annealing to optimize landscape optimization</li>
+            <li>land cover -&gt; resistance -&gt; extinction time simulated annealing to</li>
+            <li>optimize landscape optimization</li>
             </ul>
             <h1 id="ch4-a-software-note-on-the-resulting-packages.">CH4 a software note on the resulting packages.</h1>
             <p>(MetacommunityDynamics.jl: a virtual laboratory for community ecology): a collection of modules in the Julia language for different aspects of metacommunity ecology, including most of the code used for the preceding chapters.</p>
             <ul>
-            <li><p>TK conceptual figure with interfaces between what I’m writing / have contributed to and linked with other libraries</p></li>
+            <li><p>TK conceptual figure with interfaces between what I’m writing / have</p></li>
+            <li><p>contributed to and linked with other libraries</p></li>
             <li><p><code>Observatories.jl</code>, <code>Corridors.jl</code>, <code>MCD.jl</code></p></li>
             </ul>
-            <h1 id="concl">concl</h1>
-            <p>// this is a discussion para An oft applied definition of the origin of is “the application of the scientific method to natural history.” Since its origin ecology has been a descriptive science. This is a natural by-product of the immense variability of Earth’s biosphere. emerged to explain particular phenomena at particular scales. In recent years, there has been an interest in an epistemological shift in ecology. To shift ecology into a predictive science. The justification for this shift is twofold: (1) bogged down philosophy of science, by further rooting our understanding of ecosystem function and dynamics in an ability to predict their structure <span class="citation" data-cites="Dietze2017PreEco">(Dietze 2017)</span>. and (2) the practical need for models for <em>ecological forecasting</em>.</p>
+            <h1 id="conclusion">Conclusion</h1>
             <h1 id="appendix">Appendix</h1>
+            <figure>
+            <img src="./figures/trees.png" alt="trees" /><figcaption aria-hidden="true">trees</figcaption>
+            </figure>
             <h1 class="unnumbered" id="references">References</h1>
             <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+            <div id="ref-Bauer2015QuiRev" class="csl-entry" role="doc-biblioentry">
+            Bauer, P., Thorpe, A. &amp; Brunet, G. (2015). The quiet revolution of numerical weather prediction. <em>Nature</em>, 525, 47–56.
+            </div>
+            <div id="ref-Beckage2011LimPre" class="csl-entry" role="doc-biblioentry">
+            Beckage, B., Gross, L.J. &amp; Kauffman, S. (2011). The limits to prediction in ecological systems. <em>Ecosphere</em>, 2, art125.
+            </div>
             <div id="ref-Chen2019RevCom" class="csl-entry" role="doc-biblioentry">
             Chen, Y., Angulo, M.T. &amp; Liu, Y.-Y. (2019). Revealing Complex Ecological Dynamics via Symbolic Regression. <em>BioEssays</em>, 41, 1900069.
             </div>
@@ -293,6 +304,9 @@
             </div>
             <div id="ref-Makiola2020KeyQue" class="csl-entry" role="doc-biblioentry">
             Makiola, A., Compson, Z.G., Baird, D.J., Barnes, M.A., Boerlijst, S.P., Bouchez, A., <em>et al.</em> (2020). Key Questions for Next-Generation Biomonitoring. <em>Frontiers in Environmental Science</em>, 7.
+            </div>
+            <div id="ref-Petchey2015EcoFor" class="csl-entry" role="doc-biblioentry">
+            Petchey, O.L., Pontarp, M., Massie, T.M., Kéfi, S., Ozgul, A., Weilenmann, M., <em>et al.</em> (2015). The ecological forecast horizon, and examples of its uses and determinants. <em>Ecology Letters</em>, 18, 597–611.
             </div>
             </div>
         </article>
