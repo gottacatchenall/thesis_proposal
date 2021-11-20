@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1637422774 "preprint.tex" "preprint.pdf" "preprint" 1637422780
+["pdflatex"] 1637425170 "preprint.tex" "preprint.pdf" "preprint" 1637425177
   "/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc" 1558214095 7631 5169ff1acd97ff1c4ab83563c99f96f4 ""
   "/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathbb.enc" 1610747736 2904 e0faa515d685129700e18ca6e0e2b48f ""
@@ -227,12 +227,13 @@
   "/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1635729929 4363822 1720ee57da1114f6a5ce4326c1fe4d42 ""
   "/opt/texlive/texdir/texmf-var/web2c/pdftex/pdflatex.fmt" 1635729973 2805492 7c9fae4200b07d58def6e70d76c7024a ""
   "/opt/texlive/texdir/texmf.cnf" 1635729922 555 bd60ff59e4d560b42d96b004436f91d3 ""
-  "figures/ch2.png" 1637422767 385880 f79c6caeae0c56f35946b87aa849ab4e ""
-  "figures/thesisconcept.png" 1637422767 1913253 24af1267229452d47d09da55dcef5042 ""
-  "figures/trees.png" 1637422767 982577 db936af516fafba0e3bf7c9c5bef4188 ""
-  "preprint.aux" 1637422780 5696 ed6350a7dd34862da0ae2b03c2eb4ff4 "pdflatex"
-  "preprint.out" 1637422780 2500 1a192c07998e25171a3b6f4b96250ceb "pdflatex"
-  "preprint.tex" 1637422767 21493 a1170456a2b60214f6e12b4c7ca89bc7 ""
+  "figures/ch2.png" 1637425160 385880 f79c6caeae0c56f35946b87aa849ab4e ""
+  "figures/software.png" 1637425161 501334 e92cafd135222638ffad96105d2fe35d ""
+  "figures/thesisconcept.png" 1637425161 1913253 24af1267229452d47d09da55dcef5042 ""
+  "figures/trees.png" 1637425162 982577 db936af516fafba0e3bf7c9c5bef4188 ""
+  "preprint.aux" 1637425177 5980 129d0df16ae2cdd5297a26d586311441 "pdflatex"
+  "preprint.out" 1637425177 2707 d08a74f7ba9fe8ad524c0ba144c82665 "pdflatex"
+  "preprint.tex" 1637425160 21723 8b77e433dc1d0318306a567ad44b7b39 ""
   (generated)
   "preprint.pdf"
   "preprint.aux"

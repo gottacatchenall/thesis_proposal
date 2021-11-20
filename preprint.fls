@@ -1363,6 +1363,11 @@ INPUT /opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/ts1-stix2text.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-bolditalic.tfm
+INPUT ./figures/software.png
+INPUT ./figures/software.png
+INPUT ./figures/software.png
+INPUT ./figures/software.png
+INPUT ./figures/software.png
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd

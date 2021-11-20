@@ -16,6 +16,13 @@
  
 \begin{figure}
 \centering
+\includegraphics{./figures/software.png}
+\caption{todo}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
 \includegraphics{./figures/trees.png}
 \caption{trees}
 \end{figure}

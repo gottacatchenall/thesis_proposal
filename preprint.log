@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  20 NOV 2021 15:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  20 NOV 2021 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1252,30 +1252,36 @@ LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line
 (/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
 ) [4 <./figures/ch2.png>]
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 55
-7.
- (/opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+<./figures/software.png, id=116, 1346.53062pt x 933.98938pt>
+File: ./figures/software.png Graphic file (type png)
+<use ./figures/software.png>
+Package pdftex.def Info: ./figures/software.png  used on input line 555.
+(pdftex.def)             Requested size: 386.67299pt x 268.1992pt.
+ [5 <./figures/software.png>]
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 56
+5.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 557.
-<./figures/trees.png, id=116, 3010.24625pt x 3010.24625pt>
+(Font)              scaled to size 9.0pt on input line 565.
+<./figures/trees.png, id=128, 3010.24625pt x 3010.24625pt>
 File: ./figures/trees.png Graphic file (type png)
 <use ./figures/trees.png>
-Package pdftex.def Info: ./figures/trees.png  used on input line 568.
+Package pdftex.def Info: ./figures/trees.png  used on input line 576.
 (pdftex.def)             Requested size: 386.67299pt x 386.66063pt.
-
-[5] [6 <./figures/trees.png>] 
+ [6 <./figures/trees.png>] 
 AED: lastpage setting LastPage
 [7] (./preprint.aux)
 Package rerunfilecheck Info: File `preprint.out' has not changed.
-(rerunfilecheck)             Checksum: 1A192C07998E25171A3B6F4B96250CEB;2500.
+(rerunfilecheck)             Checksum: D08A74F7BA9FE8AD524C0BA144C82665;2707.
  ) 
 Here is how much of TeX's memory you used:
- 29861 strings out of 478579
- 525960 string characters out of 5855461
- 833211 words of memory out of 5000000
- 47172 multiletter control sequences out of 15000+600000
+ 29869 strings out of 478579
+ 526265 string characters out of 5855461
+ 833250 words of memory out of 5000000
+ 47178 multiletter control sequences out of 15000+600000
  544268 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,117p,498b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1296,10 +1302,10 @@ xmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/tex
 dir/texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texm
 f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/font
 s/type1/urw/helvetic/uhvr8a.pfb>
-Output written on preprint.pdf (7 pages, 3539825 bytes).
+Output written on preprint.pdf (7 pages, 3913492 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
- 51 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 219 PDF objects out of 1000 (max. 8388607)
+ 179 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
