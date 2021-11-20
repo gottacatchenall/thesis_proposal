@@ -3236,6 +3236,46 @@
         "volume": "65"
     },
     {
+        "DOI": "10.1109/MCISE.2004.1255817",
+        "author": [
+            {
+                "family": "Hill",
+                "given": "C."
+            },
+            {
+                "family": "DeLuca",
+                "given": "C."
+            },
+            {
+                "literal": "Balaji"
+            },
+            {
+                "family": "Suarez",
+                "given": "M."
+            },
+            {
+                "family": "Da Silva",
+                "given": "A."
+            }
+        ],
+        "container-title": "Computing in Science Engineering",
+        "id": "Hill2004ArcEar",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2004,
+                    1
+                ]
+            ]
+        },
+        "keyword": "Atmosphere,Atmospheric modeling,Earth,Flexible manufacturing systems,Fluid dynamics,NASA,Oceans,Predictive models,Space technology,Weather forecasting",
+        "page": "18-28",
+        "title": "The architecture of the Earth System Modeling Framework",
+        "type": "article-journal",
+        "volume": "6"
+    },
+    {
         "DOI": "10.1146/annurev-ecolsys-110411-160411",
         "author": [
             {
@@ -7153,6 +7193,88 @@
         "title": "Landscape connectivity: A graph-theoretic perspective",
         "type": "article-journal",
         "volume": "82"
+    },
+    {
+        "DOI": "10.1093/biosci/biab099",
+        "author": [
+            {
+                "family": "Urban",
+                "given": "Mark C"
+            },
+            {
+                "family": "Travis",
+                "given": "Justin M J"
+            },
+            {
+                "family": "Zurell",
+                "given": "Damaris"
+            },
+            {
+                "family": "Thompson",
+                "given": "Patrick L"
+            },
+            {
+                "family": "Synes",
+                "given": "Nicholas W"
+            },
+            {
+                "family": "Scarpa",
+                "given": "Alice"
+            },
+            {
+                "family": "Peres-Neto",
+                "given": "Pedro R"
+            },
+            {
+                "family": "Malchow",
+                "given": "Anne-Kathleen"
+            },
+            {
+                "family": "James",
+                "given": "Patrick M A"
+            },
+            {
+                "family": "Gravel",
+                "given": "Dominique"
+            },
+            {
+                "family": "De Meester",
+                "given": "Luc"
+            },
+            {
+                "family": "Brown",
+                "given": "Calum"
+            },
+            {
+                "family": "Bocedi",
+                "given": "Greta"
+            },
+            {
+                "family": "Albert",
+                "given": "C\u00e9cile H"
+            },
+            {
+                "family": "Gonzalez",
+                "given": "Andrew"
+            },
+            {
+                "family": "Hendry",
+                "given": "Andrew P"
+            }
+        ],
+        "container-title": "BioScience",
+        "id": "Urban2021CodLif",
+        "issue": "biab099",
+        "issued": {
+            "date-parts": [
+                [
+                    2021,
+                    10
+                ]
+            ]
+        },
+        "title": "Coding for Life: Designing a Platform for Projecting and Protecting Global Biodiversity",
+        "type": "article-journal"
     },
     {
         "DOI": "10.1128/AEM.36.1.11-17.1978",
