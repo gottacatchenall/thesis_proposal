@@ -195,6 +195,8 @@ Split the process into parts.
 1) Building an interaction prediction model. 2) Make it spatial based
 on distributions. 3) Forecast distributions based on CMIP6.
 
+
+
 ## Preliminary Results
 
 1) we got a tree
@@ -232,7 +234,10 @@ There is more than one way to observe a false-negative.
 
 ### In-progress results
 
-# CH3 optimizing corridor placement
+# Chapter Three: Optimizing corridor placement against ecological dynamics
+
+As human activity 
+
 
 This chapter proposes an algorithm for optimizing restoration across
 space
@@ -255,6 +260,9 @@ dynamics example).
 ecology): a collection of modules in the Julia language for different
 aspects of metacommunity ecology, including most of the code used for
 the preceding chapters.
+
+
+![todo](./figures/software.png)
 
 - TK conceptual figure with interfaces between what I'm writing / have
 - contributed to and linked with other libraries
