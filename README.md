@@ -190,8 +190,8 @@ The first result is using a log-normal distribution of relative
 abundance [@Hubbell2001UniNeu] to compute a null expectation of the
 number of total observations of individuals of _any species_ by
 simulating the process of observation on food-webs generated using the
-niche model [@williamsmart] with connectance parameterized by the
-flexible-links model [@cite]. An example of this relation for networks
+niche model [@Williams2000SimRul] with connectance parameterized by the
+flexible-links model [@MacDonald2020RevLin]. An example of this relation for networks
 with varying spceies richness is shown in @fig:fnr.
 
 ![foo](./figures/ch2_fnr.png){#fig:fnr}
