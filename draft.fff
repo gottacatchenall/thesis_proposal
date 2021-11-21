@@ -42,6 +42,13 @@ negatives in data}\label{fig:fnrtaxonomy}
 \efloatseparator
  
 \begin{figure}
+\centering
+\includegraphics{./figures/ch2_fnr.png}
+\caption{foo}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
 \hypertarget{fig:posassoc}{%
 \centering
 \includegraphics{./figures/positiveassociations.png}
