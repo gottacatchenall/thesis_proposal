@@ -157,9 +157,11 @@ predicted interaction.
 
 ## Preliminary Results
 
-1) we got a tree and SDMs. See appendix figure.
+We have phylogenies and species distributions models. 
 
+![Phylogeny for both bumblebee species (left) and flower species (right)](./figures/trees.png)
 
+![Example SDM for _Archillea millefolium_](./figures/sample_sdm.png)
 
 Transition to next chapter by discussing uncertainty in interaction
 prediction across space.
@@ -209,21 +211,22 @@ distributions $D_a, D_b$.
 
 # Chapter Three: Optimizing corridor placement against ecological dynamics
 
-Promoting landscape connectivity is important to mitigate the effects
-of land-use change on Earth's biodiversity. However, the practical
-realities of conservation mean that there is a limitation on how much
-we can modify landscapes in order to do this. So what is the best
-place to put a corridor given a constraint on how much surface-area
-you can change in a landscape? This is the question this chapter seeks
-to answer. Models for inferring corridor locations have been
-developed, but are limited in that are not developed around promoting
-some element of ecosystem function, but instead by trying to find the
-path of least resistance in an existing landscape from a derived
-resistance surface [@Peterman2018ResRP].
-
-This chapter proposes a general algorithm for choosing corridor
-placement to optimize a measurement of ecosystem functioning derived
-from simulations run on each proposed landscape modification.
+As land-use change has caused many habitats to become fragmented and
+patchy, promoting landscape connectivity has become of significant
+interest to mitigate the effects of this change on Earth's
+biodiversity. However, the practical realities of conservation mean
+that there is a limitation on how much we can modify landscapes in
+order to do this. So what is the best place to put a corridor given a
+constraint on how much surface-area you can change in a landscape?
+This is the question this chapter seeks to answer. Models for
+inferring corridor locations have been developed, but are limited in
+that are not developed around promoting some element of ecosystem
+function, but instead by trying to find the path of least resistance
+in an existing landscape from a derived resistance surface
+[@Peterman2018ResRP]. This chapter proposes a general algorithm for
+choosing corridor placement to optimize a measurement of ecosystem
+functioning derived from simulations run on each proposed landscape
+modification.
 
 ![fig](./figures/ch3.png){#fig:ch3}
 
@@ -237,6 +240,11 @@ values of resistance to dispersal between each location we simulate
 spatially-explicit metapopulation dynamics model
 [@Ovaskainen2002MetMod; @Hanski2000MetCap] to estimate a distribution
 of time until extinction for each landscape modification.
+
+We then use simulated annealing to explore the search space of possible
+modifications to estimate the modification that maximizes the time-until
+extinction of simulated metapopulation dynamics under that hypothetical
+modified landscape.
 
 - brief overview of simulated annealing describe how you build the
 - proposal function optimize landscape optimization
@@ -256,11 +264,6 @@ packages is shown in @fig:software.
 
 
 # Conclusion
-
-
-# Appendix
-
-![trees](./figures/trees.png)
 
 
 
