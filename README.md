@@ -157,10 +157,9 @@ predicted interaction.
 
 ## Preliminary Results
 
-1) we got a tree and SDMs
+1) we got a tree and SDMs. See appendix figure.
 
 
-## Next steps
 
 Transition to next chapter by discussing uncertainty in interaction
 prediction across space.
@@ -178,7 +177,7 @@ of @fig:thesis, left.
 
 As explored in the previous chapter, there are false-negatives in
 interaction data. However, there is more than one way to observe a
-false-negative when sampling interactions: (@fig:fnrtaxonomy). It
+false-negative when sampling interactions (@fig:fnrtaxonomy). It
 begins with a conceptual framework for understanding the difference in
 false-negatives in occurrence, co-occurrence, and interactions.
 Co-occurrence is not the same thing as interaction
@@ -201,11 +200,11 @@ available.
 
 ![f](./figures/positiveassociations.png){#fig:posassoc}
 
-Finally this chapter proposes a simulated annealing method to
-optimize the efficacy of interactoin detection given a set
-of observation points where the dist from observation site decays.
-optimize set of repeated sampling locations L for a pair of species
-_known_ distributions $D_a, D_b$.
+Finally this chapter proposes a simulated annealing method to optimize
+the efficacy of interaction detection given a set of observation
+points where the dist from observation site decays. optimize set of
+repeated sampling locations L for a pair of species _known_
+distributions $D_a, D_b$.
 
 
 # Chapter Three: Optimizing corridor placement against ecological dynamics
@@ -216,11 +215,11 @@ realities of conservation mean that there is a limitation on how much
 we can modify landscapes in order to do this. So what is the best
 place to put a corridor given a constraint on how much surface-area
 you can change in a landscape? This is the question this chapter seeks
-to answer. Models for proposing corridor locations have been
+to answer. Models for inferring corridor locations have been
 developed, but are limited in that are not developed around promoting
 some element of ecosystem function, but instead by trying to find the
-path of least resistance given a resistance surface
-[@Peterman2018ResRP].
+path of least resistance in an existing landscape from a derived
+resistance surface [@Peterman2018ResRP].
 
 This chapter proposes a general algorithm for choosing corridor
 placement to optimize a measurement of ecosystem functioning derived
