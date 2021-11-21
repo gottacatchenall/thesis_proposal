@@ -30,38 +30,37 @@ of quantitatively modeling ecosystems have been done in the language
 of dynamical systems, describing how the value of an observable state
 of the system, represented by a vector of numbers $[x_1, x_2, \dots,
 x_n]^T = \vec{x}$ changes as over time, yielding models in the form of
-differential equations in continuous-time settings--$\frac{dx}{dt} =
-f(x)$-- or difference equations in discrete-time settings--$x_t =
-f(x_{t-1})$--where $f:\mathbb{R}^n \to \mathbb{R}^n$ is an arbitrary
+differential equations in continuous-time settings, $\frac{dx}{dt} =
+f(x)$, or difference equations in discrete-time settings, $x_t =
+f(x_{t-1})$, where $f:\mathbb{R}^n \to \mathbb{R}^n$ is an arbitrary
 function describing how the system changes on a moment-to-moment basis
 (e.g. in the context of communities, $f$ could be Lotka-Voltera,
 Holling-Type-III or DeAngelis-Beddington functional response). The
+form of this functional response in real systems is effectively
+unknown, and some forms are inherently more "forecastable" than others
+[@Chen2019RevCom; @Pennekamp2019IntPre; @Beckage2011LimPre]. The
 initial success of these forms of models can be traced back to the
 larger program of ontological reductionism, which became the default
 approach to modeling in the sciences after its early success in
 physics, which, by the time ecology was becoming a quantitative
 science (sometime in the 20th century, depending on who you ask),
-became the foundation for early quantitative models in ecology.
+became the foundation for mathematical models in ecology.
 
 However, we run into many problems when aiming to apply this type of
-model to empirical data in ecology. Ecosystems are perhaps the
+model to empirical ecological data. Ecosystems are perhaps the
 quintessential example of system that cannot be understood by
 iterative reduction of its components into constituent
-parts---ecological phenomena are emergent are the product of different
+parts---ecological phenomena are emergent: the product of different
 mechanisms operating a different spatial, temporal, and organizational
-scales [@Levin1992ProPat]. Further, the form of this functional
-response in real systems is effectively unknown, and some forms are
-inherently more "forecastable" than others [@Chen2019RevCom;
-@Pennekamp2019IntPre; @Beckage2011LimPre]. Further this analytical
-approach to modeling explicitly ignores known realities: ecological
-dynamics not deterministic, many analytic models in ecology assume
-long-run equilibrium. Finally, perhaps the biggest challenge in using
-these models to describe ecological processes is ecosystems vary
-across more variables than the tools of analytic models are suited
-for. As the number of variables in an analytic model increases, so
-does the ability of the scientist to discern clear relationships
-between them given a fixed amount of data, the so-called "curse" of
-dimensionality.
+scales [@Levin1992ProPat].  Further this analytical approach to
+modeling explicitly ignores known realities: ecological dynamics not
+deterministic and many analytic models in ecology assume long-run
+equilibrium. Finally, perhaps the biggest challenge in using these
+models to describe ecological processes is ecosystems consist of more
+dimensions than the tools of analytic models are suited for. As the
+number of variables in an analytic model increases, so does the
+ability of the scientist to discern clear relationships between them
+given a fixed amount of data, the so-called "curse" of dimensionality.
 
 But these problems are not solely unique to ecology. The term
 _ecological forecasting_ implicitly creates an analogy with weather
