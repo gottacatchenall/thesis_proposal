@@ -119,8 +119,8 @@ to forecasts to mitigation strategy (@fig:thesis, right).
 
 Interactions between plants and pollinators form networks of interactions, which 
 structure the "architecture of biodiversity" [@Jordano2007].
-The persistence, functioning, and stability of ecosystems emerge from these
-interactions, but antropogenic change threatens to unravel and "rewire" these networks [@CaraDonna2017IntRew].
+The functioning and stability of ecosystems emerge from these
+interactions, but antropogenic change threatens to unravel and "rewire" these networks [@CaraDonna2017IntRew], threating the persistence of these systems.
 Plant-pollinator networks face two possible forms of rewiring in response to
 anthropogenic environmental change: spatial and temporal.  
 Spatially, range shifts could cause interacting species to no longer overlap
@@ -128,12 +128,10 @@ in space, and shifts in phenology could cause interacting species to no longer
 overlap in time.
 
 This chapter uses several years of data on bumblebee-flower phenology and
-interactions across several field site, each consisting of several plots 
+interactions across several field sites, each consisting of several plots 
 across an elevational gradient, combined with spatial records of species occurrence via GBIF to forecast this uncoupling. 
-
-
-Addresses the EBV to forecast of EBV
-element of the flow from data to mitigation in @fig:thesis.
+This addresses the EBV to forecast of EBV
+element of the flow from data to mitigation in @fig:thesis (left).
 
 
 ![chapter one concept fig](./figures/ch1.png)
@@ -142,20 +140,21 @@ element of the flow from data to mitigation in @fig:thesis.
 ## Data
 
 The data for this chapter is derived from multiple souces and can be
-split into three categories. (1) Field data from three different
-locations across Colorado. All field sites have multiple plots
-across an elevational gradient.
-
-System description: lots of data on _Bombus_ (bumblebees) and
-wildflowers. Three different sites, (7/7/3) years each, each covering
-an elevational gradient.
+split into four categories. (1) Field data from three different
+field sites across Colorado, each with multiple plots
+across an elevational gradient, for seven, seven, and three years resptively.
+This data was collected by Paul CaraDonna and Jane Oglevie (from the Rocky Mountain
+Biological Laboratory) and Julian Resasco (CU Boulder). 
+(2) GBIF spatial occurrence records of each of these species across Colorado,
+including a metaweb of interactions across all of Colroado taken from GBIF.
+(3) Remotely sensed data consisting of current and forecasting bioclimatic variables from CHELSA. 
+(4) Phylogeny derived from NCBI GenBank barcodes for mitochondrial COI (bumblebees) and chloroplast rbcL (flowers). 
 
 ## Methods
 
-The issue is that we don't really know what interactions are like now.
-So we also need to predict interactions as they exist _in the present_
-as the data we have and temporally sparse and likely to contain many interaction
-"false-negatives" [@Strydom2021RoaPre].
+As the data we have is spatially sparse and likely to contain many interaction
+"false-negatives" [@Strydom2021RoaPre], we beign by predicting a metaweb of
+interactions as they exist _in the present_.
 
 
 In stages, (1) take data from multiple sites to predict a spatial
@@ -243,19 +242,17 @@ path of least resistance given a resistance surface [@Peterman2018ResRP].
 This chapter proposes a general algorithm for choosing corridor placement to optimize a measurement of ecosystem functioning derived from simulations run on
 each proposed landscape modification. 
 
+![fig](./figures/ch3.png){#fig:ch3}
 
-We propose various landscape modifications
-which alter the cover of a landscape, represented as a raster
-(fig. 6, left). We then compute a new resistance surface based on
-the proposed landscape modification, and based on the values of resistance to
-dispersal between each location we simulate spatially-explicit metapopulation
-dynamics model [@Ovaskainen2002MetMod; @Hanski2000MetCap] to estimate a
-distribution of time until extinction for each landscape modification
-(fig. 6, right).
 
 ## Methods
 
-- land cover -> resistance -> extinction time
+We propose various landscape modifications
+which alter the cover of a landscape, represented as a raster. 
+We then compute a new resistance surface based on the proposed landscape modification, and based on the values of resistance to
+dispersal between each location we simulate spatially-explicit metapopulation
+dynamics model [@Ovaskainen2002MetMod; @Hanski2000MetCap] to estimate a
+distribution of time until extinction for each landscape modification.
 
 - brief overview of simulated annealing
 - describe how you build the proposal function 
@@ -265,17 +262,9 @@ distribution of time until extinction for each landscape modification
 
 This chapter consists of a collection of modules in the Julia language for 
 different aspects of community ecology, including most of the code used for
-the preceding chapters. 
+the preceding chapters. Indeed `MetacommunityDynamics.jl` (MCD.jl) is the epicenter of this set of tools, but due to the nature of the Julia language, MCD.jl is interoperable with serveral existing packages within the `EcoJulia` organization, including several to which I have contributed. A diagram showing the relation between these packages is shown in @fig:software. 
 
-Indeed `MetacommunityDynamics.jl` is the center of this, but due to the nature 
-of the Julia language, it is interoperable with serveral existing packages.
-
-`EcoJulia` organization, including several which I have contributed to enable
-interoperability with MCD.jl. 
-
-A diagram showing the relation between these packages is shown in @fig:software. 
-
-![todo](./figures/ch4.png){#fig:software}
+![The structure of the software libraries used as part of MCD.jl](./figures/ch4.png){#fig:software}
 
 
 # Conclusion
