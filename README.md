@@ -103,9 +103,9 @@ from a monitoring network to forecasts to mitigation strategy
 
 # Chapter One: Forecasting the spatial uncoupling of a plant-pollinator network
 
-Interactions between plants and pollinators form networks of
-interactions, which together create the "architecture of biodiversity"
-[@Jordano2007]. The functioning and stability of ecosystems emerge
+Interactions between plants and pollinators create networks of
+interactions, which together form the "architecture of biodiversity"
+[@Bascompte2007PlaMut]. The functioning and stability of ecosystems emerge
 from these interactions, but anthropogenic change threatens to unravel
 and "rewire" these interaction networks [@CaraDonna2017IntRew],
 threatening the persistence of these systems. Plant-pollinator
