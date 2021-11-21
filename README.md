@@ -94,9 +94,7 @@ uncertainty in parameter estimates via random number generation.
 
 **P6**
 
-But forecasting is only half the story. Marx's most well known quote
-that "philosophers have hitherto only interpreted the world in various
-ways; the point is to change it". Indeed, once we have a forecast
+But forecasting is only half the story---if indeed "[ecologists] have hitherto only interpreted the world in various ways; the point is to change it", then once we have a forecast
 about how an ecosystem will change in the future, what if this
 forecast predicts a critical ecosystem service will deteriorate? We
 are still left with the question, what do we in the time being to
@@ -119,30 +117,24 @@ to forecasts to mitigation strategy (@fig:thesis, right).
 
 # Chapter One: Forecasting the spatial uncoupling of a plant-pollinator network
 
-Plants and pollinators form interaction networks, called the
-"architecture of biodiversity" [@Jordano2007].
+Interactions between plants and pollinators form networks of interactions, which 
+structure the "architecture of biodiversity" [@Jordano2007].
+The persistence, functioning, and stability of ecosystems emerge from these
+interactions, but antropogenic change threatens to unravel and "rewire" these networks [@CaraDonna2017IntRew].
+Plant-pollinator networks face two possible forms of rewiring in response to
+anthropogenic environmental change: spatial and temporal.  
+Spatially, range shifts could cause interacting species to no longer overlap
+in space, and shifts in phenology could cause interacting species to no longer
+overlap in time.
 
-The stability, function, and persistance of ecosystems relies on the
-structure of these interactions. Antropogenic change threatens to
-unravel these networks. Two aspects to this change: spatial and
-temporal.  Spatially, range shifts along elevational gradient, and
-temporall, phenological shifts.
+This chapter uses several years of data on bumblebee-flower phenology and
+interactions across several field site, each consisting of several plots 
+across an elevational gradient, combined with spatial records of species occurrence via GBIF to forecast this uncoupling. 
 
-The issue is that we don't really know what interactions are like now.
-So not only do we need to predict with data that is spatially and
-temporally sparse and likely to contain many interaction
-"false-negatives" [@Strydom2021RoaPre].
 
-This chapter uses several years of data on bee-flower phenology and
-interactions, combined with spatial records of species occurrence via
-GBIF, to forecast how much overlap there will be between
-plants/pollinators in space/time.
+Addresses the EBV to forecast of EBV
+element of the flow from data to mitigation in @fig:thesis.
 
-In stages, (1) take data from multiple sites to predict a spatial
-metaweb of _Bombus_-flower interactions across Colorado. (2) Predict
-how these spatial distributions will change under CMIP6. and (3)
-quantify the lack of overlap between species for which there is a
-predicted
 
 ![chapter one concept fig](./figures/ch1.png)
 
@@ -154,67 +146,86 @@ split into three categories. (1) Field data from three different
 locations across Colorado. All field sites have multiple plots
 across an elevational gradient.
 
-
-
-
 System description: lots of data on _Bombus_ (bumblebees) and
 wildflowers. Three different sites, (7/7/3) years each, each covering
 an elevational gradient.
 
 ## Methods
 
-Split the process into parts.
+The issue is that we don't really know what interactions are like now.
+So we also need to predict interactions as they exist _in the present_
+as the data we have and temporally sparse and likely to contain many interaction
+"false-negatives" [@Strydom2021RoaPre].
 
-1) Building an interaction prediction model. 2) Make it spatial based
-on distributions. 3) Forecast distributions based on CMIP6.
+
+In stages, (1) take data from multiple sites to predict a spatial
+metaweb of _Bombus_-flower interactions across Colorado. (2) Predict
+how these spatial distributions will change under CMIP6. and (3)
+quantify the lack of overlap between species for which there is a
+predicted
+
+
+The process of going from data to forecast can be split into the following parts
+
+1) Building an interaction prediction model (or rather a set of candidate models, 
+relative abundance, phylo embedding relative abundance + phylo embedding) a la 
+[@Gravel2019BriElt, @Strydom2021RoaPre]
+
+Reconstructing latent features for each species based on simulating
+trait evolution on a phylogeny [@Strydom2021FooWeb]. 
+
+2) Make it spatial based
+on distributions. 
+
+
+3) Forecast distributions based on CMIP6
 
 
 
 ## Preliminary Results
 
-1) we got a tree
+1) we got a tree and SDMs 
 
 Transition to next chapter by discussing uncertainty in interaction
 prediction across space.
 
 # Chapter Two: Optimizing spatial sampling of species interactions
 
-There are false-negatives in interation data. Co-occurrence is not the
-same thing as interaction [@cite], but often is used as a proxy.
-
-This chapter unravels the relationship between a given species
-relative abundance and the sampling effort needed to adequately
-understand this species distribution and interactions.
-
-There is more than one way to observe a false-negative.
-
-![taxonomy of false negatives](./figures/ch2.png)
+This chapter uses simulation models to investigate the relationship
+between species relative abundance, sampling effort, and probability
+of accurately detecting an interaction between species, and further 
+proposes a method for optimizing the spatial sampling locations to 
+maximize the probability of detecting an interaction between two
+species given their distributions. This addresses the optimization of monitoring network part of the  flow from data to mitigation in @fig:thesis. 
 
 
-It begins with a conceptual framework for understanding the difference in
-false-negatives in occurrence, co-occurrence, and interactions (fig. 3).
-We use a null model of the relative-abundance distribution [@Hubbell2001UniNeu] to
-simulate realized false-negatives as a function of varying sampling effort.
+As explored in the previous chapter, there are false-negatives in interation 
+data. There is more than one way to observe a false-negative when sampling
+interactions: (@fig:fnrtaxonomy). It begins with a conceptual framework for understanding the difference in
+false-negatives in occurrence, co-occurrence, and interactions.
+Co-occurrence is not the same thing as interaction [@Blanchet2020CooNot], 
+but often is used as a proxy.
 
+![taxonomy of false negatives](./figures/ch2.png){#fig:fnrtaxonomy}
+
+
+We use a log-normal distribution as a null model of the relative-abundance distribution [@Hubbell2001UniNeu] to
+simulate realized false-negative rate as a function of varying sampling effort.
 
 This also goes on to includes testing some assumptions of the model with
-empirical data @fig:posassoc. which indicate our neutral model, if
+empirical data @fig:posassoc, which we analytically show that our neutral model, if
 anything, underestimates the probability of false-negatives due to positive
 correlations in co-occurrence in two spatially replicated networks
 [@Hadfield2014TalTwo; @Thompson2000ResSol]---further I'm planning to add the
-field data from chapter one into this anlysis once complete.
+field data from the previous chapter into this anlysis once available.
 
 ![f](./figures/positiveassociations.png){#fig:posassoc}
 
-new addition:
-- simulate species distribution and efficacy of detection given a set
-  of observation points where the dist from observation site decays.
-  optimize set of repeated sampling locations L for a _known_
-  distribution D. address SDM not being the territory
-
-## Results
-
-- nonrandom association figure sampling effort under neutral model
+Finally this chapter proposes a simulated annealing method to 
+optimize the efficacy of interactoin detection given a set
+of observation points where the dist from observation site decays.
+optimize set of repeated sampling locations L for a pair of species 
+_known_ distributions $D_a, D_b$.
 
 
 # Chapter Three: Optimizing corridor placement against ecological dynamics
@@ -229,9 +240,11 @@ locations have been developed, but are limited in that are not developed around
 promoting some element of ecosystem function, but instead by trying to find the
 path of least resistance given a resistance surface [@Peterman2018ResRP].
 
-This chapter proposes a general algorithm for optimizing corridor placement
-based on a measurement of ecosystem functioning derived from simulations run on
-a proposed landscape modification. We propose various landscape modifications
+This chapter proposes a general algorithm for choosing corridor placement to optimize a measurement of ecosystem functioning derived from simulations run on
+each proposed landscape modification. 
+
+
+We propose various landscape modifications
 which alter the cover of a landscape, represented as a raster
 (fig. 6, left). We then compute a new resistance surface based on
 the proposed landscape modification, and based on the values of resistance to
@@ -242,18 +255,27 @@ distribution of time until extinction for each landscape modification
 
 ## Methods
 
-- land cover -> resistance -> extinction time simulated annealing to
+- land cover -> resistance -> extinction time
+
+- brief overview of simulated annealing
+- describe how you build the proposal function 
 - optimize landscape optimization
 
-# CH4 a software note on the resulting packages.
+# Chapter Four: MetacommunityDynamics.jl: a virtual laboratory for community ecology
 
-(MetacommunityDynamics.jl: a virtual laboratory for community
-ecology): a collection of modules in the Julia language for different
-aspects of metacommunity ecology, including most of the code used for
-the preceding chapters.
+This chapter consists of a collection of modules in the Julia language for 
+different aspects of community ecology, including most of the code used for
+the preceding chapters. 
 
+Indeed `MetacommunityDynamics.jl` is the center of this, but due to the nature 
+of the Julia language, it is interoperable with serveral existing packages.
 
-![todo](./figures/ch4.png)
+`EcoJulia` organization, including several which I have contributed to enable
+interoperability with MCD.jl. 
+
+A diagram showing the relation between these packages is shown in @fig:software. 
+
+![todo](./figures/ch4.png){#fig:software}
 
 
 # Conclusion
@@ -262,5 +284,7 @@ the preceding chapters.
 # Appendix
 
 ![trees](./figures/trees.png)
+
+
 
 # References
