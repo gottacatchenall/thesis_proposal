@@ -366,23 +366,28 @@ there is a predicted interaction.
 \hypertarget{preliminary-results}{%
 \subsection{Preliminary Results}\label{preliminary-results}}
 
-We have phylogenies and species distributions models.
+Here we show the in-progress work on the prerequisites for the analysis
+outlined above: phylogenies for both plant and bee species
+(fig.~\ref{fig:phylo}) and species distribution models for all species
+(an example shown in fig.~\ref{fig:example_sdm}).
 
 \begin{figure}
+\hypertarget{fig:phylo}{%
 \centering
 \includegraphics{./figures/trees.png}
 \caption{Phylogeny for both bumblebee species (left) and flower species
-(right)}
+(right)}\label{fig:phylo}
+}
 \end{figure}
 
 \begin{figure}
+\hypertarget{fig:example_sdm}{%
 \centering
 \includegraphics{./figures/sample_sdm.png}
-\caption{Example SDM for \emph{Archillea millefolium}}
+\caption{Example SDM for \emph{Archillea
+millefolium}}\label{fig:example_sdm}
+}
 \end{figure}
-
-Transition to next chapter by discussing uncertainty in interaction
-prediction across space.
 
 \hypertarget{chapter-two-optimizing-spatial-sampling-of-species-interactions}{%
 \section{Chapter Two: Optimizing spatial sampling of species
@@ -395,13 +400,12 @@ proposes a method for optimizing the spatial sampling locations to
 maximize the probability of detecting an interaction between two species
 given their distributions. This addresses the optimization of monitoring
 network part of the flow from data to mitigation at the top of
-fig.~\ref{fig:thesis}, left.
+fig.~\ref{fig:thesis}, left. As explored in the previous chapter, there
+are false-negatives in interaction data. However, there is more than one
+way to observe a false-negative when sampling interactions.
+fig.~\ref{fig:fnrtaxonomy} shows a taxonomy of false-negatives in
+occurrence, co-occurrence, and interaction data.
 
-As explored in the previous chapter, there are false-negatives in
-interaction data. However, there is more than one way to observe a
-false-negative when sampling interactions (fig.~\ref{fig:fnrtaxonomy}).
-It begins with a conceptual framework for understanding the difference
-in false-negatives in occurrence, co-occurrence, and interactions.
 Co-occurrence is not the same thing as interaction (Blanchet \emph{et
 al.} 2020), but often is used as a proxy.
 
@@ -414,38 +418,43 @@ negatives in data}\label{fig:fnrtaxonomy}
 }
 \end{figure}
 
-We use a log-normal distribution as a null model of the
-relative-abundance distribution (Hubbell 2001) and then simulate
-realized false-negative rate as a function of varying sampling effort.
+The first result is using a log-normal distribution of relative
+abundance (Hubbell 2001) to compute a null expectation of the number of
+total observations of individuals of \emph{any species} by simulating
+the process of observation on food-webs generated using the niche model
+(\textbf{williamsmart?}) with connectance parameterized by the
+flexible-links model (\textbf{cite?}). An example of this relation for
+networks with varying spceies richness is shown in fig.~\ref{fig:fnr}.
 
 \begin{figure}
+\hypertarget{fig:fnr}{%
 \centering
 \includegraphics{./figures/ch2_fnr.png}
-\caption{foo}
+\caption{foo}\label{fig:fnr}
+}
 \end{figure}
 
-This also goes on to includes testing some assumptions of the model with
-empirical data fig.~\ref{fig:posassoc}, which we analytically show that
-our neutral model, if anything, underestimates the probability of
-false-negatives due to positive correlations in co-occurrence in two
-sets of spatially replicated samples of interaction networks (Thompson
-\& Townsend 2000; Hadfield \emph{et al.} 2014)---further I'm planning to
-add the field data from the previous chapter into this anlysis once
-available.
+We then go on to testing some assumptions of this neutral model with
+empirical data. Primarily that we analytically show that our neutral
+model, if anything, underestimates the probability of false-negatives if
+there are positive associations between species co-occurrence, which we
+show exist in two sets of spatially replicated samples of interaction
+networks (Thompson \& Townsend 2000; Hadfield \emph{et al.} 2014),
+fig.~\ref{fig:posassoc}---further I'm planning to add the field data
+from the previous chapter into this analysis once available.
 
 \begin{figure}
 \hypertarget{fig:posassoc}{%
 \centering
 \includegraphics{./figures/positiveassociations.png}
-\caption{f}\label{fig:posassoc}
+\caption{Demonstrates positive associations in
+co-occurrence}\label{fig:posassoc}
 }
 \end{figure}
 
 Finally this chapter proposes a simulated annealing method to optimize
-the efficacy of interaction detection given a set of observation points
-where the dist from observation site decays. optimize set of repeated
-sampling locations L for a pair of species \emph{known} distributions
-\(D_a, D_b\).
+the efficacy of interaction detection given a set of observation
+locations for a pair of species \emph{known} distributions \(D_a, D_b\).
 
 \hypertarget{chapter-three-optimizing-corridor-placement-against-ecological-dynamics}{%
 \section{Chapter Three: Optimizing corridor placement against ecological

@@ -1355,6 +1355,8 @@ INPUT ./figures/ch1.png
 INPUT ./figures/ch1.png
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-bold.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /opt/texlive/texdir/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
 INPUT ./figures/trees.png
 INPUT ./figures/trees.png
 INPUT ./figures/trees.png
@@ -1366,8 +1368,6 @@ INPUT ./figures/sample_sdm.png
 INPUT ./figures/sample_sdm.png
 INPUT ./figures/sample_sdm.png
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-italic.tfm
-INPUT /opt/texlive/texdir/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
-INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
 INPUT ./figures/ch2.png
 INPUT ./figures/ch2.png
 INPUT ./figures/ch2.png
