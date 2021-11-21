@@ -105,20 +105,20 @@ from a monitoring network to forecasts to mitigation strategy
 
 Interactions between plants and pollinators create networks of
 interactions, which together form the "architecture of biodiversity"
-[@Bascompte2007PlaMut]. The functioning and stability of ecosystems emerge
-from these interactions, but anthropogenic change threatens to unravel
-and "rewire" these interaction networks [@CaraDonna2017IntRew],
-threatening the persistence of these systems. Plant-pollinator
-networks face two possible forms of rewiring in response to
-anthropogenic environmental change: spatial and temporal. Spatially,
-range shifts could cause interacting species to no longer overlap in
-space, and shifts in phenology could cause interacting species to no
-longer occur at the same time of year. This chapter uses several years
-of data on bumblebee-flower phenology and interactions across several
-field sites, each consisting of several plots across an elevational
-gradient, combined with spatial records of species occurrence via GBIF
-to forecast this uncoupling. This addresses the EBV to forecast
-element of the flow from data to mitigation in @fig:thesis (left).
+[@Bascompte2007PlaMut]. The functioning and stability of ecosystems
+emerge from these interactions, but anthropogenic change threatens to
+unravel and "rewire" these interaction networks
+[@CaraDonna2017IntRew], threatening the persistence of these systems.
+Plant-pollinator networks face two possible forms of rewiring in
+response to anthropogenic environmental change: spatial and temporal.
+Spatially, range shifts could cause interacting species to no longer
+overlap in space, and shifts in phenology could cause interacting
+species to no longer occur at the same time of year. This chapter uses
+several years of data on bumblebee-flower phenology and interactions
+across several field sites, each consisting of several plots across an
+elevational gradient, combined with spatial records of species
+occurrence via GBIF to forecast the uncoupling of the plant-pollinator
+metaweb of Colorado.
 
 ![Chapter One conceptual figure. Left: the sources of data and
 how they can be synthesized. Right: The flow from data to interaction
@@ -170,12 +170,12 @@ example shown in @fig:example_sdm).
 
 This chapter uses simulation models to investigate the relationship
 between species relative abundance, sampling effort, and probability
-of accurately detecting an interaction between species, and further
-proposes a method for optimizing the spatial sampling locations to
-maximize the probability of detecting an interaction between two
-species given their distributions. This addresses the optimization of
-monitoring network part of the flow from data to mitigation at the top
-of @fig:thesis, left. As explored in the previous chapter, there are
+of observing an interaction between species, and further proposes a
+method for optimizing the spatial sampling locations to maximize the
+probability of detecting an interaction between two species given
+their distributions. This addresses the optimization of monitoring
+network part of the flow from data to mitigation at the top of
+@fig:thesis, left. As explored in the previous chapter, there are
 false-negatives in interaction data. However, there is more than one
 way to observe a false-negative when sampling interactions.
 @fig:fnrtaxonomy shows a taxonomy of false-negatives in occurrence,
@@ -186,30 +186,33 @@ Co-occurrence is not the same thing as interaction
 
 ![A taxonomy of occurrence, co-occurrence, and interaction false negatives in data](./figures/ch2.png){#fig:fnrtaxonomy}
 
-The first result is using a log-normal distribution of relative
-abundance [@Hubbell2001UniNeu] to compute a null expectation of the
-number of total observations of individuals of _any species_ by
+The first result is to compute a null expectation of the probability
+of an interaction false-negative as a function number of total
+observations of individuals of _any species_. This is done by  using a
+log-normal distribution of relative abundance [@Hubbell2001UniNeu] and
 simulating the process of observation on food-webs generated using the
-niche model [@Williams2000SimRul] with connectance parameterized by the
-flexible-links model [@MacDonald2020RevLin]. An example of this relation for networks
-with varying spceies richness is shown in @fig:fnr.
+niche model [@Williams2000SimRul] with connectance parameterized by
+the flexible-links model [@MacDonald2020RevLin]. An example of this
+relation for networks with varying spceies richness is shown in
+@fig:fnr.
 
 ![foo](./figures/ch2_fnr.png){#fig:fnr}
 
 We then go on to testing some assumptions of this neutral model with
 empirical data. Primarily that we analytically show that our neutral
 model, if anything, underestimates the probability of false-negatives
-if there are positive associations between species co-occurrence,
-which we show exist in two sets of spatially replicated samples of
-interaction networks [@Hadfield2014TalTwo; @Thompson2000ResSol;
-@fig:posassoc]---further I'm planning to add the field data from the
-previous chapter into this analysis once available.
+if there are positive associations between species co-occurrence, and
+we show these positive associations exist in two sets of spatially
+replicated samples of interaction networks [@Hadfield2014TalTwo;
+@Thompson2000ResSol; @fig:posassoc]---further I'm planning to add the
+field data from the previous chapter into this analysis once
+available.
 
 ![Demonstrates positive associations in co-occurrence](./figures/positiveassociations.png){#fig:posassoc}
 
 Finally this chapter proposes a simulated annealing method to optimize
-the efficacy of interaction detection given a set of observation
-locations for a pair of species _known_ distributions $D_a, D_b$.
+the a set of $n$ points in space to maximize the probability of detecting
+an interaction between two species $a$ and $b$ with _known_ distributions $D_a$, $D_b$.
 
 
 # Chapter Three: Optimizing corridor placement against ecological dynamics
@@ -231,30 +234,35 @@ choosing corridor placement to optimize a measurement of ecosystem
 functioning derived from simulations run on each proposed landscape
 modification.
 
-![fig](./figures/ch3.png){#fig:ch3}
-
+![foo](./figures/ch3.png){#fig:ch3}
 
 ## Methods
 
 We propose various landscape modifications which alter the cover of a
 landscape, represented as a raster. We then compute a new resistance
-surface based on the proposed landscape modification, and based on the
-values of resistance to dispersal between each location we simulate
-spatially-explicit metapopulation dynamics model
-[@Ovaskainen2002MetMod; @Hanski2000MetCap] to estimate a distribution
-of time until extinction for each landscape modification.
+surface based on the proposed landscape modification using
+Circuitscape [@McRae2008UsiCir], and based on the values of resistance
+to dispersal between pair of locations we simulate spatially-explicit
+metapopulation dynamics model [@Ovaskainen2002MetMod;
+@Hanski2000MetCap] to estimate a distribution of time until extinction
+for each landscape modification. The largest challenge in implementing
+this algorithm is the space of potential modifications grows as
+$O(nm)$ for an $n$ by $m$ raster. For most actual landscapes to which
+we wish to apply this method, the set of possible modifications becomes
+uncomputably large, so we use simulated annealing to explore the
+search space of possible modifications to estimate the modification
+that maximizes the time-until extinction of simulated metapopulation
+dynamics under that hypothetical modified landscape.
 
-We then use simulated annealing to explore the search space of
-possible modifications to estimate the modification that maximizes the
-time-until extinction of simulated metapopulation dynamics under that
-hypothetical modified landscape.
-
-- brief overview of simulated annealing describe how you build the
-- proposal function optimize landscape optimization
+The biggest challenge in implementing simulated annealing in this
+context is defining a proposal function for landscape modifications.
+This is done by computing the minimum-spanning-tree (MST) of the
+spatial nodes, and then proposing corridors that connect nodes that
+are already connected in the MST.
 
 # Chapter Four: MetacommunityDynamics.jl: a virtual laboratory for community ecology
 
-This chapter consists of a collection of modules in the Julia language
+The final chapter consists of a collection of modules in the Julia language
 for different aspects of community ecology, including most of the code
 used for the preceding chapters. Indeed `MetacommunityDynamics.jl`
 (MCD.jl) is the epicenter of this set of tools, but due to the nature
@@ -265,8 +273,9 @@ packages is shown in @fig:software.
 
 ![The structure of the software libraries used as part of MCD.jl](./figures/ch4.png){#fig:software}
 
-
 # Conclusion
+
+
 
 
 
