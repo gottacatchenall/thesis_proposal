@@ -157,7 +157,7 @@ predicted interaction.
 
 ## Preliminary Results
 
-We have phylogenies and species distributions models. 
+We have phylogenies and species distributions models.
 
 ![Phylogeny for both bumblebee species (left) and flower species (right)](./figures/trees.png)
 
@@ -190,6 +190,9 @@ Co-occurrence is not the same thing as interaction
 We use a log-normal distribution as a null model of the
 relative-abundance distribution [@Hubbell2001UniNeu] and then simulate
 realized false-negative rate as a function of varying sampling effort.
+
+
+![foo](./figures/ch2_fnr.png)
 
 This also goes on to includes testing some assumptions of the model
 with empirical data @fig:posassoc, which we analytically show that our
