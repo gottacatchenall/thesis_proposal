@@ -69,7 +69,7 @@ co-occurrence}\label{fig:posassoc}
 \hypertarget{fig:ch3}{%
 \centering
 \includegraphics{./figures/ch3.png}
-\caption{fig}\label{fig:ch3}
+\caption{foo}\label{fig:ch3}
 }
 \end{figure}
 \efloatseparator
