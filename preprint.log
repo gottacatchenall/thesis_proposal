@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  21 NOV 2021 18:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  21 NOV 2021 18:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1272,38 +1272,38 @@ rence, co-
 <./figures/ch2_fnr.png, id=98, 1806.75pt x 1204.5pt>
 File: ./figures/ch2_fnr.png Graphic file (type png)
 <use ./figures/ch2_fnr.png>
-Package pdftex.def Info: ./figures/ch2_fnr.png  used on input line 480.
+Package pdftex.def Info: ./figures/ch2_fnr.png  used on input line 481.
 (pdftex.def)             Requested size: 386.67299pt x 257.7678pt.
 [4 <./figures/trees.png>] [5 <./figures/sample_sdm.png> <./figures/ch2.png>]
 <./figures/positiveassociations.png, id=116, 2409.0pt x 2409.0pt>
 File: ./figures/positiveassociations.png Graphic file (type png)
 <use ./figures/positiveassociations.png>
 Package pdftex.def Info: ./figures/positiveassociations.png  used on input line
- 498.
+ 499.
 (pdftex.def)             Requested size: 386.67299pt x 386.6609pt.
 <./figures/ch3.png, id=117, 2099.845pt x 1161.84062pt>
 File: ./figures/ch3.png Graphic file (type png)
 <use ./figures/ch3.png>
-Package pdftex.def Info: ./figures/ch3.png  used on input line 530.
+Package pdftex.def Info: ./figures/ch3.png  used on input line 531.
 (pdftex.def)             Requested size: 386.67299pt x 213.94437pt.
 
 [6 <./figures/ch2_fnr.png>] [7 <./figures/positiveassociations.png> <./figures/
 ch3.png>]
 LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line
- 552.
+ 553.
  (/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 56
-5.
+6.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 565.
+(Font)              scaled to size 9.0pt on input line 566.
 
-Overfull \hbox (1.38481pt too wide) in paragraph at lines 562--571
+Overfull \hbox (1.38481pt too wide) in paragraph at lines 563--572
 \T1/stix2/m/n/9 ecol-ogy, in-clud-ing most of the code used for the pre-ced-ing
  chap-ters. In-deed \T1/zi4/m/n/9 MetacommunityDynamics.jl
  []
@@ -1311,7 +1311,7 @@ Overfull \hbox (1.38481pt too wide) in paragraph at lines 562--571
 <./figures/ch4.png, id=137, 1346.53062pt x 933.98938pt>
 File: ./figures/ch4.png Graphic file (type png)
 <use ./figures/ch4.png>
-Package pdftex.def Info: ./figures/ch4.png  used on input line 578.
+Package pdftex.def Info: ./figures/ch4.png  used on input line 579.
 (pdftex.def)             Requested size: 386.67299pt x 268.1992pt.
 [8 <./figures/ch4.png>] 
 AED: lastpage setting LastPage
@@ -1319,14 +1319,14 @@ AED: lastpage setting LastPage
 nen2002MetMod}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.707 \end{document}
+l.716 \end{document}
                     ] (./preprint.aux)
 Package rerunfilecheck Info: File `preprint.out' has not changed.
 (rerunfilecheck)             Checksum: 558C451A77B199CDAB3261E41ACDFCE1;2447.
  ) 
 Here is how much of TeX's memory you used:
- 29917 strings out of 478579
- 527526 string characters out of 5855461
+ 29919 strings out of 478579
+ 527571 string characters out of 5855461
  836697 words of memory out of 5000000
  47203 multiletter control sequences out of 15000+600000
  544277 words of font info for 138 fonts, out of 8000000 for 9000
@@ -1348,10 +1348,10 @@ fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/texdir/texmf
 -dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texmf-dist/fo
 nts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/u
 rw/helvetic/uhvr8a.pfb>
-Output written on preprint.pdf (9 pages, 5563245 bytes).
+Output written on preprint.pdf (9 pages, 5562014 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 199 compressed objects within 2 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
