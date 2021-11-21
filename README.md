@@ -157,14 +157,14 @@ predicted interaction.
 
 ## Preliminary Results
 
-We have phylogenies and species distributions models.
+Here we show the in-progress work on the prerequisites for the
+analysis outlined above: phylogenies for both plant and bee species
+(@fig:phylo) and species distribution models for all species (an
+example shown in @fig:example_sdm).
 
-![Phylogeny for both bumblebee species (left) and flower species (right)](./figures/trees.png)
+![Phylogeny for both bumblebee species (left) and flower species (right)](./figures/trees.png){#fig:phylo}
 
-![Example SDM for _Archillea millefolium_](./figures/sample_sdm.png)
-
-Transition to next chapter by discussing uncertainty in interaction
-prediction across space.
+![Example SDM for _Archillea millefolium_](./figures/sample_sdm.png){#fig:example_sdm}
 
 # Chapter Two: Optimizing spatial sampling of species interactions
 
@@ -175,41 +175,41 @@ proposes a method for optimizing the spatial sampling locations to
 maximize the probability of detecting an interaction between two
 species given their distributions. This addresses the optimization of
 monitoring network part of the flow from data to mitigation at the top
-of @fig:thesis, left.
+of @fig:thesis, left. As explored in the previous chapter, there are
+false-negatives in interaction data. However, there is more than one
+way to observe a false-negative when sampling interactions.
+@fig:fnrtaxonomy shows a taxonomy of false-negatives in occurrence,
+co-occurrence, and interaction data.
 
-As explored in the previous chapter, there are false-negatives in
-interaction data. However, there is more than one way to observe a
-false-negative when sampling interactions (@fig:fnrtaxonomy). It
-begins with a conceptual framework for understanding the difference in
-false-negatives in occurrence, co-occurrence, and interactions.
 Co-occurrence is not the same thing as interaction
 [@Blanchet2020CooNot], but often is used as a proxy.
 
 ![A taxonomy of occurrence, co-occurrence, and interaction false negatives in data](./figures/ch2.png){#fig:fnrtaxonomy}
 
-We use a log-normal distribution as a null model of the
-relative-abundance distribution [@Hubbell2001UniNeu] and then simulate
-realized false-negative rate as a function of varying sampling effort.
+The first result is using a log-normal distribution of relative
+abundance [@Hubbell2001UniNeu] to compute a null expectation of the
+number of total observations of individuals of _any species_ by
+simulating the process of observation on food-webs generated using the
+niche model [@williamsmart] with connectance parameterized by the
+flexible-links model [@cite]. An example of this relation for networks
+with varying spceies richness is shown in @fig:fnr.
 
+![foo](./figures/ch2_fnr.png){#fig:fnr}
 
-![foo](./figures/ch2_fnr.png)
+We then go on to testing some assumptions of this neutral model with
+empirical data. Primarily that we analytically show that our neutral
+model, if anything, underestimates the probability of false-negatives
+if there are positive associations between species co-occurrence,
+which we show exist in two sets of spatially replicated samples of
+interaction networks [@Hadfield2014TalTwo; @Thompson2000ResSol;
+@fig:posassoc]---further I'm planning to add the field data from the
+previous chapter into this analysis once available.
 
-This also goes on to includes testing some assumptions of the model
-with empirical data @fig:posassoc, which we analytically show that our
-neutral model, if anything, underestimates the probability of
-false-negatives due to positive correlations in co-occurrence in two
-sets of spatially replicated samples of interaction networks
-[@Hadfield2014TalTwo; @Thompson2000ResSol]---further I'm planning to
-add the field data from the previous chapter into this anlysis once
-available.
-
-![f](./figures/positiveassociations.png){#fig:posassoc}
+![Demonstrates positive associations in co-occurrence](./figures/positiveassociations.png){#fig:posassoc}
 
 Finally this chapter proposes a simulated annealing method to optimize
 the efficacy of interaction detection given a set of observation
-points where the dist from observation site decays. optimize set of
-repeated sampling locations L for a pair of species _known_
-distributions $D_a, D_b$.
+locations for a pair of species _known_ distributions $D_a, D_b$.
 
 
 # Chapter Three: Optimizing corridor placement against ecological dynamics
@@ -244,10 +244,10 @@ spatially-explicit metapopulation dynamics model
 [@Ovaskainen2002MetMod; @Hanski2000MetCap] to estimate a distribution
 of time until extinction for each landscape modification.
 
-We then use simulated annealing to explore the search space of possible
-modifications to estimate the modification that maximizes the time-until
-extinction of simulated metapopulation dynamics under that hypothetical
-modified landscape.
+We then use simulated annealing to explore the search space of
+possible modifications to estimate the modification that maximizes the
+time-until extinction of simulated metapopulation dynamics under that
+hypothetical modified landscape.
 
 - brief overview of simulated annealing describe how you build the
 - proposal function optimize landscape optimization
