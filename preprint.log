@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  21 NOV 2021 22:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  21 NOV 2021 22:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1208,13 +1208,6 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 10.25993pt on input line 241.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.25993pt on input line 241.
-
-Overfull \hbox (9.75026pt too wide) in paragraph at lines 266--286
-\T1/stix2/m/n/9 moment ba-sis (e.g. in the con-text of com-mu-ni-ties, $\LS1/st
-ix2/m/it/9 f$ \T1/stix2/m/n/9 could be Lotka-Voltera, Holling-Type-III or DeAng
-elis-
- []
-
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 7.12506pt on input line 323.
 LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
@@ -1341,7 +1334,7 @@ dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/texdir/
 texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texmf-di
 st/fonts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb>
-Output written on preprint.pdf (10 pages, 5562998 bytes).
+Output written on preprint.pdf (10 pages, 5563007 bytes).
 PDF statistics:
  246 PDF objects out of 1000 (max. 8388607)
  199 compressed objects within 2 object streams
