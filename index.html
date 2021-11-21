@@ -215,9 +215,13 @@
             <h2 id="methods">Methods</h2>
             <p>As the data we have is spatially sparse and likely to contain many interaction “false-negatives” <span class="citation" data-cites="Strydom2021RoaPre">(Strydom <em>et al.</em> 2021b)</span>, we begin by predicting a metaweb of interactions across Colorado as they exist <em>in the present</em>. We do this using a set of candidate interaction prediction models: relative abundance only, phylogenetic embedding only (a la <span class="citation" data-cites="Strydom2021FooWeb">Strydom <em>et al.</em> (2021a)</span>), niche embedding only <span class="citation" data-cites="Gravel2019BriElt">(Gravel <em>et al.</em> 2019)</span>, and all pairwise combinations of those constituent models. After validating each model and selecting the best performing model, we then predict how these distributions of each of these species will change under the CMIP6 consensus climate forecast [@], and then finally quantify the reduction in spatial between species for which there is a predicted interaction.</p>
             <h2 id="preliminary-results">Preliminary Results</h2>
-            <ol type="1">
-            <li>we got a tree and SDMs. See appendix figure.</li>
-            </ol>
+            <p>We have phylogenies and species distributions models.</p>
+            <figure>
+            <img src="./figures/trees.png" alt="Phylogeny for both bumblebee species (left) and flower species (right)" /><figcaption aria-hidden="true">Phylogeny for both bumblebee species (left) and flower species (right)</figcaption>
+            </figure>
+            <figure>
+            <img src="./figures/sample_sdm.png" alt="Example SDM for Archillea millefolium" /><figcaption aria-hidden="true">Example SDM for <em>Archillea millefolium</em></figcaption>
+            </figure>
             <p>Transition to next chapter by discussing uncertainty in interaction prediction across space.</p>
             <h1 id="chapter-two-optimizing-spatial-sampling-of-species-interactions">Chapter Two: Optimizing spatial sampling of species interactions</h1>
             <p>This chapter uses simulation models to investigate the relationship between species relative abundance, sampling effort, and probability of accurately detecting an interaction between species, and further proposes a method for optimizing the spatial sampling locations to maximize the probability of detecting an interaction between two species given their distributions. This addresses the optimization of monitoring network part of the flow from data to mitigation at the top of fig. 1, left.</p>
@@ -232,13 +236,13 @@
             </figure>
             <p>Finally this chapter proposes a simulated annealing method to optimize the efficacy of interaction detection given a set of observation points where the dist from observation site decays. optimize set of repeated sampling locations L for a pair of species <em>known</em> distributions <span class="math inline"><em>D</em><sub><em>a</em></sub>, <em>D</em><sub><em>b</em></sub></span>.</p>
             <h1 id="chapter-three-optimizing-corridor-placement-against-ecological-dynamics">Chapter Three: Optimizing corridor placement against ecological dynamics</h1>
-            <p>Promoting landscape connectivity is important to mitigate the effects of land-use change on Earth’s biodiversity. However, the practical realities of conservation mean that there is a limitation on how much we can modify landscapes in order to do this. So what is the best place to put a corridor given a constraint on how much surface-area you can change in a landscape? This is the question this chapter seeks to answer. Models for inferring corridor locations have been developed, but are limited in that are not developed around promoting some element of ecosystem function, but instead by trying to find the path of least resistance in an existing landscape from a derived resistance surface <span class="citation" data-cites="Peterman2018ResRP">(Peterman 2018)</span>.</p>
-            <p>This chapter proposes a general algorithm for choosing corridor placement to optimize a measurement of ecosystem functioning derived from simulations run on each proposed landscape modification.</p>
+            <p>As land-use change has caused many habitats to become fragmented and patchy, promoting landscape connectivity has become of significant interest to mitigate the effects of this change on Earth’s biodiversity. However, the practical realities of conservation mean that there is a limitation on how much we can modify landscapes in order to do this. So what is the best place to put a corridor given a constraint on how much surface-area you can change in a landscape? This is the question this chapter seeks to answer. Models for inferring corridor locations have been developed, but are limited in that are not developed around promoting some element of ecosystem function, but instead by trying to find the path of least resistance in an existing landscape from a derived resistance surface <span class="citation" data-cites="Peterman2018ResRP">(Peterman 2018)</span>. This chapter proposes a general algorithm for choosing corridor placement to optimize a measurement of ecosystem functioning derived from simulations run on each proposed landscape modification.</p>
             <figure>
             <img src="./figures/ch3.png" id="fig:ch3" alt="Figure 4: fig" /><figcaption aria-hidden="true">Figure 4: fig</figcaption>
             </figure>
             <h2 id="methods-1">Methods</h2>
             <p>We propose various landscape modifications which alter the cover of a landscape, represented as a raster. We then compute a new resistance surface based on the proposed landscape modification, and based on the values of resistance to dispersal between each location we simulate spatially-explicit metapopulation dynamics model <span class="citation" data-cites="Ovaskainen2002MetMod Hanski2000MetCap">(Hanski &amp; Ovaskainen 2000; Ovaskainen <em>et al.</em> 2002)</span> to estimate a distribution of time until extinction for each landscape modification.</p>
+            <p>We then use simulated annealing to explore the search space of possible modifications to estimate the modification that maximizes the time-until extinction of simulated metapopulation dynamics under that hypothetical modified landscape.</p>
             <ul>
             <li>brief overview of simulated annealing describe how you build the</li>
             <li>proposal function optimize landscape optimization</li>
@@ -249,10 +253,6 @@
             <img src="./figures/ch4.png" id="fig:software" alt="Figure 5: The structure of the software libraries used as part of MCD.jl" /><figcaption aria-hidden="true">Figure 5: The structure of the software libraries used as part of MCD.jl</figcaption>
             </figure>
             <h1 id="conclusion">Conclusion</h1>
-            <h1 id="appendix">Appendix</h1>
-            <figure>
-            <img src="./figures/trees.png" alt="trees" /><figcaption aria-hidden="true">trees</figcaption>
-            </figure>
             <h1 class="unnumbered" id="references">References</h1>
             <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
             <div id="ref-Bascompte2007PlaMut" class="csl-entry" role="doc-biblioentry">

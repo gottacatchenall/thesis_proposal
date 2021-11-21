@@ -17,6 +17,21 @@ prediction using a few different interaction prediction models.}
 \efloatseparator
  
 \begin{figure}
+\centering
+\includegraphics{./figures/trees.png}
+\caption{Phylogeny for both bumblebee species (left) and flower species
+(right)}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
+\includegraphics{./figures/sample_sdm.png}
+\caption{Example SDM for \emph{Archillea millefolium}}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
 \hypertarget{fig:fnrtaxonomy}{%
 \centering
 \includegraphics{./figures/ch2.png}
@@ -51,11 +66,4 @@ negatives in data}\label{fig:fnrtaxonomy}
 \caption{The structure of the software libraries used as part of
 MCD.jl}\label{fig:software}
 }
-\end{figure}
-\efloatseparator
- 
-\begin{figure}
-\centering
-\includegraphics{./figures/trees.png}
-\caption{trees}
 \end{figure}
