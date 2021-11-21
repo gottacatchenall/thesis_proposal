@@ -1168,6 +1168,60 @@
         "volume": "183"
     },
     {
+        "DOI": "10.1111/ele.12740",
+        "author": [
+            {
+                "family": "CaraDonna",
+                "given": "Paul J."
+            },
+            {
+                "family": "Petry",
+                "given": "William K."
+            },
+            {
+                "family": "Brennan",
+                "given": "Ross M."
+            },
+            {
+                "family": "Cunningham",
+                "given": "James L."
+            },
+            {
+                "family": "Bronstein",
+                "given": "Judith L."
+            },
+            {
+                "family": "Waser",
+                "given": "Nickolas M."
+            },
+            {
+                "family": "Sanders",
+                "given": "Nathan J."
+            }
+        ],
+        "container-title": "Ecology Letters",
+        "editor": [
+            {
+                "family": "Jordan",
+                "given": "Ferenc"
+            }
+        ],
+        "id": "CaraDonna2017IntRew",
+        "issue": "3",
+        "issued": {
+            "date-parts": [
+                [
+                    2017,
+                    3
+                ]
+            ]
+        },
+        "page": "385-394",
+        "title": "Interaction rewiring and the rapid turnover of plantpollinator networks",
+        "type": "article-journal",
+        "volume": "20"
+    },
+    {
         "DOI": "10.1098/rspb.2020.1841",
         "author": [
             {
@@ -2838,6 +2892,70 @@
         "title": "Inferring food web structure from predatorprey body size relationships",
         "type": "article-journal",
         "volume": "4"
+    },
+    {
+        "DOI": "10.1111/ecog.04006",
+        "author": [
+            {
+                "family": "Gravel",
+                "given": "Dominique"
+            },
+            {
+                "family": "Baiser",
+                "given": "Benjamin"
+            },
+            {
+                "family": "Dunne",
+                "given": "Jennifer A."
+            },
+            {
+                "family": "Kopelke",
+                "given": "Jens-Peter"
+            },
+            {
+                "family": "Martinez",
+                "given": "Neo D."
+            },
+            {
+                "family": "Nyman",
+                "given": "Tommi"
+            },
+            {
+                "family": "Poisot",
+                "given": "Timoth\u00e9e"
+            },
+            {
+                "family": "Stouffer",
+                "given": "Daniel B."
+            },
+            {
+                "family": "Tylianakis",
+                "given": "Jason M."
+            },
+            {
+                "family": "Wood",
+                "given": "Spencer A."
+            },
+            {
+                "family": "Roslin",
+                "given": "Tomas"
+            }
+        ],
+        "container-title": "Ecography",
+        "id": "Gravel2019BriElt",
+        "issue": "3",
+        "issued": {
+            "date-parts": [
+                [
+                    2019
+                ]
+            ]
+        },
+        "keyword": "co-occurrence,networks,spatial ecology",
+        "page": "401-415",
+        "title": "Bringing Elton and Grinnell together: A quantitative framework to represent the biogeography of ecological interaction networks",
+        "type": "article-journal",
+        "volume": "42"
     },
     {
         "DOI": "10.1046/j.1365-2656.1998.00244.x",
@@ -5598,6 +5716,12 @@
         "volume": "9"
     },
     {
+        "id": "PheShi",
+        "publisher": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4ykrokoAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=4ykrokoAAAAJ:zYLM7Y9cAGgC",
+        "title": "\u202aPhenological shifts and the fate of mutualisms\u202c",
+        "type": ""
+    },
+    {
         "DOI": "10.1038/s41559-017-0101",
         "author": [
             {
@@ -6767,6 +6891,76 @@
         "title": "All ecological models are wrong, but some are useful",
         "type": "article-journal",
         "volume": "88"
+    },
+    {
+        "DOI": "10.32942/osf.io/y7sdz",
+        "author": [
+            {
+                "family": "Strydom",
+                "given": "Tanya"
+            },
+            {
+                "family": "Bouskila",
+                "given": "Salom\u00e9"
+            },
+            {
+                "family": "Banville",
+                "given": "Francis"
+            },
+            {
+                "family": "Barros",
+                "given": "Cerres"
+            },
+            {
+                "family": "Caron",
+                "given": "Dominique"
+            },
+            {
+                "family": "Farrell",
+                "given": "Maxwell J."
+            },
+            {
+                "family": "Fortin",
+                "given": "Marie-Jos\u00e9e"
+            },
+            {
+                "family": "Hemming",
+                "given": "Victoria"
+            },
+            {
+                "family": "Mercier",
+                "given": "Benjamin"
+            },
+            {
+                "family": "Pollock",
+                "given": "Laura"
+            },
+            {
+                "family": "Runghen",
+                "given": "Rogini"
+            },
+            {
+                "family": "Riva",
+                "given": "Giulio Valentino Dalla"
+            },
+            {
+                "family": "Poisot",
+                "given": "Timoth\u00e9e"
+            }
+        ],
+        "id": "Strydom2021FooWeb",
+        "issued": {
+            "date-parts": [
+                [
+                    2021,
+                    8
+                ]
+            ]
+        },
+        "keyword": "ancestral character estimation,Biodiversity,biogeography,ecological networks,Life Sciences,network embedding,transfer learning",
+        "publisher": "EcoEvoRxiv",
+        "title": "Food web reconstruction through phylogenetic transfer of low-rank network representation",
+        "type": ""
     },
     {
         "DOI": "10.32942/osf.io/eu7k3",

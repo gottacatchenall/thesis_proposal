@@ -309,10 +309,10 @@ Interactions between plants and pollinators form networks of
 interactions, which together create the ``architecture of biodiversity''
 (\textbf{Jordano2007?}). The functioning and stability of ecosystems
 emerge from these interactions, but anthropogenic change threatens to
-unravel and ``rewire'' these interaction networks
-(\textbf{CaraDonna2017IntRew?}), threatening the persistence of these
-systems. Plant-pollinator networks face two possible forms of rewiring
-in response to anthropogenic environmental change: spatial and temporal.
+unravel and ``rewire'' these interaction networks (CaraDonna \emph{et
+al.} 2017), threatening the persistence of these systems.
+Plant-pollinator networks face two possible forms of rewiring in
+response to anthropogenic environmental change: spatial and temporal.
 Spatially, range shifts could cause interacting species to no longer
 overlap in space, and shifts in phenology could cause interacting
 species to no longer occur at the same time of year. This chapter uses
@@ -351,17 +351,17 @@ flower species derived from NCBI GenBank barcodes for mitochondrial COI
 \subsection{Methods}\label{methods}}
 
 As the data we have is spatially sparse and likely to contain many
-interaction ``false-negatives'' (Strydom \emph{et al.} 2021), we begin
+interaction ``false-negatives'' (Strydom \emph{et al.} 2021b), we begin
 by predicting a metaweb of interactions across Colorado as they exist
 \emph{in the present}. We do this using a set of candidate interaction
 prediction models: relative abundance only, phylogenetic embedding only
-(a la (\textbf{Strydom2021FooWeb?})), niche embedding only
-(\textbf{Gravel2019BriElt?}), and all pairwise combinations of those
-constituent models. After validating each model and selecting the best
-performing model, we then predict how these distributions of each of
-these species will change under the CMIP6 consensus climate forecast
-{[}@{]}, and then finally quantify the reduction in spatial between
-species for which there is a predicted interaction.
+(a la Strydom \emph{et al.} (2021a)), niche embedding only (Gravel
+\emph{et al.} 2019), and all pairwise combinations of those constituent
+models. After validating each model and selecting the best performing
+model, we then predict how these distributions of each of these species
+will change under the CMIP6 consensus climate forecast {[}@{]}, and then
+finally quantify the reduction in spatial between species for which
+there is a predicted interaction.
 
 \hypertarget{preliminary-results}{%
 \subsection{Preliminary Results}\label{preliminary-results}}
@@ -370,11 +370,8 @@ species for which there is a predicted interaction.
 \def\labelenumi{\arabic{enumi})}
 \tightlist
 \item
-  we got a tree and SDMs
+  we got a tree and SDMs. See appendix figure.
 \end{enumerate}
-
-\hypertarget{next-steps}{%
-\subsection{Next steps}\label{next-steps}}
 
 Transition to next chapter by discussing uncertainty in interaction
 prediction across space.
@@ -394,7 +391,7 @@ fig.~\ref{fig:thesis}, left.
 
 As explored in the previous chapter, there are false-negatives in
 interaction data. However, there is more than one way to observe a
-false-negative when sampling interactions: (fig.~\ref{fig:fnrtaxonomy}).
+false-negative when sampling interactions (fig.~\ref{fig:fnrtaxonomy}).
 It begins with a conceptual framework for understanding the difference
 in false-negatives in occurrence, co-occurrence, and interactions.
 Co-occurrence is not the same thing as interaction (Blanchet \emph{et
@@ -431,7 +428,7 @@ available.
 \end{figure}
 
 Finally this chapter proposes a simulated annealing method to optimize
-the efficacy of interactoin detection given a set of observation points
+the efficacy of interaction detection given a set of observation points
 where the dist from observation site decays. optimize set of repeated
 sampling locations L for a pair of species \emph{known} distributions
 \(D_a, D_b\).
@@ -446,10 +443,11 @@ realities of conservation mean that there is a limitation on how much we
 can modify landscapes in order to do this. So what is the best place to
 put a corridor given a constraint on how much surface-area you can
 change in a landscape? This is the question this chapter seeks to
-answer. Models for proposing corridor locations have been developed, but
+answer. Models for inferring corridor locations have been developed, but
 are limited in that are not developed around promoting some element of
 ecosystem function, but instead by trying to find the path of least
-resistance given a resistance surface (Peterman 2018).
+resistance in an existing landscape from a derived resistance surface
+(Peterman 2018).
 
 This chapter proposes a general algorithm for choosing corridor
 placement to optimize a measurement of ecosystem functioning derived
@@ -537,6 +535,12 @@ Blanchet, F.G., Cazelles, K. \& Gravel, D. (2020). Co-occurrence is not
 evidence of ecological interactions. \emph{Ecology Letters}, 23,
 1050--1063.
 
+\leavevmode\hypertarget{ref-CaraDonna2017IntRew}{}%
+CaraDonna, P.J., Petry, W.K., Brennan, R.M., Cunningham, J.L.,
+Bronstein, J.L., Waser, N.M., \emph{et al.} (2017). Interaction rewiring
+and the rapid turnover of plantpollinator networks. \emph{Ecology
+Letters}, 20, 385--394.
+
 \leavevmode\hypertarget{ref-Chen2019RevCom}{}%
 Chen, Y., Angulo, M.T. \& Liu, Y.-Y. (2019). Revealing Complex
 Ecological Dynamics via Symbolic Regression. \emph{BioEssays}, 41,
@@ -545,6 +549,12 @@ Ecological Dynamics via Symbolic Regression. \emph{BioEssays}, 41,
 \leavevmode\hypertarget{ref-Dietze2017PreEco}{}%
 Dietze, M.C. (2017). Prediction in ecology: A first-principles
 framework. \emph{Ecological Applications}, 27, 2048--2060.
+
+\leavevmode\hypertarget{ref-Gravel2019BriElt}{}%
+Gravel, D., Baiser, B., Dunne, J.A., Kopelke, J.-P., Martinez, N.D.,
+Nyman, T., \emph{et al.} (2019). Bringing Elton and Grinnell together: A
+quantitative framework to represent the biogeography of ecological
+interaction networks. \emph{Ecography}, 42, 401--415.
 
 \leavevmode\hypertarget{ref-Hadfield2014TalTwo}{}%
 Hadfield, J.D., Krasnov, B.R., Poulin, R. \& Nakagawa, S. (2014). A Tale
@@ -601,9 +611,14 @@ Peterman, W.E. (2018). ResistanceGA: An R package for the optimization
 of resistance surfaces using genetic algorithms. \emph{Methods in
 Ecology and Evolution}, 9, 1638--1647.
 
+\leavevmode\hypertarget{ref-Strydom2021FooWeb}{}%
+Strydom, T., Bouskila, S., Banville, F., Barros, C., Caron, D., Farrell,
+M.J., \emph{et al.} (2021a). Food web reconstruction through
+phylogenetic transfer of low-rank network representation.
+
 \leavevmode\hypertarget{ref-Strydom2021RoaPre}{}%
 Strydom, T., Catchen, M.D., Banville, F., Caron, D., Dansereau, G.,
-Desjardins-Proulx, P., \emph{et al.} (2021). \emph{A Roadmap Toward
+Desjardins-Proulx, P., \emph{et al.} (2021b). \emph{A Roadmap Toward
 Predicting Species Interaction Networks (Across Space and Time)}
 (Preprint). EcoEvoRxiv.
 
