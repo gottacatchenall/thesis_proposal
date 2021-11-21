@@ -1593,6 +1593,12 @@
         "volume": "70"
     },
     {
+        "id": "CliHig",
+        "publisher": "https://www-nature-com.proxy3.library.mcgill.ca/articles/sdata2017122",
+        "title": "Climatologies at high resolution for the earth\u2019s land surface areas | Scientific Data",
+        "type": ""
+    },
+    {
         "DOI": "10.1371/journal.pone.0176751",
         "author": [
             {
@@ -3733,6 +3739,64 @@
         "title": "Neural hierarchical models of ecological populations",
         "type": "article-journal",
         "volume": "23"
+    },
+    {
+        "DOI": "10.1038/sdata.2017.122",
+        "author": [
+            {
+                "family": "Karger",
+                "given": "Dirk Nikolaus"
+            },
+            {
+                "family": "Conrad",
+                "given": "Olaf"
+            },
+            {
+                "family": "B\u00f6hner",
+                "given": "J\u00fcrgen"
+            },
+            {
+                "family": "Kawohl",
+                "given": "Tobias"
+            },
+            {
+                "family": "Kreft",
+                "given": "Holger"
+            },
+            {
+                "family": "Soria-Auza",
+                "given": "Rodrigo Wilber"
+            },
+            {
+                "family": "Zimmermann",
+                "given": "Niklaus E."
+            },
+            {
+                "family": "Linder",
+                "given": "H. Peter"
+            },
+            {
+                "family": "Kessler",
+                "given": "Michael"
+            }
+        ],
+        "container-title": "Scientific Data",
+        "id": "Karger2017CliHig",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2017,
+                    9
+                ]
+            ]
+        },
+        "keyword": "Atmospheric science,Biogeography,Hydrology",
+        "page": "170122",
+        "publisher": "Nature Publishing Group",
+        "title": "Climatologies at high resolution for the earth\u2019s land surface areas",
+        "type": "article-journal",
+        "volume": "4"
     },
     {
         "DOI": "10.1111/j.1461-0248.2008.01277.x",
