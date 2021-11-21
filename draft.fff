@@ -33,10 +33,20 @@
 \efloatseparator
  
 \begin{figure}
+\hypertarget{fig:ch3}{%
+\centering
+\includegraphics{./figures/ch3.png}
+\caption{fig}\label{fig:ch3}
+}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
 \hypertarget{fig:software}{%
 \centering
 \includegraphics{./figures/ch4.png}
-\caption{todo}\label{fig:software}
+\caption{The structure of the software libraries used as part of
+MCD.jl}\label{fig:software}
 }
 \end{figure}
 \efloatseparator

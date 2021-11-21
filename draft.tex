@@ -320,23 +320,22 @@ network}\label{chapter-one-forecasting-the-spatial-uncoupling-of-a-plant-pollina
 
 Interactions between plants and pollinators form networks of
 interactions, which structure the ``architecture of biodiversity''
-(\textbf{Jordano2007?}). The persistence, functioning, and stability of
-ecosystems emerge from these interactions, but antropogenic change
-threatens to unravel and ``rewire'' these networks
-(\textbf{CaraDonna2017IntRew?}). Plant-pollinator networks face two
-possible forms of rewiring in response to anthropogenic environmental
-change: spatial and temporal.\\
+(\textbf{Jordano2007?}). The functioning and stability of ecosystems
+emerge from these interactions, but antropogenic change threatens to
+unravel and ``rewire'' these networks (\textbf{CaraDonna2017IntRew?}),
+threating the persistence of these systems. Plant-pollinator networks
+face two possible forms of rewiring in response to anthropogenic
+environmental change: spatial and temporal.\\
 Spatially, range shifts could cause interacting species to no longer
 overlap in space, and shifts in phenology could cause interacting
 species to no longer overlap in time.
 
 This chapter uses several years of data on bumblebee-flower phenology
-and interactions across several field site, each consisting of several
+and interactions across several field sites, each consisting of several
 plots across an elevational gradient, combined with spatial records of
-species occurrence via GBIF to forecast this uncoupling.
-
-Addresses the EBV to forecast of EBV element of the flow from data to
-mitigation in fig.~\ref{fig:thesis}.
+species occurrence via GBIF to forecast this uncoupling. This addresses
+the EBV to forecast of EBV element of the flow from data to mitigation
+in fig.~\ref{fig:thesis} (left).
 
 \begin{figure}
 \centering
@@ -348,21 +347,24 @@ mitigation in fig.~\ref{fig:thesis}.
 \subsection{Data}\label{data}}
 
 The data for this chapter is derived from multiple souces and can be
-split into three categories. (1) Field data from three different
-locations across Colorado. All field sites have multiple plots across an
-elevational gradient.
-
-System description: lots of data on \emph{Bombus} (bumblebees) and
-wildflowers. Three different sites, (7/7/3) years each, each covering an
-elevational gradient.
+split into four categories. (1) Field data from three different field
+sites across Colorado, each with multiple plots across an elevational
+gradient, for seven, seven, and three years resptively. This data was
+collected by Paul CaraDonna and Jane Oglevie (from the Rocky Mountain
+Biological Laboratory) and Julian Resasco (CU Boulder). (2) GBIF spatial
+occurrence records of each of these species across Colorado, including a
+metaweb of interactions across all of Colroado taken from GBIF. (3)
+Remotely sensed data consisting of current and forecasting bioclimatic
+variables from CHELSA. (4) Phylogeny derived from NCBI GenBank barcodes
+for mitochondrial COI (bumblebees) and chloroplast rbcL (flowers).
 
 \hypertarget{methods}{%
 \subsection{Methods}\label{methods}}
 
-The issue is that we don't really know what interactions are like now.
-So we also need to predict interactions as they exist \emph{in the
-present} as the data we have and temporally sparse and likely to contain
-many interaction ``false-negatives'' (Strydom \emph{et al.} 2021).
+As the data we have is spatially sparse and likely to contain many
+interaction ``false-negatives'' (Strydom \emph{et al.} 2021), we beign
+by predicting a metaweb of interactions as they exist \emph{in the
+present}.
 
 In stages, (1) take data from multiple sites to predict a spatial
 metaweb of \emph{Bombus}-flower interactions across Colorado. (2)
@@ -481,21 +483,27 @@ This chapter proposes a general algorithm for choosing corridor
 placement to optimize a measurement of ecosystem functioning derived
 from simulations run on each proposed landscape modification.
 
-We propose various landscape modifications which alter the cover of a
-landscape, represented as a raster (fig.~6, left). We then compute a new
-resistance surface based on the proposed landscape modification, and
-based on the values of resistance to dispersal between each location we
-simulate spatially-explicit metapopulation dynamics model (Hanski \&
-Ovaskainen 2000; Ovaskainen \emph{et al.} 2002) to estimate a
-distribution of time until extinction for each landscape modification
-(fig.~6, right).
+\begin{figure}
+\hypertarget{fig:ch3}{%
+\centering
+\includegraphics{./figures/ch3.png}
+\caption{fig}\label{fig:ch3}
+}
+\end{figure}
 
 \hypertarget{methods-1}{%
 \subsection{Methods}\label{methods-1}}
 
+We propose various landscape modifications which alter the cover of a
+landscape, represented as a raster. We then compute a new resistance
+surface based on the proposed landscape modification, and based on the
+values of resistance to dispersal between each location we simulate
+spatially-explicit metapopulation dynamics model (Hanski \& Ovaskainen
+2000; Ovaskainen \emph{et al.} 2002) to estimate a distribution of time
+until extinction for each landscape modification.
+
 \begin{itemize}
-\item
-  land cover -\textgreater{} resistance -\textgreater{} extinction time
+\tightlist
 \item
   brief overview of simulated annealing
 \item
@@ -511,23 +519,20 @@ ecology}\label{chapter-four-metacommunitydynamics.jl-a-virtual-laboratory-for-co
 
 This chapter consists of a collection of modules in the Julia language
 for different aspects of community ecology, including most of the code
-used for the preceding chapters.
-
-Indeed \texttt{MetacommunityDynamics.jl} is the center of this, but due
-to the nature of the Julia language, it is interoperable with serveral
-existing packages.
-
-\texttt{EcoJulia} organization, including several which I have
-contributed to enable interoperability with MCD.jl.
-
-A diagram showing the relation between these packages is shown in
-fig.~\ref{fig:software}.
+used for the preceding chapters. Indeed
+\texttt{MetacommunityDynamics.jl} (MCD.jl) is the epicenter of this set
+of tools, but due to the nature of the Julia language, MCD.jl is
+interoperable with serveral existing packages within the
+\texttt{EcoJulia} organization, including several to which I have
+contributed. A diagram showing the relation between these packages is
+shown in fig.~\ref{fig:software}.
 
 \begin{figure}
 \hypertarget{fig:software}{%
 \centering
 \includegraphics{./figures/ch4.png}
-\caption{todo}\label{fig:software}
+\caption{The structure of the software libraries used as part of
+MCD.jl}\label{fig:software}
 }
 \end{figure}
 
