@@ -240,8 +240,6 @@ ecology}
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-\textbf{P1}
-
 Within the last several hundred years, human activity has induced rapid
 changes in Earth's atmosphere, oceans, and surface. Greenhouse gas
 emissions have caused an increase the temperature of both Earth's
@@ -265,8 +263,6 @@ global systems for \emph{ecosystem monitoring} (Makiola \emph{et al.}
 manner that makes detecting and predicting change more possible than at
 the moment (Urban \emph{et al.} 2021).
 
-\textbf{P2}
-
 The second major challenge in ecological forecasting is that the
 underlying dynamics of most ecological processes are unknown and instead
 must be inferred from this (sparse) data. Much of the history of
@@ -288,8 +284,6 @@ was becoming a quantitative science (sometime in the 20th century,
 depending on who you ask), became the foundation for early quantitative
 models in ecology.
 
-\textbf{P3}
-
 However, we run into many problems when aiming to apply this type of
 model to empirical data in ecology. Ecosystems are perhaps the
 quintessential example of system that cannot be understood by iterative
@@ -309,8 +303,6 @@ number of variables in an analytic model increases, so does the ability
 of the scientist to discern clear relationships between them given a
 fixed amount of data, the so-called ``curse'' of dimensionality.
 
-\textbf{P4}
-
 But these problems are not solely unique to ecology. The term
 \emph{ecological forecasting} implicitly creates an analogy with weather
 forecasting. Although it has become a trite joke to complain about the
@@ -329,20 +321,22 @@ increasing computational power to directly simulate many batches of
 dynamics which directly incorporate stochasticity and uncertainty in
 parameter estimates via random number generation.
 
-\textbf{P6}
-
 But forecasting is only half the story---if indeed ``{[}ecologists{]}
 have hitherto only interpreted the world in various ways; the point is
 to change it,'' then once we have a forecast about how an ecosystem will
 change in the future, what if this forecast predicts a critical
 ecosystem service will deteriorate? We are still left with the question,
-what do we in the time being to mitigate the negative consequences a
-forecast predicts? In this framing, mitigating the consequences of
-anthropogenic change on ecosystems becomes an optimization problem:
-given a forecast of the probability. We have some goal state for the
-future, and some estimate of what the state of the world will be given a
-set of actions. Frame optimization problem mathematically an introduce
-concept of solution-space and constraint.
+what do we in the time being to mitigate the potentially negative
+consequences a forecast predicts? In this framing, mitigating the
+consequences of anthropogenic change on ecosystems becomes an
+optimization problem: given a forecast of the future state of the
+system, and some ``goal'' state for the future, the problem is then to
+optimize our intervention into the system to maximize the probability
+the system approaches our ``goal'' state. This dissertation aims to this
+framework for ecosystem monitoring and forecasting
+(fig.~\ref{fig:thesis}, left), and each chapter address some aspect of
+this pipeline to data from a monitoring network to forecasts to
+mitigation strategy (fig.~\ref{fig:thesis}, right).
 
 \begin{figure}
 \hypertarget{fig:thesis}{%
@@ -351,13 +345,6 @@ concept of solution-space and constraint.
 \caption{thesis concept}\label{fig:thesis}
 }
 \end{figure}
-
-\textbf{P7}
-
-This dissertation aims to formalize a framework for ecosystem monitoring
-and forecasting (fig.~\ref{fig:thesis}, left), and each chapter address
-some aspect of this pipeline to data from a monitoring network to
-forecasts to mitigation strategy (fig.~\ref{fig:thesis}, right).
 
 \hypertarget{chapter-one-forecasting-the-spatial-uncoupling-of-a-plant-pollinator-network}{%
 \section{Chapter One: Forecasting the spatial uncoupling of a
@@ -371,10 +358,10 @@ emerge from these interactions, but antropogenic change threatens to
 unravel and ``rewire'' these networks (\textbf{CaraDonna2017IntRew?}),
 threating the persistence of these systems. Plant-pollinator networks
 face two possible forms of rewiring in response to anthropogenic
-environmental change: spatial and temporal.\\
-Spatially, range shifts could cause interacting species to no longer
-overlap in space, and shifts in phenology could cause interacting
-species to no longer overlap in time.
+environmental change: spatial and temporal. Spatially, range shifts
+could cause interacting species to no longer overlap in space, and
+shifts in phenology could cause interacting species to no longer overlap
+in time.
 
 This chapter uses several years of data on bumblebee-flower phenology
 and interactions across several field sites, each consisting of several
@@ -492,9 +479,10 @@ This also goes on to includes testing some assumptions of the model with
 empirical data fig.~\ref{fig:posassoc}, which we analytically show that
 our neutral model, if anything, underestimates the probability of
 false-negatives due to positive correlations in co-occurrence in two
-spatially replicated networks (Thompson \& Townsend 2000; Hadfield
-\emph{et al.} 2014)---further I'm planning to add the field data from
-the previous chapter into this anlysis once available.
+sets of spatially replicated samples of interaction networks (Thompson
+\& Townsend 2000; Hadfield \emph{et al.} 2014)---further I'm planning to
+add the field data from the previous chapter into this anlysis once
+available.
 
 \begin{figure}
 \hypertarget{fig:posassoc}{%
@@ -551,11 +539,9 @@ until extinction for each landscape modification.
 \begin{itemize}
 \tightlist
 \item
-  brief overview of simulated annealing
+  brief overview of simulated annealing describe how you build the
 \item
-  describe how you build the proposal function
-\item
-  optimize landscape optimization
+  proposal function optimize landscape optimization
 \end{itemize}
 
 \hypertarget{chapter-four-metacommunitydynamics.jl-a-virtual-laboratory-for-community-ecology}{%

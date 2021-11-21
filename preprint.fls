@@ -1287,7 +1287,6 @@ INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-i
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
-INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-bold.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/stix2-mathrm.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/stix2-mathrm.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/stix2-mathrm.tfm
@@ -1349,6 +1348,7 @@ INPUT ./figures/thesisconcept.png
 INPUT ./figures/thesisconcept.png
 INPUT ./figures/thesisconcept.png
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-bold.tfm
+INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-bold.tfm
 INPUT ./figures/ch1.png
 INPUT ./figures/ch1.png
 INPUT ./figures/ch1.png
@@ -1397,11 +1397,11 @@ INPUT ./preprint.out
 INPUT ./preprint.out
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc
+INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathsf.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathbb.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc
-INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb
 INPUT /opt/texlive/texdir/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb
