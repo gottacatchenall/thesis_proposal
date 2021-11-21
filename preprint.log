@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  21 NOV 2021 22:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  21 NOV 2021 22:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1222,13 +1222,13 @@ LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
 [1
 
 {/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<./figures/thesisconcept.png, id=68, 2854.16313pt x 1903.11pt>
+<./figures/thesisconcept.png, id=64, 2854.16313pt x 1903.11pt>
 File: ./figures/thesisconcept.png Graphic file (type png)
 <use ./figures/thesisconcept.png>
 Package pdftex.def Info: ./figures/thesisconcept.png  used on input line 346.
 (pdftex.def)             Requested size: 386.67299pt x 257.80898pt.
  [2 <./figures/thesisconcept.png>]
-<./figures/ch1.png, id=79, 1245.65375pt x 1011.78pt>
+<./figures/ch1.png, id=75, 1245.65375pt x 1011.78pt>
 File: ./figures/ch1.png Graphic file (type png)
 <use ./figures/ch1.png>
 Package pdftex.def Info: ./figures/ch1.png  used on input line 373.
@@ -1241,7 +1241,7 @@ al fig-ure.
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.54997pt on input line 380.
-<./figures/trees.png, id=82, 3010.24625pt x 3010.24625pt>
+<./figures/trees.png, id=78, 3010.24625pt x 3010.24625pt>
 File: ./figures/trees.png Graphic file (type png)
 <use ./figures/trees.png>
 Package pdftex.def Info: ./figures/trees.png  used on input line 425.
@@ -1253,12 +1253,12 @@ Underfull \hbox (badness 6608) in paragraph at lines 425--425
  []
 
 [3 <./figures/ch1.png>]
-<./figures/sample_sdm.png, id=93, 2258.4375pt x 1328.965pt>
+<./figures/sample_sdm.png, id=89, 2258.4375pt x 1328.965pt>
 File: ./figures/sample_sdm.png Graphic file (type png)
 <use ./figures/sample_sdm.png>
 Package pdftex.def Info: ./figures/sample_sdm.png  used on input line 434.
 (pdftex.def)             Requested size: 386.67299pt x 227.52304pt.
-<./figures/ch2.png, id=96, 784.6113pt x 708.9687pt>
+<./figures/ch2.png, id=92, 784.6113pt x 708.9687pt>
 File: ./figures/ch2.png Graphic file (type png)
 <use ./figures/ch2.png>
 Package pdftex.def Info: ./figures/ch2.png  used on input line 463.
@@ -1269,19 +1269,19 @@ Underfull \hbox (badness 3019) in paragraph at lines 463--463
 rence, co-
  []
 
-<./figures/ch2_fnr.png, id=98, 1806.75pt x 1204.5pt>
+<./figures/ch2_fnr.png, id=94, 1806.75pt x 1204.5pt>
 File: ./figures/ch2_fnr.png Graphic file (type png)
 <use ./figures/ch2_fnr.png>
 Package pdftex.def Info: ./figures/ch2_fnr.png  used on input line 481.
 (pdftex.def)             Requested size: 386.67299pt x 257.7678pt.
 [4 <./figures/trees.png>] [5 <./figures/sample_sdm.png> <./figures/ch2.png>]
-<./figures/positiveassociations.png, id=116, 2409.0pt x 2409.0pt>
+<./figures/positiveassociations.png, id=112, 2409.0pt x 2409.0pt>
 File: ./figures/positiveassociations.png Graphic file (type png)
 <use ./figures/positiveassociations.png>
 Package pdftex.def Info: ./figures/positiveassociations.png  used on input line
  500.
 (pdftex.def)             Requested size: 386.67299pt x 386.6609pt.
-<./figures/ch3.png, id=117, 2099.845pt x 1161.84062pt>
+<./figures/ch3.png, id=113, 2099.845pt x 1161.84062pt>
 File: ./figures/ch3.png Graphic file (type png)
 <use ./figures/ch3.png>
 Package pdftex.def Info: ./figures/ch3.png  used on input line 533.
@@ -1290,22 +1290,22 @@ Package pdftex.def Info: ./figures/ch3.png  used on input line 533.
 [6 <./figures/ch2_fnr.png>] [7 <./figures/positiveassociations.png> <./figures/
 ch3.png>]
 LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 56
-9.
+6.
  (/opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 569.
+(Font)              scaled to size 9.0pt on input line 566.
 
-Overfull \hbox (17.72876pt too wide) in paragraph at lines 566--575
+Overfull \hbox (17.72876pt too wide) in paragraph at lines 563--572
 \T1/stix2/m/n/9 nity ecol-ogy, in-clud-ing most of the code used for the pre-ce
 d-ing chap-ters. In-deed \T1/zi4/m/n/9 MetacommunityDynamics.jl
  []
 
-<./figures/ch4.png, id=136, 1346.53062pt x 933.98938pt>
+<./figures/ch4.png, id=131, 1346.53062pt x 933.98938pt>
 File: ./figures/ch4.png Graphic file (type png)
 <use ./figures/ch4.png>
-Package pdftex.def Info: ./figures/ch4.png  used on input line 582.
+Package pdftex.def Info: ./figures/ch4.png  used on input line 579.
 (pdftex.def)             Requested size: 386.67299pt x 268.1992pt.
 [8 <./figures/ch4.png>] 
 AED: lastpage setting LastPage
@@ -1313,16 +1313,16 @@ AED: lastpage setting LastPage
 nen2002MetMod}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.729 \end{document}
+l.726 \end{document}
                     ] [10] (./preprint.aux)
 Package rerunfilecheck Info: File `preprint.out' has not changed.
-(rerunfilecheck)             Checksum: 558C451A77B199CDAB3261E41ACDFCE1;2447.
+(rerunfilecheck)             Checksum: 8AB335441DA9AD398D4036AC5E1DCD5D;2354.
  ) 
 Here is how much of TeX's memory you used:
- 29895 strings out of 478579
- 527109 string characters out of 5855461
- 836703 words of memory out of 5000000
- 47180 multiletter control sequences out of 15000+600000
+ 29890 strings out of 478579
+ 527043 string characters out of 5855461
+ 836627 words of memory out of 5000000
+ 47177 multiletter control sequences out of 15000+600000
  543936 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,117p,520b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1341,10 +1341,10 @@ dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/texdir/
 texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texmf-di
 st/fonts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb>
-Output written on preprint.pdf (10 pages, 5563475 bytes).
+Output written on preprint.pdf (10 pages, 5562998 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
- 76 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 246 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 
