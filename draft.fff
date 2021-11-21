@@ -10,7 +10,9 @@
 \begin{figure}
 \centering
 \includegraphics{./figures/ch1.png}
-\caption{chapter one concept fig}
+\caption{Chapter One conceptual figure. Left: the sources of data and
+how they can be synthesized. Right: The flow from data to interaction
+prediction using a few different interaction prediction models.}
 \end{figure}
 \efloatseparator
  
@@ -18,7 +20,8 @@
 \hypertarget{fig:fnrtaxonomy}{%
 \centering
 \includegraphics{./figures/ch2.png}
-\caption{taxonomy of false negatives}\label{fig:fnrtaxonomy}
+\caption{A taxonomy of occurrence, co-occurrence, and interaction false
+negatives in data}\label{fig:fnrtaxonomy}
 }
 \end{figure}
 \efloatseparator
