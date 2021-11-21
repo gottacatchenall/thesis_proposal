@@ -104,75 +104,63 @@ from a monitoring network to forecasts to mitigation strategy
 # Chapter One: Forecasting the spatial uncoupling of a plant-pollinator network
 
 Interactions between plants and pollinators form networks of
-interactions, which structure the "architecture of biodiversity"
+interactions, which together create the "architecture of biodiversity"
 [@Jordano2007]. The functioning and stability of ecosystems emerge
-from these interactions, but antropogenic change threatens to unravel
-and "rewire" these networks [@CaraDonna2017IntRew], threating the
-persistence of these systems. Plant-pollinator networks face two
-possible forms of rewiring in response to anthropogenic environmental
-change: spatial and temporal.   Spatially, range shifts could cause
-interacting species to no longer overlap in space, and shifts in
-phenology could cause interacting species to no longer overlap in
-time.
+from these interactions, but anthropogenic change threatens to unravel
+and "rewire" these interaction networks [@CaraDonna2017IntRew],
+threatening the persistence of these systems. Plant-pollinator
+networks face two possible forms of rewiring in response to
+anthropogenic environmental change: spatial and temporal. Spatially,
+range shifts could cause interacting species to no longer overlap in
+space, and shifts in phenology could cause interacting species to no
+longer occur at the same time of year. This chapter uses several years
+of data on bumblebee-flower phenology and interactions across several
+field sites, each consisting of several plots across an elevational
+gradient, combined with spatial records of species occurrence via GBIF
+to forecast this uncoupling. This addresses the EBV to forecast
+element of the flow from data to mitigation in @fig:thesis (left).
 
-This chapter uses several years of data on bumblebee-flower phenology
-and interactions across several field sites, each consisting of
-several plots across an elevational gradient, combined with spatial
-records of species occurrence via GBIF to forecast this uncoupling.
-This addresses the EBV to forecast of EBV element of the flow from
-data to mitigation in @fig:thesis (left).
-
-
-![chapter one concept fig](./figures/ch1.png)
-
+![Chapter One conceptual figure. Left: the sources of data and
+how they can be synthesized. Right: The flow from data to interaction
+prediction using a few different interaction prediction models.](./figures/ch1.png)
 
 ## Data
 
-The data for this chapter is derived from multiple souces and can be
+The data for this chapter is derived from multiple sources that can be
 split into four categories. (1) Field data from three different field
 sites across Colorado, each with multiple plots across an elevational
-gradient, for seven, seven, and three years resptively. This data was
-collected by Paul CaraDonna and Jane Oglevie (from the Rocky Mountain
-Biological Laboratory) and Julian Resasco (CU Boulder).  (2) GBIF
-spatial occurrence records of each of these species across Colorado,
-including a metaweb of interactions across all of Colroado taken from
-GBIF. (3) Remotely sensed data consisting of current and forecasting
-bioclimatic variables from CHELSA.  (4) Phylogeny derived from NCBI
-GenBank barcodes for mitochondrial COI (bumblebees) and chloroplast
-rbcL (flowers).
+gradient, for seven, seven, and three years respectively. This data
+was collected by Paul CaraDonna and Jane Oglevie (from the Rocky
+Mountain Biological Laboratory; RMBL) and Julian Resasco (CU Boulder).
+(2) GBIF spatial occurrence records of each of these species across
+Colorado, including a metaweb of interactions across all of Colroado
+taken from GBIF. (3) Remotely sensed data consisting of current and
+forecasting bioclimatic variables from CHELSA. (4) Phylogenies for
+both bee and flower species derived from NCBI GenBank barcodes for
+mitochondrial COI (bumblebees) and chloroplast rbcL (flowers).
 
 ## Methods
 
 As the data we have is spatially sparse and likely to contain many
-interaction "false-negatives" [@Strydom2021RoaPre], we beign by
-predicting a metaweb of interactions as they exist _in the present_.
-
-In stages, (1) take data from multiple sites to predict a spatial
-metaweb of _Bombus_-flower interactions across Colorado. (2) Predict
-how these spatial distributions will change under CMIP6. and (3)
-quantify the lack of overlap between species for which there is a
-predicted
-
-The process of going from data to forecast can be split into the
-following parts
-
-1) Building an interaction prediction model (or rather a set of
-candidate models, relative abundance, phylo embedding relative
-abundance + phylo embedding) a la [@Gravel2019BriElt,
-@Strydom2021RoaPre]
-
-Reconstructing latent features for each species based on simulating
-trait evolution on a phylogeny [@Strydom2021FooWeb].
-
-2) Make it spatial based on distributions.
-
-3) Forecast distributions based on CMIP6
-
-
+interaction "false-negatives" [@Strydom2021RoaPre], we begin by
+predicting a metaweb of interactions across Colorado as they exist _in
+the present_. We do this using a set of candidate interaction
+prediction models: relative abundance only, phylogenetic embedding
+only (a la @Strydom2021FooWeb), niche embedding only
+[@Gravel2019BriElt], and all pairwise combinations of those
+constituent models. After validating each model and selecting
+the best performing model, we then predict
+how these distributions of each of these species will change under the
+CMIP6 consensus climate forecast [@], and then finally
+quantify the reduction in spatial between species for which there is a
+predicted interaction.
 
 ## Preliminary Results
 
 1) we got a tree and SDMs
+
+
+## Next steps
 
 Transition to next chapter by discussing uncertainty in interaction
 prediction across space.
@@ -185,22 +173,21 @@ of accurately detecting an interaction between species, and further
 proposes a method for optimizing the spatial sampling locations to
 maximize the probability of detecting an interaction between two
 species given their distributions. This addresses the optimization of
-monitoring network part of the  flow from data to mitigation in
-@fig:thesis.
+monitoring network part of the flow from data to mitigation at the top
+of @fig:thesis, left.
 
 As explored in the previous chapter, there are false-negatives in
-interation data. There is more than one way to observe a
+interaction data. However, there is more than one way to observe a
 false-negative when sampling interactions: (@fig:fnrtaxonomy). It
 begins with a conceptual framework for understanding the difference in
 false-negatives in occurrence, co-occurrence, and interactions.
-Co-occurrence is not the same thing as interaction [@Blanchet2020CooNot],
-but often is used as a proxy.
+Co-occurrence is not the same thing as interaction
+[@Blanchet2020CooNot], but often is used as a proxy.
 
-![taxonomy of false negatives](./figures/ch2.png){#fig:fnrtaxonomy}
-
+![A taxonomy of occurrence, co-occurrence, and interaction false negatives in data](./figures/ch2.png){#fig:fnrtaxonomy}
 
 We use a log-normal distribution as a null model of the
-relative-abundance distribution [@Hubbell2001UniNeu] to simulate
+relative-abundance distribution [@Hubbell2001UniNeu] and then simulate
 realized false-negative rate as a function of varying sampling effort.
 
 This also goes on to includes testing some assumptions of the model
