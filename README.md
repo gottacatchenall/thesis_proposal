@@ -147,12 +147,11 @@ the present_. We do this using a set of candidate interaction
 prediction models: relative abundance only, phylogenetic embedding
 only (a la @Strydom2021FooWeb), niche embedding only
 [@Gravel2019BriElt], and all pairwise combinations of those
-constituent models. After validating each model and selecting
-the best performing model, we then predict
-how these distributions of each of these species will change under the
-CMIP6 consensus climate forecast [@Karger2017CliHig], and then finally
-quantify the reduction in spatial between species for which there is a
-predicted interaction.
+constituent models. After validating and selecting the best performing
+model, we then predict how these distributions of each of these
+species will change under the CMIP6 consensus climate forecast
+[@Karger2017CliHig], and then finally quantify the reduction in
+spatial between species for which there is a predicted interaction.
 
 ## Preliminary Results
 
