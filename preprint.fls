@@ -1348,12 +1348,12 @@ INPUT ./figures/thesisconcept.png
 INPUT ./figures/thesisconcept.png
 INPUT ./figures/thesisconcept.png
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-bold.tfm
+INPUT ./figures/ch1.png
+INPUT ./figures/ch1.png
+INPUT ./figures/ch1.png
+INPUT ./figures/ch1.png
+INPUT ./figures/ch1.png
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-bold.tfm
-INPUT ./figures/ch1.png
-INPUT ./figures/ch1.png
-INPUT ./figures/ch1.png
-INPUT ./figures/ch1.png
-INPUT ./figures/ch1.png
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm

@@ -446,6 +446,34 @@
         "volume": "312"
     },
     {
+        "DOI": "10.1146/annurev.ecolsys.38.091206.095818",
+        "author": [
+            {
+                "family": "Bascompte",
+                "given": "Jordi"
+            },
+            {
+                "family": "Jordano",
+                "given": "Pedro"
+            }
+        ],
+        "container-title": "Annual Review of Ecology, Evolution, and Systematics",
+        "id": "Bascompte2007PlaMut",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2007,
+                    12
+                ]
+            ]
+        },
+        "page": "567-593",
+        "title": "Plant-Animal Mutualistic Networks: The Architecture of Biodiversity",
+        "type": "article-journal",
+        "volume": "38"
+    },
+    {
         "DOI": "10.1038/nature14956",
         "author": [
             {
@@ -5757,6 +5785,12 @@
         "title": "The multilayer nature of ecological networks",
         "type": "article-journal",
         "volume": "1"
+    },
+    {
+        "id": "PlaMut",
+        "publisher": "https://www-annualreviews-org.proxy3.library.mcgill.ca/doi/10.1146/annurev.ecolsys.38.091206.095818",
+        "title": "Plant-Animal Mutualistic Networks: The Architecture of Biodiversity | Annual Review of Ecology, Evolution, and Systematics",
+        "type": ""
     },
     {
         "DOI": "10.1111/oik.01719",

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  21 NOV 2021 17:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  21 NOV 2021 17:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1303,19 +1303,19 @@ AED: lastpage setting LastPage
 nen2002MetMod}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.683 \end{document}
+l.688 \end{document}
                     ] (./preprint.aux)
 Package rerunfilecheck Info: File `preprint.out' has not changed.
 (rerunfilecheck)             Checksum: 7CA034C79CA7505C9C870A0727486DC6;2538.
  ) 
 Here is how much of TeX's memory you used:
- 29898 strings out of 478579
- 527055 string characters out of 5855461
+ 29899 strings out of 478579
+ 527078 string characters out of 5855461
  836422 words of memory out of 5000000
  47189 multiletter control sequences out of 15000+600000
  536576 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,117p,520b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,12n,117p,520b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{/opt
 /texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc}{/opt/texl
 ive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}{/opt/texlive/te
@@ -1332,10 +1332,10 @@ fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/texdir/texmf
 -dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texmf-dist/fo
 nts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/u
 rw/helvetic/uhvr8a.pfb>
-Output written on preprint.pdf (9 pages, 5065352 bytes).
+Output written on preprint.pdf (9 pages, 5070160 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
+ 69 named destinations out of 1000 (max. 500000)
  144 words of extra memory for PDF output out of 10000 (max. 10000000)
 
