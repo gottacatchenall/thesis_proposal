@@ -179,9 +179,6 @@ way to observe a false-negative when sampling interactions.
 @fig:fnrtaxonomy shows a taxonomy of false-negatives in occurrence,
 co-occurrence, and interaction data.
 
-Co-occurrence is not the same thing as interaction
-[@Blanchet2020CooNot], but often is used as a proxy.
-
 ![A taxonomy of occurrence, co-occurrence, and interaction false negatives in data](./figures/ch2.png){#fig:fnrtaxonomy}
 
 The first result is to compute a null expectation of the probability
