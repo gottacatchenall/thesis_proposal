@@ -538,7 +538,7 @@ metapopulation dynamics model (Hanski \& Ovaskainen 2000; Ovaskainen
 \emph{et al.} 2002) to estimate a distribution of time until extinction
 for each landscape modification. The largest challenge in implementing
 this algorithm is the space of potential modifications grows as
-\(O(nm)\) for an \(n\) by \(m\) raster. For most actual landscapes to
+\(O((nm)!)\) for an \(n\) by \(m\) raster. For most actual landscapes to
 which we wish to apply this method, the set of possible modifications
 becomes uncomputably large, so we use simulated annealing to explore the
 search space of possible modifications to estimate the modification that
