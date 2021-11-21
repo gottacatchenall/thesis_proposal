@@ -102,22 +102,22 @@ from a monitoring network to forecasts to mitigation strategy
 
 # Chapter One: Forecasting the spatial uncoupling of a plant-pollinator network
 
-Interactions between plants and pollinators create networks of
-interactions, which together form the "architecture of biodiversity"
+Interactions between plants and pollinators form networks which
+together structure the "architecture of biodiversity"
 [@Bascompte2007PlaMut]. The functioning and stability of ecosystems
 emerge from these interactions, but anthropogenic change threatens to
 unravel and "rewire" these interaction networks
-[@CaraDonna2017IntRew], threatening the persistence of these systems.
+[@CaraDonna2017IntRew], jeopardizing the persistence of these systems.
 Plant-pollinator networks face two possible forms of rewiring in
 response to anthropogenic environmental change: spatial and temporal.
-Spatially, range shifts could cause interacting species to no longer
-overlap in space, and shifts in phenology could cause interacting
-species to no longer occur at the same time of year. This chapter uses
-several years of data on bumblebee-flower phenology and interactions
-across several field sites, each consisting of several plots across an
-elevational gradient, combined with spatial records of species
-occurrence via GBIF to forecast the uncoupling of the plant-pollinator
-metaweb of Colorado.
+Range shifts could cause interacting species to no longer overlap in
+space, and shifts in phenology could cause interacting species to no
+longer occur at the same time of year. This chapter uses several years
+of data on bumblebee-flower phenology and interactions across several
+field sites, each consisting of several plots across an elevational
+gradient, combined with spatial records of species occurrence via GBIF
+to forecast the uncoupling of the plant-pollinator metaweb of
+Colorado.
 
 ![Chapter One conceptual figure. Left: the sources of data and
 how they can be synthesized. Right: The flow from data to interaction
@@ -132,7 +132,7 @@ gradient, for seven, seven, and three years respectively. This data
 was collected by Paul CaraDonna and Jane Oglevie (from the Rocky
 Mountain Biological Laboratory; RMBL) and Julian Resasco (CU Boulder).
 (2) GBIF spatial occurrence records of each of these species across
-Colorado, including a metaweb of interactions across all of Colroado
+Colorado, including a metaweb of interactions across all of Colorado
 taken from GBIF. (3) Remotely sensed data consisting of current and
 forecasting bioclimatic variables from CHELSA. (4) Phylogenies for
 both bee and flower species derived from NCBI GenBank barcodes for
