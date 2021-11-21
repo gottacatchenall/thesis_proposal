@@ -236,8 +236,6 @@ modification.
 
 ![foo](./figures/ch3.png){#fig:ch3}
 
-## Methods
-
 We propose various landscape modifications which alter the cover of a
 landscape, represented as a raster. We then compute a new resistance
 surface based on the proposed landscape modification using
