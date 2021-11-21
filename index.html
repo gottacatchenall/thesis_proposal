@@ -206,18 +206,17 @@
             <p><strong>P4</strong></p>
             <p>But these problems are not solely unique to ecology. The term <em>ecological forecasting</em> implicitly creates an analogy with weather forecasting. Although it has become a trite joke to complain about the weather forecast being wrong, over the least 50 years the field of numerical weather prediction (NWP) has dramatically improved out ability to predict weather across the board <span class="citation" data-cites="Bauer2015QuiRev">(Bauer <em>et al.</em> 2015)</span>. The success of NWP, and the Earth observations systems that support it <span class="citation" data-cites="Hill2004ArcEar">(Hill <em>et al.</em> 2004)</span>, should serve as a template for development of a system for monitoring Earth’s biodiversity. Much like ecology, NWP is faced with high-dimensional systems that are governed by different mechanisms at different scales. The success of NWP is that, rather than, say, attempt to forecast the weather in Quebec by applying Navier-Stokes to entire province, to instead use simulation models which describe known mechanisms at different scales, and use the availability to increasing computational power to directly simulate many batches of dynamics which directly incorporate stochasticity and uncertainty in parameter estimates via random number generation.</p>
             <p><strong>P6</strong></p>
-            <p>But forecasting is only half the story. Marx’s most well known quote that “philosophers have hitherto only interpreted the world in various ways; the point is to change it.” Indeed, once we have a forecast about how an ecosystem will change in the future, what if this forecast predicts a critical ecosystem service will deteriorate? We are still left with the question, what do we in the time being to mitigate the negative consequences a forecast predicts? In this framing, mitigating the consequences of anthropogenic change on ecosystems becomes an optimization problem: given a forecast of the probability. We have some goal state for the future, and some estimate of what the state of the world will be given a set of actions. Frame optimization problem mathematically an introduce concept of solution-space and constraint.</p>
+            <p>But forecasting is only half the story—if indeed “[ecologists] have hitherto only interpreted the world in various ways; the point is to change it,” then once we have a forecast about how an ecosystem will change in the future, what if this forecast predicts a critical ecosystem service will deteriorate? We are still left with the question, what do we in the time being to mitigate the negative consequences a forecast predicts? In this framing, mitigating the consequences of anthropogenic change on ecosystems becomes an optimization problem: given a forecast of the probability. We have some goal state for the future, and some estimate of what the state of the world will be given a set of actions. Frame optimization problem mathematically an introduce concept of solution-space and constraint.</p>
             <figure>
             <img src="./figures/thesisconcept.png" id="fig:thesis" alt="Figure 1: thesis concept" /><figcaption aria-hidden="true">Figure 1: thesis concept</figcaption>
             </figure>
             <p><strong>P7</strong></p>
             <p>This dissertation aims to formalize a framework for ecosystem monitoring and forecasting (fig. 1, left), and each chapter address some aspect of this pipeline to data from a monitoring network to forecasts to mitigation strategy (fig. 1, right).</p>
             <h1 id="chapter-one-forecasting-the-spatial-uncoupling-of-a-plant-pollinator-network">Chapter One: Forecasting the spatial uncoupling of a plant-pollinator network</h1>
-            <p>Plants and pollinators form interaction networks, called the “architecture of biodiversity” <span class="citation" data-cites="Jordano2007">(<strong>Jordano2007?</strong>)</span>.</p>
-            <p>The stability, function, and persistance of ecosystems relies on the structure of these interactions. Antropogenic change threatens to unravel these networks. Two aspects to this change: spatial and temporal. Spatially, range shifts along elevational gradient, and temporall, phenological shifts.</p>
-            <p>The issue is that we don’t really know what interactions are like now. So not only do we need to predict with data that is spatially and temporally sparse and likely to contain many interaction “false-negatives” <span class="citation" data-cites="Strydom2021RoaPre">(Strydom <em>et al.</em> 2021)</span>.</p>
-            <p>This chapter uses several years of data on bee-flower phenology and interactions, combined with spatial records of species occurrence via GBIF, to forecast how much overlap there will be between plants/pollinators in space/time.</p>
-            <p>In stages, (1) take data from multiple sites to predict a spatial metaweb of <em>Bombus</em>-flower interactions across Colorado. (2) Predict how these spatial distributions will change under CMIP6. and (3) quantify the lack of overlap between species for which there is a predicted</p>
+            <p>Interactions between plants and pollinators form networks of interactions, which structure the “architecture of biodiversity” <span class="citation" data-cites="Jordano2007">(<strong>Jordano2007?</strong>)</span>. The persistence, functioning, and stability of ecosystems emerge from these interactions, but antropogenic change threatens to unravel and “rewire” these networks <span class="citation" data-cites="CaraDonna2017IntRew">(<strong>CaraDonna2017IntRew?</strong>)</span>. Plant-pollinator networks face two possible forms of rewiring in response to anthropogenic environmental change: spatial and temporal.<br />
+            Spatially, range shifts could cause interacting species to no longer overlap in space, and shifts in phenology could cause interacting species to no longer overlap in time.</p>
+            <p>This chapter uses several years of data on bumblebee-flower phenology and interactions across several field site, each consisting of several plots across an elevational gradient, combined with spatial records of species occurrence via GBIF to forecast this uncoupling.</p>
+            <p>Addresses the EBV to forecast of EBV element of the flow from data to mitigation in fig. 1.</p>
             <figure>
             <img src="./figures/ch1.png" alt="chapter one concept fig" /><figcaption aria-hidden="true">chapter one concept fig</figcaption>
             </figure>
@@ -225,44 +224,52 @@
             <p>The data for this chapter is derived from multiple souces and can be split into three categories. (1) Field data from three different locations across Colorado. All field sites have multiple plots across an elevational gradient.</p>
             <p>System description: lots of data on <em>Bombus</em> (bumblebees) and wildflowers. Three different sites, (7/7/3) years each, each covering an elevational gradient.</p>
             <h2 id="methods">Methods</h2>
-            <p>Split the process into parts.</p>
+            <p>The issue is that we don’t really know what interactions are like now. So we also need to predict interactions as they exist <em>in the present</em> as the data we have and temporally sparse and likely to contain many interaction “false-negatives” <span class="citation" data-cites="Strydom2021RoaPre">(Strydom <em>et al.</em> 2021)</span>.</p>
+            <p>In stages, (1) take data from multiple sites to predict a spatial metaweb of <em>Bombus</em>-flower interactions across Colorado. (2) Predict how these spatial distributions will change under CMIP6. and (3) quantify the lack of overlap between species for which there is a predicted</p>
+            <p>The process of going from data to forecast can be split into the following parts</p>
             <ol type="1">
-            <li>Building an interaction prediction model. 2) Make it spatial based on distributions. 3) Forecast distributions based on CMIP6.</li>
+            <li>Building an interaction prediction model (or rather a set of candidate models, relative abundance, phylo embedding relative abundance + phylo embedding) a la <span class="citation" data-cites="Gravel2019BriElt">Strydom <em>et al.</em> (2021)</span></li>
+            </ol>
+            <p>Reconstructing latent features for each species based on simulating trait evolution on a phylogeny <span class="citation" data-cites="Strydom2021FooWeb">(<strong>Strydom2021FooWeb?</strong>)</span>.</p>
+            <ol start="2" type="1">
+            <li><p>Make it spatial based on distributions.</p></li>
+            <li><p>Forecast distributions based on CMIP6</p></li>
             </ol>
             <h2 id="preliminary-results">Preliminary Results</h2>
             <ol type="1">
-            <li>we got a tree</li>
+            <li>we got a tree and SDMs</li>
             </ol>
             <p>Transition to next chapter by discussing uncertainty in interaction prediction across space.</p>
             <h1 id="chapter-two-optimizing-spatial-sampling-of-species-interactions">Chapter Two: Optimizing spatial sampling of species interactions</h1>
-            <p>There are false-negatives in interation data. Co-occurrence is not the same thing as interaction <span class="citation" data-cites="cite">(<strong>cite?</strong>)</span>, but often is used as a proxy.</p>
-            <p>This chapter unravels the relationship between a given species relative abundance and the sampling effort needed to adequately understand this species distribution and interactions.</p>
-            <p>There is more than one way to observe a false-negative.</p>
+            <p>This chapter uses simulation models to investigate the relationship between species relative abundance, sampling effort, and probability of accurately detecting an interaction between species, and further proposes a method for optimizing the spatial sampling locations to maximize the probability of detecting an interaction between two species given their distributions. This addresses the optimization of monitoring network part of the flow from data to mitigation in fig. 1.</p>
+            <p>As explored in the previous chapter, there are false-negatives in interation data. There is more than one way to observe a false-negative when sampling interactions: (fig. 2). It begins with a conceptual framework for understanding the difference in false-negatives in occurrence, co-occurrence, and interactions. Co-occurrence is not the same thing as interaction <span class="citation" data-cites="Blanchet2020CooNot">(Blanchet <em>et al.</em> 2020)</span>, but often is used as a proxy.</p>
             <figure>
-            <img src="./figures/ch2.png" alt="taxonomy of false negatives" /><figcaption aria-hidden="true">taxonomy of false negatives</figcaption>
+            <img src="./figures/ch2.png" id="fig:fnrtaxonomy" alt="Figure 2: taxonomy of false negatives" /><figcaption aria-hidden="true">Figure 2: taxonomy of false negatives</figcaption>
             </figure>
-            <p>It begins with a conceptual framework for understanding the difference in false-negatives in occurrence, co-occurrence, and interactions (fig. 3). We use a null model of the relative-abundance distribution <span class="citation" data-cites="Hubbell2001UniNeu">(Hubbell 2001)</span> to simulate realized false-negatives as a function of varying sampling effort.</p>
-            <p>This also goes on to includes testing some assumptions of the model with empirical data fig. 2. which indicate our neutral model, if anything, underestimates the probability of false-negatives due to positive correlations in co-occurrence in two spatially replicated networks <span class="citation" data-cites="Hadfield2014TalTwo Thompson2000ResSol">(Thompson &amp; Townsend 2000; Hadfield <em>et al.</em> 2014)</span>—further I’m planning to add the field data from chapter one into this anlysis once complete.</p>
+            <p>We use a log-normal distribution as a null model of the relative-abundance distribution <span class="citation" data-cites="Hubbell2001UniNeu">(Hubbell 2001)</span> to simulate realized false-negative rate as a function of varying sampling effort.</p>
+            <p>This also goes on to includes testing some assumptions of the model with empirical data fig. 3, which we analytically show that our neutral model, if anything, underestimates the probability of false-negatives due to positive correlations in co-occurrence in two spatially replicated networks <span class="citation" data-cites="Hadfield2014TalTwo Thompson2000ResSol">(Thompson &amp; Townsend 2000; Hadfield <em>et al.</em> 2014)</span>—further I’m planning to add the field data from the previous chapter into this anlysis once available.</p>
             <figure>
-            <img src="./figures/positiveassociations.png" id="fig:posassoc" alt="Figure 2: f" /><figcaption aria-hidden="true">Figure 2: f</figcaption>
+            <img src="./figures/positiveassociations.png" id="fig:posassoc" alt="Figure 3: f" /><figcaption aria-hidden="true">Figure 3: f</figcaption>
             </figure>
-            <p>new addition: - simulate species distribution and efficacy of detection given a set of observation points where the dist from observation site decays. optimize set of repeated sampling locations L for a <em>known</em> distribution D. address SDM not being the territory</p>
-            <h2 id="results">Results</h2>
-            <ul>
-            <li>nonrandom association figure sampling effort under neutral model</li>
-            </ul>
+            <p>Finally this chapter proposes a simulated annealing method to optimize the efficacy of interactoin detection given a set of observation points where the dist from observation site decays. optimize set of repeated sampling locations L for a pair of species <em>known</em> distributions <span class="math inline"><em>D</em><sub><em>a</em></sub>, <em>D</em><sub><em>b</em></sub></span>.</p>
             <h1 id="chapter-three-optimizing-corridor-placement-against-ecological-dynamics">Chapter Three: Optimizing corridor placement against ecological dynamics</h1>
             <p>Promoting landscape connectivity is important to mitigate the effects of land-use change on Earth’s biodiversity. However, the practical realities of conservation mean that there is a limitation on how much we can modify landscapes in order to do this. So what is the best place to put a corridor given a constraint on how much surface-area you can change in a landscape? This is the question this chapter seeks to answer. Models for proposing corridor locations have been developed, but are limited in that are not developed around promoting some element of ecosystem function, but instead by trying to find the path of least resistance given a resistance surface <span class="citation" data-cites="Peterman2018ResRP">(Peterman 2018)</span>.</p>
-            <p>This chapter proposes a general algorithm for optimizing corridor placement based on a measurement of ecosystem functioning derived from simulations run on a proposed landscape modification. We propose various landscape modifications which alter the cover of a landscape, represented as a raster (fig. 6, left). We then compute a new resistance surface based on the proposed landscape modification, and based on the values of resistance to dispersal between each location we simulate spatially-explicit metapopulation dynamics model <span class="citation" data-cites="Ovaskainen2002MetMod Hanski2000MetCap">(Hanski &amp; Ovaskainen 2000; Ovaskainen <em>et al.</em> 2002)</span> to estimate a distribution of time until extinction for each landscape modification (fig. 6, right).</p>
+            <p>This chapter proposes a general algorithm for choosing corridor placement to optimize a measurement of ecosystem functioning derived from simulations run on each proposed landscape modification.</p>
+            <p>We propose various landscape modifications which alter the cover of a landscape, represented as a raster (fig. 6, left). We then compute a new resistance surface based on the proposed landscape modification, and based on the values of resistance to dispersal between each location we simulate spatially-explicit metapopulation dynamics model <span class="citation" data-cites="Ovaskainen2002MetMod Hanski2000MetCap">(Hanski &amp; Ovaskainen 2000; Ovaskainen <em>et al.</em> 2002)</span> to estimate a distribution of time until extinction for each landscape modification (fig. 6, right).</p>
             <h2 id="methods-1">Methods</h2>
             <ul>
-            <li>land cover -&gt; resistance -&gt; extinction time simulated annealing to</li>
-            <li>optimize landscape optimization</li>
+            <li><p>land cover -&gt; resistance -&gt; extinction time</p></li>
+            <li><p>brief overview of simulated annealing</p></li>
+            <li><p>describe how you build the proposal function</p></li>
+            <li><p>optimize landscape optimization</p></li>
             </ul>
-            <h1 id="ch4-a-software-note-on-the-resulting-packages.">CH4 a software note on the resulting packages.</h1>
-            <p>(MetacommunityDynamics.jl: a virtual laboratory for community ecology): a collection of modules in the Julia language for different aspects of metacommunity ecology, including most of the code used for the preceding chapters.</p>
+            <h1 id="chapter-four-metacommunitydynamics.jl-a-virtual-laboratory-for-community-ecology">Chapter Four: MetacommunityDynamics.jl: a virtual laboratory for community ecology</h1>
+            <p>This chapter consists of a collection of modules in the Julia language for different aspects of community ecology, including most of the code used for the preceding chapters.</p>
+            <p>Indeed <code>MetacommunityDynamics.jl</code> is the center of this, but due to the nature of the Julia language, it is interoperable with serveral existing packages.</p>
+            <p><code>EcoJulia</code> organization, including several which I have contributed to enable interoperability with MCD.jl.</p>
+            <p>A diagram showing the relation between these packages is shown in fig. 4.</p>
             <figure>
-            <img src="./figures/ch4.png" alt="todo" /><figcaption aria-hidden="true">todo</figcaption>
+            <img src="./figures/ch4.png" id="fig:software" alt="Figure 4: todo" /><figcaption aria-hidden="true">Figure 4: todo</figcaption>
             </figure>
             <h1 id="conclusion">Conclusion</h1>
             <h1 id="appendix">Appendix</h1>
@@ -276,6 +283,9 @@
             </div>
             <div id="ref-Beckage2011LimPre" class="csl-entry" role="doc-biblioentry">
             Beckage, B., Gross, L.J. &amp; Kauffman, S. (2011). The limits to prediction in ecological systems. <em>Ecosphere</em>, 2, art125.
+            </div>
+            <div id="ref-Blanchet2020CooNot" class="csl-entry" role="doc-biblioentry">
+            Blanchet, F.G., Cazelles, K. &amp; Gravel, D. (2020). Co-occurrence is not evidence of ecological interactions. <em>Ecology Letters</em>, 23, 1050–1063.
             </div>
             <div id="ref-Chen2019RevCom" class="csl-entry" role="doc-biblioentry">
             Chen, Y., Angulo, M.T. &amp; Liu, Y.-Y. (2019). Revealing Complex Ecological Dynamics via Symbolic Regression. <em>BioEssays</em>, 41, 1900069.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  20 NOV 2021 22:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  21 NOV 2021 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1222,98 +1222,108 @@ LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
 [1
 
 {/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<./figures/thesisconcept.png, id=76, 2854.16313pt x 1903.11pt>
+<./figures/thesisconcept.png, id=72, 2854.16313pt x 1903.11pt>
 File: ./figures/thesisconcept.png Graphic file (type png)
 <use ./figures/thesisconcept.png>
 Package pdftex.def Info: ./figures/thesisconcept.png  used on input line 352.
 (pdftex.def)             Requested size: 386.67299pt x 257.80898pt.
  [2 <./figures/thesisconcept.png>]
-Overfull \hbox (10.38452pt too wide) in paragraph at lines 367--369
-\T1/stix2/m/n/9 Plants and pol-li-na-tors form in-ter-ac-tion net-works, called
- the ``ar-chi-tec-ture of bio-di-ver-sity'' (\T1/stix2/b/n/9 Jordano2007?\T1/st
-ix2/m/n/9 ). 
- []
-
-
-Overfull \hbox (18.68617pt too wide) in paragraph at lines 381--385
-\T1/stix2/m/n/9 records of species oc-cur-rence via GBIF, to fore-cast how much
- over-lap there will be be-tween plants/pollinators
- []
-
-<./figures/ch1.png, id=87, 1245.65375pt x 1011.78pt>
+<./figures/ch1.png, id=84, 1245.65375pt x 1011.78pt>
 File: ./figures/ch1.png Graphic file (type png)
 <use ./figures/ch1.png>
-Package pdftex.def Info: ./figures/ch1.png  used on input line 394.
+Package pdftex.def Info: ./figures/ch1.png  used on input line 389.
 (pdftex.def)             Requested size: 386.67299pt x 314.08084pt.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 399.
-[3 <./figures/ch1.png>]
-<./figures/ch2.png, id=97, 784.6113pt x 708.9687pt>
+(Font)              scaled to size 8.54997pt on input line 394.
+ [3 <./figures/ch1.png>]
+<./figures/ch2.png, id=96, 784.6113pt x 708.9687pt>
 File: ./figures/ch2.png Graphic file (type png)
 <use ./figures/ch2.png>
-Package pdftex.def Info: ./figures/ch2.png  used on input line 452.
+Package pdftex.def Info: ./figures/ch2.png  used on input line 482.
 (pdftex.def)             Requested size: 386.67299pt x 349.39903pt.
- [4 <./figures/ch2.png>]
-<./figures/positiveassociations.png, id=109, 2409.0pt x 2409.0pt>
+
+Overfull \hbox (6.07707pt too wide) in paragraph at lines 489--496
+\T1/stix2/m/n/9 due to pos-i-tive cor-re-la-tions in co-occurrence in two spa-t
+ially repli-cated net-works (Thomp-son & Townsend
+ []
+
+<./figures/positiveassociations.png, id=98, 2409.0pt x 2409.0pt>
 File: ./figures/positiveassociations.png Graphic file (type png)
 <use ./figures/positiveassociations.png>
 Package pdftex.def Info: ./figures/positiveassociations.png  used on input line
- 475.
+ 502.
 (pdftex.def)             Requested size: 386.67299pt x 386.6609pt.
+[4] [5 <./figures/ch2.png>] [6 <./figures/positiveassociations.png>]
 LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line
- 489.
+ 544.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
-) [5 <./figures/positiveassociations.png>]
-<./figures/ch4.png, id=119, 1346.53062pt x 933.98938pt>
+)
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 56
+2.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
+)
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 9.0pt on input line 562.
+
+Overfull \hbox (6.73886pt too wide) in paragraph at lines 566--568
+[]\T1/zi4/m/n/9 EcoJulia \T1/stix2/m/n/9 or-ga-ni-za-tion, in-clud-ing sev-eral
+ which I have con-tributed to en-able in-ter-op-er-abil-ity with MCD.jl. 
+ []
+
+<./figures/ch4.png, id=124, 1346.53062pt x 933.98938pt>
 File: ./figures/ch4.png Graphic file (type png)
 <use ./figures/ch4.png>
-Package pdftex.def Info: ./figures/ch4.png  used on input line 541.
+Package pdftex.def Info: ./figures/ch4.png  used on input line 577.
 (pdftex.def)             Requested size: 386.67299pt x 268.1992pt.
-<./figures/trees.png, id=120, 3010.24625pt x 3010.24625pt>
+<./figures/trees.png, id=125, 3010.24625pt x 3010.24625pt>
 File: ./figures/trees.png Graphic file (type png)
 <use ./figures/trees.png>
-Package pdftex.def Info: ./figures/trees.png  used on input line 553.
+Package pdftex.def Info: ./figures/trees.png  used on input line 588.
 (pdftex.def)             Requested size: 386.67299pt x 386.66063pt.
- [6 <./figures/ch4.png>] [7 <./figures/trees.png>]
-
-AED: lastpage setting LastPage
-[8pdfTeX warning (ext4): destination with the same identifier (name{ref-Ovaskai
-nen2002MetMod}) has been already used, duplicate ignored
+[7] [8pdfTeX warning (ext4): destination with the same identifier (name{ref-Ova
+skainen2002MetMod}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.653 \end{document}
-                    ] (./preprint.aux)
+l.685 
+       <./figures/ch4.png>] [9 <./figures/trees.png>]
+
+AED: lastpage setting LastPage
+[10] (./preprint.aux)
 Package rerunfilecheck Info: File `preprint.out' has not changed.
-(rerunfilecheck)             Checksum: DD2D65F8FB6F6F5AC1E5A99C7DFDE52C;2448.
+(rerunfilecheck)             Checksum: 54742EF83EBC5F73DB4B4BCBAEB2BA76;2538.
  ) 
 Here is how much of TeX's memory you used:
- 29860 strings out of 478579
- 526257 string characters out of 5855461
- 833136 words of memory out of 5000000
- 47162 multiletter control sequences out of 15000+600000
- 536268 words of font info for 136 fonts, out of 8000000 for 9000
+ 29888 strings out of 478579
+ 526830 string characters out of 5855461
+ 833254 words of memory out of 5000000
+ 47181 multiletter control sequences out of 15000+600000
+ 536576 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,117p,498b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc}{/o
-pt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathsf.enc}{/opt
-/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathbb.enc}{/opt/t
-exlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{/opt/tex
-live/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{/opt/texli
-ve/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}{/opt/texlive/tex
-dir/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/texlive/texdir/texmf-dist/font
-s/type1/public/stix2-type1/STIX2Math.pfb></opt/texlive/texdir/texmf-dist/fonts/
-type1/public/stix2-type1/STIX2Text-Bold.pfb></opt/texlive/texdir/texmf-dist/fon
-ts/type1/public/stix2-type1/STIX2Text-Italic.pfb></opt/texlive/texdir/texmf-dis
-t/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/texdir/tex
-mf-dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texmf-dist/
-fonts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/fonts/type1
-/urw/helvetic/uhvr8a.pfb>
-Output written on preprint.pdf (8 pages, 4578489 bytes).
+ 108i,11n,117p,520b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{/opt
+/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc}{/opt/texl
+ive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathsf.enc}{/opt/texliv
+e/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathbb.enc}{/opt/texlive/
+texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{/opt/texlive/te
+xdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{/opt/texlive/texd
+ir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}{/opt/texlive/texdir/tex
+mf-dist/fonts/enc/dvips/base/8r.enc}</opt/texlive/texdir/texmf-dist/fonts/type1
+/public/inconsolata/Inconsolata-zi4r.pfb></opt/texlive/texdir/texmf-dist/fonts/
+type1/public/stix2-type1/STIX2Math.pfb></opt/texlive/texdir/texmf-dist/fonts/ty
+pe1/public/stix2-type1/STIX2Text-Bold.pfb></opt/texlive/texdir/texmf-dist/fonts
+/type1/public/stix2-type1/STIX2Text-Italic.pfb></opt/texlive/texdir/texmf-dist/
+fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/texdir/texmf
+-dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texmf-dist/fo
+nts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/u
+rw/helvetic/uhvr8a.pfb>
+Output written on preprint.pdf (10 pages, 4594317 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
- 62 named destinations out of 1000 (max. 500000)
- 147 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 241 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

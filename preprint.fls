@@ -1372,6 +1372,11 @@ INPUT /opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/ts1-stix2text.tfm
+INPUT /opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT /opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT /opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT /opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-0.tfm
 INPUT ./figures/ch4.png
 INPUT ./figures/ch4.png
 INPUT ./figures/ch4.png
@@ -1385,6 +1390,7 @@ INPUT ./figures/trees.png
 INPUT preprint.aux
 INPUT ./preprint.out
 INPUT ./preprint.out
+INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathsf.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathbb.enc
@@ -1392,6 +1398,7 @@ INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.en
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /opt/texlive/texdir/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb
 INPUT /opt/texlive/texdir/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb
 INPUT /opt/texlive/texdir/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb
 INPUT /opt/texlive/texdir/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb

@@ -15,9 +15,11 @@
 \efloatseparator
  
 \begin{figure}
+\hypertarget{fig:fnrtaxonomy}{%
 \centering
 \includegraphics{./figures/ch2.png}
-\caption{taxonomy of false negatives}
+\caption{taxonomy of false negatives}\label{fig:fnrtaxonomy}
+}
 \end{figure}
 \efloatseparator
  
@@ -31,9 +33,11 @@
 \efloatseparator
  
 \begin{figure}
+\hypertarget{fig:software}{%
 \centering
 \includegraphics{./figures/ch4.png}
-\caption{todo}
+\caption{todo}\label{fig:software}
+}
 \end{figure}
 \efloatseparator
  
