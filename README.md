@@ -7,8 +7,9 @@ terrain and oceans, and both agricultural and urban development has
 rapidly reshaped the Earth's land cover. These the bulk of this change
 has occurred within the last several hundred years, a geological
 instant, inducing a sudden shift in conditions to Earth's climate and
-biosphere. As a result _ecological forecasting_---TK DEFINITION ---and
-then using these forecasts to make decisions to mitigate the negative
+biosphere. As a result _ecological forecasting_---modeling how
+ecosystems and their services will change in the future---and then
+using these forecasts to make decisions to mitigate the negative
 consequences of this change on ecosystems, their functioning, and the
 services they provide to humans has emerged as an imperative for
 ecology and environmental science [@Dietze2017PreEco]. However, robust
@@ -22,8 +23,6 @@ _ecosystem monitoring_ [@Makiola2020KeyQue], which would systematize
 the collection of biodiversity data in manner that makes detecting and
 predicting change more possible than at the moment [@Urban2021CodLif].
 
-
-***TK add mention of interaction prediction here as they effect dynamics***
 The second major challenge in ecological forecasting is that the
 underlying dynamics of most ecological processes are unknown and
 instead must be inferred from this (sparse) data. Much of the history
@@ -37,7 +36,8 @@ f(x_{t-1})$, where $f:\mathbb{R}^n \to \mathbb{R}^n$ is an arbitrary
 function describing how the system changes on a moment-to-moment basis
 (e.g. in the context of communities, $f$ could be Lotka-Voltera,
 Holling-Type-III or DeAngelis-Beddington functional response). The
-form of this functional response in real systems is effectively
+form of this functional response in real systems, and whether it is
+meaningfully non-zero for a given species interaction, is effectively
 unknown, and some forms are inherently more "forecastable" than others
 [@Chen2019RevCom; @Pennekamp2019IntPre; @Beckage2011LimPre]. The
 initial success of these forms of models can be traced back to the
@@ -161,11 +161,10 @@ we show these positive associations exist in two sets of spatially
 replicated samples of interaction networks [@Hadfield2014TalTwo;
 @Thompson2000ResSol; @fig:posassoc]---further I'm planning to add the
 field data from the previous chapter into this analysis once
-available.
-
-Finally this chapter proposes a simulated annealing method to optimize
-the a set of $n$ points in space to maximize the probability of detecting
-an interaction between two species $a$ and $b$ with _known_ distributions $D_a$, $D_b$.
+available. Finally this chapter proposes a simulated annealing method
+to optimize the a set of $n$ points in space to maximize the
+probability of detecting an interaction between two species $a$ and
+$b$ with _known_ distributions $D_a$, $D_b$.
 
 
 ## Results
@@ -181,11 +180,11 @@ metaweb [@fig:fnr].
 ![foo](./figures/ch2_fnr.png){#fig:fnr}
 
 The second major result is that we analytically show that the this
-simulated observation model, by assuming that there is no correlation
-between observing two species given that they interaction, actually
-underpredicts the realized false-negative interaction rate. We then
-demonstrate that this association exists in two empirical systems
-[@fig:posassoc].  
+simulated observation model, by assuming that there is no association
+between observing two species given that they interact, actually under
+predicts the realized false-negative interaction rate. We then
+demonstrate that this positive association association exists in two
+empirical systems [@fig:posassoc].  
 
 ![Demonstrates positive associations in co-occurrence](./figures/positiveassociations.png){#fig:posassoc}
 
@@ -217,9 +216,10 @@ gradient, combined with spatial records of species occurrence via GBIF
 to forecast the uncoupling of the plant-pollinator metaweb of
 Colorado.
 
-![Chapter One conceptual figure. Left: the sources of data and
-how they can be synthesized. Right: The flow from data to interaction
-prediction using a few different interaction prediction models.](./figures/ch1.png)
+![Chapter One conceptual figure. Left: the sources of data and how
+they can be synthesized. Right: The flow from data to interaction
+prediction using a few different interaction prediction
+models.](./figures/ch1.png)
 
 
 ## Methods
@@ -263,11 +263,11 @@ example shown in @fig:example_sdm).
 
 ## Progress
 
-At the moment, we have derived phylogenies and SDMs for all the
-species present in the Colorado GBIF metaweb. I've also been exploring
-the data available from Julian Resasco. The primary constraint on
-further progress is that we are waiting on the finalization of a data
-sharing agreement with RMBL.
+At the moment, we have derived phylogenies (@fig:phylo) and SDMs
+(@fig:example_sdm) for all the species present in the Colorado GBIF
+metaweb. I've also been exploring the data available from Julian
+Resasco. The primary constraint on further progress is that we are
+waiting on the finalization of a data sharing agreement with RMBL.
 
 # Chapter Three: Optimizing corridor placement against ecological dynamics
 
@@ -294,8 +294,6 @@ modification.
 
 ![foo](./figures/ch3.png){#fig:ch3}
 
-
-
 We propose various landscape modifications which alter the cover of a
 landscape, represented as a raster. We then compute a new resistance
 surface based on the proposed landscape modification using
@@ -312,15 +310,14 @@ search space of possible modifications to estimate the modification
 that maximizes the time-until extinction of simulated metapopulation
 dynamics under that hypothetical modified landscape.
 
-
 The biggest challenge in implementing simulated annealing in this
 context is defining a proposal function for landscape modifications.
-This is done by computing the minimum-spanning-tree (MST) of the
-spatial nodes, and then proposing corridors that connect nodes that
-are already connected in the MST.
+At the moment this is done by computing the minimum-spanning-tree
+(MST) of the spatial nodes, and then proposing corridors that connect
+nodes that are already connected in the MST.
 
-## Results
-
+The final component of this chapter is measuring the effect of
+land-use change on the robustness of the optimized corridor.
 
 ## Progress
 
@@ -376,16 +373,13 @@ trophic-level.
 The software as it exists is capable of simulating the biomass
 dynamics of arbitrarily large food-webs using Lotka-Volterra, Holling
 Type-II, or Holling Type-III functional responses. It currently has
-methods to implement Guassian drift, and verious forms of dispersal
+methods to implement Gaussian drift, and verious forms of dispersal
 via Dispersal.jl. Also occupancy dynamics for Levins metapopulations
 [@levins1967], and spatially explicit Hanski metapopulatoins
 [@hanski2001]. This is most of what needs to exist for the preceding
-chapters.
-
-Selection on arbitrary environmental variables in progress, as well as
-traits.
-
-
+chapters. In-progress functionality includes selection (which affects
+growth-rate) on arbitrary environmental variables in progress, as well
+as traits.
 
 # Discussion
 
