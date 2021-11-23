@@ -201,29 +201,29 @@ terrain and oceans, and both agricultural and urban development has
 rapidly reshaped the Earth's land cover. These the bulk of this change
 has occurred within the last several hundred years, a geological
 instant, inducing a sudden shift in conditions to Earth's climate and
-biosphere. As a result \emph{ecological forecasting}---TK DEFINITION
----and then using these forecasts to make decisions to mitigate the
-negative consequences of this change on ecosystems, their functioning,
-and the services they provide to humans has emerged as an imperative for
-ecology and environmental science (Dietze 2017). However, robust
-prediction of ecological processes is, to say the least, quite difficult
-(Beckage \emph{et al.} 2011; Petchey \emph{et al.} 2015). This
-difficultly is compounded by a few factors, the first being that
-sampling ecosystems is not easy. Ecological data is often biased,
-noisey, and sparse in both space and time. The current paucity of
-ecological data has resulted in much interest in developing global
-systems for \emph{ecosystem monitoring} (Makiola \emph{et al.} 2020),
-which would systematize the collection of biodiversity data in manner
-that makes detecting and predicting change more possible than at the
-moment (Urban \emph{et al.} 2021).
+biosphere. As a result \emph{ecological forecasting}---modeling how
+ecosystems and their services will change in the future---and then using
+these forecasts to make decisions to mitigate the negative consequences
+of this change on ecosystems, their functioning, and the services they
+provide to humans has emerged as an imperative for ecology and
+environmental science (Dietze 2017). However, robust prediction of
+ecological processes is, to say the least, quite difficult (Beckage
+\emph{et al.} 2011; Petchey \emph{et al.} 2015). This difficultly is
+compounded by a few factors, the first being that sampling ecosystems is
+not easy. Ecological data is often biased, noisey, and sparse in both
+space and time. The current paucity of ecological data has resulted in
+much interest in developing global systems for \emph{ecosystem
+monitoring} (Makiola \emph{et al.} 2020), which would systematize the
+collection of biodiversity data in manner that makes detecting and
+predicting change more possible than at the moment (Urban \emph{et al.}
+2021).
 
-\textbf{\emph{TK add mention of interaction prediction here as they
-effect dynamics}} The second major challenge in ecological forecasting
-is that the underlying dynamics of most ecological processes are unknown
-and instead must be inferred from this (sparse) data. Much of the
-history of quantitatively modeling ecosystems have been done in the
-language of dynamical systems, describing how the value of an observable
-state of the system, represented by a vector of numbers
+The second major challenge in ecological forecasting is that the
+underlying dynamics of most ecological processes are unknown and instead
+must be inferred from this (sparse) data. Much of the history of
+quantitatively modeling ecosystems have been done in the language of
+dynamical systems, describing how the value of an observable state of
+the system, represented by a vector of numbers
 \([x_1, x_2, \dots, x_n]^T = \vec{x}\) changes as over time, yielding
 models in the form of differential equations in continuous-time
 settings, \(\frac{dx}{dt} = f(x)\), or difference equations in
@@ -232,7 +232,8 @@ discrete-time settings, \(x_t = f(x_{t-1})\), where
 how the system changes on a moment-to-moment basis (e.g.~in the context
 of communities, \(f\) could be Lotka-Voltera, Holling-Type-III or
 DeAngelis-Beddington functional response). The form of this functional
-response in real systems is effectively unknown, and some forms are
+response in real systems, and whether it is meaningfully non-zero for a
+given species interaction, is effectively unknown, and some forms are
 inherently more ``forecastable'' than others (Beckage \emph{et al.}
 2011; Chen \emph{et al.} 2019; Pennekamp \emph{et al.} 2019). The
 initial success of these forms of models can be traced back to the
@@ -371,12 +372,10 @@ show these positive associations exist in two sets of spatially
 replicated samples of interaction networks (Thompson \& Townsend 2000;
 Hadfield \emph{et al.} 2014), fig.~\ref{fig:posassoc}---further I'm
 planning to add the field data from the previous chapter into this
-analysis once available.
-
-Finally this chapter proposes a simulated annealing method to optimize
-the a set of \(n\) points in space to maximize the probability of
-detecting an interaction between two species \(a\) and \(b\) with
-\emph{known} distributions \(D_a\), \(D_b\).
+analysis once available. Finally this chapter proposes a simulated
+annealing method to optimize the a set of \(n\) points in space to
+maximize the probability of detecting an interaction between two species
+\(a\) and \(b\) with \emph{known} distributions \(D_a\), \(D_b\).
 
 \hypertarget{results}{%
 \subsection{Results}\label{results}}
@@ -398,11 +397,11 @@ fig.~\ref{fig:fnr}.
 \end{figure}
 
 The second major result is that we analytically show that the this
-simulated observation model, by assuming that there is no correlation
-between observing two species given that they interaction, actually
-underpredicts the realized false-negative interaction rate. We then
-demonstrate that this association exists in two empirical systems
-fig.~\ref{fig:posassoc}.
+simulated observation model, by assuming that there is no association
+between observing two species given that they interact, actually under
+predicts the realized false-negative interaction rate. We then
+demonstrate that this positive association association exists in two
+empirical systems fig.~\ref{fig:posassoc}.
 
 \begin{figure}
 \hypertarget{fig:posassoc}{%
@@ -509,11 +508,11 @@ millefolium}}\label{fig:example_sdm}
 \hypertarget{progress-1}{%
 \subsection{Progress}\label{progress-1}}
 
-At the moment, we have derived phylogenies and SDMs for all the species
-present in the Colorado GBIF metaweb. I've also been exploring the data
-available from Julian Resasco. The primary constraint on further
-progress is that we are waiting on the finalization of a data sharing
-agreement with RMBL.
+At the moment, we have derived phylogenies (fig.~\ref{fig:phylo}) and
+SDMs (fig.~\ref{fig:example_sdm}) for all the species present in the
+Colorado GBIF metaweb. I've also been exploring the data available from
+Julian Resasco. The primary constraint on further progress is that we
+are waiting on the finalization of a data sharing agreement with RMBL.
 
 \hypertarget{chapter-three-optimizing-corridor-placement-against-ecological-dynamics}{%
 \section{Chapter Three: Optimizing corridor placement against ecological
@@ -566,13 +565,13 @@ maximizes the time-until extinction of simulated metapopulation dynamics
 under that hypothetical modified landscape.
 
 The biggest challenge in implementing simulated annealing in this
-context is defining a proposal function for landscape modifications.
-This is done by computing the minimum-spanning-tree (MST) of the spatial
-nodes, and then proposing corridors that connect nodes that are already
-connected in the MST.
+context is defining a proposal function for landscape modifications. At
+the moment this is done by computing the minimum-spanning-tree (MST) of
+the spatial nodes, and then proposing corridors that connect nodes that
+are already connected in the MST.
 
-\hypertarget{results-2}{%
-\subsection{Results}\label{results-2}}
+The final component of this chapter is measuring the effect of land-use
+change on the robustness of the optimized corridor.
 
 \hypertarget{progress-2}{%
 \subsection{Progress}\label{progress-2}}
@@ -626,8 +625,8 @@ networks from Mangal.jl (\textbf{cite?}).
 Framework based on (\textbf{Velland2010ConSyn?}), processes divided into
 four categories: selection, dispersal, drift, speciation.
 
-\hypertarget{results-3}{%
-\subsection{Results}\label{results-3}}
+\hypertarget{results-2}{%
+\subsection{Results}\label{results-2}}
 
 Below (fig.~\ref{fig:foodwebtraj}) is a sample output of simulated
 food-web dynamics for a metaweb of 100 species generated using the
@@ -652,14 +651,13 @@ MetacommunityDynamics.jl}\label{fig:foodwebtraj}
 The software as it exists is capable of simulating the biomass dynamics
 of arbitrarily large food-webs using Lotka-Volterra, Holling Type-II, or
 Holling Type-III functional responses. It currently has methods to
-implement Guassian drift, and verious forms of dispersal via
+implement Gaussian drift, and verious forms of dispersal via
 Dispersal.jl. Also occupancy dynamics for Levins metapopulations
 (\textbf{levins1967?}), and spatially explicit Hanski metapopulatoins
 (\textbf{hanski2001?}). This is most of what needs to exist for the
-preceding chapters.
-
-Selection on arbitrary environmental variables in progress, as well as
-traits.
+preceding chapters. In-progress functionality includes selection (which
+affects growth-rate) on arbitrary environmental variables in progress,
+as well as traits.
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
