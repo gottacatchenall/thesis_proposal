@@ -2,7 +2,15 @@
 \hypertarget{fig:thesis}{%
 \centering
 \includegraphics{./figures/thesisconcept.png}
-\caption{thesis concept}\label{fig:thesis}
+\caption{Left: a framework for ecosystem monitoring, forecasting, and
+mitigation. From the top, a set of biodiversity observatories which form
+a monitoring network. Each collect various biodiversity data products.
+From this raw data, we derive essential biodiversity variables (EBVs),
+and forecast how they change over time. Based on this forecast, we wish
+to choose the best possible mitigation strategy to maximize the chance
+the realized future outcomes of the EBV approaches the target state.
+Right: Each panel represents a chapter of the thesis, which follows the
+flow of the framework on the left.}\label{fig:thesis}
 }
 \end{figure}
 \efloatseparator
