@@ -46,26 +46,6 @@ prediction using a few different interaction prediction models.}
 \efloatseparator
  
 \begin{figure}
-\hypertarget{fig:phylo}{%
-\centering
-\includegraphics{./figures/trees.png}
-\caption{Phylogeny for both bumblebee species (left) and flower species
-(right)}\label{fig:phylo}
-}
-\end{figure}
-\efloatseparator
- 
-\begin{figure}
-\hypertarget{fig:example_sdm}{%
-\centering
-\includegraphics{./figures/sample_sdm.png}
-\caption{Example SDM for \emph{Archillea
-millefolium}}\label{fig:example_sdm}
-}
-\end{figure}
-\efloatseparator
- 
-\begin{figure}
 \hypertarget{fig:ch3}{%
 \centering
 \includegraphics{./figures/ch3.png}

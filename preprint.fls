@@ -1372,17 +1372,6 @@ INPUT ./figures/ch1.png
 INPUT ./figures/ch1.png
 INPUT ./figures/ch1.png
 INPUT ./figures/ch1.png
-INPUT ./figures/trees.png
-INPUT ./figures/trees.png
-INPUT ./figures/trees.png
-INPUT ./figures/trees.png
-INPUT ./figures/trees.png
-INPUT ./figures/sample_sdm.png
-INPUT ./figures/sample_sdm.png
-INPUT ./figures/sample_sdm.png
-INPUT ./figures/sample_sdm.png
-INPUT ./figures/sample_sdm.png
-INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-italic.tfm
 INPUT ./figures/ch3.png
 INPUT ./figures/ch3.png
 INPUT ./figures/ch3.png
