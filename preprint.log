@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  23 NOV 2021 20:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  23 NOV 2021 20:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1320,8 +1320,8 @@ Package rerunfilecheck Info: File `preprint.out' has not changed.
 (rerunfilecheck)             Checksum: 551F5CD93733D0DD6B2042C0FD6CB6DC;3379.
  ) 
 Here is how much of TeX's memory you used:
- 29961 strings out of 478579
- 528104 string characters out of 5855461
+ 29962 strings out of 478579
+ 528125 string characters out of 5855461
  837588 words of memory out of 5000000
  47218 multiletter control sequences out of 15000+600000
  543936 words of font info for 137 fonts, out of 8000000 for 9000
@@ -1342,10 +1342,10 @@ dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/texdir/
 texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texmf-di
 st/fonts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb>
-Output written on preprint.pdf (12 pages, 5943443 bytes).
+Output written on preprint.pdf (12 pages, 5941954 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 103 named destinations out of 1000 (max. 500000)
+ 328 PDF objects out of 1000 (max. 8388607)
+ 277 compressed objects within 3 object streams
+ 104 named destinations out of 1000 (max. 500000)
  231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
