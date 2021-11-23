@@ -616,14 +616,17 @@ MCD.jl}\label{fig:software}
 \hypertarget{methods-3}{%
 \subsection{Methods}\label{methods-3}}
 
-Software is structured based on DG.jl (\textbf{cite?}) and Dispersal.jl
-(\textbf{cite?}).
+\texttt{MetacommunityDynamics.jl} is built on \texttt{DynamicGrids.jl},
+a library for high-performance gridded simulations in the \texttt{Julia}
+language, and Dispersal.jl (Maino \emph{et al.} 2021), and extension of
+\texttt{DynamicGrids.jl} specifically for modeling organism dispersal.
+It also contains integrations with \texttt{EcologicalNetworks.jl}
+(Poisot \emph{et al.} 2019) to generate metawebs, or can use empirical
+networks from Mangal.jl (Banville \emph{et al.} 2021).
 
-Uses methods from EN.jl to generate metawebs, or can use empirical
-networks from Mangal.jl (\textbf{cite?}).
-
-Framework based on (\textbf{Velland2010ConSyn?}), processes divided into
-four categories: selection, dispersal, drift, speciation.
+It implements the general framework for community dynamics proposed by
+(\textbf{Velland2010ConSyn?}), where all community processes can divided
+into four categories: selection, dispersal, drift, and speciation.
 
 \hypertarget{results-2}{%
 \subsection{Results}\label{results-2}}
@@ -673,6 +676,12 @@ important for QE. This should be at least half a page.
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
+\leavevmode\hypertarget{ref-Banville2021ManJl}{}%
+Banville, F., Vissault, S. \& Poisot, T. (2021). Mangal.jl and
+EcologicalNetworks.jl: Two complementary packages for analyzing
+ecological networks in Julia. \emph{Journal of Open Source Software}, 6,
+2721.
+
 \leavevmode\hypertarget{ref-Bascompte2007PlaMut}{}%
 Bascompte, J. \& Jordano, P. (2007). Plant-Animal Mutualistic Networks:
 The Architecture of Biodiversity. \emph{Annual Review of Ecology,
@@ -739,6 +748,11 @@ Robert H. MacArthur Award Lecture. \emph{Ecology}, 73, 1943--1967.
 MacDonald, A.A.M., Banville, F. \& Poisot, T. (2020). Revisiting the
 Links-Species Scaling Relationship in Food Webs. \emph{Patterns}, 1.
 
+\leavevmode\hypertarget{ref-Maino2021PreGlo}{}%
+Maino, J.L., Schouten, R. \& Umina, P. (2021). Predicting the global
+invasion of Drosophila suzukii to improve Australian biosecurity
+preparedness. \emph{Journal of Applied Ecology}, 58, 789--800.
+
 \leavevmode\hypertarget{ref-Makiola2020KeyQue}{}%
 Makiola, A., Compson, Z.G., Baird, D.J., Barnes, M.A., Boerlijst, S.P.,
 Bouchez, A., \emph{et al.} (2020). Key Questions for Next-Generation
@@ -775,6 +789,11 @@ and examples of its uses and determinants. \emph{Ecology Letters}, 18,
 Peterman, W.E. (2018). ResistanceGA: An R package for the optimization
 of resistance surfaces using genetic algorithms. \emph{Methods in
 Ecology and Evolution}, 9, 1638--1647.
+
+\leavevmode\hypertarget{ref-Poisot2019EcoJl}{}%
+Poisot, T., Bélisle, Z., Hoebeke, L., Stock, M. \& Szefer, P. (2019).
+EcologicalNetworks.jl: Analysing ecological networks of species
+interactions. \emph{Ecography}, 42, 1850--1861.
 
 \leavevmode\hypertarget{ref-Strydom2021FooWeb}{}%
 Strydom, T., Bouskila, S., Banville, F., Barros, C., Caron, D., Farrell,

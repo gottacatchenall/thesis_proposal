@@ -350,6 +350,38 @@
         "volume": "6"
     },
     {
+        "DOI": "10.21105/joss.02721",
+        "author": [
+            {
+                "family": "Banville",
+                "given": "Francis"
+            },
+            {
+                "family": "Vissault",
+                "given": "Steve"
+            },
+            {
+                "family": "Poisot",
+                "given": "Timoth\u00e9e"
+            }
+        ],
+        "container-title": "Journal of Open Source Software",
+        "id": "Banville2021ManJla",
+        "issue": "61",
+        "issued": {
+            "date-parts": [
+                [
+                    2021,
+                    5
+                ]
+            ]
+        },
+        "page": "2721",
+        "title": "Mangal.jl and EcologicalNetworks.jl: Two complementary packages for analyzing ecological networks in Julia",
+        "type": "article-journal",
+        "volume": "6"
+    },
+    {
         "DOI": "10.2307/5781",
         "author": [
             {
@@ -4521,6 +4553,38 @@
         "type": "article-journal"
     },
     {
+        "DOI": "10.1111/1365-2664.13812",
+        "author": [
+            {
+                "family": "Maino",
+                "given": "James L."
+            },
+            {
+                "family": "Schouten",
+                "given": "Rafael"
+            },
+            {
+                "family": "Umina",
+                "given": "Paul"
+            }
+        ],
+        "container-title": "Journal of Applied Ecology",
+        "id": "Maino2021PreGlo",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    2021
+                ]
+            ]
+        },
+        "keyword": "dispersal,economic activity,exotic,forecasting,globalization,human-mediated,propagule pressure,spatially explicit",
+        "page": "789-800",
+        "title": "Predicting the global invasion of Drosophila suzukii to improve Australian biosecurity preparedness",
+        "type": "article-journal",
+        "volume": "58"
+    },
+    {
         "DOI": "10.3389/fenvs.2019.00197",
         "author": [
             {
@@ -6122,6 +6186,46 @@
         ],
         "container-title": "Ecography",
         "id": "Poisot2019EcoJl",
+        "issue": "11",
+        "issued": {
+            "date-parts": [
+                [
+                    2019
+                ]
+            ]
+        },
+        "keyword": "ecological networks,graph theory,Julia",
+        "page": "1850-1861",
+        "title": "EcologicalNetworks.jl: Analysing ecological networks of species interactions",
+        "type": "article-journal",
+        "volume": "42"
+    },
+    {
+        "DOI": "10.1111/ecog.04310",
+        "author": [
+            {
+                "family": "Poisot",
+                "given": "Timoth\u00e9e"
+            },
+            {
+                "family": "B\u00e9lisle",
+                "given": "Zachary"
+            },
+            {
+                "family": "Hoebeke",
+                "given": "Laura"
+            },
+            {
+                "family": "Stock",
+                "given": "Michiel"
+            },
+            {
+                "family": "Szefer",
+                "given": "Piotr"
+            }
+        ],
+        "container-title": "Ecography",
+        "id": "Poisot2019EcoJla",
         "issue": "11",
         "issued": {
             "date-parts": [

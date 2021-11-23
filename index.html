@@ -264,9 +264,8 @@
             <img src="./figures/ch4.png" id="fig:software" alt="Figure 8: The structure of the software libraries used as part of MCD.jl" /><figcaption aria-hidden="true">Figure 8: The structure of the software libraries used as part of MCD.jl</figcaption>
             </figure>
             <h2 id="methods-3">Methods</h2>
-            <p>Software is structured based on DG.jl <span class="citation" data-cites="cite">(<strong>cite?</strong>)</span> and Dispersal.jl <span class="citation" data-cites="cite">(<strong>cite?</strong>)</span>.</p>
-            <p>Uses methods from EN.jl to generate metawebs, or can use empirical networks from Mangal.jl <span class="citation" data-cites="cite">(<strong>cite?</strong>)</span>.</p>
-            <p>Framework based on <span class="citation" data-cites="Velland2010ConSyn">(<strong>Velland2010ConSyn?</strong>)</span>, processes divided into four categories: selection, dispersal, drift, speciation.</p>
+            <p><code>MetacommunityDynamics.jl</code> is built on <code>DynamicGrids.jl</code>, a library for high-performance gridded simulations in the <code>Julia</code> language, and Dispersal.jl <span class="citation" data-cites="Maino2021PreGlo">(Maino <em>et al.</em> 2021)</span>, and extension of <code>DynamicGrids.jl</code> specifically for modeling organism dispersal. It also contains integrations with <code>EcologicalNetworks.jl</code> <span class="citation" data-cites="Poisot2019EcoJl">(Poisot <em>et al.</em> 2019)</span> to generate metawebs, or can use empirical networks from Mangal.jl <span class="citation" data-cites="Banville2021ManJl">(Banville <em>et al.</em> 2021)</span>.</p>
+            <p>It implements the general framework for community dynamics proposed by <span class="citation" data-cites="Velland2010ConSyn">(<strong>Velland2010ConSyn?</strong>)</span>, where all community processes can divided into four categories: selection, dispersal, drift, and speciation.</p>
             <h2 id="results-2">Results</h2>
             <p>Below (fig. 9) is a sample output of simulated food-web dynamics for a metaweb of 100 species generated using the minimum-potential-niche model with connectance <span class="math inline"><em>C</em> = 0.05</span> and forbidden-link probability of <span class="math inline">0.5</span>. The dynamics change according to a Lotka-Volttera functional response, dispersal (with dispersal distance inverse proportional to trophic-level), linear mortality, and logistic growth for any species at the producer trophic-level.</p>
             <figure>
@@ -280,6 +279,9 @@
             </blockquote>
             <h1 class="unnumbered" id="references">References</h1>
             <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+            <div id="ref-Banville2021ManJl" class="csl-entry" role="doc-biblioentry">
+            Banville, F., Vissault, S. &amp; Poisot, T. (2021). Mangal.jl and EcologicalNetworks.jl: Two complementary packages for analyzing ecological networks in Julia. <em>Journal of Open Source Software</em>, 6, 2721.
+            </div>
             <div id="ref-Bascompte2007PlaMut" class="csl-entry" role="doc-biblioentry">
             Bascompte, J. &amp; Jordano, P. (2007). Plant-Animal Mutualistic Networks: The Architecture of Biodiversity. <em>Annual Review of Ecology, Evolution, and Systematics</em>, 38, 567–593.
             </div>
@@ -322,6 +324,9 @@
             <div id="ref-MacDonald2020RevLin" class="csl-entry" role="doc-biblioentry">
             MacDonald, A.A.M., Banville, F. &amp; Poisot, T. (2020). Revisiting the Links-Species Scaling Relationship in Food Webs. <em>Patterns</em>, 1.
             </div>
+            <div id="ref-Maino2021PreGlo" class="csl-entry" role="doc-biblioentry">
+            Maino, J.L., Schouten, R. &amp; Umina, P. (2021). Predicting the global invasion of Drosophila suzukii to improve Australian biosecurity preparedness. <em>Journal of Applied Ecology</em>, 58, 789–800.
+            </div>
             <div id="ref-Makiola2020KeyQue" class="csl-entry" role="doc-biblioentry">
             Makiola, A., Compson, Z.G., Baird, D.J., Barnes, M.A., Boerlijst, S.P., Bouchez, A., <em>et al.</em> (2020). Key Questions for Next-Generation Biomonitoring. <em>Frontiers in Environmental Science</em>, 7.
             </div>
@@ -342,6 +347,9 @@
             </div>
             <div id="ref-Peterman2018ResRP" class="csl-entry" role="doc-biblioentry">
             Peterman, W.E. (2018). ResistanceGA: An R package for the optimization of resistance surfaces using genetic algorithms. <em>Methods in Ecology and Evolution</em>, 9, 1638–1647.
+            </div>
+            <div id="ref-Poisot2019EcoJl" class="csl-entry" role="doc-biblioentry">
+            Poisot, T., Bélisle, Z., Hoebeke, L., Stock, M. &amp; Szefer, P. (2019). EcologicalNetworks.jl: Analysing ecological networks of species interactions. <em>Ecography</em>, 42, 1850–1861.
             </div>
             <div id="ref-Strydom2021FooWeb" class="csl-entry" role="doc-biblioentry">
             Strydom, T., Bouskila, S., Banville, F., Barros, C., Caron, D., Farrell, M.J., <em>et al.</em> (2021a). Food web reconstruction through phylogenetic transfer of low-rank network representation.
