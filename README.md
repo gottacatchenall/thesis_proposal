@@ -7,20 +7,20 @@ terrain and oceans, and both agricultural and urban development has
 rapidly reshaped the Earth's land cover. These the bulk of this change
 has occurred within the last several hundred years, a geological
 instant, inducing a sudden shift in conditions to Earth's climate and
-biosphere. As a result _ecological forecasting_---TK DEFINITION ---and then using these forecasts to
-make decisions to mitigate the negative consequences of this change on
-ecosystems, their functioning, and the services they provide to humans
-has emerged as an imperative for ecology and environmental science
-[@Dietze2017PreEco]. However, robust prediction of ecological
-processes is, to say the least, quite difficult [@Beckage2011LimPre;
-@Petchey2015EcoFor]. This difficultly is compounded by a few factors,
-the first being that sampling ecosystems is not easy. Ecological data
-is often biased, noisey, and sparse in both space and time. The
-current paucity of ecological data has resulted in much interest in
-developing global systems for _ecosystem monitoring_
-[@Makiola2020KeyQue], which would systematize the collection of
-biodiversity data in manner that makes detecting and predicting change
-more possible than at the moment [@Urban2021CodLif].
+biosphere. As a result _ecological forecasting_---TK DEFINITION ---and
+then using these forecasts to make decisions to mitigate the negative
+consequences of this change on ecosystems, their functioning, and the
+services they provide to humans has emerged as an imperative for
+ecology and environmental science [@Dietze2017PreEco]. However, robust
+prediction of ecological processes is, to say the least, quite
+difficult [@Beckage2011LimPre; @Petchey2015EcoFor]. This difficultly
+is compounded by a few factors, the first being that sampling
+ecosystems is not easy. Ecological data is often biased, noisey, and
+sparse in both space and time. The current paucity of ecological data
+has resulted in much interest in developing global systems for
+_ecosystem monitoring_ [@Makiola2020KeyQue], which would systematize
+the collection of biodiversity data in manner that makes detecting and
+predicting change more possible than at the moment [@Urban2021CodLif].
 
 
 ***TK add mention of interaction prediction here as they effect dynamics***
@@ -100,37 +100,42 @@ from a monitoring network to forecasts to mitigation strategy
 
 ![thesis concept](./figures/thesisconcept.png){#fig:thesis}
 
-**TK final paragraph**
-> Set up the key research challenges in this field so that the reader understands where your thesis fits in.
-> Finish the introduction with a short summary of what you will do across your chapters. This is the bridging paragraph to your chapters.
-
-The primary reserach challenges this thesis addresses: how do
-we design ecological samples? Data assimilation pipeline.
-How do we propgate uncertainty from these samples into forecasts?
-More details on pipeline flow 
-
+The primary research challenges this thesis addresses: how do we
+design ecological samples to? How do we build the software
+infrastructure to assimilate data from a variety of sources? How do we
+propagate uncertainty from data to forecasts? The flow of chapters
+follows the flow in @fig:thesis (left), from data collection via a
+monitoring network, to forecasting an essential biodiversity variable
+(EBV), to optimizing mitigation strategy based on constraints. In
+chapter one, we discuss how simulation can aid in the design of
+ecological samples and monitoring network design. In chapter two we
+use data to forecast the uncoupling of a plant-pollinator network. In
+chapter three, we apply simulation methods in landscape ecology to
+optimize corridor placement with respect maximize the
+time-until-extinction of a metapopulation. The fourth and final
+chapter is the software (_MetacommunityDynamics.jl_) which enables the
+rest of the dissertation.
 
 
 # Chapter One: Optimizing spatial sampling of species interactions
 
-## Objective 
+## Objective
 
 This chapter uses simulation models to investigate the relationship
 between species relative abundance, sampling effort, and probability
-of observing an interaction between species in order to aid in the design
-of samples of ecological interactions, and to provide a null expectation 
-of false-negative probability for a dataset of a given size. 
-Further it then proposes a
-method for optimizing the spatial sampling locations to maximize the
-probability of detecting an interaction between two species given a fixed 
-number of total of observations, and the distributions of each species.
-This addresses the optimization of monitoring
-network part of the flow from data to mitigation at the top of
-@fig:thesis, left. As explored in the previous chapter, there are
-false-negatives in interaction data. However, there is more than one
-way to observe a false-negative when sampling interactions.
-@fig:fnrtaxonomy shows a taxonomy of false-negatives in occurrence,
-co-occurrence, and interaction data.
+of observing an interaction between species in order to aid in the
+design of samples of ecological interactions, and to provide a null
+expectation of false-negative probability for a dataset of a given
+size. Further it then proposes a method for optimizing the spatial
+sampling locations to maximize the probability of detecting an
+interaction between two species given a fixed number of total of
+observations, and the distributions of each species. This addresses
+the optimization of monitoring network part of the flow from data to
+mitigation at the top of @fig:thesis, left. As explored in the
+previous chapter, there are false-negatives in interaction data.
+However, there is more than one way to observe a false-negative when
+sampling interactions. @fig:fnrtaxonomy shows a taxonomy of
+false-negatives in occurrence, co-occurrence, and interaction data.
 
 ![A taxonomy of occurrence, co-occurrence, and interaction false negatives in data](./figures/ch2.png){#fig:fnrtaxonomy}
 
@@ -138,15 +143,13 @@ co-occurrence, and interaction data.
 
 The first result is to compute a null expectation of the probability
 of an interaction false-negative as a function number of total
-observations of individuals of _any species_. This is done by simulating
-the process of observation, where the probability of observing a given
-species is its relative abundance. We use a
+observations of individuals of _any species_. This is done by
+simulating the process of observation, where the probability of
+observing a given species is its relative abundance. We use a
 log-normal distribution of relative abundance [@Hubbell2001UniNeu] and
 simulating the process of observation on food-webs generated using the
 niche model [@Williams2000SimRul] with connectance parameterized by
-the flexible-links model [@MacDonald2020RevLin].
-
-An example of this
+the flexible-links model [@MacDonald2020RevLin]. An example of this
 relation for networks with varying spceies richness is shown in
 @fig:fnr.
 
@@ -160,23 +163,39 @@ replicated samples of interaction networks [@Hadfield2014TalTwo;
 field data from the previous chapter into this analysis once
 available.
 
-## Results
-
-![foo](./figures/ch2_fnr.png){#fig:fnr}
-
-
-![Demonstrates positive associations in co-occurrence](./figures/positiveassociations.png){#fig:posassoc}
-
-## Discussion 
-
-
 Finally this chapter proposes a simulated annealing method to optimize
 the a set of $n$ points in space to maximize the probability of detecting
 an interaction between two species $a$ and $b$ with _known_ distributions $D_a$, $D_b$.
 
-## Progress 
 
-This chapter is mostly complete. The only remaining work is the implementation of simulated annealing optimization process.
+## Results
+
+The first major result is using the simulation of the observation
+process described above to generate expectations of interaction
+false-negative rate (FNR) as a function of total number of
+observations, with the goal being for this estimate to be used as
+correction for detection  error when fitting an interaction prediction
+model. This relationship varies with the total richness of the
+metaweb [@fig:fnr].
+
+![foo](./figures/ch2_fnr.png){#fig:fnr}
+
+The second major result is that we analytically show that the this
+simulated observation model, by assuming that there is no correlation
+between observing two species given that they interaction, actually
+underpredicts the realized false-negative interaction rate. We then
+demonstrate that this association exists in two empirical systems
+[@fig:posassoc].  
+
+![Demonstrates positive associations in co-occurrence](./figures/positiveassociations.png){#fig:posassoc}
+
+## Progress
+
+This chapter is mostly complete. The only remaining work is the
+implementation of simulated annealing optimization process. This will
+be done by using a proposal function which takes a set of coordinates
+in space and proposes a new location for each point based on a
+distance-decaying kernel.
 
 
 # Chapter Two: Forecasting the spatial uncoupling of a plant-pollinator network
@@ -233,7 +252,7 @@ spatial between species for which there is a predicted interaction.
 
 ## Results
 
-Here we show the in-progress work on the prerequisites for the
+Here we show the in-progress results, which are the prerequisites for the
 analysis outlined above: phylogenies for both plant and bee species
 (@fig:phylo) and species distribution models for all species (an
 example shown in @fig:example_sdm).
@@ -244,8 +263,11 @@ example shown in @fig:example_sdm).
 
 ## Progress
 
-I have a phylogeny and SDMs for all the species. 
-Waiting on data agreement with RMBL. 
+At the moment, we have derived phylogenies and SDMs for all the
+species present in the Colorado GBIF metaweb. I've also been exploring
+the data available from Julian Resasco. The primary constraint on
+further progress is that we are waiting on the finalization of a data
+sharing agreement with RMBL.
 
 # Chapter Three: Optimizing corridor placement against ecological dynamics
 
@@ -299,7 +321,13 @@ are already connected in the MST.
 
 ## Results
 
+
 ## Progress
+
+The current progress is that I have an algorithm for proposing
+landscape modifications and a simple implementation of simulated
+annealing. The only gap left is implementing Circuitscape estimation
+of resistance surfaces.
 
 # Chapter Four: MetacommunityDynamics.jl: a virtual laboratory for community ecology
 
@@ -315,43 +343,53 @@ which I have contributed. A diagram showing the relation between these
 packages is shown in @fig:software.
 
 We need tools to generate synthetic data from a _known_ set of mechanisms
-and parameters to test our methods for parameter inference and forecasting on 
+and parameters to test our methods for parameter inference and forecasting on
 this _known_ system to assess the effectiveness of these inference and forecasting
-methods. 
+methods.
 
+![The structure of the software libraries used as part of MCD.jl](./figures/ch4.png){#fig:software}
 
 ## Methods
 
 Software is structured based on DG.jl [@cite] and Dispersal.jl [@cite].
 
 Uses methods from EN.jl to generate metawebs, or can use empirical networks
-from Mangal.jl [@cite]. 
+from Mangal.jl [@cite].
 
 Framework based on [@Velland2010ConSyn], processes divided into four categories:
-selection, dispersal, drift, speciation. 
-
+selection, dispersal, drift, speciation.
 
 ## Results
 
-![Sample output of simulated food web dynamics from MetacommunityDynamics.jl ](./figures/foodwebtraj.png)
+Below (@fig:foodwebtraj) is a sample output of simulated food-web dynamics
+for a metaweb of 100 species generated using the minimum-potential-niche
+model with connectance $C=0.05$ and forbidden-link probability of $0.5$.
+The dynamics change according to a Lotka-Volttera functional response,
+dispersal (with dispersal distance inverse proportional to trophic-level),
+linear mortality, and logistic growth for any species at the producer
+trophic-level.
+
+![Sample output of simulated food web dynamics from MetacommunityDynamics.jl ](./figures/foodwebtraj.png){#fig:foodwebtraj}
 
 ## Progress
 
-The software as it exists is capable of simulating the biomass dynamics of
-arbitrarily large food-webs using Lotka-Volterra, Holling Type-II, or Holling Type-III functional responses. It currently has methods to implement Guassian drift, and verious forms of dispersal via Dispersal.jl. 
-Also occupancy dynamics for Levins metapopulations [@levins1967], and spatially explicit Hanski metapopulatoins [@hanski2001].
-This is most of what needs to exist for the preceding chapters. 
+The software as it exists is capable of simulating the biomass
+dynamics of arbitrarily large food-webs using Lotka-Volterra, Holling
+Type-II, or Holling Type-III functional responses. It currently has
+methods to implement Guassian drift, and verious forms of dispersal
+via Dispersal.jl. Also occupancy dynamics for Levins metapopulations
+[@levins1967], and spatially explicit Hanski metapopulatoins
+[@hanski2001]. This is most of what needs to exist for the preceding
+chapters.
 
-Selection on arbitrary environmental variables in progress, as well as traits.
+Selection on arbitrary environmental variables in progress, as well as
+traits.
 
 
-
-
-![The structure of the software libraries used as part of MCD.jl](./figures/ch4.png){#fig:software}
 
 # Discussion
 
-> Describing expected/anticipated contributions of the thesis. Very important for QE. This should be at least half a page. 
+> Describing expected/anticipated contributions of the thesis. Very important for QE. This should be at least half a page.
 
 
 
