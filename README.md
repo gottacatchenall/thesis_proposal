@@ -257,10 +257,6 @@ analysis outlined above: phylogenies for both plant and bee species
 (@fig:phylo) and species distribution models for all species (an
 example shown in @fig:example_sdm).
 
-![Phylogeny for both bumblebee species (left) and flower species (right)](./figures/trees.png){#fig:phylo}
-
-![Example SDM for _Archillea millefolium_](./figures/sample_sdm.png){#fig:example_sdm}
-
 ## Progress
 
 At the moment, we have derived phylogenies (@fig:phylo) and SDMs
