@@ -642,13 +642,11 @@ the code used for the preceding chapters. Indeed
 of tools, but due to the nature of the Julia language, MCD.jl is
 interoperable with serveral existing packages within the
 \texttt{EcoJulia} organization, including several to which I have
-contributed. A diagram showing the relation between these packages is
-shown in fig.~\ref{fig:software}.
-
-We need tools to generate synthetic data from a \emph{known} set of
-mechanisms and parameters to test our methods for parameter inference
-and forecasting on this \emph{known} system to assess the effectiveness
-of these inference and forecasting methods.
+contributed. We need a software library like this to generate synthetic
+data from a \emph{known} set of mechanisms and parameters to test our
+methods for parameter inference and forecasting on this \emph{known}
+system to assess the effectiveness of these inference and forecasting
+methods.
 
 \begin{figure}
 \hypertarget{fig:software}{%
@@ -662,17 +660,18 @@ MCD.jl}\label{fig:software}
 \hypertarget{methods-3}{%
 \subsection{Methods}\label{methods-3}}
 
-\texttt{MetacommunityDynamics.jl} is built on \texttt{DynamicGrids.jl},
-a library for high-performance gridded simulations in the \texttt{Julia}
-language, and Dispersal.jl (Maino \emph{et al.} 2021), and extension of
-\texttt{DynamicGrids.jl} specifically for modeling organism dispersal.
-It also contains integrations with \texttt{EcologicalNetworks.jl}
-(Poisot \emph{et al.} 2019) to generate metawebs, or can use empirical
-networks from Mangal.jl (Banville \emph{et al.} 2021).
-
-It implements the general framework for community dynamics proposed by
-(\textbf{Velland2010ConSyn?}), where all community processes can divided
-into four categories: selection, dispersal, drift, and speciation.
+A diagram showing the relation between these packages is shown in
+fig.~\ref{fig:software}. \texttt{MetacommunityDynamics.jl} is built on
+\texttt{DynamicGrids.jl}, a library for high-performance gridded
+simulations in the \texttt{Julia} language, and Dispersal.jl (Maino
+\emph{et al.} 2021), and extension of \texttt{DynamicGrids.jl}
+specifically for modeling organism dispersal. It also contains
+integrations with \texttt{EcologicalNetworks.jl} (Poisot \emph{et al.}
+2019) to generate metawebs, or can use empirical networks from Mangal.jl
+(Banville \emph{et al.} 2021). It implements the general framework for
+community dynamics proposed by (\textbf{Velland2010ConSyn?}), where all
+community processes can divided into four categories: selection,
+dispersal, drift, and speciation.
 
 \hypertarget{results-2}{%
 \subsection{Results}\label{results-2}}
@@ -701,12 +700,12 @@ The software as it exists is capable of simulating the biomass dynamics
 of arbitrarily large food-webs using Lotka-Volterra, Holling Type-II, or
 Holling Type-III functional responses. It currently has methods to
 implement Gaussian drift, and verious forms of dispersal via
-Dispersal.jl. Also occupancy dynamics for Levins metapopulations
-(\textbf{levins1967?}), and spatially explicit Hanski metapopulatoins
-(\textbf{hanski2001?}). This is most of what needs to exist for the
-preceding chapters. In-progress functionality includes selection (which
-affects growth-rate) on arbitrary environmental variables in progress,
-as well as traits.
+Dispersal.jl. Also occupancy dynamics for Levins metapopulations (Levins
+1969), and spatially explicit Hanski-Ovaskainen metapopulations (Hanski
+\& Ovaskainen 2000; Ovaskainen \emph{et al.} 2002). This is most of what
+needs to exist for the preceding chapters. In-progress functionality
+includes selection (which affects growth-rate) on arbitrary
+environmental variables in progress, as well as traits.
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
@@ -789,6 +788,11 @@ earth's land surface areas. \emph{Scientific Data}, 4, 170122.
 \leavevmode\hypertarget{ref-Levin1992ProPat}{}%
 Levin, S.A. (1992). The Problem of Pattern and Scale in Ecology: The
 Robert H. MacArthur Award Lecture. \emph{Ecology}, 73, 1943--1967.
+
+\leavevmode\hypertarget{ref-Levins1969DemGen}{}%
+Levins, R. (1969). Some Demographic and Genetic Consequences of
+Environmental Heterogeneity for Biological Control. \emph{Bulletin of
+the Entomological Society of America}, 15, 237--240.
 
 \leavevmode\hypertarget{ref-MacDonald2020RevLin}{}%
 MacDonald, A.A.M., Banville, F. \& Poisot, T. (2020). Revisiting the
