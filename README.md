@@ -249,6 +249,8 @@ Waiting on data agreement with RMBL.
 
 # Chapter Three: Optimizing corridor placement against ecological dynamics
 
+## Objective
+
 As land-use change has caused many habitats to become fragmented and
 patchy, promoting landscape connectivity has become of significant
 interest to mitigate the effects of this change on Earth's
@@ -266,7 +268,11 @@ choosing corridor placement to optimize a measurement of ecosystem
 functioning derived from simulations run on each proposed landscape
 modification.
 
+## Methods
+
 ![foo](./figures/ch3.png){#fig:ch3}
+
+
 
 We propose various landscape modifications which alter the cover of a
 landscape, represented as a raster. We then compute a new resistance
@@ -284,11 +290,16 @@ search space of possible modifications to estimate the modification
 that maximizes the time-until extinction of simulated metapopulation
 dynamics under that hypothetical modified landscape.
 
+
 The biggest challenge in implementing simulated annealing in this
 context is defining a proposal function for landscape modifications.
 This is done by computing the minimum-spanning-tree (MST) of the
 spatial nodes, and then proposing corridors that connect nodes that
 are already connected in the MST.
+
+## Results
+
+## Progress
 
 # Chapter Four: MetacommunityDynamics.jl: a virtual laboratory for community ecology
 
