@@ -199,6 +199,8 @@ distance-decaying kernel.
 
 # Chapter Two: Forecasting the spatial uncoupling of a plant-pollinator network
 
+## Objective
+
 Interactions between plants and pollinators form networks which
 together structure the "architecture of biodiversity"
 [@Bascompte2007PlaMut]. The functioning and stability of ecosystems
@@ -306,14 +308,19 @@ search space of possible modifications to estimate the modification
 that maximizes the time-until extinction of simulated metapopulation
 dynamics under that hypothetical modified landscape.
 
-The biggest challenge in implementing simulated annealing in this
+**TK** The biggest challenge in implementing simulated annealing in this
 context is defining a proposal function for landscape modifications.
 At the moment this is done by computing the minimum-spanning-tree
 (MST) of the spatial nodes, and then proposing corridors that connect
 nodes that are already connected in the MST.
 
-The final component of this chapter is measuring the effect of
-land-use change on the robustness of the optimized corridor.
+**TK** The goal to rank the cells in the raster by priority based on how many
+times they are converted in the distribution of "good" corridors after
+simulated annealing has reached a pseudoequilibrium. Further, the
+final component of this chapter is measuring the effect of land-use
+change on the robustness of the optimized corridor. By simulating
+various neutral models of urban and agricultural sprawl, we can
+determine if the proposed modifications
 
 ## Progress
 
@@ -383,6 +390,14 @@ arbitrary environmental variables in progress, as well as traits.
 # Discussion
 
 > Describing expected/anticipated contributions of the thesis. Very important for QE. This should be at least half a page.
+
+Developing a system for global biodiversity monitoring is an
+imperative to mitigate biodiversity loss and its impacts on humanity.
+In my thesis I hope to provide a template for the digital
+infrastructure that enables the pipeline from data collection, to
+forecast, to actionable information, both through software that can be
+used to solve these problems (chapters one, three, four), and
+vignettes of how these software can be applied (chapters one, two).
 
 
 
