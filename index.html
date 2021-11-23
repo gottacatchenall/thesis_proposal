@@ -247,25 +247,29 @@
             <h2 id="progress-1">Progress</h2>
             <p>I have a phylogeny and SDMs for all the species. Waiting on data agreement with RMBL.</p>
             <h1 id="chapter-three-optimizing-corridor-placement-against-ecological-dynamics">Chapter Three: Optimizing corridor placement against ecological dynamics</h1>
+            <h2 id="objective-1">Objective</h2>
             <p>As land-use change has caused many habitats to become fragmented and patchy, promoting landscape connectivity has become of significant interest to mitigate the effects of this change on Earth’s biodiversity. However, the practical realities of conservation mean that there is a limitation on how much we can modify landscapes in order to do this. So what is the best place to put a corridor given a constraint on how much surface-area you can change in a landscape? This is the question this chapter seeks to answer. Models for inferring corridor locations have been developed, but are limited in that are not developed around promoting some element of ecosystem function, but instead by trying to find the path of least resistance in an existing landscape from a derived resistance surface <span class="citation" data-cites="Peterman2018ResRP">(Peterman 2018)</span>. This chapter proposes a general algorithm for choosing corridor placement to optimize a measurement of ecosystem functioning derived from simulations run on each proposed landscape modification.</p>
+            <h2 id="methods-2">Methods</h2>
             <figure>
             <img src="./figures/ch3.png" id="fig:ch3" alt="Figure 7: foo" /><figcaption aria-hidden="true">Figure 7: foo</figcaption>
             </figure>
             <p>We propose various landscape modifications which alter the cover of a landscape, represented as a raster. We then compute a new resistance surface based on the proposed landscape modification using Circuitscape <span class="citation" data-cites="McRae2008UsiCir">(McRae <em>et al.</em> 2008)</span>, and based on the values of resistance to dispersal between pair of locations we simulate spatially-explicit metapopulation dynamics model <span class="citation" data-cites="Ovaskainen2002MetMod Hanski2000MetCap">(Hanski &amp; Ovaskainen 2000; Ovaskainen <em>et al.</em> 2002)</span> to estimate a distribution of time until extinction for each landscape modification. The largest challenge in implementing this algorithm is the space of potential modifications grows as <span class="math inline"><em>O</em>((<em>n</em><em>m</em>)!)</span> for an <span class="math inline"><em>n</em></span> by <span class="math inline"><em>m</em></span> raster. For most actual landscapes to which we wish to apply this method, the set of possible modifications becomes uncomputably large, so we use simulated annealing to explore the search space of possible modifications to estimate the modification that maximizes the time-until extinction of simulated metapopulation dynamics under that hypothetical modified landscape.</p>
             <p>The biggest challenge in implementing simulated annealing in this context is defining a proposal function for landscape modifications. This is done by computing the minimum-spanning-tree (MST) of the spatial nodes, and then proposing corridors that connect nodes that are already connected in the MST.</p>
+            <h2 id="results-2">Results</h2>
+            <h2 id="progress-2">Progress</h2>
             <h1 id="chapter-four-metacommunitydynamics.jl-a-virtual-laboratory-for-community-ecology">Chapter Four: MetacommunityDynamics.jl: a virtual laboratory for community ecology</h1>
-            <h2 id="objective-1">Objective</h2>
+            <h2 id="objective-2">Objective</h2>
             <p>The final chapter consists of a collection of modules in the Julia language for different aspects of community ecology, including most of the code used for the preceding chapters. Indeed <code>MetacommunityDynamics.jl</code> (MCD.jl) is the epicenter of this set of tools, but due to the nature of the Julia language, MCD.jl is interoperable with serveral existing packages within the <code>EcoJulia</code> organization, including several to which I have contributed. A diagram showing the relation between these packages is shown in fig. 8.</p>
             <p>We need tools to generate synthetic data from a <em>known</em> set of mechanisms and parameters to test our methods for parameter inference and forecasting on this <em>known</em> system to assess the effectiveness of these inference and forecasting methods.</p>
-            <h2 id="methods-2">Methods</h2>
+            <h2 id="methods-3">Methods</h2>
             <p>Software is structured based on DG.jl <span class="citation" data-cites="cite">(<strong>cite?</strong>)</span> and Dispersal.jl <span class="citation" data-cites="cite">(<strong>cite?</strong>)</span>.</p>
             <p>Uses methods from EN.jl to generate metawebs, or can use empirical networks from Mangal.jl <span class="citation" data-cites="cite">(<strong>cite?</strong>)</span>.</p>
             <p>Framework based on <span class="citation" data-cites="Velland2010ConSyn">(<strong>Velland2010ConSyn?</strong>)</span>, processes divided into four categories: selection, dispersal, drift, speciation.</p>
-            <h2 id="results-2">Results</h2>
+            <h2 id="results-3">Results</h2>
             <figure>
             <img src="./figures/foodwebtraj.png" alt="Sample output of simulated food web dynamics from MetacommunityDynamics.jl" /><figcaption aria-hidden="true">Sample output of simulated food web dynamics from MetacommunityDynamics.jl</figcaption>
             </figure>
-            <h2 id="progress-2">Progress</h2>
+            <h2 id="progress-3">Progress</h2>
             <p>The software as it exists is capable of simulating the biomass dynamics of arbitrarily large food-webs using Lotka-Volterra, Holling Type-II, or Holling Type-III functional responses. It currently has methods to implement Guassian drift, and verious forms of dispersal via Dispersal.jl. Also occupancy dynamics for Levins metapopulations <span class="citation" data-cites="levins1967">(<strong>levins1967?</strong>)</span>, and spatially explicit Hanski metapopulatoins <span class="citation" data-cites="hanski2001">(<strong>hanski2001?</strong>)</span>. This is most of what needs to exist for the preceding chapters.</p>
             <p>Selection on arbitrary environmental variables in progress, as well as traits.</p>
             <figure>
