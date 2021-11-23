@@ -8,35 +8,6 @@
 \efloatseparator
  
 \begin{figure}
-\centering
-\includegraphics{./figures/ch1.png}
-\caption{Chapter One conceptual figure. Left: the sources of data and
-how they can be synthesized. Right: The flow from data to interaction
-prediction using a few different interaction prediction models.}
-\end{figure}
-\efloatseparator
- 
-\begin{figure}
-\hypertarget{fig:phylo}{%
-\centering
-\includegraphics{./figures/trees.png}
-\caption{Phylogeny for both bumblebee species (left) and flower species
-(right)}\label{fig:phylo}
-}
-\end{figure}
-\efloatseparator
- 
-\begin{figure}
-\hypertarget{fig:example_sdm}{%
-\centering
-\includegraphics{./figures/sample_sdm.png}
-\caption{Example SDM for \emph{Archillea
-millefolium}}\label{fig:example_sdm}
-}
-\end{figure}
-\efloatseparator
- 
-\begin{figure}
 \hypertarget{fig:fnrtaxonomy}{%
 \centering
 \includegraphics{./figures/ch2.png}
@@ -66,11 +37,48 @@ co-occurrence}\label{fig:posassoc}
 \efloatseparator
  
 \begin{figure}
+\centering
+\includegraphics{./figures/ch1.png}
+\caption{Chapter One conceptual figure. Left: the sources of data and
+how they can be synthesized. Right: The flow from data to interaction
+prediction using a few different interaction prediction models.}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\hypertarget{fig:phylo}{%
+\centering
+\includegraphics{./figures/trees.png}
+\caption{Phylogeny for both bumblebee species (left) and flower species
+(right)}\label{fig:phylo}
+}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\hypertarget{fig:example_sdm}{%
+\centering
+\includegraphics{./figures/sample_sdm.png}
+\caption{Example SDM for \emph{Archillea
+millefolium}}\label{fig:example_sdm}
+}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
 \hypertarget{fig:ch3}{%
 \centering
 \includegraphics{./figures/ch3.png}
 \caption{foo}\label{fig:ch3}
 }
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
+\includegraphics{./figures/foodwebtraj.png}
+\caption{Sample output of simulated food web dynamics from
+MetacommunityDynamics.jl}
 \end{figure}
 \efloatseparator
  
