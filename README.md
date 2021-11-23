@@ -330,35 +330,34 @@ of resistance surfaces.
 
 ## Objective
 
-The final chapter consists of a collection of modules in the Julia language
-for different aspects of community ecology, including most of the code
-used for the preceding chapters. Indeed `MetacommunityDynamics.jl`
-(MCD.jl) is the epicenter of this set of tools, but due to the nature
-of the Julia language, MCD.jl is interoperable with serveral existing
-packages within the `EcoJulia` organization, including several to
-which I have contributed. A diagram showing the relation between these
-packages is shown in @fig:software.
+The final chapter consists of a collection of modules in the Julia
+language for different aspects of community ecology, including most of
+the code used for the preceding chapters. Indeed
+`MetacommunityDynamics.jl` (MCD.jl) is the epicenter of this set of
+tools, but due to the nature of the Julia language, MCD.jl is
+interoperable with serveral existing packages within the `EcoJulia`
+organization, including several to which I have contributed. We need a
+software library like this to generate synthetic data from a _known_
+set of mechanisms and parameters to test our methods for parameter
+inference and forecasting on this _known_ system to assess the
+effectiveness of these inference and forecasting methods.
 
-We need tools to generate synthetic data from a _known_ set of mechanisms
-and parameters to test our methods for parameter inference and forecasting on
-this _known_ system to assess the effectiveness of these inference and forecasting
-methods.
 
 ![The structure of the software libraries used as part of MCD.jl](./figures/ch4.png){#fig:software}
 
 ## Methods
 
-`MetacommunityDynamics.jl` is built on `DynamicGrids.jl`, a library for
-high-performance gridded simulations in the `Julia` language, and
-Dispersal.jl [@Maino2021PreGlo], and extension of `DynamicGrids.jl`
-specifically for modeling organism dispersal. It also contains
-integrations with `EcologicalNetworks.jl` [@Poisot2019EcoJl] to
-generate metawebs, or can use empirical networks from Mangal.jl
-[@Banville2021ManJl].
-
-It implements the general framework for community dynamics proposed by
-@Velland2010ConSyn, where all community processes can divided into four
-categories: selection, dispersal, drift, and speciation.
+A diagram showing the relation between these packages is shown in
+@fig:software. `MetacommunityDynamics.jl` is built on
+`DynamicGrids.jl`, a library for high-performance gridded simulations
+in the `Julia` language, and Dispersal.jl [@Maino2021PreGlo], and
+extension of `DynamicGrids.jl` specifically for modeling organism
+dispersal. It also contains integrations with `EcologicalNetworks.jl`
+[@Poisot2019EcoJl] to generate metawebs, or can use empirical networks
+from Mangal.jl [@Banville2021ManJl]. It implements the general
+framework for community dynamics proposed by @Velland2010ConSyn, where
+all community processes can divided into four categories: selection,
+dispersal, drift, and speciation.
 
 ## Results
 
@@ -379,11 +378,11 @@ dynamics of arbitrarily large food-webs using Lotka-Volterra, Holling
 Type-II, or Holling Type-III functional responses. It currently has
 methods to implement Gaussian drift, and verious forms of dispersal
 via Dispersal.jl. Also occupancy dynamics for Levins metapopulations
-[@levins1967], and spatially explicit Hanski metapopulatoins
-[@hanski2001]. This is most of what needs to exist for the preceding
-chapters. In-progress functionality includes selection (which affects
-growth-rate) on arbitrary environmental variables in progress, as well
-as traits.
+[@Levins1969DemGen], and spatially explicit Hanski-Ovaskainen
+metapopulations [@Hanski2000MetCap; @Ovaskainen2002MetMod]. This is
+most of what needs to exist for the preceding chapters. In-progress
+functionality includes selection (which affects growth-rate) on
+arbitrary environmental variables in progress, as well as traits.
 
 # Discussion
 
