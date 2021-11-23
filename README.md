@@ -355,7 +355,7 @@ extension of `DynamicGrids.jl` specifically for modeling organism
 dispersal. It also contains integrations with `EcologicalNetworks.jl`
 [@Poisot2019EcoJl] to generate metawebs, or can use empirical networks
 from Mangal.jl [@Banville2021ManJl]. It implements the general
-framework for community dynamics proposed by @Velland2010ConSyn, where
+framework for community dynamics proposed by @Vellend2010ConSyn, where
 all community processes can divided into four categories: selection,
 dispersal, drift, and speciation.
 
