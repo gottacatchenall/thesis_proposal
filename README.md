@@ -348,13 +348,17 @@ methods.
 
 ## Methods
 
-Software is structured based on DG.jl [@cite] and Dispersal.jl [@cite].
+`MetacommunityDynamics.jl` is built on `DynamicGrids.jl`, a library for
+high-performance gridded simulations in the `Julia` language, and
+Dispersal.jl [@Maino2021PreGlo], and extension of `DynamicGrids.jl`
+specifically for modeling organism dispersal. It also contains
+integrations with `EcologicalNetworks.jl` [@Poisot2019EcoJl] to
+generate metawebs, or can use empirical networks from Mangal.jl
+[@Banville2021ManJl].
 
-Uses methods from EN.jl to generate metawebs, or can use empirical networks
-from Mangal.jl [@cite].
-
-Framework based on [@Velland2010ConSyn], processes divided into four categories:
-selection, dispersal, drift, speciation.
+It implements the general framework for community dynamics proposed by
+@Velland2010ConSyn, where all community processes can divided into four
+categories: selection, dispersal, drift, and speciation.
 
 ## Results
 
