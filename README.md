@@ -369,7 +369,7 @@ dispersal (with dispersal distance inverse proportional to trophic-level),
 linear mortality, and logistic growth for any species at the producer
 trophic-level.
 
-![Sample output of simulated food web dynamics from MetacommunityDynamics.jl ](./figures/foodwebtraj.png){#fig:foodwebtraj}
+![Sample output of simulated food web dynamics from MetacommunityDynamics.jl](./figures/foodwebtraj.png){#fig:foodwebtraj}
 
 ## Progress
 
