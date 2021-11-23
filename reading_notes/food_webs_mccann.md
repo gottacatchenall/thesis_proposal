@@ -44,3 +44,5 @@ Most of this book is about these metrics.
 > In nature, when we study a complex system, it is almost always immediately essential that we reduce the dimensions of the problem to something tractable. When we can do this with limited loss of information, we have made considerable progress. At a level, this is the job of a scientist: to tell a mostly true story of a complex natural system using the barest essentials or fewest dimensions.
 
 
+## Chapter 3 - Motifs and Modules
+

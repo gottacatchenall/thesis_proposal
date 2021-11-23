@@ -7,8 +7,7 @@ terrain and oceans, and both agricultural and urban development has
 rapidly reshaped the Earth's land cover. These the bulk of this change
 has occurred within the last several hundred years, a geological
 instant, inducing a sudden shift in conditions to Earth's climate and
-biosphere. As a result, predicting how ecosystems will change in the
-future, _ecological forecasting_, and then using these forecasts to
+biosphere. As a result _ecological forecasting_---TK DEFINITION ---and then using these forecasts to
 make decisions to mitigate the negative consequences of this change on
 ecosystems, their functioning, and the services they provide to humans
 has emerged as an imperative for ecology and environmental science
@@ -23,6 +22,8 @@ developing global systems for _ecosystem monitoring_
 biodiversity data in manner that makes detecting and predicting change
 more possible than at the moment [@Urban2021CodLif].
 
+
+***TK add mention of interaction prediction here as they effect dynamics***
 The second major challenge in ecological forecasting is that the
 underlying dynamics of most ecological processes are unknown and
 instead must be inferred from this (sparse) data. Much of the history
@@ -99,8 +100,86 @@ from a monitoring network to forecasts to mitigation strategy
 
 ![thesis concept](./figures/thesisconcept.png){#fig:thesis}
 
+**TK final paragraph**
+> Set up the key research challenges in this field so that the reader understands where your thesis fits in.
+> Finish the introduction with a short summary of what you will do across your chapters. This is the bridging paragraph to your chapters.
 
-# Chapter One: Forecasting the spatial uncoupling of a plant-pollinator network
+The primary reserach challenges this thesis addresses: how do
+we design ecological samples? Data assimilation pipeline.
+How do we propgate uncertainty from these samples into forecasts?
+More details on pipeline flow 
+
+
+
+# Chapter One: Optimizing spatial sampling of species interactions
+
+## Objective 
+
+This chapter uses simulation models to investigate the relationship
+between species relative abundance, sampling effort, and probability
+of observing an interaction between species in order to aid in the design
+of samples of ecological interactions, and to provide a null expectation 
+of false-negative probability for a dataset of a given size. 
+Further it then proposes a
+method for optimizing the spatial sampling locations to maximize the
+probability of detecting an interaction between two species given a fixed 
+number of total of observations, and the distributions of each species.
+This addresses the optimization of monitoring
+network part of the flow from data to mitigation at the top of
+@fig:thesis, left. As explored in the previous chapter, there are
+false-negatives in interaction data. However, there is more than one
+way to observe a false-negative when sampling interactions.
+@fig:fnrtaxonomy shows a taxonomy of false-negatives in occurrence,
+co-occurrence, and interaction data.
+
+![A taxonomy of occurrence, co-occurrence, and interaction false negatives in data](./figures/ch2.png){#fig:fnrtaxonomy}
+
+## Methods
+
+The first result is to compute a null expectation of the probability
+of an interaction false-negative as a function number of total
+observations of individuals of _any species_. This is done by simulating
+the process of observation, where the probability of observing a given
+species is its relative abundance. We use a
+log-normal distribution of relative abundance [@Hubbell2001UniNeu] and
+simulating the process of observation on food-webs generated using the
+niche model [@Williams2000SimRul] with connectance parameterized by
+the flexible-links model [@MacDonald2020RevLin].
+
+An example of this
+relation for networks with varying spceies richness is shown in
+@fig:fnr.
+
+We then go on to testing some assumptions of this neutral model with
+empirical data. Primarily that we analytically show that our neutral
+model, if anything, underestimates the probability of false-negatives
+if there are positive associations between species co-occurrence, and
+we show these positive associations exist in two sets of spatially
+replicated samples of interaction networks [@Hadfield2014TalTwo;
+@Thompson2000ResSol; @fig:posassoc]---further I'm planning to add the
+field data from the previous chapter into this analysis once
+available.
+
+## Results
+
+![foo](./figures/ch2_fnr.png){#fig:fnr}
+
+
+![Demonstrates positive associations in co-occurrence](./figures/positiveassociations.png){#fig:posassoc}
+
+## Discussion 
+
+
+Finally this chapter proposes a simulated annealing method to optimize
+the a set of $n$ points in space to maximize the probability of detecting
+an interaction between two species $a$ and $b$ with _known_ distributions $D_a$, $D_b$.
+
+## Progress 
+
+This chapter is mostly complete. The only remaining work is the implementation of simulated annealing optimization process.
+
+
+# Chapter Two: Forecasting the spatial uncoupling of a plant-pollinator network
 
 Interactions between plants and pollinators form networks which
 together structure the "architecture of biodiversity"
@@ -123,7 +202,8 @@ Colorado.
 how they can be synthesized. Right: The flow from data to interaction
 prediction using a few different interaction prediction models.](./figures/ch1.png)
 
-## Data
+
+## Methods
 
 The data for this chapter is derived from multiple sources that can be
 split into four categories. (1) Field data from three different field
@@ -138,8 +218,6 @@ forecasting bioclimatic variables from CHELSA. (4) Phylogenies for
 both bee and flower species derived from NCBI GenBank barcodes for
 mitochondrial COI (bumblebees) and chloroplast rbcL (flowers).
 
-## Methods
-
 As the data we have is spatially sparse and likely to contain many
 interaction "false-negatives" [@Strydom2021RoaPre], we begin by
 predicting a metaweb of interactions across Colorado as they exist _in
@@ -153,7 +231,7 @@ species will change under the CMIP6 consensus climate forecast
 [@Karger2017CliHig], and then finally quantify the reduction in
 spatial between species for which there is a predicted interaction.
 
-## Preliminary Results
+## Results
 
 Here we show the in-progress work on the prerequisites for the
 analysis outlined above: phylogenies for both plant and bee species
@@ -164,51 +242,10 @@ example shown in @fig:example_sdm).
 
 ![Example SDM for _Archillea millefolium_](./figures/sample_sdm.png){#fig:example_sdm}
 
-# Chapter Two: Optimizing spatial sampling of species interactions
+## Progress
 
-This chapter uses simulation models to investigate the relationship
-between species relative abundance, sampling effort, and probability
-of observing an interaction between species, and further proposes a
-method for optimizing the spatial sampling locations to maximize the
-probability of detecting an interaction between two species given
-their distributions. This addresses the optimization of monitoring
-network part of the flow from data to mitigation at the top of
-@fig:thesis, left. As explored in the previous chapter, there are
-false-negatives in interaction data. However, there is more than one
-way to observe a false-negative when sampling interactions.
-@fig:fnrtaxonomy shows a taxonomy of false-negatives in occurrence,
-co-occurrence, and interaction data.
-
-![A taxonomy of occurrence, co-occurrence, and interaction false negatives in data](./figures/ch2.png){#fig:fnrtaxonomy}
-
-The first result is to compute a null expectation of the probability
-of an interaction false-negative as a function number of total
-observations of individuals of _any species_. This is done by  using a
-log-normal distribution of relative abundance [@Hubbell2001UniNeu] and
-simulating the process of observation on food-webs generated using the
-niche model [@Williams2000SimRul] with connectance parameterized by
-the flexible-links model [@MacDonald2020RevLin]. An example of this
-relation for networks with varying spceies richness is shown in
-@fig:fnr.
-
-![foo](./figures/ch2_fnr.png){#fig:fnr}
-
-We then go on to testing some assumptions of this neutral model with
-empirical data. Primarily that we analytically show that our neutral
-model, if anything, underestimates the probability of false-negatives
-if there are positive associations between species co-occurrence, and
-we show these positive associations exist in two sets of spatially
-replicated samples of interaction networks [@Hadfield2014TalTwo;
-@Thompson2000ResSol; @fig:posassoc]---further I'm planning to add the
-field data from the previous chapter into this analysis once
-available.
-
-![Demonstrates positive associations in co-occurrence](./figures/positiveassociations.png){#fig:posassoc}
-
-Finally this chapter proposes a simulated annealing method to optimize
-the a set of $n$ points in space to maximize the probability of detecting
-an interaction between two species $a$ and $b$ with _known_ distributions $D_a$, $D_b$.
-
+I have a phylogeny and SDMs for all the species. 
+Waiting on data agreement with RMBL. 
 
 # Chapter Three: Optimizing corridor placement against ecological dynamics
 
@@ -255,6 +292,8 @@ are already connected in the MST.
 
 # Chapter Four: MetacommunityDynamics.jl: a virtual laboratory for community ecology
 
+## Objective
+
 The final chapter consists of a collection of modules in the Julia language
 for different aspects of community ecology, including most of the code
 used for the preceding chapters. Indeed `MetacommunityDynamics.jl`
@@ -264,11 +303,44 @@ packages within the `EcoJulia` organization, including several to
 which I have contributed. A diagram showing the relation between these
 packages is shown in @fig:software.
 
+We need tools to generate synthetic data from a _known_ set of mechanisms
+and parameters to test our methods for parameter inference and forecasting on 
+this _known_ system to assess the effectiveness of these inference and forecasting
+methods. 
+
+
+## Methods
+
+Software is structured based on DG.jl [@cite] and Dispersal.jl [@cite].
+
+Uses methods from EN.jl to generate metawebs, or can use empirical networks
+from Mangal.jl [@cite]. 
+
+Framework based on [@Velland2010ConSyn], processes divided into four categories:
+selection, dispersal, drift, speciation. 
+
+
+## Results
+
+![Sample output of simulated food web dynamics from MetacommunityDynamics.jl ](./figures/foodwebtraj.png)
+
+## Progress
+
+The software as it exists is capable of simulating the biomass dynamics of
+arbitrarily large food-webs using Lotka-Volterra, Holling Type-II, or Holling Type-III functional responses. It currently has methods to implement Guassian drift, and verious forms of dispersal via Dispersal.jl. 
+Also occupancy dynamics for Levins metapopulations [@levins1967], and spatially explicit Hanski metapopulatoins [@hanski2001].
+This is most of what needs to exist for the preceding chapters. 
+
+Selection on arbitrary environmental variables in progress, as well as traits.
+
+
+
+
 ![The structure of the software libraries used as part of MCD.jl](./figures/ch4.png){#fig:software}
 
-# Conclusion
+# Discussion
 
-
+> Describing expected/anticipated contributions of the thesis. Very important for QE. This should be at least half a page. 
 
 
 
