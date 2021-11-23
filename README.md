@@ -98,7 +98,16 @@ left), and each chapter address some aspect of this pipeline to data
 from a monitoring network to forecasts to mitigation strategy
 (@fig:thesis, right).
 
-![thesis concept](./figures/thesisconcept.png){#fig:thesis}
+![Left: a framework for ecosystem monitoring, forecasting, and
+mitigation. From the top, a set of biodiversity observatories which
+form a monitoring network. Each collect various biodiversity data
+products. From this raw data, we derive essential biodiversity
+variables (EBVs), and forecast how they change over time. Based on
+this forecast, we wish to choose the best possible mitigation strategy
+to maximize the chance the realized future outcomes of the EBV
+approaches the target state. Right: Each panel represents a chapter of
+the thesis, which follows the flow of the framework on the left.
+](./figures/thesisconcept.png){#fig:thesis}
 
 The primary research challenges this thesis addresses: how do we
 design ecological samples to? How do we build the software
@@ -399,6 +408,7 @@ forecast, to actionable information, both through software that can be
 used to solve these problems (chapters one, three, four), and
 vignettes of how these software can be applied (chapters one, two).
 
-
+By using the success of numerical-weather prediction and the Earth
+monitoring system that supports it as a model,
 
 # References
