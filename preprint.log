@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  23 NOV 2021 21:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  23 NOV 2021 22:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1215,7 +1215,7 @@ LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
 [1
 
 {/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<./figures/thesisconcept.png, id=108, 2860.6875pt x 1909.1325pt>
+<./figures/thesisconcept.png, id=112, 2860.6875pt x 1909.1325pt>
 File: ./figures/thesisconcept.png Graphic file (type png)
 <use ./figures/thesisconcept.png>
 Package pdftex.def Info: ./figures/thesisconcept.png  used on input line 348.
@@ -1223,7 +1223,7 @@ Package pdftex.def Info: ./figures/thesisconcept.png  used on input line 348.
  [2 <./figures/thesisconcept.png>]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.54997pt on input line 372.
-<./figures/ch2.png, id=122, 784.6113pt x 708.9687pt>
+<./figures/ch2.png, id=126, 784.6113pt x 708.9687pt>
 File: ./figures/ch2.png Graphic file (type png)
 <use ./figures/ch2.png>
 Package pdftex.def Info: ./figures/ch2.png  used on input line 396.
@@ -1235,98 +1235,106 @@ rence, co-
  []
 
 [3 <./figures/ch2.png>]
-<./figures/ch2_fnr.png, id=136, 1806.75pt x 1204.5pt>
+<./figures/ch2_fnr.png, id=140, 1806.75pt x 1204.5pt>
 File: ./figures/ch2_fnr.png Graphic file (type png)
 <use ./figures/ch2_fnr.png>
 Package pdftex.def Info: ./figures/ch2_fnr.png  used on input line 442.
 (pdftex.def)             Requested size: 386.67299pt x 257.7678pt.
-<./figures/positiveassociations.png, id=138, 2409.0pt x 2409.0pt>
+<./figures/positiveassociations.png, id=142, 2409.0pt x 2409.0pt>
 File: ./figures/positiveassociations.png Graphic file (type png)
 <use ./figures/positiveassociations.png>
 Package pdftex.def Info: ./figures/positiveassociations.png  used on input line
  458.
 (pdftex.def)             Requested size: 386.67299pt x 386.6609pt.
-<./figures/ch1.png, id=139, 1245.65375pt x 1011.78pt>
+ [4 <./figures/ch2_fnr.png>] [5 <./figures/positiveassociations.png>]
+<./figures/ch1.png, id=158, 1245.65375pt x 1011.78pt>
 File: ./figures/ch1.png Graphic file (type png)
 <use ./figures/ch1.png>
-Package pdftex.def Info: ./figures/ch1.png  used on input line 493.
+Package pdftex.def Info: ./figures/ch1.png  used on input line 496.
 (pdftex.def)             Requested size: 386.67299pt x 314.08084pt.
 
-Underfull \hbox (badness 3492) in paragraph at lines 496--496
+Underfull \hbox (badness 3492) in paragraph at lines 499--499
 []\T1/stix2/b/n/8.21255 Figure 5 |\T1/stix2/m/n/8.21255 Chap-ter One con-cep-tu
 al fig-ure.
  []
 
-[4 <./figures/ch2_fnr.png>] [5 <./figures/positiveassociations.png>]
 
-LaTeX Warning: Reference `fig:phylo' on page 6 undefined on input line 533.
+LaTeX Warning: Reference `fig:phylo' on page 6 undefined on input line 536.
 
 
 LaTeX Warning: Reference `fig:example_sdm' on page 6 undefined on input line 53
-4.
+7.
 
 
-LaTeX Warning: Reference `fig:phylo' on page 6 undefined on input line 539.
+LaTeX Warning: Reference `fig:phylo' on page 6 undefined on input line 542.
 
 
 LaTeX Warning: Reference `fig:example_sdm' on page 6 undefined on input line 54
-0.
+3.
 
 [6 <./figures/ch1.png>]
-<./figures/ch3.png, id=164, 2099.845pt x 1161.84062pt>
+<./figures/ch3.png, id=169, 2099.845pt x 1161.84062pt>
 File: ./figures/ch3.png Graphic file (type png)
 <use ./figures/ch3.png>
-Package pdftex.def Info: ./figures/ch3.png  used on input line 576.
+Package pdftex.def Info: ./figures/ch3.png  used on input line 579.
 (pdftex.def)             Requested size: 386.67299pt x 213.94437pt.
- [7 <./figures/ch3.png>]
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 62
-3.
+
+Overfull \hbox (2.51321pt too wide) in paragraph at lines 598--603
+\T1/stix2/m/n/9 func-tion for land-scape mod-i-fi-ca-tions. At the mo-ment this
+ is done by com-put-ing the minimum-spanning-
+ []
+
+[7 <./figures/ch3.png>]
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 63
+1.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 623.
-<./figures/ch4.png, id=177, 1346.53062pt x 933.98938pt>
+(Font)              scaled to size 9.0pt on input line 631.
+<./figures/ch4.png, id=181, 1346.53062pt x 933.98938pt>
 File: ./figures/ch4.png Graphic file (type png)
 <use ./figures/ch4.png>
-Package pdftex.def Info: ./figures/ch4.png  used on input line 639.
+Package pdftex.def Info: ./figures/ch4.png  used on input line 647.
 (pdftex.def)             Requested size: 386.67299pt x 268.1992pt.
 
-Overfull \hbox (56.21245pt too wide) in paragraph at lines 645--657
+Overfull \hbox (56.21245pt too wide) in paragraph at lines 653--665
 [] []|\T1/phv/b/n/9 5.2. Meth-ods[] \T1/stix2/m/n/9 A di-a-gram show-ing the re
 -la-tion be-tween these pack-ages is shown in fig. [][]7[][]. \T1/zi4/m/n/9 Met
 acommunityDynamics.jl
  []
 
-<./figures/foodwebtraj.png, id=180, 1514.65875pt x 1199.48125pt>
+[8 <./figures/ch4.png>]
+<./figures/foodwebtraj.png, id=198, 1514.65875pt x 1199.48125pt>
 File: ./figures/foodwebtraj.png Graphic file (type png)
 <use ./figures/foodwebtraj.png>
-Package pdftex.def Info: ./figures/foodwebtraj.png  used on input line 675.
+Package pdftex.def Info: ./figures/foodwebtraj.png  used on input line 683.
 (pdftex.def)             Requested size: 386.67299pt x 306.20227pt.
-[8 <./figures/ch4.png>] [9 <./figures/foodwebtraj.png>] [10pdfTeX warning (ext4
-): destination with the same identifier (name{ref-Ovaskainen2002MetMod}) has be
-en already used, duplicate ignored
+ [9 <./figures/foodwebtraj.png>] [10pdfTeX warning (ext4): destination with the
+ same identifier (name{ref-Ovaskainen2002MetMod}) has been already used, duplic
+ate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.845 
-      ] 
+l.836 \leavevmode
+                 \hypertarget{ref-Peterman2018ResRP}{}%]
+
 AED: lastpage setting LastPage
 [11] (./preprint.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `preprint.out' has not changed.
-(rerunfilecheck)             Checksum: 551F5CD93733D0DD6B2042C0FD6CB6DC;3379.
+(rerunfilecheck)             Checksum: 7192E6AE0143E75E1D15C1A0E093F41E;3482.
  ) 
 Here is how much of TeX's memory you used:
- 29940 strings out of 478579
- 527659 string characters out of 5855461
- 837344 words of memory out of 5000000
- 47203 multiletter control sequences out of 15000+600000
+ 29945 strings out of 478579
+ 527731 string characters out of 5855461
+ 837421 words of memory out of 5000000
+ 47206 multiletter control sequences out of 15000+600000
  536235 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,117p,521b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,12n,117p,521b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{/opt
 /texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}{/opt/texli
 ve/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathsf.enc}{/opt/texlive
@@ -1342,10 +1350,10 @@ dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/texdir/
 texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texmf-di
 st/fonts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb>
-Output written on preprint.pdf (11 pages, 4890276 bytes).
+Output written on preprint.pdf (11 pages, 4891362 bytes).
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 99 named destinations out of 1000 (max. 500000)
- 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 
