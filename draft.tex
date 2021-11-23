@@ -301,16 +301,21 @@ mitigation strategy (fig.~\ref{fig:thesis}, right).
 }
 \end{figure}
 
-\textbf{TK final paragraph} \textgreater{} Set up the key research
-challenges in this field so that the reader understands where your
-thesis fits in. \textgreater{} Finish the introduction with a short
-summary of what you will do across your chapters. This is the bridging
-paragraph to your chapters.
-
-The primary reserach challenges this thesis addresses: how do we design
-ecological samples? Data assimilation pipeline. How do we propgate
-uncertainty from these samples into forecasts? More details on pipeline
-flow
+The primary research challenges this thesis addresses: how do we design
+ecological samples to? How do we build the software infrastructure to
+assimilate data from a variety of sources? How do we propagate
+uncertainty from data to forecasts? The flow of chapters follows the
+flow in fig.~\ref{fig:thesis} (left), from data collection via a
+monitoring network, to forecasting an essential biodiversity variable
+(EBV), to optimizing mitigation strategy based on constraints. In
+chapter one, we discuss how simulation can aid in the design of
+ecological samples and monitoring network design. In chapter two we use
+data to forecast the uncoupling of a plant-pollinator network. In
+chapter three, we apply simulation methods in landscape ecology to
+optimize corridor placement with respect maximize the
+time-until-extinction of a metapopulation. The fourth and final chapter
+is the software (\emph{MetacommunityDynamics.jl}) which enables the rest
+of the dissertation.
 
 \hypertarget{chapter-one-optimizing-spatial-sampling-of-species-interactions}{%
 \section{Chapter One: Optimizing spatial sampling of species
@@ -355,10 +360,8 @@ species is its relative abundance. We use a log-normal distribution of
 relative abundance (Hubbell 2001) and simulating the process of
 observation on food-webs generated using the niche model (Williams \&
 Martinez 2000) with connectance parameterized by the flexible-links
-model (MacDonald \emph{et al.} 2020).
-
-An example of this relation for networks with varying spceies richness
-is shown in fig.~\ref{fig:fnr}.
+model (MacDonald \emph{et al.} 2020). An example of this relation for
+networks with varying spceies richness is shown in fig.~\ref{fig:fnr}.
 
 We then go on to testing some assumptions of this neutral model with
 empirical data. Primarily that we analytically show that our neutral
@@ -370,8 +373,21 @@ Hadfield \emph{et al.} 2014), fig.~\ref{fig:posassoc}---further I'm
 planning to add the field data from the previous chapter into this
 analysis once available.
 
+Finally this chapter proposes a simulated annealing method to optimize
+the a set of \(n\) points in space to maximize the probability of
+detecting an interaction between two species \(a\) and \(b\) with
+\emph{known} distributions \(D_a\), \(D_b\).
+
 \hypertarget{results}{%
 \subsection{Results}\label{results}}
+
+The first major result is using the simulation of the observation
+process described above to generate expectations of interaction
+false-negative rate (FNR) as a function of total number of observations,
+with the goal being for this estimate to be used as correction for
+detection error when fitting an interaction prediction model. This
+relationship varies with the total richness of the metaweb
+fig.~\ref{fig:fnr}.
 
 \begin{figure}
 \hypertarget{fig:fnr}{%
@@ -380,6 +396,13 @@ analysis once available.
 \caption{foo}\label{fig:fnr}
 }
 \end{figure}
+
+The second major result is that we analytically show that the this
+simulated observation model, by assuming that there is no correlation
+between observing two species given that they interaction, actually
+underpredicts the realized false-negative interaction rate. We then
+demonstrate that this association exists in two empirical systems
+fig.~\ref{fig:posassoc}.
 
 \begin{figure}
 \hypertarget{fig:posassoc}{%
@@ -390,19 +413,14 @@ co-occurrence}\label{fig:posassoc}
 }
 \end{figure}
 
-\hypertarget{discussion}{%
-\subsection{Discussion}\label{discussion}}
-
-Finally this chapter proposes a simulated annealing method to optimize
-the a set of \(n\) points in space to maximize the probability of
-detecting an interaction between two species \(a\) and \(b\) with
-\emph{known} distributions \(D_a\), \(D_b\).
-
 \hypertarget{progress}{%
 \subsection{Progress}\label{progress}}
 
 This chapter is mostly complete. The only remaining work is the
-implementation of simulated annealing optimization process.
+implementation of simulated annealing optimization process. This will be
+done by using a proposal function which takes a set of coordinates in
+space and proposes a new location for each point based on a
+distance-decaying kernel.
 
 \hypertarget{chapter-two-forecasting-the-spatial-uncoupling-of-a-plant-pollinator-network}{%
 \section{Chapter Two: Forecasting the spatial uncoupling of a
@@ -465,8 +483,8 @@ species for which there is a predicted interaction.
 \hypertarget{results-1}{%
 \subsection{Results}\label{results-1}}
 
-Here we show the in-progress work on the prerequisites for the analysis
-outlined above: phylogenies for both plant and bee species
+Here we show the in-progress results, which are the prerequisites for
+the analysis outlined above: phylogenies for both plant and bee species
 (fig.~\ref{fig:phylo}) and species distribution models for all species
 (an example shown in fig.~\ref{fig:example_sdm}).
 
@@ -491,7 +509,10 @@ millefolium}}\label{fig:example_sdm}
 \hypertarget{progress-1}{%
 \subsection{Progress}\label{progress-1}}
 
-I have a phylogeny and SDMs for all the species. Waiting on data
+At the moment, we have derived phylogenies and SDMs for all the species
+present in the Colorado GBIF metaweb. I've also been exploring the data
+available from Julian Resasco. The primary constraint on further
+progress is that we are waiting on the finalization of a data sharing
 agreement with RMBL.
 
 \hypertarget{chapter-three-optimizing-corridor-placement-against-ecological-dynamics}{%
@@ -556,6 +577,11 @@ connected in the MST.
 \hypertarget{progress-2}{%
 \subsection{Progress}\label{progress-2}}
 
+The current progress is that I have an algorithm for proposing landscape
+modifications and a simple implementation of simulated annealing. The
+only gap left is implementing Circuitscape estimation of resistance
+surfaces.
+
 \hypertarget{chapter-four-metacommunitydynamics.jl-a-virtual-laboratory-for-community-ecology}{%
 \section{Chapter Four: MetacommunityDynamics.jl: a virtual laboratory
 for community
@@ -579,6 +605,15 @@ mechanisms and parameters to test our methods for parameter inference
 and forecasting on this \emph{known} system to assess the effectiveness
 of these inference and forecasting methods.
 
+\begin{figure}
+\hypertarget{fig:software}{%
+\centering
+\includegraphics{./figures/ch4.png}
+\caption{The structure of the software libraries used as part of
+MCD.jl}\label{fig:software}
+}
+\end{figure}
+
 \hypertarget{methods-3}{%
 \subsection{Methods}\label{methods-3}}
 
@@ -594,11 +629,21 @@ four categories: selection, dispersal, drift, speciation.
 \hypertarget{results-3}{%
 \subsection{Results}\label{results-3}}
 
+Below (fig.~\ref{fig:foodwebtraj}) is a sample output of simulated
+food-web dynamics for a metaweb of 100 species generated using the
+minimum-potential-niche model with connectance \(C=0.05\) and
+forbidden-link probability of \(0.5\). The dynamics change according to
+a Lotka-Volttera functional response, dispersal (with dispersal distance
+inverse proportional to trophic-level), linear mortality, and logistic
+growth for any species at the producer trophic-level.
+
 \begin{figure}
+\hypertarget{fig:foodwebtraj}{%
 \centering
 \includegraphics{./figures/foodwebtraj.png}
 \caption{Sample output of simulated food web dynamics from
-MetacommunityDynamics.jl}
+MetacommunityDynamics.jl}\label{fig:foodwebtraj}
+}
 \end{figure}
 
 \hypertarget{progress-3}{%
@@ -616,17 +661,8 @@ preceding chapters.
 Selection on arbitrary environmental variables in progress, as well as
 traits.
 
-\begin{figure}
-\hypertarget{fig:software}{%
-\centering
-\includegraphics{./figures/ch4.png}
-\caption{The structure of the software libraries used as part of
-MCD.jl}\label{fig:software}
-}
-\end{figure}
-
-\hypertarget{discussion-1}{%
-\section{Discussion}\label{discussion-1}}
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
 
 \begin{quote}
 Describing expected/anticipated contributions of the thesis. Very

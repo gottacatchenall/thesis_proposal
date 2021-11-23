@@ -75,18 +75,20 @@ millefolium}}\label{fig:example_sdm}
 \efloatseparator
  
 \begin{figure}
-\centering
-\includegraphics{./figures/foodwebtraj.png}
-\caption{Sample output of simulated food web dynamics from
-MetacommunityDynamics.jl}
-\end{figure}
-\efloatseparator
- 
-\begin{figure}
 \hypertarget{fig:software}{%
 \centering
 \includegraphics{./figures/ch4.png}
 \caption{The structure of the software libraries used as part of
 MCD.jl}\label{fig:software}
+}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\hypertarget{fig:foodwebtraj}{%
+\centering
+\includegraphics{./figures/foodwebtraj.png}
+\caption{Sample output of simulated food web dynamics from
+MetacommunityDynamics.jl}\label{fig:foodwebtraj}
 }
 \end{figure}
