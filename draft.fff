@@ -26,10 +26,26 @@ negatives in data}\label{fig:fnrtaxonomy}
 \efloatseparator
  
 \begin{figure}
+\centering
+\includegraphics{./figures/negativebinomial.png}
+\caption{Relationship between total number of observed interactions
+negatives (x-axis) and the probability that an interaction is a
+true-negative as a function of different realized false-negative rates
+(colors), assuming each observed negative is independent---the same as
+the negative-bernoulli distribution.}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
 \hypertarget{fig:fnr}{%
 \centering
 \includegraphics{./figures/ch2_fnr.png}
-\caption{foo}\label{fig:fnr}
+\caption{The realized false-negative-rate of interaction detection
+(y-axis) as a function of the total number of observations of all
+species in the species pool (different richnesses in different colors).
+Each point is the mean of 50 replicates, with one standard-deviation in
+the first shade, and two standard deviations in the second
+shade.}\label{fig:fnr}
 }
 \end{figure}
 \efloatseparator
@@ -38,8 +54,14 @@ negatives in data}\label{fig:fnrtaxonomy}
 \hypertarget{fig:posassoc}{%
 \centering
 \includegraphics{./figures/positiveassociations.png}
-\caption{Demonstrates positive associations in
-co-occurrence}\label{fig:posassoc}
+\caption{Demonstrates positive associations in co-occurrence. Left: the
+product of the marginal probability of observing two species (A and B)
+in a sample (x-axis) agaianst the computed joint probability of
+observing these species together (y-axis). Dashed line indicates
+\(y=x\), meaning no association between the two. Each point is an
+observed interaction between two species. Right: the distribution of the
+difference between these joint and marginal probabilities. Both are
+non-zero with \(p < 10^-50\) via a t-test.}\label{fig:posassoc}
 }
 \end{figure}
 \efloatseparator
