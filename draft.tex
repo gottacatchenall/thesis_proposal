@@ -160,10 +160,7 @@ urlcolor=blue}
 {\Large\bfseries\sffamily Thesis proposal}
 \vskip 5em
 
-%
 \href{https://orcid.org/0000-0002-6506-6487}{Michael D.\,Catchen}%
-%
-\,\textsuperscript{1,2}
 
 \textsuperscript{1}\,McGill University\quad \textsuperscript{2}\,Québec
 Centre for Biodiversity Sciences
@@ -198,13 +195,13 @@ Within the last several hundred years, human activity has induced rapid
 changes in Earth's atmosphere, oceans, and surface. Greenhouse gas
 emissions have caused an increase the temperature of both Earth's
 terrain and oceans, and both agricultural and urban development has
-rapidly reshaped the Earth's land cover. These the bulk of this change
-has occurred within the last several hundred years, a geological
-instant, inducing a sudden shift in conditions to Earth's climate and
-biosphere. As a result \emph{ecological forecasting}---modeling how
-ecosystems and their services will change in the future---and then using
-these forecasts to make decisions to mitigate the negative consequences
-of this change on ecosystems, their functioning, and the services they
+rapidly reshaped Earth's land cover. The bulk of this change has
+occurred within the last several hundred years, a geological instant,
+inducing a sudden shift in conditions to Earth's climate and biosphere.
+As a result \emph{ecological forecasting}---modeling how ecosystems and
+their services will change in the future---and then using these
+forecasts to make decisions to mitigate the negative consequences of
+this change on ecosystems, their functioning, and the services they
 provide to humans has emerged as an imperative for ecology and
 environmental science (Dietze 2017). However, robust prediction of
 ecological processes is, to say the least, quite difficult (Beckage
@@ -214,64 +211,64 @@ not easy. Ecological data is often biased, noisey, and sparse in both
 space and time. The current paucity of ecological data has resulted in
 much interest in developing global systems for \emph{ecosystem
 monitoring} (Makiola \emph{et al.} 2020), which would systematize the
-collection of biodiversity data in manner that makes detecting and
+collection of biodiversity data in a manner that makes detecting and
 predicting change more possible than at the moment (Urban \emph{et al.}
 2021).
 
 The second major challenge in ecological forecasting is that the
-underlying dynamics of most ecological processes are unknown and instead
-must be inferred from this (sparse) data. Much of the history of
+underlying dynamics of ecological processes are unknown and instead must
+be inferred from this (sparse) data. Much of the history of
 quantitatively modeling ecosystems have been done in the language of
 dynamical systems, describing how the value of an observable state of
 the system, represented by a vector of numbers
-\([x_1, x_2, \dots, x_n]^T = \vec{x}\) changes as over time, yielding
+\([x_1, x_2, \dots, x_n]^T = \vec{x}\) changes over time, yielding
 models in the form of differential equations in continuous-time
 settings, \(\frac{dx}{dt} = f(x)\), or difference equations in
 discrete-time settings, \(x_t = f(x_{t-1})\), where
 \(f:\mathbb{R}^n \to \mathbb{R}^n\) is an arbitrary function describing
 how the system changes on a moment-to-moment basis (e.g.~in the context
-of communities, \(f\) could be Lotka-Voltera, Holling-Type-III or
+of communities, \(f\) could be Lotka-Voltera, Holling-Type-II or
 DeAngelis-Beddington functional response). The form of this functional
 response in real systems, and whether it is meaningfully non-zero for a
 given species interaction, is effectively unknown and must be predicted
-(Strydom \emph{et al.} 2021b), and some forms are inherently more
-``forecastable'' than others (Beckage \emph{et al.} 2011; Chen \emph{et
-al.} 2019; Pennekamp \emph{et al.} 2019). The initial success of these
-forms of models can be traced back to the larger program of ontological
-reductionism, which became the default approach to modeling in the
-sciences after its early success in physics, which, by the time ecology
-was becoming a quantitative science (sometime in the 20th century,
-depending on who you ask), became the foundation for mathematical models
-in ecology.
+(Strydom \emph{et al.} 2021b), and some forms of these dynamics are
+inherently more ``forecastable'' than others (Beckage \emph{et al.}
+2011; Chen \emph{et al.} 2019; Pennekamp \emph{et al.} 2019). The
+initial success of these forms of models can be traced back to the
+larger program of ontological reductionism, which became the default
+approach to modeling in the sciences after its early success in physics,
+which, by the time ecology was becoming a quantitative science (sometime
+in the 20th century, depending on who you ask), became the foundation
+for mathematical models in ecology.
 
 However, we run into many problems when aiming to apply this type of
 model to empirical ecological data. Ecosystems are perhaps the
 quintessential example of system that cannot be understood by iterative
 reduction of its components into constituent parts---ecological
-phenomena are emergent: the product of different mechanisms operating a
+phenomena are emergent: the product of different mechanisms operating at
 different spatial, temporal, and organizational scales (Levin 1992).
 Further this analytical approach to modeling explicitly ignores known
 realities: ecological dynamics not deterministic and many analytic
 models in ecology assume long-run equilibrium. Finally, perhaps the
 biggest challenge in using these models to describe ecological processes
 is ecosystems consist of more dimensions than the tools of analytic
-models are suited for. As the number of variables in an analytic model
-increases, so does the ability of the scientist to discern clear
-relationships between them given a fixed amount of data, the so-called
-``curse'' of dimensionality.
+models are suited for. As the number of variables in a model increases,
+so does the ability of the scientist to discern clear relationships
+between them given a fixed amount of data, the so-called ``curse'' of
+dimensionality.
 
 But these problems are not solely unique to ecology. The term
 \emph{ecological forecasting} implicitly creates an analogy with weather
 forecasting. Although it has become a trite joke to complain about the
 weather forecast being wrong, over the least 50 years the field of
-numerical weather prediction (NWP) has dramatically improved out ability
+numerical weather prediction (NWP) has dramatically improved our ability
 to predict weather across the board (Bauer \emph{et al.} 2015). The
-success of NWP, and the Earth observations systems that support it (Hill
+success of NWP, and the Earth observation systems that support it (Hill
 \emph{et al.} 2004), should serve as a template for development of a
 system for monitoring Earth's biodiversity. Much like ecology, NWP is
 faced with high-dimensional systems that are governed by different
 mechanisms at different scales. The success of NWP is that, rather than,
-say, attempt to forecast the weather in Quebec by applying Navier-Stokes
+say, attempt to forecast the weather in Québec by applying Navier-Stokes
 to entire province, to instead use simulation models which describe
 known mechanisms at different scales, and use the availability to
 increasing computational power to directly simulate many batches of
@@ -289,8 +286,8 @@ consequences of anthropogenic change on ecosystems becomes an
 optimization problem: given a forecast of the future state of the
 system, and some ``goal'' state for the future, the problem is then to
 optimize our intervention into the system to maximize the probability
-the system approaches our ``goal'' state. This dissertation aims to this
-framework for ecosystem monitoring and forecasting
+the system approaches our ``goal'' state. This dissertation aims to
+provide a framework for ecosystem monitoring and forecasting
 (fig.~\ref{fig:thesis}, left), and each chapter address some aspect of
 this pipeline to data from a monitoring network to forecasts to
 mitigation strategy (fig.~\ref{fig:thesis}, right).
@@ -311,21 +308,21 @@ flow of the framework on the left.}\label{fig:thesis}
 }
 \end{figure}
 
-The primary research challenges this thesis addresses: how do we design
-ecological samples to? How do we build the software infrastructure to
-assimilate data from a variety of sources? How do we propagate
-uncertainty from data to forecasts? The flow of chapters follows the
-flow in fig.~\ref{fig:thesis} (left), from data collection via a
-monitoring network, to forecasting an essential biodiversity variable
-(EBV), to optimizing mitigation strategy based on constraints. In
-chapter one, we discuss how simulation can aid in the design of
+The primary research challenges this thesis addresses are: how do we
+design ecological samples to? How do we build the software
+infrastructure to assimilate data from a variety of sources? And how do
+we propagate uncertainty from data to forecasts? The flow of chapters
+follows the flow in fig.~\ref{fig:thesis} (left), from data collection
+via a monitoring network, to forecasting an essential biodiversity
+variable (EBV), to optimizing mitigation strategy based on constraints.
+In chapter one, we discuss how simulation can aid in the design of
 ecological samples and monitoring network design. In chapter two we use
 data to forecast the uncoupling of a plant-pollinator network. In
 chapter three, we apply simulation methods in landscape ecology to
-optimize corridor placement with respect maximize the
-time-until-extinction of a metapopulation. The fourth and final chapter
-is the software (\emph{MetacommunityDynamics.jl}) which enables the rest
-of the dissertation.
+optimize corridor placement to maximize the time-until-extinction of a
+metapopulation. The fourth and final chapter is the software
+(\emph{MetacommunityDynamics.jl}) which enables the rest of the
+dissertation.
 
 \hypertarget{chapter-one-optimizing-spatial-sampling-of-species-interactions}{%
 \section{Chapter One: Optimizing spatial sampling of species
@@ -337,18 +334,20 @@ interactions}\label{chapter-one-optimizing-spatial-sampling-of-species-interacti
 This chapter uses simulation models to investigate the relationship
 between species relative abundance, sampling effort, and probability of
 observing an interaction between species in order to aid in the design
-of samples of ecological interactions, and to provide a null expectation
-of false-negative probability for a dataset of a given size. Further it
-then proposes a method for optimizing the spatial sampling locations to
-maximize the probability of detecting an interaction between two species
-given a fixed number of total of observations and the distributions of
-each species. This addresses the optimization of monitoring network part
-of the flow from data to mitigation at the top of fig.~\ref{fig:thesis},
-left. There is more than one way to observe a false-negative when
-sampling interactions. fig.~\ref{fig:fnrtaxonomy} shows a taxonomy of
-false-negatives in occurrence, co-occurrence, and interaction data. This
-chapter untangles the relationship between co-occurrence false-negatives
-and interaction false-negatives.
+of samples of ecological interactions across space, and to provide a
+null expectation of the false-negative probability for a dataset of a
+given size. Further it then proposes a method for optimizing the spatial
+sampling locations to maximize the probability of detecting an
+interaction between two species given a fixed number of total of
+observations and the distributions of each species. This addresses the
+optimization of monitoring network part of the flow from data to
+mitigation at the top of fig.~\ref{fig:thesis}, left. There is more than
+one way to observe a false-negative when sampling interactions---
+fig.~\ref{fig:fnrtaxonomy} shows a taxonomy of false-negatives in
+occurrence, co-occurrence, and interaction data. The goal of this
+chapter is to untangle the relationship between co-occurrence
+false-negatives (and their relation to relative abundance) and
+interaction false-negatives.
 
 \begin{figure}
 \hypertarget{fig:fnrtaxonomy}{%
@@ -366,15 +365,15 @@ We begin by proposing a method to compute a null expectation of the
 probability of an interaction false-negative as a function number of
 total observations of individuals of \emph{all species in the species
 pool}. This is done by simulating the process of observation, where the
-probability of observing a given species is its relative abundance. We
-show that the realized false-negative rate can be quite high, simply as
-a byproduct of the distributoin of relative abundance in communities. We
-use a log-normal distribution of relative abundance (Hubbell 2001) and
-simulating the process of observation on food-webs generated using the
-niche model (Williams \& Martinez 2000) with connectance parameterized
-by the flexible-links model (MacDonald \emph{et al.} 2020). An example
-of this relation for networks with varying spceies richness is shown in
-fig.~\ref{fig:fnr}.
+probability that an observation is of a given species is that species'
+relative abundance. We show that the realized false-negative rate can be
+quite high, simply as a byproduct of the distribution of relative
+abundance in communities. We use a log-normal distribution of relative
+abundance (Hubbell 2001) and simulating the process of observation on
+food-webs generated using the niche model (Williams \& Martinez 2000)
+with connectance parameterized by the flexible-links model (MacDonald
+\emph{et al.} 2020). An example of this relation for networks with
+varying species richness is shown in fig.~\ref{fig:fnr}.
 
 \begin{figure}
 \centering
@@ -386,18 +385,18 @@ true-negative as a function of different realized false-negative rates
 the negative-bernoulli distribution.}
 \end{figure}
 
-We then go on to testing some assumptions of this neutral model with
-empirical data. Primarily that we analytically show that our neutral
-model, if anything, underestimates the probability of false-negatives if
-there are positive associations between species co-occurrence, and we
-show these positive associations exist in two sets of spatially
-replicated samples of interaction networks (Thompson \& Townsend 2000;
-Hadfield \emph{et al.} 2014), fig.~\ref{fig:posassoc}---further I'm
-planning to add the field data from the previous chapter into this
-analysis once available. Finally this chapter proposes a simulated
-annealing method to optimize the a set of \(n\) points in space to
-maximize the probability of detecting an interaction between two species
-\(a\) and \(b\) with \emph{known} distributions \(D_a\), \(D_b\).
+We then go on to test some assumptions of this neutral model with
+empirical data. Primarily we analytically show that our neutral model,
+if anything, underestimates the probability of false-negatives if there
+are positive associations between species co-occurrence, and we show
+these positive associations exist in two sets of spatially replicated
+samples of interaction networks (Thompson \& Townsend 2000; Hadfield
+\emph{et al.} 2014), fig.~\ref{fig:posassoc}---further I'm planning to
+add the field data from chapter two into this analysis once available.
+Finally this chapter proposes a simulated annealing method to optimize
+the a set of \(n\) points in space to maximize the probability of
+detecting an interaction between two species \(a\) and \(b\) with
+\emph{known} distributions \(D_a\), \(D_b\).
 
 \hypertarget{results}{%
 \subsection{Results}\label{results}}
@@ -407,8 +406,8 @@ process described above to generate expectations of interaction
 false-negative rate (FNR) as a function of total number of observations,
 with the goal being for this estimate to be used as correction for
 detection error when fitting an interaction prediction model. This
-relationship varies with the total richness of the metaweb
-fig.~\ref{fig:fnr}.
+relationship varies with the total richness of the metaweb (see
+fig.~\ref{fig:fnr}).
 
 \begin{figure}
 \hypertarget{fig:fnr}{%
@@ -497,23 +496,24 @@ collected by Paul CaraDonna and Jane Oglevie (from the Rocky Mountain
 Biological Laboratory; RMBL) and Julian Resasco (CU Boulder). (2) GBIF
 spatial occurrence records of each of these species across Colorado,
 including a metaweb of interactions across all of Colorado taken from
-GBIF. (3) Remotely sensed data consisting of current and forecasting
+GBIF. (3) Remotely sensed data consisting of current and forecasted
 bioclimatic variables from CHELSA. (4) Phylogenies for both bee and
 flower species derived from NCBI GenBank barcodes for mitochondrial COI
 (bumblebees) and chloroplast rbcL (flowers).
 
 As the data we have is spatially sparse and likely to contain many
-interaction ``false-negatives'' (Strydom \emph{et al.} 2021b), we begin
-by predicting a metaweb of interactions across Colorado as they exist
-\emph{in the present}. We do this using a set of candidate interaction
-prediction models: relative abundance only, phylogenetic embedding only
-(a la Strydom \emph{et al.} (2021a)), niche embedding only (Gravel
-\emph{et al.} 2019), and all pairwise combinations of those constituent
-models. After validating and selecting the best performing model, we
-then predict how these distributions of each of these species will
-change under the CMIP6 consensus climate forecast (Karger \emph{et al.}
-2017), and then finally quantify the reduction in spatial between
-species for which there is a predicted interaction.
+interaction false-negatives, we begin by predicting a metaweb of
+interactions across Colorado as they exist \emph{in the present}. We do
+this using a set of candidate interaction prediction models: relative
+abundance only, phylogenetic embedding only (a la Strydom \emph{et al.}
+(2021a)), niche embedding only (encompassing both phenology and
+environmental niche, similar to Gravel \emph{et al.} (2019)), and all
+pairwise combinations of those constituent models. After validating and
+selecting the best performing model, we then predict how these
+distributions of each of these species will change under the CMIP6
+consensus climate forecast (Karger \emph{et al.} 2017), and then finally
+quantify the reduction in spatial overlap between species for which
+there is a predicted interaction.
 
 \hypertarget{results-1}{%
 \subsection{Results}\label{results-1}}
@@ -550,10 +550,9 @@ chapter seeks to answer. Models for inferring corridor locations have
 been developed, but are limited in that are not developed around
 promoting some element of ecosystem function, but instead by trying to
 find the path of least resistance in an existing landscape from a
-derived resistance surface (Peterman 2018). This chapter proposes a
-general algorithm for choosing corridor placement to optimize a
-measurement of ecosystem functioning derived from simulations run on
-each proposed landscape modification.
+derived resistance surface (e.g. Peterman 2018). This chapter proposes a
+general algorithm for optimizing spatial restoration effort to move a
+measurement of ecosystem functioning toward a target state.
 
 \hypertarget{methods-2}{%
 \subsection{Methods}\label{methods-2}}
@@ -573,49 +572,49 @@ metapopulation in this new landscape (right).}\label{fig:ch3}
 }
 \end{figure}
 
-We propose various landscape modifications which alter the cover of a
+We propose various landscape modifications that alter the cover of a
 landscape, represented as a raster. We then compute a new resistance
 surface based on the proposed landscape modification using Circuitscape
 (McRae \emph{et al.} 2008), and based on the values of resistance to
 dispersal between pair of locations we simulate spatially-explicit
-metapopulation dynamics model (Hanski \& Ovaskainen 2000; Ovaskainen
-\emph{et al.} 2002) to estimate a distribution of time until extinction
-for each landscape modification. The largest challenge in implementing
-this algorithm is the space of potential modifications grows as
-\(O((nm)!)\) for an \(n\) by \(m\) raster. For most actual landscapes to
-which we wish to apply this method, the set of possible modifications
-becomes uncomputably large, so we use simulated annealing to explore the
-search space of possible modifications to estimate the modification that
+metapopulation dynamics (Hanski \& Ovaskainen 2000; Ovaskainen \emph{et
+al.} 2002) to estimate a distribution of time-until-extinction for each
+landscape modification. The largest challenge in implementing this
+algorithm is the space of potential modifications grows as \(O((nm)!)\)
+for an \(n\) by \(m\) raster. For most actual landscapes to which we
+wish to apply this method, the set of possible modifications becomes
+uncomputably large, so we use simulated annealing to explore the search
+space of possible modifications to estimate the modification that
 maximizes the time-until extinction of simulated metapopulation dynamics
 under that hypothetical modified landscape.
 
 The biggest challenge in implementing simulated annealing in this
 context is defining a proposal function for landscape modifications. At
 the moment this is done by computing the minimum-spanning-tree (MST) of
-the spatial nodes, and then proposing corridors that connect nodes that
-are already connected in the MST. The primary reason for doing this is
-the cut down the size of the solution space to enable quicker
-convergence, although the final software that implements this algorithm
-will enable alternative methods of proposing modifications.
+the spatial nodes (locations where occurrence has been observed), and
+then proposing corridors that only connect nodes that are already
+connected in the MST. The primary reason for doing this is the cut down
+the size of the solution space to enable quicker convergence, although
+the final software that implements this algorithm will enable
+alternative methods of proposing modifications.
 
 The goal output of this chapter is not only to provide a set of discrete
 corridor options, but also to rank the cells in the raster by priority
-based on how many times they are converted in the distribution of
-``good'' corridors after simulated annealing has reached a
-pseudoequilibrium. Further, the final component of this chapter is
-measuring the effect of land-use change on the robustness of the
-optimized corridor by simulating various neutral models of urban and
-agricultural sprawl, and determining if the proposed modifications still
-maximize time-until-extinction when the landcover in the landscape is
-not static.
+based on how many times they are included in the distribution of
+``good'' corridors after simulated annealing has converged. Further, the
+final component of this chapter is measuring the effect of land-use
+change on the robustness of the optimized corridor by simulating various
+neutral models of urban and agricultural sprawl, and determining if the
+proposed modifications still maximize time-until-extinction when the
+landcover in the landscape is not static.
 
 \hypertarget{progress-2}{%
 \subsection{Progress}\label{progress-2}}
 
-The current progress is that I have an algorithm for proposing landscape
-modifications and a simple implementation of simulated annealing. The
-only gap left is implementing Circuitscape estimation of resistance
-surfaces.
+Currently I have an algorithm for proposing landscape modifications and
+a simple implementation of simulated annealing. The only gap left is
+implementing Circuitscape estimation of resistance surfaces and running
+benchmarking tests for the resulting chapter.
 
 \hypertarget{chapter-four-metacommunitydynamics.jl-a-virtual-laboratory-for-community-ecology}{%
 \section{Chapter Four: MetacommunityDynamics.jl: a virtual laboratory
@@ -625,12 +624,12 @@ ecology}\label{chapter-four-metacommunitydynamics.jl-a-virtual-laboratory-for-co
 \hypertarget{objective-3}{%
 \subsection{Objective}\label{objective-3}}
 
-The final chapter consists of a collection of modules in the Julia
-language for different aspects of community ecology, including most of
-the code used for the preceding chapters. Indeed
-\texttt{MetacommunityDynamics.jl} (MCD.jl) is the epicenter of this set
+The final chapter consists of a collection of modules in the
+\texttt{Julia} language for different aspects of community ecology,
+including most of the code used for the preceding chapters. Indeed
+\texttt{MetacommunityDynamics.jl} (MCD.jl) is at the center of this set
 of tools, but due to the nature of the Julia language, MCD.jl is
-interoperable with serveral existing packages within the
+inter-operable with several existing packages within the
 \texttt{EcoJulia} organization, including several to which I have
 contributed. We need a software library like this to generate synthetic
 data from a \emph{known} set of mechanisms and parameters to test our
@@ -666,13 +665,14 @@ and speciation.
 \hypertarget{results-2}{%
 \subsection{Results}\label{results-2}}
 
-Below (fig.~\ref{fig:foodwebtraj}) is a sample output of simulated
+In fig.~\ref{fig:foodwebtraj} we see a sample output of simulated
 food-web dynamics for a metaweb of 100 species generated using the
-minimum-potential-niche model with connectance \(C=0.05\) and
-forbidden-link probability of \(0.5\). The dynamics change according to
-a Lotka-Volttera functional response, dispersal (with dispersal distance
-inverse proportional to trophic-level), linear mortality, and logistic
-growth for any species at the producer trophic-level.
+minimum-potential-niche model (Allesina \emph{et al.} 2008) with
+connectance \(C=0.05\) and forbidden-link probability of \(0.5\). The
+dynamics change according to a Lotka-Volterra functional response,
+dispersal with distance inversely proportional to trophic-level, linear
+mortality, and logistic growth for any species at the producer
+trophic-level.
 
 \begin{figure}
 \hypertarget{fig:foodwebtraj}{%
@@ -690,13 +690,13 @@ MetacommunityDynamics.jl. Timestep (x-axis), and biomass of each species
 The software as it exists is capable of simulating the biomass dynamics
 of arbitrarily large food-webs using Lotka-Volterra, Holling Type-II, or
 Holling Type-III functional responses. It currently has methods to
-implement Gaussian drift, and verious forms of dispersal via
-Dispersal.jl. Also occupancy dynamics for Levins metapopulations (Levins
-1969), and spatially explicit Hanski-Ovaskainen metapopulations (Hanski
-\& Ovaskainen 2000; Ovaskainen \emph{et al.} 2002). This is most of what
-needs to exist for the preceding chapters. In-progress functionality
-includes selection (which affects growth-rate) on arbitrary
-environmental variables in progress, as well as traits.
+implement Gaussian drift, and various forms of dispersal via
+\texttt{Dispersal.jl}. Also functional are occupancy dynamics for Levins
+metapopulations (Levins 1969), and spatially explicit Hanski-Ovaskainen
+metapopulations (Hanski \& Ovaskainen 2000; Ovaskainen \emph{et al.}
+2002). This is most of what needs to exist for the preceding chapters.
+In-progress functionality includes selection (which affects growth-rate)
+on arbitrary environmental variables in progress, as well as traits.
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
@@ -727,6 +727,10 @@ the only planet on which life has ever been known to occur.
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
+\leavevmode\hypertarget{ref-Allesina2008GenMod}{}%
+Allesina, S., Alonso, D. \& Pascual, M. (2008). A General Model for Food
+Web Structure. \emph{Science}, 320, 658--661.
+
 \leavevmode\hypertarget{ref-Banville2021ManJl}{}%
 Banville, F., Vissault, S. \& Poisot, T. (2021). Mangal.jl and
 EcologicalNetworks.jl: Two complementary packages for analyzing

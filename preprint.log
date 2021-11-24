@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  24 NOV 2021 17:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  24 NOV 2021 23:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1131,72 +1131,11 @@ File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 14.77432pt on input line 211.
-LaTeX Font Info:    Calculating math sizes for size <8.21255> on input line 219
-.
-LaTeX Font Info:    Trying to load font information for LS1+stix2scr on input l
-ine 219.
 
-(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls1stix2scr.fd
-File: ls1stix2scr.fd 2018/04/02 v2.0.0-latex stix2 script LS1 font definitions
-)
-LaTeX Font Info:    Trying to load font information for LS2+stix2ex on input li
-ne 219.
-
-(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls2stix2ex.fd
-File: ls2stix2ex.fd 2018/04/02 v2.0.0-latex stix2 extentions LS2 font definitio
-ns
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 219
-.
-
-(/opt/texlive/texdir/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 219
-.
-
-(/opt/texlive/texdir/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for LS1+stix2frak on input 
-line 219.
-
-(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls1stix2frak.fd
-File: ls1stix2frak.fd 2018/04/02 v2.0.0-latex stix2 fraktur LS1 font definition
-s
-)
-LaTeX Font Info:    Trying to load font information for LS1+stix2bb on input li
-ne 219.
-
-(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls1stix2bb.fd
-File: ls1stix2bb.fd 2018/04/02 v2.0.0-latex stix2 blackboard LS1 font definitio
-ns
-)
-LaTeX Font Info:    Trying to load font information for LS2+stix2cal on input l
-ine 219.
-
-(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls2stix2cal.fd
-File: ls2stix2cal.fd 2018/04/02 v2.0.0-latex stix2 calligraphic LS2 font defini
-tions
-)
-LaTeX Font Info:    Trying to load font information for LS1+stix2sf on input li
-ne 219.
-
-(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls1stix2sf.fd
-File: ls1stix2sf.fd 2018/04/02 v2.0.0-latex stix2 sans-serif LS1 font definitio
-ns
-)
-LaTeX Font Info:    Trying to load font information for LS2+stix2tt on input li
-ne 219.
-
-(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls2stix2tt.fd
-File: ls2stix2tt.fd 2018/04/02 v2.0.0-latex stix2 typewriter LS2 font definitio
-ns
-)
 ! Missing } inserted.
 <inserted text> 
                 }
-l.221 \end{flushleft}
+l.218 \end{flushleft}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1205,36 +1144,95 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.25993pt on input line 241.
+(Font)              scaled to size 10.25993pt on input line 238.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.25993pt on input line 241.
+(Font)              scaled to size 10.25993pt on input line 238.
+LaTeX Font Info:    Trying to load font information for LS1+stix2scr on input l
+ine 270.
+(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls1stix2scr.fd
+File: ls1stix2scr.fd 2018/04/02 v2.0.0-latex stix2 script LS1 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS2+stix2ex on input li
+ne 270.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls2stix2ex.fd
+File: ls2stix2ex.fd 2018/04/02 v2.0.0-latex stix2 extentions LS2 font definitio
+ns
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 270
+.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 270
+.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for LS1+stix2frak on input 
+line 270.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls1stix2frak.fd
+File: ls1stix2frak.fd 2018/04/02 v2.0.0-latex stix2 fraktur LS1 font definition
+s
+)
+LaTeX Font Info:    Trying to load font information for LS1+stix2bb on input li
+ne 270.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls1stix2bb.fd
+File: ls1stix2bb.fd 2018/04/02 v2.0.0-latex stix2 blackboard LS1 font definitio
+ns
+)
+LaTeX Font Info:    Trying to load font information for LS2+stix2cal on input l
+ine 270.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls2stix2cal.fd
+File: ls2stix2cal.fd 2018/04/02 v2.0.0-latex stix2 calligraphic LS2 font defini
+tions
+)
+LaTeX Font Info:    Trying to load font information for LS1+stix2sf on input li
+ne 270.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls1stix2sf.fd
+File: ls1stix2sf.fd 2018/04/02 v2.0.0-latex stix2 sans-serif LS1 font definitio
+ns
+)
+LaTeX Font Info:    Trying to load font information for LS2+stix2tt on input li
+ne 270.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/stix2-type1/ls2stix2tt.fd
+File: ls2stix2tt.fd 2018/04/02 v2.0.0-latex stix2 typewriter LS2 font definitio
+ns
+)
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.12506pt on input line 309.
+(Font)              scaled to size 7.12506pt on input line 306.
 LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
-(Font)              scaled to size 7.50009pt on input line 309.
-[1
+(Font)              scaled to size 7.50009pt on input line 306.
+ [1
 
 {/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 <./figures/thesisconcept.png, id=112, 2860.6875pt x 1909.1325pt>
 File: ./figures/thesisconcept.png Graphic file (type png)
 <use ./figures/thesisconcept.png>
-Package pdftex.def Info: ./figures/thesisconcept.png  used on input line 357.
+Package pdftex.def Info: ./figures/thesisconcept.png  used on input line 354.
 (pdftex.def)             Requested size: 386.67299pt x 258.0422pt.
 
-Underfull \hbox (badness 2809) in paragraph at lines 357--357
+Underfull \hbox (badness 2809) in paragraph at lines 354--354
 \T1/stix2/m/n/8.21255 the top, a set of bio-di-ver-sity ob-ser-va-to-ries
  []
 
 [2 <./figures/thesisconcept.png>]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 381.
+(Font)              scaled to size 8.54997pt on input line 378.
 <./figures/ch2.png, id=126, 784.6113pt x 708.9687pt>
 File: ./figures/ch2.png Graphic file (type png)
 <use ./figures/ch2.png>
-Package pdftex.def Info: ./figures/ch2.png  used on input line 405.
+Package pdftex.def Info: ./figures/ch2.png  used on input line 404.
 (pdftex.def)             Requested size: 386.67299pt x 349.39903pt.
 
-Underfull \hbox (badness 3019) in paragraph at lines 405--405
+Underfull \hbox (badness 3019) in paragraph at lines 404--404
 []\T1/stix2/b/n/8.21255 Figure 2 |\T1/stix2/m/n/8.21255 A tax-on-omy of oc-cur-
 rence, co-
  []
@@ -1242,11 +1240,11 @@ rence, co-
 <./figures/negativebinomial.png, id=128, 1806.75pt x 1204.5pt>
 File: ./figures/negativebinomial.png Graphic file (type png)
 <use ./figures/negativebinomial.png>
-Package pdftex.def Info: ./figures/negativebinomial.png  used on input line 427
+Package pdftex.def Info: ./figures/negativebinomial.png  used on input line 426
 .
 (pdftex.def)             Requested size: 386.67299pt x 257.7678pt.
 
-Underfull \hbox (badness 1168) in paragraph at lines 432--432
+Underfull \hbox (badness 1168) in paragraph at lines 431--431
 \T1/stix2/m/n/8.21255 and the prob-a-bil-ity that an in-ter-ac-tion is a
  []
 
@@ -1254,71 +1252,73 @@ Underfull \hbox (badness 1168) in paragraph at lines 432--432
 <./figures/ch2_fnr.png, id=141, 1806.75pt x 1204.5pt>
 File: ./figures/ch2_fnr.png Graphic file (type png)
 <use ./figures/ch2_fnr.png>
-Package pdftex.def Info: ./figures/ch2_fnr.png  used on input line 469.
+Package pdftex.def Info: ./figures/ch2_fnr.png  used on input line 468.
 (pdftex.def)             Requested size: 386.67299pt x 257.7678pt.
 <./figures/positiveassociations.png, id=143, 2409.0pt x 2409.0pt>
 File: ./figures/positiveassociations.png Graphic file (type png)
 <use ./figures/positiveassociations.png>
 Package pdftex.def Info: ./figures/positiveassociations.png  used on input line
- 491.
+ 490.
 (pdftex.def)             Requested size: 386.67299pt x 386.6609pt.
+LaTeX Font Info:    Calculating math sizes for size <8.21255> on input line 490
+.
  [4 <./figures/negativebinomial.png>] [5 <./figures/ch2_fnr.png> <./figures/pos
 itiveassociations.png>]
 <./figures/ch1.png, id=160, 1245.65375pt x 1011.78pt>
 File: ./figures/ch1.png Graphic file (type png)
 <use ./figures/ch1.png>
-Package pdftex.def Info: ./figures/ch1.png  used on input line 529.
+Package pdftex.def Info: ./figures/ch1.png  used on input line 528.
 (pdftex.def)             Requested size: 386.67299pt x 314.08084pt.
 
-Underfull \hbox (badness 3492) in paragraph at lines 532--532
+Underfull \hbox (badness 3492) in paragraph at lines 531--531
 []\T1/stix2/b/n/8.21255 Figure 6 |\T1/stix2/m/n/8.21255 Chap-ter One con-cep-tu
 al fig-ure.
  []
 
 [6 <./figures/ch1.png>]
-<./figures/ch3.png, id=171, 2099.845pt x 1161.84062pt>
+<./figures/ch3.png, id=170, 2099.845pt x 1161.84062pt>
 File: ./figures/ch3.png Graphic file (type png)
 <use ./figures/ch3.png>
-Package pdftex.def Info: ./figures/ch3.png  used on input line 619.
+Package pdftex.def Info: ./figures/ch3.png  used on input line 618.
 (pdftex.def)             Requested size: 386.67299pt x 213.94437pt.
 
-Underfull \hbox (badness 1642) in paragraph at lines 619--619
+Underfull \hbox (badness 1642) in paragraph at lines 618--618
 \T1/stix2/m/n/8.21255 go from a map of land-cover with a set of
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 619--619
+Underfull \hbox (badness 2073) in paragraph at lines 618--618
 \T1/stix2/m/n/8.21255 recorded (top left), to the set of all pos-si-
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 619--619
+Underfull \hbox (badness 4254) in paragraph at lines 618--618
 \T1/stix2/m/n/8.21255 each point in the green box is a unique
  []
 
 [7 <./figures/ch3.png>]
 LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 67
-7.
+4.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 677.
+(Font)              scaled to size 9.0pt on input line 674.
 <./figures/ch4.png, id=183, 1346.53062pt x 933.98938pt>
 File: ./figures/ch4.png Graphic file (type png)
 <use ./figures/ch4.png>
-Package pdftex.def Info: ./figures/ch4.png  used on input line 693.
+Package pdftex.def Info: ./figures/ch4.png  used on input line 692.
 (pdftex.def)             Requested size: 386.67299pt x 268.1992pt.
 
-Overfull \hbox (56.21245pt too wide) in paragraph at lines 699--711
+Overfull \hbox (56.21245pt too wide) in paragraph at lines 698--710
 [] []|\T1/phv/b/n/9 5.2. Meth-ods[] \T1/stix2/m/n/9 A di-a-gram show-ing the re
 -la-tion be-tween these pack-ages is shown in fig. [][]8[][]. \T1/zi4/m/n/9 Met
 acommunityDynamics.jl
  []
 
 [8 <./figures/ch4.png>]
-<./figures/foodwebtraj.png, id=199, 1514.65875pt x 1199.48125pt>
+<./figures/foodwebtraj.png, id=198, 1514.65875pt x 1199.48125pt>
 File: ./figures/foodwebtraj.png Graphic file (type png)
 <use ./figures/foodwebtraj.png>
 Package pdftex.def Info: ./figures/foodwebtraj.png  used on input line 730.
@@ -1330,19 +1330,19 @@ AED: lastpage setting LastPage
 inen2002MetMod}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.931 \end{document}
+l.935 \end{document}
                     ] (./preprint.aux)
 Package rerunfilecheck Info: File `preprint.out' has not changed.
 (rerunfilecheck)             Checksum: 7192E6AE0143E75E1D15C1A0E093F41E;3482.
  ) 
 Here is how much of TeX's memory you used:
  29951 strings out of 478579
- 527950 string characters out of 5855461
- 837363 words of memory out of 5000000
- 47210 multiletter control sequences out of 15000+600000
- 536235 words of font info for 136 fonts, out of 8000000 for 9000
+ 527952 string characters out of 5855461
+ 839363 words of memory out of 5000000
+ 47209 multiletter control sequences out of 15000+600000
+ 529124 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,117p,756b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,12n,117p,756b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{/opt
 /texlive/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}{/opt/texli
 ve/texdir/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathsf.enc}{/opt/texlive
@@ -1358,10 +1358,10 @@ dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/texdir/
 texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texmf-di
 st/fonts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb>
-Output written on preprint.pdf (11 pages, 5023290 bytes).
+Output written on preprint.pdf (11 pages, 5023635 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
- 102 named destinations out of 1000 (max. 500000)
+ 322 PDF objects out of 1000 (max. 8388607)
+ 273 compressed objects within 3 object streams
+ 103 named destinations out of 1000 (max. 500000)
  234 words of extra memory for PDF output out of 10000 (max. 10000000)
 

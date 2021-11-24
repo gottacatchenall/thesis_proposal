@@ -140,6 +140,39 @@
         "volume": "3"
     },
     {
+        "DOI": "10.1126/science.1156269",
+        "author": [
+            {
+                "family": "Allesina",
+                "given": "Stefano"
+            },
+            {
+                "family": "Alonso",
+                "given": "David"
+            },
+            {
+                "family": "Pascual",
+                "given": "Mercedes"
+            }
+        ],
+        "container-title": "Science",
+        "id": "Allesina2008GenMod",
+        "issue": "5876",
+        "issued": {
+            "date-parts": [
+                [
+                    2008,
+                    5
+                ]
+            ]
+        },
+        "page": "658-661",
+        "publisher": "American Association for the Advancement of Science",
+        "title": "A General Model for Food Web Structure",
+        "type": "article-journal",
+        "volume": "320"
+    },
+    {
         "DOI": "10.1038/ncomms8842",
         "author": [
             {
@@ -2677,6 +2710,12 @@
         "title": "Food-web aggregation, methodological and functional issues",
         "type": "article-journal",
         "volume": "122"
+    },
+    {
+        "id": "GenMod",
+        "publisher": "https://www-science-org.proxy3.library.mcgill.ca/doi/10.1126/science.1156269",
+        "title": "A General Model for Food Web Structure",
+        "type": ""
     },
     {
         "DOI": "10.1101/2021.04.18.440319",
