@@ -106,6 +106,7 @@ MCD.jl}\label{fig:software}
 \centering
 \includegraphics{./figures/foodwebtraj.png}
 \caption{Sample output of simulated food web dynamics from
-MetacommunityDynamics.jl}\label{fig:foodwebtraj}
+MetacommunityDynamics.jl. Timestep (x-axis), and biomass of each species
+(y-axis).}\label{fig:foodwebtraj}
 }
 \end{figure}
