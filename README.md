@@ -153,13 +153,16 @@ We begin by proposing a method to compute a null expectation of the probability
 of an interaction false-negative as a function number of total
 observations of individuals of _all species in the species pool_. This is done by
 simulating the process of observation, where the probability of
-observing a given species is its relative abundance. We use a
+observing a given species is its relative abundance. We show that the realized false-negative rate can be quite high, simply as a byproduct of the distributoin
+of relative abundance in communities. We use a
 log-normal distribution of relative abundance [@Hubbell2001UniNeu] and
 simulating the process of observation on food-webs generated using the
 niche model [@Williams2000SimRul] with connectance parameterized by
 the flexible-links model [@MacDonald2020RevLin]. An example of this
 relation for networks with varying spceies richness is shown in
 @fig:fnr.
+
+![Relationship between total number of observed interactions negatives (x-axis) and the probability that an interaction is a true-negative as a function of different realized false-negative rates (colors), assuming each observed negative is independent---the same as the negative-bernoulli distribution.](./figures/negativebinomial.png)
 
 We then go on to testing some assumptions of this neutral model with
 empirical data. Primarily that we analytically show that our neutral
@@ -185,7 +188,7 @@ correction for detection  error when fitting an interaction prediction
 model. This relationship varies with the total richness of the
 metaweb [@fig:fnr].
 
-![foo](./figures/ch2_fnr.png){#fig:fnr}
+![The realized false-negative-rate of interaction detection (y-axis) as a function of the total number of observations of all species in the species pool (different richnesses in different colors). Each point is the mean of 50 replicates, with one standard-deviation in the first shade, and two standard deviations in the second shade.](./figures/ch2_fnr.png){#fig:fnr}
 
 The second major result is that we analytically show that the this
 simulated observation model, by assuming that there is no association
@@ -194,7 +197,7 @@ predicts the realized false-negative interaction rate. We then
 demonstrate that this positive association association exists in two
 empirical systems [@fig:posassoc].  
 
-![Demonstrates positive associations in co-occurrence](./figures/positiveassociations.png){#fig:posassoc}
+![Demonstrates positive associations in co-occurrence. Left: the product of the marginal probability of observing two species (A and B) in a sample (x-axis) agaianst the computed joint probability of observing these species together (y-axis). Dashed line indicates $y=x$, meaning no association between the two. Each point is an observed interaction between two species. Right: the distribution of the difference between these joint and marginal probabilities. Both are non-zero with $p < 10^-50$ via a t-test.](./figures/positiveassociations.png){#fig:posassoc}
 
 ## Progress
 
@@ -407,7 +410,13 @@ forecast, to actionable information, both through software that can be
 used to solve these problems (chapters one, three, four), and
 vignettes of how these software can be applied (chapters one, two).
 
-**TK** By using the success of numerical-weather prediction and the Earth
-monitoring system that supports it as a model,
+Biodiversity science would be wise to use the success of numerical-weather prediction and the Earth monitoring system that supports it as a template.
+Further, we should embrace methodological advances in computational statistics that
+can enable more robust prediction of the dynamics of complex systems than is
+possible using the tools of analytic models---not just because they can provide
+more efficacious predictions, but also because they enable a more direct representation of uncertainty, which is crucial for developing ecological
+forecasting models which provide actionable information to stakeholders. 
+
+
 
 # References
