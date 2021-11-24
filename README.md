@@ -138,21 +138,20 @@ expectation of false-negative probability for a dataset of a given
 size. Further it then proposes a method for optimizing the spatial
 sampling locations to maximize the probability of detecting an
 interaction between two species given a fixed number of total of
-observations, and the distributions of each species. This addresses
+observations and the distributions of each species. This addresses
 the optimization of monitoring network part of the flow from data to
-mitigation at the top of @fig:thesis, left. As explored in the
-previous chapter, there are false-negatives in interaction data.
-However, there is more than one way to observe a false-negative when
-sampling interactions. @fig:fnrtaxonomy shows a taxonomy of
-false-negatives in occurrence, co-occurrence, and interaction data.
+mitigation at the top of @fig:thesis, left. There is more than one way 
+to observe a false-negative when sampling interactions. @fig:fnrtaxonomy shows a taxonomy of false-negatives in occurrence, co-occurrence, and interaction data.
+This chapter untangles the relationship between co-occurrence false-negatives
+and interaction false-negatives.
 
 ![A taxonomy of occurrence, co-occurrence, and interaction false negatives in data](./figures/ch2.png){#fig:fnrtaxonomy}
 
 ## Methods
 
-The first result is to compute a null expectation of the probability
+We begin by proposing a method to compute a null expectation of the probability
 of an interaction false-negative as a function number of total
-observations of individuals of _any species_. This is done by
+observations of individuals of _all species in the species pool_. This is done by
 simulating the process of observation, where the probability of
 observing a given species is its relative abundance. We use a
 log-normal distribution of relative abundance [@Hubbell2001UniNeu] and
@@ -228,7 +227,7 @@ to forecast the uncoupling of the plant-pollinator metaweb of
 Colorado.
 
 ![Chapter One conceptual figure. Left: the sources of data and how
-they can be synthesized. Right: The flow from data to interaction
+they can be combined. Right: The flow from data to interaction
 prediction using a few different interaction prediction
 models.](./figures/ch1.png)
 
@@ -263,16 +262,15 @@ spatial between species for which there is a predicted interaction.
 
 ## Results
 
-Here we show the in-progress results, which are the prerequisites for the
+The in-progress results are the prerequisites for the
 analysis outlined above: phylogenies for both plant and bee species
-(@fig:phylo) and species distribution models for all species (an
-example shown in @fig:example_sdm).
+(appendix figure one) and species distribution models for all species (an
+example shown in appendix figure two).
 
 ## Progress
 
-At the moment, we have derived phylogenies (@fig:phylo) and SDMs
-(@fig:example_sdm) for all the species present in the Colorado GBIF
-metaweb. I've also been exploring the data available from Julian
+At the moment, we have derived phylogenies and SDMs for all the species present in the Colorado GBIF
+metaweb (appendix figures one and two). I've also been exploring the data available from Julian
 Resasco. The primary constraint on further progress is that we are
 waiting on the finalization of a data sharing agreement with RMBL.
 
@@ -299,7 +297,7 @@ modification.
 
 ## Methods
 
-![foo](./figures/ch3.png){#fig:ch3}
+![A conceptual example of how we go from a map of landcover with a set of points where occurrence of a species has been recorded (top left), to the set of all possible landscape modifications (green box, where each point in the green box is a unique landscape modification, with three examples shown as pink, red and orange dots), to computing resistance surfaces based on proposed landscape modifications (center) and then simulate the distribution of extinction times for a metapopulation in this new landscape (right).](./figures/ch3.png){#fig:ch3}
 
 We propose various landscape modifications which alter the cover of a
 landscape, represented as a raster. We then compute a new resistance
@@ -317,19 +315,22 @@ search space of possible modifications to estimate the modification
 that maximizes the time-until extinction of simulated metapopulation
 dynamics under that hypothetical modified landscape.
 
-**TK** The biggest challenge in implementing simulated annealing in this
+The biggest challenge in implementing simulated annealing in this
 context is defining a proposal function for landscape modifications.
 At the moment this is done by computing the minimum-spanning-tree
 (MST) of the spatial nodes, and then proposing corridors that connect
-nodes that are already connected in the MST.
+nodes that are already connected in the MST. The primary reason for doing this
+is the cut down the size of the solution space to enable quicker convergence,
+although the final software that implements this algorithm will enable 
+alternative methods of proposing modifications. 
 
-**TK** The goal to rank the cells in the raster by priority based on how many
+The goal output of this chapter is not only to provide a set of discrete corridor options, but also to rank the cells in the raster by priority based on how many
 times they are converted in the distribution of "good" corridors after
 simulated annealing has reached a pseudoequilibrium. Further, the
 final component of this chapter is measuring the effect of land-use
-change on the robustness of the optimized corridor. By simulating
-various neutral models of urban and agricultural sprawl, we can
-determine if the proposed modifications
+change on the robustness of the optimized corridor by simulating
+various neutral models of urban and agricultural sprawl, and determining if the proposed modifications still maximize time-until-extinction when the landcover
+in the landscape is not static.
 
 ## Progress
 
@@ -398,8 +399,6 @@ arbitrary environmental variables in progress, as well as traits.
 
 # Discussion
 
-> Describing expected/anticipated contributions of the thesis. Very important for QE. This should be at least half a page.
-
 Developing a system for global biodiversity monitoring is an
 imperative to mitigate biodiversity loss and its impacts on humanity.
 In my thesis I hope to provide a template for the digital
@@ -408,7 +407,7 @@ forecast, to actionable information, both through software that can be
 used to solve these problems (chapters one, three, four), and
 vignettes of how these software can be applied (chapters one, two).
 
-By using the success of numerical-weather prediction and the Earth
+**TK** By using the success of numerical-weather prediction and the Earth
 monitoring system that supports it as a model,
 
 # References
