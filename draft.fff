@@ -48,7 +48,7 @@ co-occurrence}\label{fig:posassoc}
 \centering
 \includegraphics{./figures/ch1.png}
 \caption{Chapter One conceptual figure. Left: the sources of data and
-how they can be synthesized. Right: The flow from data to interaction
+how they can be combined. Right: The flow from data to interaction
 prediction using a few different interaction prediction models.}
 \end{figure}
 \efloatseparator
@@ -57,7 +57,14 @@ prediction using a few different interaction prediction models.}
 \hypertarget{fig:ch3}{%
 \centering
 \includegraphics{./figures/ch3.png}
-\caption{foo}\label{fig:ch3}
+\caption{A conceptual example of how we go from a map of landcover with
+a set of points where occurrence of a species has been recorded (top
+left), to the set of all possible landscape modifications (green box,
+where each point in the green box is a unique landscape modification,
+with three examples shown as pink, red and orange dots), to computing
+resistance surfaces based on proposed landscape modifications (center)
+and then simulate the distribution of extinction times for a
+metapopulation in this new landscape (right).}\label{fig:ch3}
 }
 \end{figure}
 \efloatseparator
