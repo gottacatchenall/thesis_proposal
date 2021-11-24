@@ -38,7 +38,7 @@ function describing how the system changes on a moment-to-moment basis
 Holling-Type-III or DeAngelis-Beddington functional response). The
 form of this functional response in real systems, and whether it is
 meaningfully non-zero for a given species interaction, is effectively
-unknown, and some forms are inherently more "forecastable" than others
+unknown and must be predicted [@Strydom2021RoaMap], and some forms are inherently more "forecastable" than others
 [@Chen2019RevCom; @Pennekamp2019IntPre; @Beckage2011LimPre]. The
 initial success of these forms of models can be traced back to the
 larger program of ontological reductionism, which became the default
@@ -385,7 +385,7 @@ dispersal (with dispersal distance inverse proportional to trophic-level),
 linear mortality, and logistic growth for any species at the producer
 trophic-level.
 
-![Sample output of simulated food web dynamics from MetacommunityDynamics.jl](./figures/foodwebtraj.png){#fig:foodwebtraj}
+![Sample output of simulated food web dynamics from MetacommunityDynamics.jl. Timestep (x-axis), and biomass of each species (y-axis). ](./figures/foodwebtraj.png){#fig:foodwebtraj}
 
 ## Progress
 
@@ -415,8 +415,9 @@ Further, we should embrace methodological advances in computational statistics t
 can enable more robust prediction of the dynamics of complex systems than is
 possible using the tools of analytic models---not just because they can provide
 more efficacious predictions, but also because they enable a more direct representation of uncertainty, which is crucial for developing ecological
-forecasting models which provide actionable information to stakeholders. 
-
+forecasting models which provide actionable information to stakeholders, 
+and to find a way for humans to live sustainably on Earth, the only planet 
+on which life has ever been known to occur. 
 
 
 # References
