@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  24 NOV 2021 17:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  24 NOV 2021 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1215,7 +1215,7 @@ LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
 [1
 
 {/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<./figures/thesisconcept.png, id=113, 2860.6875pt x 1909.1325pt>
+<./figures/thesisconcept.png, id=112, 2860.6875pt x 1909.1325pt>
 File: ./figures/thesisconcept.png Graphic file (type png)
 <use ./figures/thesisconcept.png>
 Package pdftex.def Info: ./figures/thesisconcept.png  used on input line 357.
@@ -1338,7 +1338,7 @@ Package rerunfilecheck Info: File `preprint.out' has not changed.
 Here is how much of TeX's memory you used:
  29951 strings out of 478579
  527950 string characters out of 5855461
- 838363 words of memory out of 5000000
+ 837363 words of memory out of 5000000
  47210 multiletter control sequences out of 15000+600000
  536235 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1358,7 +1358,7 @@ dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/texdir/
 texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texmf-di
 st/fonts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb>
-Output written on preprint.pdf (11 pages, 5025896 bytes).
+Output written on preprint.pdf (11 pages, 5023290 bytes).
 PDF statistics:
  320 PDF objects out of 1000 (max. 8388607)
  271 compressed objects within 3 object streams

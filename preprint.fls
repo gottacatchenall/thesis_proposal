@@ -1329,7 +1329,6 @@ INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/stix2-mathsfit
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/stix2-mathtt.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/stix2-mathtt.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/stix2-mathtt.tfm
-INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-bold.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
@@ -1348,6 +1347,7 @@ INPUT ./figures/thesisconcept.png
 INPUT ./figures/thesisconcept.png
 INPUT ./figures/thesisconcept.png
 INPUT ./figures/thesisconcept.png
+INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-bold.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text-bold.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT ./figures/ch2.png
