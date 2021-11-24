@@ -38,7 +38,7 @@ function describing how the system changes on a moment-to-moment basis
 Holling-Type-III or DeAngelis-Beddington functional response). The
 form of this functional response in real systems, and whether it is
 meaningfully non-zero for a given species interaction, is effectively
-unknown and must be predicted [@Strydom2021RoaMap], and some forms are inherently more "forecastable" than others
+unknown and must be predicted [@Strydom2021RoaPre], and some forms are inherently more "forecastable" than others
 [@Chen2019RevCom; @Pennekamp2019IntPre; @Beckage2011LimPre]. The
 initial success of these forms of models can be traced back to the
 larger program of ontological reductionism, which became the default
