@@ -32,7 +32,7 @@ negatives in data}\label{fig:fnrtaxonomy}
 negatives (x-axis) and the probability that an interaction is a
 true-negative as a function of different realized false-negative rates
 (colors), assuming each observed negative is independent---the same as
-the negative-bernoulli distribution.}
+the negative-Bernoulli distribution.}
 \end{figure}
 \efloatseparator
  
@@ -69,7 +69,7 @@ non-zero with \(p < 10^-50\) via a t-test.}\label{fig:posassoc}
 \begin{figure}
 \centering
 \includegraphics{./figures/ch1.png}
-\caption{Chapter One conceptual figure. Left: the sources of data and
+\caption{Chapter two conceptual figure. Left: the sources of data and
 how they can be combined. Right: The flow from data to interaction
 prediction using a few different interaction prediction models.}
 \end{figure}

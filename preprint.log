@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  24 NOV 2021 23:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.11.1)  25 NOV 2021 00:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1270,8 +1270,8 @@ File: ./figures/ch1.png Graphic file (type png)
 Package pdftex.def Info: ./figures/ch1.png  used on input line 528.
 (pdftex.def)             Requested size: 386.67299pt x 314.08084pt.
 
-Underfull \hbox (badness 3492) in paragraph at lines 531--531
-[]\T1/stix2/b/n/8.21255 Figure 6 |\T1/stix2/m/n/8.21255 Chap-ter One con-cep-tu
+Underfull \hbox (badness 5077) in paragraph at lines 531--531
+[]\T1/stix2/b/n/8.21255 Figure 6 |\T1/stix2/m/n/8.21255 Chap-ter two con-cep-tu
 al fig-ure.
  []
 
@@ -1338,7 +1338,7 @@ Package rerunfilecheck Info: File `preprint.out' has not changed.
 Here is how much of TeX's memory you used:
  29951 strings out of 478579
  527952 string characters out of 5855461
- 839363 words of memory out of 5000000
+ 837361 words of memory out of 5000000
  47209 multiletter control sequences out of 15000+600000
  529124 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1358,7 +1358,7 @@ dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></opt/texlive/texdir/
 texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></opt/texlive/texdir/texmf-di
 st/fonts/type1/urw/helvetic/uhvb8a.pfb></opt/texlive/texdir/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb>
-Output written on preprint.pdf (11 pages, 5023635 bytes).
+Output written on preprint.pdf (11 pages, 5023644 bytes).
 PDF statistics:
  322 PDF objects out of 1000 (max. 8388607)
  273 compressed objects within 3 object streams
