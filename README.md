@@ -130,24 +130,33 @@ rest of the dissertation.
 
 # Chapter One: Optimizing spatial sampling of species interactions
 
+## Context
+
+Ecosystems are composed of interactions between species, yet this
+remains one of the greatest shortfalls of data in biodiversity science
+[@Strydom2021RoaPre]. This is, in no small part, because species
+interactions are considerably more difficult to sample than
+single-species processes. However, understanding and predicting
+species interactions, and how anthropogenic change is affecting them,
+is one of the grand challenges faced by modern ecologists
+[@Jordano2016ChaEco]. Further, co-occurrence is often used as a proxy
+for species interaction when this is not necessary always a valid
+assumption [@Blanchet2020CooNot].
+
+
 ## Objective
 
-This chapter uses simulation models to investigate the relationship
-between species relative abundance, sampling effort, and probability
-of observing an interaction between species in order to aid in the
-design of samples of ecological interactions across space, and to
-provide a null expectation of the false-negative probability for a
-dataset of a given size. Further, it then proposes a method for
-optimizing the spatial sampling locations to maximize the probability
-of detecting an interaction between two species given a fixed number
-of total of observations and the distributions of each species. This
-addresses the optimization of monitoring network part of the flow from
-data to mitigation at the top of @fig:thesis, left. There is more than
-one way to observe a false-negative when sampling interactions---
-@fig:fnrtaxonomy shows a taxonomy of false-negatives in occurrence,
-co-occurrence, and interaction data. The goal of this chapter is to
-untangle the relationship between co-occurrence false-negatives (and
-their relation to relative abundance) and interaction false-negatives.
+The goal of this chapter is to use simulation models to investigate
+the relationship between species relative abundance, sampling effort,
+and probability of observing an interaction between species in order
+to aid in the design of samples of ecological interactions across
+space, and to provide a null expectation of the false-negative
+probability for a dataset of a given size. Further, it then proposes a
+method for optimizing the spatial sampling locations to maximize the
+probability of detecting an interaction between two species given a
+fixed number of total of observations and the distributions of each
+species. This addresses the optimization of monitoring network part of
+the flow from data to mitigation at the top of @fig:thesis, left.
 
 ![A taxonomy of occurrence, co-occurrence, and interaction false negatives in data](./figures/ch2.png){#fig:fnrtaxonomy}
 
@@ -216,7 +225,7 @@ distance-decaying kernel.
 
 # Chapter Two: Forecasting the spatial uncoupling of a plant-pollinator network
 
-## Objective
+## Context
 
 Interactions between plants and pollinators form networks which
 together structure the "architecture of biodiversity"
@@ -228,12 +237,15 @@ Plant-pollinator networks face two possible forms of rewiring in
 response to anthropogenic environmental change: spatial and temporal.
 Range shifts could cause interacting species to no longer overlap in
 space, and shifts in phenology could cause interacting species to no
-longer occur at the same time of year. This chapter uses several years
-of data on bumblebee-flower phenology and interactions across several
-field sites, each consisting of several plots across an elevational
-gradient, combined with spatial records of species occurrence via GBIF
-to forecast the uncoupling of the plant-pollinator metaweb of
-Colorado.
+longer occur at the same time of year.
+
+## Objective
+
+This chapter uses several years of data on bumblebee-flower phenology
+and interactions across several field sites, each consisting of
+several plots across an elevational gradient, combined with spatial
+records of species occurrence via GBIF to forecast the uncoupling of
+the plant-pollinator metaweb of Colorado.
 
 ![Chapter two conceptual figure. Left: the sources of data and how
 they can be combined. Right: The flow from data to interaction
@@ -286,23 +298,26 @@ the finalization of a data sharing agreement with RMBL.
 
 # Chapter Three: Optimizing corridor placement against ecological dynamics
 
-## Objective
+## Context
 
 As land-use change has caused many habitats to become fragmented and
 patchy, promoting landscape connectivity has become of significant
 interest to mitigate the effects of this change on Earth's
-biodiversity. However, the practical realities of conservation mean
-that there is a limitation on how much we can modify landscapes in
-order to do this. So what is the best place to put a corridor given a
-constraint on how much surface-area you can change in a landscape?
-This is the question this chapter seeks to answer. Models for
-inferring corridor locations have been developed, but are limited in
-that are not developed around promoting some element of ecosystem
-function, but instead by trying to find the path of least resistance
-in an existing landscape from a derived resistance surface
-[e.g. @Peterman2018ResRP]. This chapter proposes a general algorithm for
-optimizing spatial restoration effort to move a measurement of ecosystem
-functioning toward a target state.
+biodiversity [@Resasco2019MetDec]. However, the practical realities of
+conservation mean that there is a limitation on how much we can modify
+landscapes in order to do this.
+
+## Objective
+
+What is the best place to put a corridor given a constraint on how
+much surface-area you can change in a landscape? This is the question
+this chapter seeks to answer. Models for inferring corridor locations
+have been developed, but are limited in that are not developed around
+promoting some element of ecosystem function, but instead by trying to
+find the path of least resistance in an existing landscape from a
+derived resistance surface [e.g. @Peterman2018ResRP]. This chapter
+proposes a general algorithm for optimizing spatial restoration effort
+to move a measurement of ecological dynamics toward a target state.
 
 ## Methods
 
@@ -354,6 +369,17 @@ running benchmarking tests for the resulting chapter.
 
 # Chapter Four: MetacommunityDynamics.jl: a virtual laboratory for community ecology
 
+## Context
+
+Building models for ecological forecasting is an imperative
+[@Dietze2018IteNea], but before applying forecasting methods to actual
+data, we need a way to determine the efficacy of different forecasting
+methods. We need a software library like this to generate synthetic
+data from a _known_ set of mechanisms and parameters to test our
+methods for parameter inference and forecasting on a system with
+_known_ ground-truth dynamics  to assess the effectiveness of these
+inference and forecasting methods.
+
 ## Objective
 
 The final chapter consists of a collection of modules in the `Julia`
@@ -362,11 +388,7 @@ the code used for the preceding chapters. Indeed
 `MetacommunityDynamics.jl` (MCD.jl) is at the center of this set of
 tools, but due to the nature of the Julia language, MCD.jl is
 inter-operable with several existing packages within the `EcoJulia`
-organization, including several to which I have contributed. We need a
-software library like this to generate synthetic data from a _known_
-set of mechanisms and parameters to test our methods for parameter
-inference and forecasting on this _known_ system to assess the
-effectiveness of these inference and forecasting methods.
+organization, including several to which I have contributed.
 
 
 ![The structure of the software libraries used as part of MCD.jl](./figures/ch4.png){#fig:software}
