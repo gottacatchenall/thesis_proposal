@@ -328,26 +328,34 @@ dissertation.
 \section{Chapter One: Optimizing spatial sampling of species
 interactions}\label{chapter-one-optimizing-spatial-sampling-of-species-interactions}}
 
+\hypertarget{context}{%
+\subsection{Context}\label{context}}
+
+Ecosystems are composed of interactions between species, yet this
+remains one of the greatest shortfalls of data in biodiversity science
+(Strydom \emph{et al.} 2021b). This is, in no small part, because
+species interactions are considerably more difficult to sample than
+single-species processes. However, understanding and predicting species
+interactions, and how anthropogenic change is affecting them, is one of
+the grand challenges faced by modern ecologists (Jordano 2016). Further,
+co-occurrence is often used as a proxy for species interaction when this
+is not necessary always a valid assumption (Blanchet \emph{et al.}
+2020).
+
 \hypertarget{objective}{%
 \subsection{Objective}\label{objective}}
 
-This chapter uses simulation models to investigate the relationship
-between species relative abundance, sampling effort, and probability of
-observing an interaction between species in order to aid in the design
-of samples of ecological interactions across space, and to provide a
-null expectation of the false-negative probability for a dataset of a
-given size. Further, it then proposes a method for optimizing the
-spatial sampling locations to maximize the probability of detecting an
-interaction between two species given a fixed number of total of
-observations and the distributions of each species. This addresses the
-optimization of monitoring network part of the flow from data to
-mitigation at the top of fig.~\ref{fig:thesis}, left. There is more than
-one way to observe a false-negative when sampling interactions---
-fig.~\ref{fig:fnrtaxonomy} shows a taxonomy of false-negatives in
-occurrence, co-occurrence, and interaction data. The goal of this
-chapter is to untangle the relationship between co-occurrence
-false-negatives (and their relation to relative abundance) and
-interaction false-negatives.
+The goal of this chapter is to use simulation models to investigate the
+relationship between species relative abundance, sampling effort, and
+probability of observing an interaction between species in order to aid
+in the design of samples of ecological interactions across space, and to
+provide a null expectation of the false-negative probability for a
+dataset of a given size. Further, it then proposes a method for
+optimizing the spatial sampling locations to maximize the probability of
+detecting an interaction between two species given a fixed number of
+total of observations and the distributions of each species. This
+addresses the optimization of monitoring network part of the flow from
+data to mitigation at the top of fig.~\ref{fig:thesis}, left.
 
 \begin{figure}
 \hypertarget{fig:fnrtaxonomy}{%
@@ -458,8 +466,8 @@ distance-decaying kernel.
 plant-pollinator
 network}\label{chapter-two-forecasting-the-spatial-uncoupling-of-a-plant-pollinator-network}}
 
-\hypertarget{objective-1}{%
-\subsection{Objective}\label{objective-1}}
+\hypertarget{context-1}{%
+\subsection{Context}\label{context-1}}
 
 Interactions between plants and pollinators form networks which together
 structure the ``architecture of biodiversity'' (Bascompte \& Jordano
@@ -471,11 +479,16 @@ face two possible forms of rewiring in response to anthropogenic
 environmental change: spatial and temporal. Range shifts could cause
 interacting species to no longer overlap in space, and shifts in
 phenology could cause interacting species to no longer occur at the same
-time of year. This chapter uses several years of data on
-bumblebee-flower phenology and interactions across several field sites,
-each consisting of several plots across an elevational gradient,
-combined with spatial records of species occurrence via GBIF to forecast
-the uncoupling of the plant-pollinator metaweb of Colorado.
+time of year.
+
+\hypertarget{objective-1}{%
+\subsection{Objective}\label{objective-1}}
+
+This chapter uses several years of data on bumblebee-flower phenology
+and interactions across several field sites, each consisting of several
+plots across an elevational gradient, combined with spatial records of
+species occurrence via GBIF to forecast the uncoupling of the
+plant-pollinator metaweb of Colorado.
 
 \begin{figure}
 \centering
@@ -536,15 +549,20 @@ finalization of a data sharing agreement with RMBL.
 \section{Chapter Three: Optimizing corridor placement against ecological
 dynamics}\label{chapter-three-optimizing-corridor-placement-against-ecological-dynamics}}
 
-\hypertarget{objective-2}{%
-\subsection{Objective}\label{objective-2}}
+\hypertarget{context-2}{%
+\subsection{Context}\label{context-2}}
 
 As land-use change has caused many habitats to become fragmented and
 patchy, promoting landscape connectivity has become of significant
-interest to mitigate the effects of this change on Earth's biodiversity.
-However, the practical realities of conservation mean that there is a
-limitation on how much we can modify landscapes in order to do this. So
-what is the best place to put a corridor given a constraint on how much
+interest to mitigate the effects of this change on Earth's biodiversity
+(Resasco 2019). However, the practical realities of conservation mean
+that there is a limitation on how much we can modify landscapes in order
+to do this.
+
+\hypertarget{objective-2}{%
+\subsection{Objective}\label{objective-2}}
+
+What is the best place to put a corridor given a constraint on how much
 surface-area you can change in a landscape? This is the question this
 chapter seeks to answer. Models for inferring corridor locations have
 been developed, but are limited in that are not developed around
@@ -552,7 +570,7 @@ promoting some element of ecosystem function, but instead by trying to
 find the path of least resistance in an existing landscape from a
 derived resistance surface (e.g. Peterman 2018). This chapter proposes a
 general algorithm for optimizing spatial restoration effort to move a
-measurement of ecosystem functioning toward a target state.
+measurement of ecological dynamics toward a target state.
 
 \hypertarget{methods-2}{%
 \subsection{Methods}\label{methods-2}}
@@ -621,6 +639,18 @@ benchmarking tests for the resulting chapter.
 for community
 ecology}\label{chapter-four-metacommunitydynamics.jl-a-virtual-laboratory-for-community-ecology}}
 
+\hypertarget{context-3}{%
+\subsection{Context}\label{context-3}}
+
+Building models for ecological forecasting is an imperative (Dietze
+\emph{et al.} 2018), but before applying forecasting methods to actual
+data, we need a way to determine the efficacy of different forecasting
+methods. We need a software library like this to generate synthetic data
+from a \emph{known} set of mechanisms and parameters to test our methods
+for parameter inference and forecasting on a system with \emph{known}
+ground-truth dynamics to assess the effectiveness of these inference and
+forecasting methods.
+
 \hypertarget{objective-3}{%
 \subsection{Objective}\label{objective-3}}
 
@@ -631,11 +661,7 @@ including most of the code used for the preceding chapters. Indeed
 of tools, but due to the nature of the Julia language, MCD.jl is
 inter-operable with several existing packages within the
 \texttt{EcoJulia} organization, including several to which I have
-contributed. We need a software library like this to generate synthetic
-data from a \emph{known} set of mechanisms and parameters to test our
-methods for parameter inference and forecasting on this \emph{known}
-system to assess the effectiveness of these inference and forecasting
-methods.
+contributed.
 
 \begin{figure}
 \hypertarget{fig:software}{%
@@ -750,6 +776,11 @@ numerical weather prediction. \emph{Nature}, 525, 47--56.
 Beckage, B., Gross, L.J. \& Kauffman, S. (2011). The limits to
 prediction in ecological systems. \emph{Ecosphere}, 2, art125.
 
+\leavevmode\hypertarget{ref-Blanchet2020CooNot}{}%
+Blanchet, F.G., Cazelles, K. \& Gravel, D. (2020). Co-occurrence is not
+evidence of ecological interactions. \emph{Ecology Letters}, 23,
+1050--1063.
+
 \leavevmode\hypertarget{ref-CaraDonna2017IntRew}{}%
 CaraDonna, P.J., Petry, W.K., Brennan, R.M., Cunningham, J.L.,
 Bronstein, J.L., Waser, N.M., \emph{et al.} (2017). Interaction rewiring
@@ -764,6 +795,12 @@ Ecological Dynamics via Symbolic Regression. \emph{BioEssays}, 41,
 \leavevmode\hypertarget{ref-Dietze2017PreEco}{}%
 Dietze, M.C. (2017). Prediction in ecology: A first-principles
 framework. \emph{Ecological Applications}, 27, 2048--2060.
+
+\leavevmode\hypertarget{ref-Dietze2018IteNea}{}%
+Dietze, M.C., Fox, A., Beck-Johnson, L.M., Betancourt, J.L., Hooten,
+M.B., Jarnevich, C.S., \emph{et al.} (2018). Iterative near-term
+ecological forecasting: Needs, opportunities, and challenges.
+\emph{Proceedings of the National Academy of Sciences}, 115, 1424--1432.
 
 \leavevmode\hypertarget{ref-Gravel2019BriElt}{}%
 Gravel, D., Baiser, B., Dunne, J.A., Kopelke, J.-P., Martinez, N.D.,
@@ -789,6 +826,10 @@ Science Engineering}, 6, 18--28.
 Hubbell, S.P. (2001). \emph{The unified neutral theory of biodiversity
 and biogeography}. Monographs in population biology. Princeton
 University Press, Princeton.
+
+\leavevmode\hypertarget{ref-Jordano2016ChaEco}{}%
+Jordano, P. (2016). Chasing Ecological Interactions. \emph{PLOS
+Biology}, 14, e1002559.
 
 \leavevmode\hypertarget{ref-Karger2017CliHig}{}%
 Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza,
@@ -854,6 +895,11 @@ Ecology and Evolution}, 9, 1638--1647.
 Poisot, T., Bélisle, Z., Hoebeke, L., Stock, M. \& Szefer, P. (2019).
 EcologicalNetworks.jl: Analysing ecological networks of species
 interactions. \emph{Ecography}, 42, 1850--1861.
+
+\leavevmode\hypertarget{ref-Resasco2019MetDec}{}%
+Resasco, J. (2019). Meta-analysis on a Decade of Testing Corridor
+Efficacy: What New Have we Learned? \emph{Current Landscape Ecology
+Reports}, 4, 61--69.
 
 \leavevmode\hypertarget{ref-Strydom2021FooWeb}{}%
 Strydom, T., Bouskila, S., Banville, F., Barros, C., Caron, D., Farrell,
