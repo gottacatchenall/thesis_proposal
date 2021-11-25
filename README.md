@@ -2,13 +2,13 @@
 
 Within the last several hundred years, human activity has induced
 rapid changes in Earth's atmosphere, oceans, and surface. Greenhouse
-gas emissions have caused an increase the temperature of both Earth's
-terrain and oceans, and both agricultural and urban development has
-rapidly reshaped Earth's land cover. The bulk of this change has
-occurred within the last several hundred years, a geological instant,
-inducing a sudden shift in conditions to Earth's climate and
-biosphere. As a result _ecological forecasting_---modeling how
-ecosystems and their services will change in the future---and then
+gas emissions have caused an increase in the temperature of both
+Earth's terrain and oceans, and both agricultural and urban
+development has rapidly reshaped Earth's land cover. The bulk of this
+change has occurred within the last several hundred years, a
+geological instant, inducing a sudden shift in conditions to Earth's
+climate and biosphere. As a result _ecological forecasting_---modeling
+how ecosystems and their services will change in the future---and then
 using these forecasts to make decisions to mitigate the negative
 consequences of this change on ecosystems, their functioning, and the
 services they provide to humans has emerged as an imperative for
@@ -35,7 +35,7 @@ differential equations in continuous-time settings, $\frac{dx}{dt} =
 f(x)$, or difference equations in discrete-time settings, $x_t =
 f(x_{t-1})$, where $f:\mathbb{R}^n \to \mathbb{R}^n$ is an arbitrary
 function describing how the system changes on a moment-to-moment basis
-(e.g. in the context of communities, $f$ could be Lotka-Voltera,
+(e.g. in the context of communities, $f$ could be Lotka-Volterra,
 Holling-Type-II or DeAngelis-Beddington functional response). The form
 of this functional response in real systems, and whether it is
 meaningfully non-zero for a given species interaction, is effectively
@@ -68,7 +68,7 @@ fixed amount of data, the so-called "curse" of dimensionality.
 But these problems are not solely unique to ecology. The term
 _ecological forecasting_ implicitly creates an analogy with weather
 forecasting. Although it has become a trite joke to complain about the
-weather forecast being wrong, over the least 50 years the field of
+weather forecast being wrong, over the last 50 years the field of
 numerical weather prediction (NWP) has dramatically improved our
 ability to predict weather across the board [@Bauer2015QuiRev]. The
 success of NWP, and the Earth observation systems that support it
@@ -88,7 +88,7 @@ hitherto only interpreted the world in various ways; the point is to
 change it", then once we have a forecast about how an ecosystem will
 change in the future, what if this forecast predicts a critical
 ecosystem service will deteriorate? We are still left with the
-question, what do we in the time being to mitigate the potentially
+question, what do we do in the time being to mitigate the potentially
 negative consequences a forecast predicts? In this framing, mitigating
 the consequences of anthropogenic change on ecosystems becomes an
 optimization problem: given a forecast of the future state of the
@@ -96,7 +96,7 @@ system, and some "goal" state for the future, the problem is then to
 optimize our intervention into the system to maximize the probability
 the system approaches our "goal" state. This dissertation aims to
 provide a framework for ecosystem monitoring and forecasting
-(@fig:thesis, left), and each chapter address some aspect of this
+(@fig:thesis, left), and each chapter addresses some aspect of this
 pipeline to data from a monitoring network to forecasts to mitigation
 strategy (@fig:thesis, right).
 
@@ -112,7 +112,7 @@ the thesis, which follows the flow of the framework on the left.
 ](./figures/thesisconcept.png){#fig:thesis}
 
 The primary research challenges this thesis addresses are: how do we
-design ecological samples to? How do we build the software
+design ecological samples to detect change? How do we build the software
 infrastructure to assimilate data from a variety of sources? And how
 do we propagate uncertainty from data to forecasts? The flow of
 chapters follows the flow in @fig:thesis (left), from data collection
@@ -137,7 +137,7 @@ between species relative abundance, sampling effort, and probability
 of observing an interaction between species in order to aid in the
 design of samples of ecological interactions across space, and to
 provide a null expectation of the false-negative probability for a
-dataset of a given size. Further it then proposes a method for
+dataset of a given size. Further, it then proposes a method for
 optimizing the spatial sampling locations to maximize the probability
 of detecting an interaction between two species given a fixed number
 of total of observations and the distributions of each species. This
@@ -168,7 +168,7 @@ flexible-links model [@MacDonald2020RevLin]. An example of this
 relation for networks with varying species richness is shown in
 @fig:fnr.
 
-![Relationship between total number of observed interactions negatives (x-axis) and the probability that an interaction is a true-negative as a function of different realized false-negative rates (colors), assuming each observed negative is independent---the same as the negative-bernoulli distribution.](./figures/negativebinomial.png)
+![Relationship between total number of observed interactions negatives (x-axis) and the probability that an interaction is a true-negative as a function of different realized false-negative rates (colors), assuming each observed negative is independent---the same as the negative-Bernoulli distribution.](./figures/negativebinomial.png)
 
 We then go on to test some assumptions of this neutral model with
 empirical data. Primarily we analytically show that our neutral model,
@@ -235,7 +235,7 @@ gradient, combined with spatial records of species occurrence via GBIF
 to forecast the uncoupling of the plant-pollinator metaweb of
 Colorado.
 
-![Chapter One conceptual figure. Left: the sources of data and how
+![Chapter two conceptual figure. Left: the sources of data and how
 they can be combined. Right: The flow from data to interaction
 prediction using a few different interaction prediction
 models.](./figures/ch1.png)
@@ -330,7 +330,7 @@ At the moment this is done by computing the minimum-spanning-tree
 (MST) of the spatial nodes (locations where occurrence has been
 observed), and then proposing corridors that only connect nodes that
 are already connected in the MST. The primary reason for doing this is
-the cut down the size of the solution space to enable quicker
+to the cut down the size of the search space to enable quicker
 convergence, although the final software that implements this
 algorithm will enable alternative methods of proposing modifications.
 
