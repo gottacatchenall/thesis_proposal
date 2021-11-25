@@ -374,10 +374,10 @@ running benchmarking tests for the resulting chapter.
 Building models for ecological forecasting is an imperative
 [@Dietze2018IteNea], but before applying forecasting methods to actual
 data, we need a way to determine the efficacy of different forecasting
-methods. We need a software library like this to generate synthetic
+methods. We need a software library to generate synthetic
 data from a _known_ set of mechanisms and parameters to test our
 methods for parameter inference and forecasting on a system with
-_known_ ground-truth dynamics  to assess the effectiveness of these
+_known_ ground-truth dynamics to assess the effectiveness of these
 inference and forecasting methods.
 
 ## Objective
